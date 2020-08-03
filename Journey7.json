@@ -30,7 +30,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "${journey.header-1}",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -71,7 +71,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "${journey.header-2}",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -112,7 +112,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "${journey.header-3}",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -158,7 +158,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "${journey.header-4}",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -199,7 +199,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "${journey.header-5}",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -240,7 +240,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "${journey.header-6}",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -281,7 +281,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "${journey.header-7}",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -336,7 +336,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.header-1}",
+        "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -351,7 +351,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.header-2}",
+        "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and not ${journey.where-3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -366,7 +366,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.header-3}",
+        "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and not ${journey.where-4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -381,7 +381,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.header-4}",
+        "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and not ${journey.where-5}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -396,7 +396,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.header-5}",
+        "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and not ${journey.where-6}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -411,7 +411,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.header-6}",
+        "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and not ${journey.where-7}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -426,7 +426,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.header-7}",
+        "customName": " ",
         "query": "select 0 as \"Abandons\" from usersession limit 1",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"

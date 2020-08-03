@@ -30,7 +30,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "${journey.header-1}",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -71,7 +71,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "${journey.header-2}",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -112,7 +112,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "${journey.header-3}",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -189,7 +189,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.header-1}",
+        "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -204,7 +204,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.header-2}",
+        "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and not ${journey.where-3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -219,7 +219,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.header-3}",
+        "customName": " ",
         "query": "select 0 as \"Abandons\" from usersession limit 1",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
