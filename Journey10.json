@@ -30,7 +30,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Awareness",
+            "customName": "${journey.header-1}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -71,7 +71,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Interest",
+            "customName": "${journey.header-2}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -112,7 +112,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Evaluation",
+            "customName": "${journey.header-3}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -158,7 +158,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Decision",
+            "customName": "${journey.header-4}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -199,7 +199,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Decision",
+            "customName": "${journey.header-5}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -240,7 +240,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Decision",
+            "customName": "${journey.header-6}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -281,7 +281,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Decision",
+            "customName": "${journey.header-7}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -322,7 +322,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Decision",
+            "customName": "${journey.header-8}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -363,7 +363,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Decision",
+            "customName": "${journey.header-9}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -404,7 +404,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Decision",
+            "customName": "${journey.header-10",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -644,7 +644,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-4}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda734)"
+        "markdown": "## [${journey.header-4}](#dashboard;id=7f64e3ef-239c-416a-b3a4-66b99beda734)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -656,7 +656,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-5}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda734)"
+        "markdown": "## [${journey.header-5}](#dashboard;id=a7340848-3f03-4155-ac15-d8ea4a7da734)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -668,7 +668,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-6}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda734)"
+        "markdown": "## [${journey.header-6}](#dashboard;id=a7340848-3f03-4155-ac06-d8ea4a7da734)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -680,7 +680,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-7}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda734)"
+        "markdown": "## [${journey.header-7}](#dashboard;id=a7340848-3f03-4155-ac07-d8ea4a7da734)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -692,7 +692,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-8}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda734)"
+        "markdown": "## [${journey.header-8}](#dashboard;id=a7340848-3f03-4155-ac08-d8ea4a7da734)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -704,7 +704,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-9}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda734)"
+        "markdown": "## [${journey.header-9}](#dashboard;id=a7340848-3f03-4155-ac09-d8ea4a7da734)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",

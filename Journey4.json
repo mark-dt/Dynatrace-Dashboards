@@ -33,7 +33,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Awareness",
+            "customName": "${journey.header-1}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -74,7 +74,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Interest",
+            "customName": "${journey.header-2}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -115,7 +115,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Evaluation",
+            "customName": "${journey.header-3}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -161,7 +161,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Decision",
+            "customName": "${journey.header-4}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
