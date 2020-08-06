@@ -1,4 +1,4 @@
 ## VMware Utilization Dashboard
-This dashboard pack provides a quick overview of VMware under utilization.
+This dashboard pack provides a quick overview of VMware utilization.
 
-![User Journey Dashboard](VMwareu.png)
+![User Journey Dashboard](VMware.png)
