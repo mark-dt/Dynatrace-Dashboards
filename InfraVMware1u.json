@@ -7,7 +7,7 @@
   },
   "id": "925c6458-41a3-44a7-a53e-5089f6b831d4",
   "dashboardMetadata": {
-    "name": "\ud83d\udcbb VMware Utilization",
+    "name": "${overviewName} VMware Utilization",
     "shared": false,
     "owner": "${MyEmail}",
     "sharingDetails": {
