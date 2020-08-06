@@ -7,7 +7,7 @@
   },
   "id": "ee9171aa-0bc3-476e-804b-589be5b6341a",
   "dashboardMetadata": {
-    "name": "${overviewName} VMware Utilization",
+    "name": "${overviewName} VMware Infrastructure Utilization",
     "shared": false,
     "owner": "${MyEmail}",
     "sharingDetails": {
@@ -18,24 +18,9 @@
       "timeframe": "",
       "managementZone": null
     }
+    "tags": ["Infrastructure"]
   },
   "tiles": [
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 1634,
-        "width": 38,
-        "height": 38
-      },
-      "tileFilter": {
-        "timeframe": null,
-        "managementZone": null
-      },
-      "markdown": "![BackButton]()"
-    },
     {
       "name": "Infrastructure Utilization",
       "tileType": "HEADER",

@@ -7,7 +7,7 @@
   },
   "id": "825c6458-41a3-44a7-a53e-5089f6b831d4",
   "dashboardMetadata": {
-    "name": "${overviewName} VMware Utilization",
+    "name": "${overviewName} VMware Underutilized Infrastructure",
     "shared": false,
     "owner": "${MyEmail}",
     "sharingDetails": {
@@ -18,25 +18,9 @@
       "timeframe": "",
       "managementZone": null
     },
-    "tags": ["Underutilized Infra"]
+    "tags": ["Infrastructure"]
   },
   "tiles": [
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 1634,
-        "width": 38,
-        "height": 38
-      },
-      "tileFilter": {
-        "timeframe": null,
-        "managementZone": null
-      },
-      "markdown": "![BackButton]()"
-    },
     {
       "name": "Underutilized Infrastructure",
       "tileType": "HEADER",
