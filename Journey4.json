@@ -33,7 +33,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "_____________________________________________________________________!colorhack:base=high;warn=.90;crit=.80",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -74,7 +74,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "_____________________________________________________________________!colorhack:base=high;warn=.90;crit=.80",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -115,7 +115,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "_____________________________________________________________________!colorhack:base=high;warn=.90;crit=.80",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -161,7 +161,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "_____________________________________________________________________!colorhack:base=high;warn=.90;crit=.80",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
