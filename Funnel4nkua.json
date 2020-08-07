@@ -31,7 +31,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.where-1}",
+        "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -46,7 +46,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.where-4}",
+        "customName": " ",
         "query": "select 0 as \"Abandons\" from usersession limit 1",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -129,7 +129,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.where-4}",
+        "customName": " ",
         "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -144,7 +144,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.where-1}",
+        "customName": " ",
         "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -159,7 +159,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.where-1}",
+        "customName": " ",
         "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -174,7 +174,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.where-4}",
+        "customName": " ",
         "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -189,7 +189,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.where-2}",
+        "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and not ${journey.where-3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -204,7 +204,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.where-3}",
+        "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and not ${journey.where-4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -219,7 +219,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.where-2}",
+        "customName": " ",
         "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-2} ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -234,7 +234,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.where-3}",
+        "customName": " ",
         "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -249,7 +249,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.where-2}",
+        "customName": " ",
         "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -264,7 +264,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "${journey.where-3}",
+        "customName": " ",
         "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
