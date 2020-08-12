@@ -481,7 +481,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-1.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-1.id}"]
                 }
             }
         }
@@ -528,7 +528,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-1.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-1.id}"]
                 }
             }
         }
@@ -570,7 +570,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-1.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-1.id}"]
                 }
             }
         }
@@ -612,7 +612,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-1.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-1.id}"]
                 }
             }
         }
@@ -654,7 +654,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-2.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-2.id}"]
                 }
             }
         }
@@ -696,7 +696,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-2.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-2.id}"]
                 }
             }
         }
@@ -743,7 +743,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-2.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-2.id}"]
                 }
             }
         }
@@ -785,7 +785,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-2.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-2.id}"]
                 }
             }
         }
@@ -827,7 +827,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-2.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-2.id}"]
                 }
             }
         }
@@ -869,7 +869,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-3.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-3.id}"]
                 }
             }
         }
@@ -916,7 +916,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-3.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-3.id}"]
                 }
             }
         }
@@ -958,7 +958,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-3.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-3.id}"]
                 }
             }
         }
@@ -1000,7 +1000,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-3.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-3.id}"]
                 }
             }
         }
@@ -1042,7 +1042,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-3.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-3.id}"]
                 }
             }
         }
@@ -1084,7 +1084,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-4.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-4.id}"]
                 }
             }
         }
@@ -1126,7 +1126,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-4.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-4.id}"]
                 }
             }
         }
@@ -1173,7 +1173,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-4.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-4.id}"]
                 }
             }
         }
@@ -1215,7 +1215,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-4.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-4.id}"]
                 }
             }
         }
@@ -1257,7 +1257,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": [" ${app-4.id}"]
+                    "SPECIFIC_ENTITIES": ["${app-4.id}"]
                 }
             }
         }
