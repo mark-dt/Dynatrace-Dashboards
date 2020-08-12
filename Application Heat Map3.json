@@ -14,7 +14,8 @@
         },
         "dashboardFilter": {
             "timeframe": "-24h to now"
-        }
+        },
+        "tags": ["Overview"]
     },
     "tiles": [{
         "name": "${app-1.name}",
