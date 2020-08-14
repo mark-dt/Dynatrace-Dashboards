@@ -1,0 +1,147 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.196.73.20200706-200807"
+    },
+    "id": "73419458-0442-4e65-9b7e-28321b1755b6",
+    "dashboardMetadata": {
+        "name": "Marketing Campaign Conversion Analysis",
+        "shared": false,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": ""
+        },
+        "tags": ["V6", "Overview", "Marketing"]
+    },
+    "tiles": [{
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 0,
+            "width": 1672,
+            "height": 342
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "${metricRum.id}",
+                    "aggregation": "SUM",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "null${metricRum.id}|SUM|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1594125749193,
+                        "customColor": "#39ff14"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Conversions by Campaign",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Conversions Over Time",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Lost Conversions by Campaign",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1140,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 532,
+            "height": 380
+        },
+        "tileFilter": {},
+        "customName": "User sessions query results",
+        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where ${uspCampaign.id} IS NOT NULL and useraction.name=\"${kuaLastStep}\" group by ${uspCampaign.id}",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": "Risk Conversions by Campaign",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 570,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 570,
+            "width": 532,
+            "height": 380
+        },
+        "tileFilter": {},
+        "customName": "User sessions query results",
+        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where ${uspCampaign.id} IS NOT NULL and useraction.name=\"${kuaLastStep}\" and userExperienceScore <> \"SATISFIED\" group by ${uspCampaign.id}",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1140,
+            "width": 532,
+            "height": 380
+        },
+        "tileFilter": {},
+        "customName": "User sessions query results",
+        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where ${uspCampaign.id} IS NOT NULL and not useraction.name=\"${kuaLastStep}\" group by ${uspCampaign.id}",
+        "type": "PIE_CHART",
+        "limit": 50
+    }]
+}
