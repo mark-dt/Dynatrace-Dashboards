@@ -60,7 +60,7 @@
                     "sortColumn": false
                 }],
                 "resultMetadata": {
-                    "null${metricRum.id}|SUM|TOTAL|LINE|APPLICATION|APPLICATION": {
+                    "null${metricRum.id}|COUNT|TOTAL|LINE|APPLICATION|APPLICATION": {
                         "lastModified": 1591285527997,
                         "customColor": "#39ff14"
                     }
@@ -310,7 +310,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Avg Order Value",
+        "name": "Errors",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {

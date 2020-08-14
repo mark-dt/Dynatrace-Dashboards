@@ -46,7 +46,7 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "null${metricRum.id}|SUM|TOTAL|AREA|APPLICATION": {
+                    "null${metricRum.id}|COUNT|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1594125749193,
                         "customColor": "#39ff14"
                     }
