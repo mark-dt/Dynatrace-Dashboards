@@ -61,7 +61,7 @@
         "bounds": {
             "top": 0,
             "left": 0,
-            "width": 304,
+            "width": 380,
             "height": 38
         },
         "tileFilter": {}
@@ -83,7 +83,7 @@
         "bounds": {
             "top": 0,
             "left": 1140,
-            "width": 304,
+            "width": 380,
             "height": 38
         },
         "tileFilter": {}
@@ -98,7 +98,7 @@
             "height": 380
         },
         "tileFilter": {},
-        "customName": "User sessions query results",
+        "customName": " ",
         "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where ${uspCampaign.id} IS NOT NULL and useraction.name=\"${kuaLastStep}\" group by ${uspCampaign.id}",
         "type": "PIE_CHART",
         "limit": 50
@@ -109,7 +109,7 @@
         "bounds": {
             "top": 0,
             "left": 570,
-            "width": 304,
+            "width": 380,
             "height": 38
         },
         "tileFilter": {}
@@ -124,7 +124,7 @@
             "height": 380
         },
         "tileFilter": {},
-        "customName": "User sessions query results",
+        "customName": " ",
         "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where ${uspCampaign.id} IS NOT NULL and useraction.name=\"${kuaLastStep}\" and userExperienceScore <> \"SATISFIED\" group by ${uspCampaign.id}",
         "type": "PIE_CHART",
         "limit": 50
@@ -139,7 +139,7 @@
             "height": 380
         },
         "tileFilter": {},
-        "customName": "User sessions query results",
+        "customName": " ",
         "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where ${uspCampaign.id} IS NOT NULL and not useraction.name=\"${kuaLastStep}\" group by ${uspCampaign.id}",
         "type": "PIE_CHART",
         "limit": 50

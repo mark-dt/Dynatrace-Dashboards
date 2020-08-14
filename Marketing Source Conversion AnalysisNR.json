@@ -98,7 +98,7 @@
             "height": 380
         },
         "tileFilter": {},
-        "customName": "User sessions query results",
+        "customName": " ",
         "query": "SELECT ${uspSource.id}, count(*) FROM usersession where ${uspSource.id} IS NOT NULL and useraction.name=\"${kuaLastStep}\" group by ${uspSource.id}",
         "type": "PIE_CHART",
         "limit": 50
@@ -124,7 +124,7 @@
             "height": 380
         },
         "tileFilter": {},
-        "customName": "User sessions query results",
+        "customName": " ",
         "query": "SELECT ${uspSource.id}, count(*) FROM usersession where ${uspSource.id} IS NOT NULL and useraction.name=\"${kuaLastStep}\" and userExperienceScore <> \"SATISFIED\" group by ${uspSource.id}",
         "type": "PIE_CHART",
         "limit": 50
@@ -139,7 +139,7 @@
             "height": 380
         },
         "tileFilter": {},
-        "customName": "User sessions query results",
+        "customName": " ",
         "query": "SELECT ${uspSource.id}, count(*) FROM usersession where ${uspSource.id} IS NOT NULL and not useraction.name=\"${kuaLastStep}\" group by ${uspSource.id}",
         "type": "PIE_CHART",
         "limit": 50
