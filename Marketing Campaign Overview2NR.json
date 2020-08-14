@@ -372,11 +372,11 @@
         "bounds": {
             "top": 152,
             "left": 1482,
-            "width": 190,
+            "width": 228,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Conversions Analysis](#dashboard;id=73419458-0442-4e65-9b7e-28321b1755b2)"
+        "markdown": "## [Conversions Analysis](#dashboard;id=73419458-0442-4e65-9b7e-28321b1755b6)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -384,7 +384,7 @@
         "bounds": {
             "top": 228,
             "left": 1482,
-            "width": 190,
+            "width": 228,
             "height": 38
         },
         "tileFilter": {},
