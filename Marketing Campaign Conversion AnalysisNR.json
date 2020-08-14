@@ -37,7 +37,7 @@
                 "type": "TIMESERIES",
                 "series": [{
                     "metric": "${metricRum.id}",
-                    "aggregation": "SUM",
+                    "aggregation": "COUNT",
                     "type": "AREA",
                     "entityType": "APPLICATION",
                     "dimensions": [],

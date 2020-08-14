@@ -51,7 +51,7 @@
                     "sortColumn": true
                 }, {
                     "metric": "${metricRum.id}",
-                    "aggregation": "SUM",
+                    "aggregation": "COUNT",
                     "type": "LINE",
                     "entityType": "APPLICATION",
                     "dimensions": [],
@@ -224,7 +224,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": ""select avg(useraction.duration) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\""",
+        "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
