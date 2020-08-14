@@ -15,7 +15,7 @@
         "dashboardFilter": {
             "timeframe": ""
         },
-        "tags": ["V6", "Overview", "Marketing"]
+        "tags": ["Overview", "Marketing"]
     },
     "tiles": [{
         "name": "Custom chart",

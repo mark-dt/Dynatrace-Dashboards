@@ -15,7 +15,7 @@
         "dashboardFilter": {
             "timeframe": "Today"
         },
-        "tags": ["V6", "Marketing"]
+        "tags": ["Marketing"]
     },
     "tiles": [{
         "name": "",
