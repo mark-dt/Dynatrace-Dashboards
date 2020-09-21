@@ -1,0 +1,1113 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.198.51.20200717-123005"
+    },
+    "id": "35f71905-abd4-497d-a407-af48fc384753",
+    "dashboardMetadata": {
+        "name": "RabbitMQ Performance Dashboard",
+        "shared": false,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": ""
+        },
+        "tags": ["RabbitMQ", "OneAgentExtension", "Performance"]
+    },
+    "tiles": [{
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 304,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Average Queues",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.queues_count",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 304,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Node Status (SUM)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.node_status",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "Bucket",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "null¦Bucket»ok»falsebuiltin:tech.rabbitmq.node_status|NONE|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600454124289,
+                        "customColor": "#008000"
+                    },
+                    "null¦Bucket»failed»falsebuiltin:tech.rabbitmq.node_status|NONE|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600454118930,
+                        "customColor": "#ff0000"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 0,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Messages Rates (Avg)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.messages_ack",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.messages_deliver_get",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.messages_publish",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.messages_redeliver",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.messages_return_unroutable",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:tech.rabbitmq.messages_return_unroutable|AVG|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600452644809,
+                        "customColor": "#ff0000"
+                    },
+                    "nullbuiltin:tech.rabbitmq.messages_deliver_get|AVG|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600446790047,
+                        "customColor": "#008000"
+                    },
+                    "nullbuiltin:tech.rabbitmq.messages_publish|AVG|TOTAL|AREA|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600443537220,
+                        "customColor": "#f5d30f"
+                    },
+                    "nullbuiltin:tech.rabbitmq.messages_ack|AVG|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600446816399,
+                        "customColor": "#ffff00"
+                    },
+                    "nullbuiltin:tech.rabbitmq.messages_redeliver|AVG|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600446779085,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:tech.rabbitmq.messages_publish|AVG|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600452676943,
+                        "customColor": "#008cdb"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "PROCESS_GROUP_INSTANCE": {
+                    "AUTO_TAGS": ["Application:Unify"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 380,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Available Disk Space (MIN)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.disk_free_left_to_limit",
+                    "aggregation": "MIN",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "node",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": true,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Nodes Overview",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 0,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 0,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Memory Usage (AVG)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.mem_usage",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "node",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 760,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "File Descriptors Usage (AVG)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.fd_usage",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "node",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 1140,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Processes Usage (AVG)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.proc_usage",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.process_group_instance",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "node",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Percent"
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 1520,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Sockets Usage (AVG)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.sockets_usage",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "node",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 1520,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Channels and Connections",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.connections_count",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.channels_count",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.connections_blocked",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:tech.rabbitmq.connections_count|AVG|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600448581674,
+                        "customColor": "#a972cc"
+                    },
+                    "nullbuiltin:tech.rabbitmq.channels_count|AVG|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600448579130,
+                        "customColor": "#008cdb"
+                    },
+                    "nullbuiltin:tech.rabbitmq.connections_blocked|AVG|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600448574345,
+                        "customColor": "#ff0000"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1026,
+            "left": 760,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Nodes Health",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.cluster_nodes_failed",
+                    "aggregation": "SUM",
+                    "type": "BAR",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.cluster_nodes_ok",
+                    "aggregation": "SUM",
+                    "type": "LINE",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:tech.rabbitmq.cluster_nodes_failed|SUM|TOTAL|BAR|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600445668247,
+                        "customColor": "#ff0000"
+                    },
+                    "nullbuiltin:tech.rabbitmq.cluster_nodes_ok|SUM|TOTAL|LINE|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600445673207,
+                        "customColor": "#008000"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "GLOBAL_BACKGROUND_ACTIVITY": {
+                    "AUTO_TAGS": ["Application:Unify"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 380,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Messages (AVG)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.messages_ready",
+                    "aggregation": "AVG",
+                    "type": "BAR",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.messages_unacknowledged",
+                    "aggregation": "AVG",
+                    "type": "BAR",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:tech.rabbitmq.messages_unacknowledged|AVG|TOTAL|BAR|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600446554399,
+                        "customColor": "#4169e1"
+                    },
+                    "nullbuiltin:tech.rabbitmq.messages_ready|AVG|TOTAL|BAR|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600448314873,
+                        "customColor": "#008000"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1026,
+            "left": 1520,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Cluster Summary",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.cluster_channels",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.cluster_connections",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.cluster_consumers",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.cluster_exchanges",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:tech.rabbitmq.cluster_exchanges|AVG|TOTAL|LINE|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600451963271,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:tech.rabbitmq.cluster_consumers|AVG|TOTAL|LINE|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600452048135,
+                        "customColor": "#b4e5f9"
+                    },
+                    "nullbuiltin:tech.rabbitmq.cluster_channels|AVG|TOTAL|LINE|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600452044288,
+                        "customColor": "#004F98"
+                    },
+                    "nullbuiltin:tech.rabbitmq.cluster_connections|AVG|TOTAL|LINE|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600452061353,
+                        "customColor": "#00CED1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Cluster Overview",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 988,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 1140,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Consumers and Queues",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.consumers",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.queues_count",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.ad_queues_no_consumers",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:tech.rabbitmq.ad_queues_no_consumers|AVG|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600447393943,
+                        "customColor": "#c9a000"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1026,
+            "left": 1140,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Queues Health",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.cluster_queues_running",
+                    "aggregation": "AVG",
+                    "type": "BAR",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.cluster_queues_idle",
+                    "aggregation": "AVG",
+                    "type": "BAR",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:tech.rabbitmq.cluster_queues_down|AVG|TOTAL|LINE|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600450725728,
+                        "customColor": "#65000b"
+                    },
+                    "nullbuiltin:tech.rabbitmq.cluster_queues_flow|AVG|TOTAL|LINE|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600450633249,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:tech.rabbitmq.ad_queues_no_consumers|AVG|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600447393943,
+                        "customColor": "#c9a000"
+                    },
+                    "nullbuiltin:tech.rabbitmq.cluster_queues_idle|AVG|TOTAL|BAR|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600452229863,
+                        "customColor": "#f5d30f"
+                    },
+                    "nullbuiltin:tech.rabbitmq.cluster_queues_crashed|AVG|TOTAL|LINE|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600450645464,
+                        "customColor": "#ff0000"
+                    },
+                    "nullbuiltin:tech.rabbitmq.cluster_queues_running|AVG|TOTAL|BAR|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600450619553,
+                        "customColor": "#008000"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1026,
+            "left": 0,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Message Rates",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.cluster_messages_ack",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.cluster_messages_deliver_get",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.cluster_messages_publish",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.cluster_messages_redeliver",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.cluster_messages_return_unroutable",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:tech.rabbitmq.cluster_messages_return_unroutable|AVG|TOTAL|LINE|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600452633649,
+                        "customColor": "#ff0000"
+                    },
+                    "nullbuiltin:tech.rabbitmq.cluster_messages_publish|AVG|TOTAL|LINE|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600452694032,
+                        "customColor": "#008cdb"
+                    },
+                    "nullbuiltin:tech.rabbitmq.cluster_messages_ack|AVG|TOTAL|LINE|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600452600914,
+                        "customColor": "#ffff00"
+                    },
+                    "nullbuiltin:tech.rabbitmq.cluster_messages_deliver_get|AVG|TOTAL|LINE|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600452606657,
+                        "customColor": "#008000"
+                    },
+                    "nullbuiltin:tech.rabbitmq.cluster_messages_redeliver|AVG|TOTAL|LINE|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600452628485,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1026,
+            "left": 380,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Queued Messages",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.cluster_messages_ready",
+                    "aggregation": "AVG",
+                    "type": "BAR",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:tech.rabbitmq.cluster_messages_unacknowledged",
+                    "aggregation": "AVG",
+                    "type": "BAR",
+                    "entityType": "GLOBAL_BACKGROUND_ACTIVITY",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:tech.rabbitmq.cluster_messages_ready|AVG|TOTAL|BAR|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600451310697,
+                        "customColor": "#008cdb"
+                    },
+                    "nullbuiltin:tech.rabbitmq.cluster_messages_unacknowledged|AVG|TOTAL|BAR|GLOBAL_BACKGROUND_ACTIVITY": {
+                        "lastModified": 1600451314611,
+                        "customColor": "#ef651f"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Problems",
+        "tileType": "OPEN_PROBLEMS",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Smartscape",
+        "tileType": "PURE_MODEL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 0,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Network metrics",
+        "tileType": "NETWORK",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 608,
+            "width": 304,
+            "height": 304
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 760,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Node Status (SUM)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.rabbitmq.node_status",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "Bucket",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "null¦Bucket»ok»falsebuiltin:tech.rabbitmq.node_status|NONE|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600454124289,
+                        "customColor": "#008000"
+                    },
+                    "null¦Bucket»failed»falsebuiltin:tech.rabbitmq.node_status|NONE|TOTAL|LINE|PROCESS_GROUP_INSTANCE": {
+                        "lastModified": 1600454118930,
+                        "customColor": "#ff0000"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 912,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "CPU usage %",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:host.cpu.usage",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "HOST",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Overall Infrastructure",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1292,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Memory used %",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:host.mem.usage",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "HOST",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 1672,
+            "width": 304,
+            "height": 266
+        },
+        "tileFilter": {},
+        "markdown": "#### [RabbitMQ Monitored Processes](#newprocessessummary;PLUGINS_RUNNING=RabbitMQ)\n\n#### [Technologies](#newprocessessummary)\n\n#### [Dynatrace University](https://university.dynatrace.com/)"
+    }, {
+        "name": "Resources",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1672,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "",
+        "tileType": "HOSTS",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 152,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "HOST",
+            "customName": "Hosts",
+            "defaultName": "Hosts",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        },
+        "chartVisible": true
+    }]
+}
