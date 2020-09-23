@@ -143,7 +143,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=low;warn=${Warning};crit=${Critical}",
         "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
@@ -159,7 +159,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=low;warn=${Warning2};crit=${Critical2}",
         "query": "select avg(useraction.visuallycompletetime) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
@@ -175,7 +175,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=low;warn=${Warning3};crit=${Critical3}",
         "query": "select avg(useraction.speedindex) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
@@ -191,7 +191,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=low;warn=${Warning4};crit=${Critical4}",
         "query": "select sum(useraction.errorcount) as \" \" FROM useraction where useraction.name=\"${kuaLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
@@ -207,7 +207,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=high;warn=${Warning5};crit=${Critical5}",
         "query": "select count(*) as \" \" from usersession where useraction.name=\"${kuaLastStep}\" ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
@@ -223,7 +223,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=low;warn=${Warning6};crit=${Critical6}",
         "query": "select count(*) as \" \" from usersession where not useraction.name=\"${kuaLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
