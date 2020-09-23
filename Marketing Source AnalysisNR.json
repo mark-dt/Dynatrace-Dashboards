@@ -89,9 +89,9 @@
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
-                "type": "SINGLE_VALUE",
+                "type": "TOP_LIST",
                 "series": [{
-                    "metric": "${Source.id}",
+                    "metric": "${metricRum2.id}",
                     "aggregation": "COUNT",
                     "type": "LINE",
                     "entityType": "APPLICATION",
@@ -99,6 +99,11 @@
                         "id": "1",
                         "name": "${uspSource.name}",
                         "values": ["${uspSource.value}"],
+                        "entityDimension": false
+                    }, {
+                        "id": "2",
+                        "name": "${uspCampaign.name}",
+                        "values": [],
                         "entityDimension": false
                     }],
                     "sortAscending": false,
@@ -132,7 +137,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
+        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and ${uspSource.key}=\"${uspSource.value}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -148,7 +153,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.visuallycompletetime) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
+        "query": "select avg(useraction.visuallycompletetime) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and ${uspSource.key}=\"${uspSource.value}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -164,7 +169,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(useraction.errorcount) as \" \" FROM useraction where useraction.name=\"${kuaLastStep}\"",
+        "query": "select sum(useraction.errorcount) as \" \" FROM useraction where useraction.name=\"${kuaLastStep}\" and ${uspSource.key}=\"${uspSource.value}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -212,7 +217,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
+        "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and ${uspSource.key}=\"${uspSource.value}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
