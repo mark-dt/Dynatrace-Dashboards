@@ -82,17 +82,6 @@
             "width": 380,
             "height": 266
         },
-    }, {
-        "name": "Responses",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 0,
-            "width": 380,
-            "height": 38
-        },
-        "tileFilter": {}
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
@@ -221,6 +210,17 @@
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
+    }, {
+        "name": "Responses",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
     }, {
         "name": "Duration",
         "tileType": "HEADER",
