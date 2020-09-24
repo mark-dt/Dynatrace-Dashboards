@@ -36,7 +36,7 @@
                 "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [{
-                    "metric": "${Source.id}",
+                    "metric": "${metricRum2.id}",
                     "aggregation": "COUNT",
                     "type": "BAR",
                     "entityType": "APPLICATION",
