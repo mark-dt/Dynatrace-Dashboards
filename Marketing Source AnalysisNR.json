@@ -45,6 +45,11 @@
                         "name": "${uspSource.name}",
                         "values": ["${uspSource.value}"],
                         "entityDimension": false
+                    }, {
+                        "id": "2",
+                        "name": "${uspCampaign.name}",
+                        "values": [],
+                        "entityDimension": false
                     }],
                     "sortAscending": false,
                     "sortColumn": false,
