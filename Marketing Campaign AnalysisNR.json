@@ -36,7 +36,7 @@
                 "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [{
-                    "metric": "${Campaign.id}",
+                    "metric": "${metricRum2.id}",
                     "aggregation": "COUNT",
                     "type": "BAR",
                     "entityType": "APPLICATION",
@@ -44,6 +44,11 @@
                         "id": "1",
                         "name": "${uspCampaign.name}",
                         "values": ["${uspCampaign.value}"],
+                        "entityDimension": false
+                    }, {
+                        "id": "2",
+                        "name": "${uspSource.name}",
+                        "values": [],
                         "entityDimension": false
                     }],
                     "sortAscending": false,
