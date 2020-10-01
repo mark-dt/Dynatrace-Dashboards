@@ -5,7 +5,7 @@
 This dashboard pack provides a detail analysis for your marketing campaigns. You can see the responses broken down <br>
 by a specific campain, campaign responses by GEO and key KPI data like revenue and conversion for the campaigns. <br>
 
-![Marketing Campaign Analysis](image/MCA.png)
+![Marketing Campaign Analysis](MCA.png)
 
 # Prerequisites Highlights
 
