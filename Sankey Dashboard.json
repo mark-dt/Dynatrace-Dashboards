@@ -1,0 +1,47 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.200.99.20200828-133130"
+    },
+    "id": "c98ef606-eb1a-4adf-bb8e-926b5bf49efa",
+    "dashboardMetadata": {
+        "name": "${overviewName} Sankey Dashboard",
+        "shared": false,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": ""
+        }
+    },
+    "tiles": [{
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 1482,
+            "height": 760
+        },
+        "tileFilter": {},
+        "markdown": "!PU(link):sankey1"
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 798,
+            "left": 0,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "customName": "UserJourneys !PU(sankey):link=sankey1;kpi=revenue;kpicurr=EUR",
+        "query": "select useraction.name, useraction.matchingConversionGoals, useraction.apdexCategory, useraction.isEntryAction, useraction.isExitAction, useraction.stringProperties, useraction.doubleProperties, useraction.longProperties, useraction.dateProperties, useraction.duration, useraction.errorCount, userExperienceScore FROM usersession WHERE useraction.application in (\"${app.name}\")",
+        "type": "TABLE",
+        "limit": 50
+    }]
+}
