@@ -14,7 +14,8 @@
         },
         "dashboardFilter": {
             "timeframe": ""
-        }
+        },
+        "tags": ["Sankey"]
     },
     "tiles": [{
         "name": "Markdown",
@@ -39,9 +40,9 @@
             "height": 38
         },
         "tileFilter": {},
-        "customName": "UserJourneys !PU(sankey):link=sankey1;kpi=revenue;kpicurr=EUR",
+        "customName": "UserJourneys !PU(sankey):link=sankey1;kpi=${usp.key};kpicurr=${MyCurrency.value}",
         "query": "select useraction.name, useraction.matchingConversionGoals, useraction.apdexCategory, useraction.isEntryAction, useraction.isExitAction, useraction.stringProperties, useraction.doubleProperties, useraction.longProperties, useraction.dateProperties, useraction.duration, useraction.errorCount, userExperienceScore FROM usersession WHERE useraction.application in (\"${app.name}\")",
         "type": "TABLE",
-        "limit": 50
+        "limit": ${MyLimit}
     }]
 }
