@@ -5,7 +5,7 @@
     },
     "id": "f520ca5d-c56b-4593-9fbd-29aad19c6ffd",
     "dashboardMetadata": {
-        "name": "${overviewName} Apdex Heatmap",
+        "name": "${overviewName}  Apdex Heatmap",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {
