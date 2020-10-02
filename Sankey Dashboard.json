@@ -43,6 +43,6 @@
         "customName": "UserJourneys !PU(sankey):link=sankey1;kpi=${usp.name};kpicurr=${MyCurrency.value}",
         "query": "select useraction.name, useraction.matchingConversionGoals, useraction.apdexCategory, useraction.isEntryAction, useraction.isExitAction, useraction.stringProperties, useraction.doubleProperties, useraction.longProperties, useraction.dateProperties, useraction.duration, useraction.errorCount, userExperienceScore FROM usersession WHERE useraction.application in (\"${app.name}\")",
         "type": "TABLE",
-        "limit": "${MyLimit}"
+        "limit": ${MyLimit}
     }]
 }
