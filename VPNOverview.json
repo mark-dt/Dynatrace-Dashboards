@@ -28,7 +28,7 @@
         },
         "tileFilter": {},
         "customName": "Duration by IP",
-        "query": "Select ip, avg(useraction.duration) FROM usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by IP order by avg(useraction.duration) DESC LIMIT 10",
+        "query": "Select ip, avg(useraction.duration) FROM usersession where ip is not null and (ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by IP order by avg(useraction.duration) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
