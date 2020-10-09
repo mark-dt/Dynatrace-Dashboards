@@ -1,9 +1,9 @@
 {
     "metadata": {
         "configurationVersions": [3],
-        "clusterVersion": "1.192.0.20200408-205558"
+        "clusterVersion": "1.205.0.20201008-221800"
     },
-    "id": "fbe8d3b1-ccb9-480c-9e5d-0e1b8b4da733",
+    "id": "cfd0d556-8a38-41ae-a768-dfb4487e7884",
     "dashboardMetadata": {
         "name": "${overviewName} ${MyVPNName} Overview",
         "shared": true,
@@ -22,7 +22,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 722,
+            "top": 342,
             "left": 0,
             "width": 418,
             "height": 266
@@ -37,7 +37,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 722,
+            "top": 342,
             "left": 418,
             "width": 418,
             "height": 266
@@ -52,7 +52,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 722,
+            "top": 342,
             "left": 1710,
             "width": 418,
             "height": 266
@@ -67,7 +67,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 722,
+            "top": 342,
             "left": 1292,
             "width": 418,
             "height": 266
@@ -82,7 +82,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 1254,
+            "top": 874,
             "left": 0,
             "width": 418,
             "height": 266
@@ -97,7 +97,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 1254,
+            "top": 874,
             "left": 418,
             "width": 418,
             "height": 266
@@ -112,7 +112,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 1254,
+            "top": 874,
             "left": 1292,
             "width": 418,
             "height": 266
@@ -127,7 +127,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 1254,
+            "top": 874,
             "left": 1710,
             "width": 418,
             "height": 266
@@ -142,7 +142,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 456,
+            "top": 76,
             "left": 0,
             "width": 418,
             "height": 266
@@ -157,7 +157,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 456,
+            "top": 76,
             "left": 418,
             "width": 418,
             "height": 266
@@ -172,7 +172,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 456,
+            "top": 76,
             "left": 1292,
             "width": 418,
             "height": 266
@@ -187,7 +187,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 456,
+            "top": 76,
             "left": 1710,
             "width": 418,
             "height": 266
@@ -202,7 +202,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 456,
+            "top": 76,
             "left": 836,
             "width": 456,
             "height": 266
@@ -217,7 +217,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 722,
+            "top": 342,
             "left": 836,
             "width": 456,
             "height": 266
@@ -232,7 +232,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 1254,
+            "top": 874,
             "left": 836,
             "width": 456,
             "height": 266
@@ -247,7 +247,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 988,
+            "top": 608,
             "left": 418,
             "width": 418,
             "height": 266
@@ -262,7 +262,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 988,
+            "top": 608,
             "left": 0,
             "width": 418,
             "height": 266
@@ -277,7 +277,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 988,
+            "top": 608,
             "left": 836,
             "width": 456,
             "height": 266
@@ -292,7 +292,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 988,
+            "top": 608,
             "left": 1292,
             "width": 418,
             "height": 266
@@ -307,7 +307,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 988,
+            "top": 608,
             "left": 1710,
             "width": 418,
             "height": 266
@@ -318,208 +318,16 @@
         "type": "PIE_CHART",
         "limit": 50
     }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 0,
-            "width": 418,
-            "height": 190
-        },
-        "tileFilter": {},
-        "customName": "Unique IPs",
-        "query": "select count(distinct ip) as \"Unique IPs\" from usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 418,
-            "width": 418,
-            "height": 190
-        },
-        "tileFilter": {},
-        "customName": "Unique ISPs",
-        "query": "select count(distinct isp) as \"Unique ISPs\" from usersession where isp is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 836,
-            "width": 456,
-            "height": 190
-        },
-        "tileFilter": {},
-        "customName": "Unique Applications",
-        "query": "select count(distinct useraction.application) as \"Unique Applications\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 1292,
-            "width": 418,
-            "height": 190
-        },
-        "tileFilter": {},
-        "customName": "Unique Browsers",
-        "query": "select count(distinct browserMajorVersion) as \"Unique Browsers\" from usersession where browserMajorVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 1710,
-            "width": 418,
-            "height": 190
-        },
-        "tileFilter": {},
-        "customName": "Unique Cities",
-        "query": "select count(distinct city) as \"Unique Cities\" from usersession where city is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 912,
-            "width": 304,
-            "height": 190
-        },
-        "tileFilter": {},
-        "customName": "Requests",
-        "query": "select count(usersessionid) as \"Requests\" from usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 304,
-            "width": 304,
-            "height": 190
-        },
-        "tileFilter": {},
-        "customName": "Tolerated Users",
-        "query": "select count(usersessionid) as \"Users\" from usersession where userExperienceScore=\"TOLERATED\" and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 608,
-            "width": 304,
-            "height": 190
-        },
-        "tileFilter": {},
-        "customName": "Frustrated Users",
-        "query": "select count(usersessionid) as \"Users\" from usersession where userExperienceScore=\"FRUSTRATED\" and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 1216,
-            "width": 304,
-            "height": 190
-        },
-        "tileFilter": {},
-        "customName": "Duration",
-        "query": "select avg(duration) as \"Duration\" from useraction where name is not null and usersession.ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 1520,
-            "width": 304,
-            "height": 190
-        },
-        "tileFilter": {},
-        "customName": "Network",
-        "query": "select avg(networkTime) FROM useraction where name is not null and usersession.ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 1824,
-            "width": 304,
-            "height": 190
-        },
-        "tileFilter": {},
-        "customName": "Errors",
-        "query": "select sum(totalErrorCount) FROM usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
         "name": "Distribution ▼",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 418,
+            "top": 38,
             "left": 0,
             "width": 418,
             "height": 38
         },
         "tileFilter": {}
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 0,
-            "width": 304,
-            "height": 190
-        },
-        "tileFilter": {},
-        "customName": " Satisfied Users",
-        "query": "select count(usersessionid) as \"Users\" from usersession where userExperienceScore=\"SATISFIED\" and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -527,10 +335,10 @@
         "bounds": {
             "top": 0,
             "left": 0,
-            "width": 304,
+            "width": 266,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [KPIs ▼](#dashboard;id=cfd0d556-8a38-41ae-a768-dfb4487e7884)"
+        "markdown": "## [KPIs ▲](#dashboard;id=fbe8d3b1-ccb9-480c-9e5d-0e1b8b4da733)"
     }]
 }
