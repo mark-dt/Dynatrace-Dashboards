@@ -28,7 +28,7 @@
         },
         "tileFilter": {},
         "customName": "Duration by IP",
-        "query": "Select ip, avg(useraction.duration) FROM usersession where ip is not null and (ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by IP order by avg(useraction.duration) DESC LIMIT 10",
+        "query": "Select ip, avg(useraction.duration) FROM usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by IP order by avg(useraction.duration) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -208,7 +208,7 @@
         },
         "tileFilter": {},
         "customName": "Requests",
-        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\" as \"Time\", count(userSessionId) as \"Requests\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
+        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\") as \"Time\", count(userSessionId) as \"Requests\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": true
@@ -226,7 +226,7 @@
         },
         "tileFilter": {},
         "customName": "Duration",
-        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\" as \"Time\", avg(useraction.duration) as \"Duration\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
+        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\") as \"Time\", avg(useraction.duration) as \"Duration\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": true
@@ -244,7 +244,7 @@
         },
         "tileFilter": {},
         "customName": "Errors",
-        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\" as \"Time\", sum(totalErrorCount) as \"Errors\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
+        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\") as \"Time\", sum(totalErrorCount) as \"Errors\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": true
@@ -620,7 +620,7 @@
         },
         "tileFilter": {},
         "customName": "Duration",
-        "query": "select avg(duration) as \"Duration\" from useraction where name is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
+        "query": "select avg(duration) as \"Duration\" from useraction where name is not null and usersession.ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -636,7 +636,7 @@
         },
         "tileFilter": {},
         "customName": "Network",
-        "query": "select avg(networkTime) FROM useraction where name is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
+        "query": "select avg(networkTime) FROM useraction where name is not null and usersession.ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
