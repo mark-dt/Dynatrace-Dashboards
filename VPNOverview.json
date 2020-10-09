@@ -28,7 +28,7 @@
         },
         "tileFilter": {},
         "customName": "Duration by IP",
-        "query": "Select ip, avg(useraction.duration) FROM usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by IP order by avg(useraction.duration) DESC LIMIT 10",
+        "query": "Select ip, avg(useraction.duration) FROM usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by IP order by avg(useraction.duration) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -43,7 +43,7 @@
         },
         "tileFilter": {},
         "customName": "Duration by ISP",
-        "query": "Select isp, avg(useraction.duration) FROM usersession where isp is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by IsP order by avg(useraction.duration) DESC LIMIT 10",
+        "query": "Select isp, avg(useraction.duration) FROM usersession where isp is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by IsP order by avg(useraction.duration) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -58,7 +58,7 @@
         },
         "tileFilter": {},
         "customName": "Duration by City",
-        "query": "Select city, avg(useraction.duration) FROM usersession where city is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by city order by avg(useraction.duration) DESC LIMIT 10",
+        "query": "Select city, avg(useraction.duration) FROM usersession where city is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by city order by avg(useraction.duration) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -73,7 +73,7 @@
         },
         "tileFilter": {},
         "customName": "Duration by Browser",
-        "query": "Select browserMajorVersion, avg(useraction.duration) FROM usersession where browserMajorVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by browserMajorVersion order by avg(useraction.duration) DESC LIMIT 10",
+        "query": "Select browserMajorVersion, avg(useraction.duration) FROM usersession where browserMajorVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by browserMajorVersion order by avg(useraction.duration) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -88,7 +88,7 @@
         },
         "tileFilter": {},
         "customName": "Errors by IP",
-        "query": "Select ip, sum(useraction.errorCount) FROM usersession where ip is not null and useraction.errorCount>0 and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by IP order by sum(useraction.errorCount) DESC LIMIT 10",
+        "query": "Select ip, sum(useraction.errorCount) FROM usersession where ip is not null and useraction.errorCount>0 and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by IP order by sum(useraction.errorCount) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -103,7 +103,7 @@
         },
         "tileFilter": {},
         "customName": "Errors by ISP",
-        "query": "Select isp, sum(useraction.errorCount) FROM usersession where isp is not null and useraction.errorCount>0 and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by IsP order by sum(useraction.errorCount) DESC LIMIT 10",
+        "query": "Select isp, sum(useraction.errorCount) FROM usersession where isp is not null and useraction.errorCount>0 and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by IsP order by sum(useraction.errorCount) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -118,7 +118,7 @@
         },
         "tileFilter": {},
         "customName": "Errors by Browser",
-        "query": "Select browserMajorVersion, sum(useraction.errorCount) FROM usersession where browserMajorVersion is not null and useraction.errorCount>0 and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by browserMajorVersion order by sum(useraction.errorCount) DESC LIMIT 10",
+        "query": "Select browserMajorVersion, sum(useraction.errorCount) FROM usersession where browserMajorVersion is not null and useraction.errorCount>0 and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by browserMajorVersion order by sum(useraction.errorCount) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -133,7 +133,7 @@
         },
         "tileFilter": {},
         "customName": "Errors by City",
-        "query": "Select city, sum(useraction.errorCount) FROM usersession where city is not null and useraction.errorCount>0 and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by city order by sum(useraction.errorCount) DESC LIMIT 10",
+        "query": "Select city, sum(useraction.errorCount) FROM usersession where city is not null and useraction.errorCount>0 and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by city order by sum(useraction.errorCount) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -148,7 +148,7 @@
         },
         "tileFilter": {},
         "customName": "Requests by IP",
-        "query": "Select ip, count(*) FROM usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by IP order by count(*) DESC LIMIT 10",
+        "query": "Select ip, count(*) FROM usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by IP order by count(*) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -163,7 +163,7 @@
         },
         "tileFilter": {},
         "customName": "Requests by ISP",
-        "query": "Select isp, count(*) FROM usersession where isp is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by IsP order by count(*) DESC LIMIT 10",
+        "query": "Select isp, count(*) FROM usersession where isp is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by IsP order by count(*) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -178,7 +178,7 @@
         },
         "tileFilter": {},
         "customName": "Requests by Browser",
-        "query": "Select browserMajorVersion, count(*) FROM usersession where browserMajorVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by browserMajorVersion order by count(*) DESC LIMIT 10",
+        "query": "Select browserMajorVersion, count(*) FROM usersession where browserMajorVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by browserMajorVersion order by count(*) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -193,7 +193,7 @@
         },
         "tileFilter": {},
         "customName": "Requests by City",
-        "query": "Select city, count(*) FROM usersession where city is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by city order by count(*) DESC LIMIT 10",
+        "query": "Select city, count(*) FROM usersession where city is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by city order by count(*) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -208,7 +208,7 @@
         },
         "tileFilter": {},
         "customName": "Requests",
-        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\") as \"Time\", count(userSessionId) as \"Requests\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\" as \"Time\", count(userSessionId) as \"Requests\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": true
@@ -226,7 +226,7 @@
         },
         "tileFilter": {},
         "customName": "Duration",
-        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\") as \"Time\", avg(useraction.duration) as \"Duration\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\" as \"Time\", avg(useraction.duration) as \"Duration\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": true
@@ -244,7 +244,7 @@
         },
         "tileFilter": {},
         "customName": "Errors",
-        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\") as \"Time\", sum(totalErrorCount) as \"Errors\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\" as \"Time\", sum(totalErrorCount) as \"Errors\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": true
@@ -262,7 +262,7 @@
         },
         "tileFilter": {},
         "customName": "Requests by Application",
-        "query": "Select useraction.application, count(*) FROM usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by useraction.application order by count(*) DESC LIMIT 10",
+        "query": "Select useraction.application, count(*) FROM usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by useraction.application order by count(*) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -277,7 +277,7 @@
         },
         "tileFilter": {},
         "customName": "Duration by Application",
-        "query": "Select useraction.application, avg(useraction.duration) FROM usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by useraction.application order by avg(useraction.duration) DESC LIMIT 10",
+        "query": "Select useraction.application, avg(useraction.duration) FROM usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by useraction.application order by avg(useraction.duration) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -292,7 +292,7 @@
         },
         "tileFilter": {},
         "customName": "Errors by Application",
-        "query": "Select useraction.application, sum(useraction.errorCount) FROM usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by useraction.application order by sum(useraction.errorCount) DESC LIMIT 10",
+        "query": "Select useraction.application, sum(useraction.errorCount) FROM usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by useraction.application order by sum(useraction.errorCount) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -307,7 +307,7 @@
         },
         "tileFilter": {},
         "customName": "Network Time by ISP",
-        "query": "SELECT isp, AVG(useraction.networkTime) FROM usersession where isp is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group BY isp Order By AVG(useraction.networkTime) DESC",
+        "query": "SELECT isp, AVG(useraction.networkTime) FROM usersession where isp is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group BY isp Order By AVG(useraction.networkTime) DESC",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -322,7 +322,7 @@
         },
         "tileFilter": {},
         "customName": "Network Time by IP",
-        "query": "SELECT ip, AVG(useraction.networkTime) FROM usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group BY ip Order By AVG(useraction.networkTime) DESC",
+        "query": "SELECT ip, AVG(useraction.networkTime) FROM usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group BY ip Order By AVG(useraction.networkTime) DESC",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -337,7 +337,7 @@
         },
         "tileFilter": {},
         "customName": "Network Time by Application",
-        "query": "SELECT useraction.application, AVG(useraction.networkTime) FROM usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group BY useraction.application Order By AVG(useraction.networkTime) DESC",
+        "query": "SELECT useraction.application, AVG(useraction.networkTime) FROM usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group BY useraction.application Order By AVG(useraction.networkTime) DESC",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -352,7 +352,7 @@
         },
         "tileFilter": {},
         "customName": "Network Time by Browser",
-        "query": "SELECT browserMajorVersion, AVG(useraction.networkTime) FROM usersession where browserMajorVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group BY browserMajorVersion Order By AVG(useraction.networkTime) DESC",
+        "query": "SELECT browserMajorVersion, AVG(useraction.networkTime) FROM usersession where browserMajorVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group BY browserMajorVersion Order By AVG(useraction.networkTime) DESC",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -367,7 +367,7 @@
         },
         "tileFilter": {},
         "customName": "Network Time by City",
-        "query": "SELECT city, AVG(useraction.networkTime) FROM usersession where city is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group BY City Order By AVG(useraction.networkTime) DESC",
+        "query": "SELECT city, AVG(useraction.networkTime) FROM usersession where city is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group BY City Order By AVG(useraction.networkTime) DESC",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -382,7 +382,7 @@
         },
         "tileFilter": {},
         "customName": "Network",
-        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\") as \"Time\", avg(useraction.networkTime) as \"Network\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select DISTINCT DATETIME(starttime, \"HH:mm\", \"8m\" as \"Time\", avg(useraction.networkTime) as \"Network\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": true
@@ -400,7 +400,7 @@
         },
         "tileFilter": {},
         "customName": "Requests by OS",
-        "query": "Select osVersion, count(*) FROM usersession where city is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by osversion order by count(*) DESC LIMIT 10",
+        "query": "Select osVersion, count(*) FROM usersession where city is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by osversion order by count(*) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -415,7 +415,7 @@
         },
         "tileFilter": {},
         "customName": "Duration by OS",
-        "query": "Select osVersion, avg(useraction.duration) FROM usersession where osVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by osVersion order by avg(useraction.duration) DESC LIMIT 10",
+        "query": "Select osVersion, avg(useraction.duration) FROM usersession where osVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by osVersion order by avg(useraction.duration) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -430,7 +430,7 @@
         },
         "tileFilter": {},
         "customName": "Network Time by OS",
-        "query": "SELECT osVersion, AVG(useraction.networkTime) FROM usersession where osVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group BY osVersion Order By AVG(useraction.networkTime) DESC",
+        "query": "SELECT osVersion, AVG(useraction.networkTime) FROM usersession where osVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group BY osVersion Order By AVG(useraction.networkTime) DESC",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -445,7 +445,7 @@
         },
         "tileFilter": {},
         "customName": "Errors by OS",
-        "query": "Select osVersion, sum(useraction.errorCount) FROM usersession where osVersion is not null and useraction.errorCount>0 and ip between \"${MyVPN1}\" and \"${MyVPN2}\") group by osVersion order by sum(useraction.errorCount) DESC LIMIT 10",
+        "query": "Select osVersion, sum(useraction.errorCount) FROM usersession where osVersion is not null and useraction.errorCount>0 and ip between \"${MyVPN1}\" and \"${MyVPN2}\" group by osVersion order by sum(useraction.errorCount) DESC LIMIT 10",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -460,7 +460,7 @@
         },
         "tileFilter": {},
         "customName": "Unique IPs",
-        "query": "select count(distinct ip) as \"Unique IPs\" from usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select count(distinct ip) as \"Unique IPs\" from usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -476,7 +476,7 @@
         },
         "tileFilter": {},
         "customName": "Unique ISPs",
-        "query": "select count(distinct isp) as \"Unique ISPs\" from usersession where isp is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select count(distinct isp) as \"Unique ISPs\" from usersession where isp is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -492,7 +492,7 @@
         },
         "tileFilter": {},
         "customName": "Unique Applications",
-        "query": "select count(distinct useraction.application) as \"Unique Applications\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select count(distinct useraction.application) as \"Unique Applications\" from usersession where useraction.application is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -508,7 +508,7 @@
         },
         "tileFilter": {},
         "customName": "Unique Browsers",
-        "query": "select count(distinct browserMajorVersion) as \"Unique Browsers\" from usersession where browserMajorVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select count(distinct browserMajorVersion) as \"Unique Browsers\" from usersession where browserMajorVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -524,7 +524,7 @@
         },
         "tileFilter": {},
         "customName": "Unique Cities",
-        "query": "select count(distinct city) as \"Unique Cities\" from usersession where city is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select count(distinct city) as \"Unique Cities\" from usersession where city is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -540,7 +540,7 @@
         },
         "tileFilter": {},
         "customName": "Unique Operating Systems",
-        "query": "select count(distinct osVersion) as \"Unique Operating Systems\" from usersession where osVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select count(distinct osVersion) as \"Unique Operating Systems\" from usersession where osVersion is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -556,7 +556,7 @@
         },
         "tileFilter": {},
         "customName": "Requests",
-        "query": "select count(usersessionid) as \"Requests\" from usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select count(usersessionid) as \"Requests\" from usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -572,7 +572,7 @@
         },
         "tileFilter": {},
         "customName": "Satisfied Users",
-        "query": "select count(usersessionid) as \"Users\" from usersession where userExperienceScore=\"SATISFIED\" and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select count(usersessionid) as \"Users\" from usersession where userExperienceScore=\"SATISFIED\" and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -588,7 +588,7 @@
         },
         "tileFilter": {},
         "customName": "Tolerated Users",
-        "query": "select count(usersessionid) as \"Users\" from usersession where userExperienceScore=\"TOLERATED\" and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select count(usersessionid) as \"Users\" from usersession where userExperienceScore=\"TOLERATED\" and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -604,7 +604,7 @@
         },
         "tileFilter": {},
         "customName": "Frustrated Users",
-        "query": "select count(usersessionid) as \"Users\" from usersession where userExperienceScore=\"FRUSTRATED\" and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select count(usersessionid) as \"Users\" from usersession where userExperienceScore=\"FRUSTRATED\" and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -620,7 +620,7 @@
         },
         "tileFilter": {},
         "customName": "Duration",
-        "query": "select avg(duration) as \"Duration\" from useraction where name is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select avg(duration) as \"Duration\" from useraction where name is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -636,7 +636,7 @@
         },
         "tileFilter": {},
         "customName": "Network",
-        "query": "select avg(networkTime) FROM useraction where name is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select avg(networkTime) FROM useraction where name is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -652,7 +652,7 @@
         },
         "tileFilter": {},
         "customName": "Errors",
-        "query": "select sum(totalErrorCount) FROM usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\")",
+        "query": "select sum(totalErrorCount) FROM usersession where ip is not null and ip between \"${MyVPN1}\" and \"${MyVPN2}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
