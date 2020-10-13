@@ -430,7 +430,7 @@
                 "series": [{
                     "metric": "builtin:apps.web.actionCount.category",
                     "aggregation": "NONE",
-                    "type": "BAR",
+                    "type": "AREA",
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "1",
@@ -443,15 +443,15 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606426356,
                         "customColor": "#ffe11c"
                     },
-                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606413009,
                         "customColor": "#39ff14"
                     },
-                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606438893,
                         "customColor": "#FF1C1C"
                     }
@@ -493,7 +493,7 @@
                 "series": [{
                     "metric": "builtin:apps.web.actionCount.category",
                     "aggregation": "NONE",
-                    "type": "BAR",
+                    "type": "AREA",
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "1",
@@ -506,15 +506,15 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606426356,
                         "customColor": "#ffe11c"
                     },
-                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606413009,
                         "customColor": "#39ff14"
                     },
-                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606438893,
                         "customColor": "#FF1C1C"
                     }
@@ -540,12 +540,12 @@
             "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
-                "legendShown": false,
+                "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [{
                     "metric": "builtin:apps.web.actionCount.category",
                     "aggregation": "NONE",
-                    "type": "BAR",
+                    "type": "AREA",
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "1",
@@ -558,15 +558,15 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606426356,
                         "customColor": "#ffe11c"
                     },
-                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606413009,
                         "customColor": "#39ff14"
                     },
-                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606438893,
                         "customColor": "#FF1C1C"
                     }
@@ -592,12 +592,12 @@
             "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
-                "legendShown": false,
+                "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [{
                     "metric": "builtin:apps.web.actionCount.category",
                     "aggregation": "NONE",
-                    "type": "BAR",
+                    "type": "AREA",
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "1",
@@ -610,15 +610,15 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606426356,
                         "customColor": "#ffe11c"
                     },
-                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606413009,
                         "customColor": "#39ff14"
                     },
-                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606438893,
                         "customColor": "#FF1C1C"
                     }
@@ -644,12 +644,12 @@
             "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
-                "legendShown": false,
+                "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [{
                     "metric": "builtin:apps.web.actionCount.category",
                     "aggregation": "NONE",
-                    "type": "BAR",
+                    "type": "AREA",
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "1",
@@ -662,15 +662,15 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606426356,
                         "customColor": "#ffe11c"
                     },
-                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606413009,
                         "customColor": "#39ff14"
                     },
-                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|BAR|APPLICATION": {
+                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606438893,
                         "customColor": "#FF1C1C"
                     }
@@ -678,16 +678,5 @@
             },
             "filtersPerEntityType": {}
         }
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 76,
-            "left": 1710,
-            "width": 304,
-            "height": 304
-        },
-        "tileFilter": {}
     }]
 }
