@@ -166,7 +166,7 @@
             "timeframe": "-14d to -8d"
         },
         "customName": " !PU(link):var32 !PU(color):base=low;warn=0;crit=0",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"FRUSTRATED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"FRUSTRATED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -183,7 +183,7 @@
             "timeframe": "-21d to -15d"
         },
         "customName": "  !PU(link):var33 !PU(color):base=low;warn=0;crit=0",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"FRUSTRATED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"FRUSTRATED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -200,7 +200,7 @@
             "timeframe": "-28d to -22d"
         },
         "customName": "  !PU(link):var34 !PU(color):base=low;warn=0;crit=0",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"FRUSTRATED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"FRUSTRATED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -217,7 +217,7 @@
             "timeframe": "-35d to -29d"
         },
         "customName": "  !PU(link):var35 !PU(color):base=low;warn=0;crit=0",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"FRUSTRATED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"FRUSTRATED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -234,7 +234,7 @@
             "timeframe": "-7d to -1d"
         },
         "customName": " !PU(link):var21 !PU(color):base=low;warn=0;crit=100000000",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"TOLERATED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"TOLERATED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -251,7 +251,7 @@
             "timeframe": "-14d to -8d"
         },
         "customName": " !PU(link):var22 !PU(color):base=low;warn=0;crit=100000000",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"TOLERATED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"TOLERATED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -268,7 +268,7 @@
             "timeframe": "-21d to -15d"
         },
         "customName": "  !PU(link):var23 !PU(color):base=low;warn=0;crit=100000000",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"TOLERATED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"TOLERATED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -285,7 +285,7 @@
             "timeframe": "-28d to -22d"
         },
         "customName": "  !PU(link):var24 !PU(color):base=low;warn=0;crit=100000000",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"TOLERATED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"TOLERATED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -302,7 +302,7 @@
             "timeframe": "-35d to -29d"
         },
         "customName": "  !PU(link):var25 !PU(color):base=low;warn=0;crit=100000000",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"TOLERATED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"TOLERATED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -319,7 +319,7 @@
             "timeframe": "-7d to -1d"
         },
         "customName": " !PU(link):var11 !PU(color):base=high;warn=0;crit=0",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"SATISFIED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"SATISFIED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -336,7 +336,7 @@
             "timeframe": "-14d to -8d"
         },
         "customName": " !PU(link):var12 !PU(color):base=high;warn=0;crit=0",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"SATISFIED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"SATISFIED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -353,7 +353,7 @@
             "timeframe": "-21d to -15d"
         },
         "customName": "  !PU(link):var13 !PU(color):base=high;warn=0;crit=0",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"SATISFIED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"SATISFIED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -370,7 +370,7 @@
             "timeframe": "-28d to -22d"
         },
         "customName": "  !PU(link):var14 !PU(color):base=high;warn=0;crit=0",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"SATISFIED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"SATISFIED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -387,7 +387,7 @@
             "timeframe": "-35d to -29d"
         },
         "customName": "  !PU(link):var15 !PU(color):base=high;warn=0;crit=0",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"SATISFIED\"",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"SATISFIED\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -404,7 +404,7 @@
             "timeframe": "-7d to -1d"
         },
         "customName": " !PU(link):var31 !PU(color):base=low;warn=0;crit=0",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" userExperienceScore=\"FRUSTRATED\" ",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application=\"${app.name}\" and userExperienceScore=\"FRUSTRATED\" ",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
