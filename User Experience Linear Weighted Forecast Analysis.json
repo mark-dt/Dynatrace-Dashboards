@@ -4,8 +4,8 @@
         "clusterVersion": "1.200.99.20200828-133130"
     },
     "id": "effc7085-0130-41aa-9521-e3efacaf0d51",
-    "dashboardMetadata": {
-        "name": "${overviewName} ${app.name} User Experience Linear Weighted Forecast Analysis",
+    "dashboardMetadata": { 
+        "name": " ${overviewName} ${app.name} User Experience Linear Weighted Forecast Analysis ",
         "shared": true,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {
