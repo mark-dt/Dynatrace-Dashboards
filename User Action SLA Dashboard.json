@@ -1,0 +1,691 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.206.0.20201013-203611"
+    },
+    "id": "263aaa0f-9c4a-487e-8788-21f44ada6020",
+    "dashboardMetadata": {
+        "name": "${overviewName} User Action SLA Dashboard",
+        "shared": false,
+        "owner": "John.Kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": ""
+        }
+    },
+    "tiles": [{
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 874,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=100-(a/b);scope=a:varA,b:varB;color=white"
+    }, {
+        "name": "Number of Actions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 266,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Number of Actions > 5s",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 570,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "SLA Percentage",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 874,
+            "width": 228,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${app-1.name}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 0,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Number of Actions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 1406,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Number of Actions > 5s",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 1710,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "SLA Percentage",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 2014,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${app-7.name}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 1140,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 2014,
+            "width": 266,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=100-(a/b);scope=a:varM,b:varN;color=white"
+    }, {
+        "name": "${app-2.name}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 0,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${app-8.name}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 1140,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 874,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=100-(a/b);scope=a:varC,b:varD;color=white"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 2014,
+            "width": 266,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=100-(a/b);scope=a:varO,b:varP;color=white"
+    }, {
+        "name": "${app-3.name}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 0,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${app-9.name}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 1140,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${app-4.name}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 646,
+            "left": 0,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${app-10.name}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 722,
+            "left": 1140,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 874,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=100-(a/b);scope=a:varE,b:varF;color=white"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 2014,
+            "width": 266,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=100-(a/b);scope=a:varQ,b:varR;color=white"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 874,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=100-(a/b);scope=a:varG,b:varH;color=white"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 2014,
+            "width": 266,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=100-(a/b);scope=a:varS,b:varT;color=white"
+    }, {
+        "name": "${app-5.name}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 798,
+            "left": 0,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${app-11.name}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 874,
+            "left": 1140,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${app-6.name}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 0,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 760,
+            "left": 874,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=100-(a/b);scope=a:varI,b:varJ;color=white"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 2014,
+            "width": 266,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=100-(a/b);scope=a:varU,b:varV;color=white"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 912,
+            "left": 874,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=100-(a/b);scope=a:varK,b:varL;color=white"
+    }, {
+        "name": "User Action SLA",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1064,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 2356,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 266,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varA",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-1.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 570,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varB",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-1.name}\" and duration>5000",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 266,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varC",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-2.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 570,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varD",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-2.name}\" and duration>5000",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 266,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varE",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-3.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 570,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varF",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-3.name}\" and duration>5000",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 266,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varG",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-4.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 570,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varH",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-4.name}\" and duration>5000",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 760,
+            "left": 266,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varI",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-5.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 760,
+            "left": 570,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varJ",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-5.name}\" and duration>5000",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 912,
+            "left": 266,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varK",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-6.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 912,
+            "left": 570,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varL",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-6.name}\" and duration>5000",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 1406,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varM",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-7.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 1710,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varN",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-7.name}\" and duration>5000",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 1406,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varO",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-8.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 1710,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varP",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-8.name}\" and duration>5000",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 1406,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varQ",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-9.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 1710,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varR",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-9.name}\" and duration>5000",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 1406,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varS",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-10.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 1710,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varT",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-10.name}\" and duration>5000",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 1406,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varU",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-11.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 1710,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):varV",
+        "query": "select count(name) as \" \" from useraction where application=\"${app-11.name}\" and duration>5000",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }]
+}
