@@ -44,7 +44,7 @@
                         "id": "1",
                         "name": "${uspRevenue.name}",
                         "values": [],
-                        "entityDimension": ${dim1}
+                        "entityDimension": false
                     }],
                     "sortAscending": false,
                     "aggregationRate": "TOTAL",
@@ -92,7 +92,7 @@
                         "id": "2",
                         "name": "${uspRevenue.name}",
                         "values": [],
-                        "entityDimension": ${dim2}
+                        "entityDimension": false
                     }],
                     "sortAscending": false,
                     "aggregationRate": "TOTAL",
@@ -313,7 +313,7 @@
                         "id": "1",
                         "name": "${uspRevenue.name}",
                         "values": [],
-                        "entityDimension": ${dim1}
+                        "entityDimension": false
                     }],
                     "sortAscending": false,
                     "aggregationRate": "TOTAL",
