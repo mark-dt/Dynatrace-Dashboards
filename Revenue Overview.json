@@ -136,7 +136,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Revenue by Geo",
+        "name": "Revenue by ${MyDimension2}",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -180,7 +180,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Revenue by ${overviewName}",
+        "name": "Revenue by ${MyDimension1}",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
