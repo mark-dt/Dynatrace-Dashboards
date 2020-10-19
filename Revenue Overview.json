@@ -55,7 +55,7 @@
             "filtersPerEntityType": {}
         }
     }, {
-        "name": "Revenue by ${overviewName}",
+        "name": "Revenue by ${MyDimension1}",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
