@@ -92,7 +92,7 @@
                         "id": "2",
                         "name": "${uspRevenue.name}",
                         "values": [],
-                        "entityDimension": false
+                        "entityDimension": true
                     }],
                     "sortAscending": false,
                     "aggregationRate": "TOTAL",
