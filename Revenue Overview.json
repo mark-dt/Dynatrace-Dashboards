@@ -42,33 +42,20 @@
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "1",
-                        "name": "Apdex type",
-                        "values": ["Satisfied", "Tolerating", "Frustrated"],
+                        "name": "${uspRevenue.name}",
+                        "values": [],
                         "entityDimension": false
                     }],
                     "sortAscending": false,
                     "aggregationRate": "TOTAL",
                     "sortColumn": true
                 }],
-                "resultMetadata": {
-                    "null¦Apdex type»Tolerating»false${Revenue.id}|SUM|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1600095899044,
-                        "customColor": "#ffe11c"
-                    },
-                    "null¦Apdex type»Frustrated»false${Revenue.id}|SUM|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1600096507425,
-                        "customColor": "#FF1C1C"
-                    },
-                    "null¦Apdex type»Satisfied»false${Revenue.id}|SUM|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1600095882719,
-                        "customColor": "#39ff14"
-                    }
-                }
+                "resultMetadata": {}
             },
             "filtersPerEntityType": {}
         }
     }, {
-        "name": "Revenue by Apdex",
+        "name": "Revenue by ${overviewName}",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
