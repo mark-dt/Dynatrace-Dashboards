@@ -318,7 +318,7 @@
                 "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [{
-                    "metric": "${Revenue2.id}",
+                    "metric": "${Revenue.id}",
                     "aggregation": "SUM",
                     "type": "BAR",
                     "entityType": "APPLICATION",
