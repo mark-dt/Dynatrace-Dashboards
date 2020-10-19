@@ -90,7 +90,7 @@
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "2",
-                        "name": "dt.entity.geolocation",
+                        "name": "${uspRevenue.name}",
                         "values": [],
                         "entityDimension": true
                     }],
