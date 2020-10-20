@@ -1,0 +1,360 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.196.71.20200702-184254"
+    },
+    "id": "734f3b06-c272-4b27-a48c-31444692c466",
+    "dashboardMetadata": {
+        "name": "${overviewName} Marketing Campaign Analysis - ${uspCampaign.value}",
+        "shared": false,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "Today"
+        },
+        "tags": ["${uspCampaign.value}", "Overview", "Marketing"]
+    },
+    "tiles": [{
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 0,
+            "width": 1672,
+            "height": 456
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "${metricRum2.id}",
+                    "aggregation": "COUNT",
+                    "type": "BAR",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspCampaign.name}",
+                        "values": ["${uspCampaign.value}"],
+                        "entityDimension": false
+                    }, {
+                        "id": "2",
+                        "name": "${uspSource.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "${metricRum.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "null${metricRum.id}|COUNT|TOTAL|LINE|APPLICATION|APPLICATION": {
+                        "lastModified": 1591285527997,
+                        "customColor": "#39ff14"
+                    }
+                },
+                "axisLimits": {
+                    "LEFT_MIN": 0.0
+                },
+                "leftAxisCustomUnit": "Count"
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 380,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${metricRum2.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspCampaign.name}",
+                        "values": ["${uspCampaign.value}"],
+                        "entityDimension": false
+                    }, {
+                        "id": "2",
+                        "name": "${uspSource.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 988,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${Warning3};crit=${Critical3}",
+        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and ${uspCampaign.key}=\"${uspCampaign.value}\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 684,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${Warning2};crit=${Critical2}",
+        "query": "select avg(useraction.visuallycompletetime) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and ${uspCampaign.key}=\"${uspCampaign.value}\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 380,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${Warning4};crit=${Critical4}",
+        "query": "select sum(useraction.errorcount) as \" \" FROM useraction where useraction.name=\"${kuaLastStep}\" and ${uspCampaign.key}=\"${uspCampaign.value}\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 684,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=high;warn=${Warning5};crit=${Critical5}",
+        "query": "select count(*) as \" \" from usersession where ${uspCampaign.key}=\"${uspCampaign.value}\" and useraction.name=\"${kuaLastStep}\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 988,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${Warning6};crit=${Critical6}",
+        "query": "select count(*) as \" \" from usersession where ${uspCampaign.key}=\"${uspCampaign.value}\" and not useraction.name=\"${kuaLastStep}\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 380,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${Warning};crit=${Critical}",
+        "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and ${uspCampaign.key}=\"${uspCampaign.value}\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Responses",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Duration",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 380,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Visually Complete",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 684,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Speed Index",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 988,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Responses by Geo",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1292,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Errors",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 380,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Conversions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 684,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Abandons",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 988,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Responses vs Conversions Over Time",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 0,
+            "width": 570,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1292,
+            "width": 380,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${Campaign.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "2",
+                        "name": "dt.entity.geolocation",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "${uspCampaign.name}",
+                        "values": ["${uspCampaign.value}"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }]
+}
