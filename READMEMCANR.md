@@ -1,10 +1,7 @@
-[Requires Google Chrome PowerUp Plugin](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)
-
 # BizOps Marketing Campaign Analysis Dashboard
 
 This dashboard pack provides a detail analysis for your marketing campaigns. You can see the responses broken down <br>
-by a specific campain, campaign responses by GEO and key KPI data like revenue and conversion for the campaigns. <br>
-Fully explain what a campaign/source is...
+by a specific campain, campaign responses by GEO and key KPI data like duration and conversion for the campaigns. <br>
 
 ![Marketing Campaign Analysis](MCA.png)
 
@@ -18,3 +15,5 @@ image
 5. Create a metric for the campaign and source (Metric: Useraction Duration split by Campaign/Source)
 6. Create a metric for the source and campaign (Metric: Useraction Duration split by Source/Campaign)
 7. Mark the last user action step as a key user action for the user journey
+
+[Requires Google Chrome PowerUp Plugin](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)
