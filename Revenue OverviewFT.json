@@ -1,0 +1,353 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.204.0.20200915-125312"
+    },
+    "id": "201029df-7211-4a22-9b71-2cf1de3f936c",
+    "dashboardMetadata": {
+        "name": "${overviewName} Revenue Overview",
+        "shared": true,
+        "owner": "John.Kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": true
+        },
+        "dashboardFilter": {
+            "timeframe": "Today"
+        },
+        "tags": ["Overview", "Revenue"]
+    },
+    "tiles": [{
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 380,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${Revenue.id}",
+                    "aggregation": "SUM",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspRevenue.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }],
+                "resultMetadata": {
+                    "null¦Apdex type»Frustrated»falsecalc:apps.web.easytravel.revenue|SUM|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1603211426207,
+                        "customColor": "#FF1C1C"
+                    },
+                    "null¦Apdex type»Tolerating»falsecalc:apps.web.easytravel.revenue|SUM|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1603211416157,
+                        "customColor": "#ffe11c"
+                    },
+                    "null¦Apdex type»Satisfied»falsecalc:apps.web.easytravel.revenue|SUM|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1603211404169,
+                        "customColor": "#39ff14"
+                    }
+}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Revenue by ${MyDimension1}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1292,
+            "width": 380,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${Revenue.id}",
+                    "aggregation": "SUM",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "2",
+                        "name": "${uspRevenue.name}",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }],
+                "resultMetadata": {
+                    "null¦Apdex type»Frustrated»falsecalc:apps.web.easytravel.revenue|SUM|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1603211426207,
+                        "customColor": "#FF1C1C"
+                    },
+                    "null¦Apdex type»Tolerating»falsecalc:apps.web.easytravel.revenue|SUM|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1603211416157,
+                        "customColor": "#ffe11c"
+                    },
+                    "null¦Apdex type»Satisfied»falsecalc:apps.web.easytravel.revenue|SUM|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1603211404169,
+                        "customColor": "#39ff14"
+                    }
+}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 380,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "New User Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 684,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Returning User Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 988,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Revenue by ${MyDimension2}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1292,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Average Order Value",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 380,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Risk Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 684,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Lost Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 988,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Revenue by ${MyDimension1}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 0,
+            "width": 570,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 380,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 684,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and newUser=true",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 988,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select avg(${uspRevenue.id}) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and newUser=false",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 380,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select avg(${uspRevenue.id}) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 684,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and userExperienceScore!=\"SATISFIED\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 988,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where not useraction.name=\"${kuaLastStep}\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 0,
+            "width": 1672,
+            "height": 456
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "${Revenue.id}",
+                    "aggregation": "SUM",
+                    "type": "BAR",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspRevenue.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }]
+}
