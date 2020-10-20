@@ -346,15 +346,15 @@
                     "sortColumn": true
                 }],
                 "resultMetadata": {
-				                    "null¦Apdex type»Frustrated»falsecalc:apps.web.easytravel.revenue|SUM|TOTAL|LINE|APPLICATION": {
+				    "null¦Apdex type»Frustrated»falsecalc:apps.web.easytravel.revenue|SUM|TOTAL|BAR|APPLICATION": {
                         "lastModified": 1603211426207,
                         "customColor": "#FF1C1C"
                     },
-                    "null¦Apdex type»Tolerating»falsecalc:apps.web.easytravel.revenue|SUM|TOTAL|LINE|APPLICATION": {
+                    "null¦Apdex type»Tolerating»falsecalc:apps.web.easytravel.revenue|SUM|TOTAL|BAR|APPLICATION": {
                         "lastModified": 1603211416157,
                         "customColor": "#ffe11c"
                     },
-                    "null¦Apdex type»Satisfied»falsecalc:apps.web.easytravel.revenue|SUM|TOTAL|LINE|APPLICATION": {
+                    "null¦Apdex type»Satisfied»falsecalc:apps.web.easytravel.revenue|SUM|TOTAL|BAR|APPLICATION": {
                         "lastModified": 1603211404169,
                         "customColor": "#39ff14"
                     }
