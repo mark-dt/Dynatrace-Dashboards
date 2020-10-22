@@ -49,22 +49,8 @@
                     "sortAscending": false,
                     "aggregationRate": "TOTAL",
                     "sortColumn": true
-                }, {
-                    "metric": "${metricRum.id}",
-                    "aggregation": "COUNT",
-                    "type": "LINE",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "aggregationRate": "TOTAL",
-                    "sortColumn": false
                 }],
-                "resultMetadata": {
-                    "null${metricRum.id}|COUNT|TOTAL|LINE|APPLICATION|APPLICATION": {
-                        "lastModified": 1591285527997,
-                        "customColor": "#39ff14"
-                    }
-                },
+                "resultMetadata": {},
                 "axisLimits": {
                     "LEFT_MIN": 0.0
                 },
@@ -144,7 +130,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
+        "query": "select avg(useraction.duration) as \" \" FROM usersession where ${uspCampaign.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -160,7 +146,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.visuallycompletetime) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
+        "query": "select avg(useraction.visuallycompletetime) as \" \" FROM usersession where ${uspCampaign.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -176,7 +162,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
+        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where ${uspCampaign.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -192,7 +178,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(useraction.errorcount) as \" \" FROM useraction where useraction.name=\"${kuaLastStep}\"",
+        "query": "select sum(useraction.errorcount) as \" \" FROM useraction where ${uspCampaign.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -208,7 +194,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.name=\"${kuaLastStep}\" ",
+        "query": "select count(*) as \" \" from usersession where useraction.matchingConversionGoals is not null and ${uspCampaign.id} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -224,7 +210,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where not useraction.name=\"${kuaLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where useraction.matchingConversionGoals is null and ${uspCampaign.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
