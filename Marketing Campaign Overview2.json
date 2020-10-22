@@ -350,7 +350,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [User Journey](#dashboard;id=${MyJourneyLink})"
+        "markdown": "## [User Journey](${url}/ui/dashboards?gtf=today&gf=all&filters=tag:User%20Journey%7CUser%20Journey)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
