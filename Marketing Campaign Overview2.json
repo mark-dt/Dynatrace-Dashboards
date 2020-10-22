@@ -362,7 +362,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Conversions Analysis](#dashboard;id=${MyJourneyLink})"
+        "markdown": "## [Conversions Analysis](#dashboard;id=73419458-0442-4e65-9b7e-28321b1755b6)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -374,6 +374,6 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Conversions by GEO](#dashboard;id=${MyJourneyLink})"
+        "markdown": "## [Conversions by GEO](#dashboard;id=734bd2cc-c68e-45f1-9969-5688e16c8025)"
     }]
 }
