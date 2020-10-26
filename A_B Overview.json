@@ -5,7 +5,7 @@
     },
     "id": "ce1b66a7-6346-4c70-96b2-2b212107bfe9",
     "dashboardMetadata": {
-        "name": "${overviewName} A/B Overview",
+        "name": "${overviewName} A/B Testing Overview",
         "shared": false,
         "owner": "techshadyjk@ruxitlabs.com",
         "sharingDetails": {
@@ -14,7 +14,8 @@
         },
         "dashboardFilter": {
             "timeframe": ""
-        }
+        },
+        "tags": ["A/B Testing"]
     },
     "tiles": [{
         "name": "User Sessions Query",
