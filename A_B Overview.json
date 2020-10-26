@@ -1,0 +1,833 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.206.7.20201023-161501"
+    },
+    "id": "ce1b66a7-6346-4c70-96b2-2b212107bfe9",
+    "dashboardMetadata": {
+        "name": "A/B Overview",
+        "shared": false,
+        "owner": "techshadyjk@ruxitlabs.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": ""
+        }
+    },
+    "tiles": [{
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 0,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "Avg Duration",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Max Duration",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 304,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 304,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select max(duration) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "Min Duration",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 608,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 608,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select min(duration) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "Avg Duration",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 950,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Max Duration",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 1254,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Min Duration",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 1558,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 950,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 1254,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select max(duration) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 1558,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select min(duration) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "${value1}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 304,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${value1}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1254,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 1938,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Avg Visually Complete",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Max Visually Complete",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 304,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Min Visually Complete",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 608,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Avg Visually Complete",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 950,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Max Visually Complete",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 1254,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Min Visually Complete",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 1558,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Avg Speed Index",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Max Speed Index",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 304,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Min Speed Index",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 608,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Avg Speed Index",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 950,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Max Speed Index",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 1254,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Min Speed Index",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 1558,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Avg Dom Complete",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 646,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Max Dom Complete",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 646,
+            "left": 304,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Min Dom Complete",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 646,
+            "left": 608,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Avg Dom Complete",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 646,
+            "left": 950,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Max Dom Complete",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 646,
+            "left": 1254,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Min Dom Complete",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 646,
+            "left": 1558,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Converted Sessions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 304,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Non Converted Sessions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 608,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Converted Sessions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 1254,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Non Converted Sessions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 1558,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 0,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select avg(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 0,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select avg(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 304,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select max(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 608,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select min(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 950,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select avg(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 1254,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select max(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 1558,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select min(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 0,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select avg(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 304,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select max(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 608,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select min(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 950,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select avg(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 1254,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select max(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 1558,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select min(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 304,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select max(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 608,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select min(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 950,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select avg(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 1254,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select max(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 1558,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select min(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 874,
+            "left": 304,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from useraction where application=\"${app.name}\" ${uspClause} and usersession.matchingConversionGoals is not null",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 874,
+            "left": 1254,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from useraction where application=\"${app.name}\" ${uspClause} and usersession.matchingConversionGoals is not null",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 874,
+            "left": 608,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from useraction where application=\"${app.name}\" ${uspClause} and usersession.matchingConversionGoals is null",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 874,
+            "left": 1558,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from useraction where application=\"${app.name}\" ${uspClause} and usersession.matchingConversionGoals is null",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "Sessions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Sessions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 950,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 874,
+            "left": 0,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 874,
+            "left": 950,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }]
+}
