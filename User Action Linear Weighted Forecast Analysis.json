@@ -494,7 +494,12 @@
                         "lastModified": 1603746557382,
                         "customColor": "#FFCB05"
                     }
-                }
+                },
+                "axisLimits": {
+                    "LEFT_MIN": 0.0,
+                    "LEFT_MAX": 10000.0
+                },
+                "leftAxisCustomUnit": "MilliSecond"
             },
             "filtersPerEntityType": {}
         }
@@ -596,7 +601,12 @@
                         "lastModified": 1603746557382,
                         "customColor": "#FFCB05"
                     }
-                }
+                },
+                "axisLimits": {
+                    "LEFT_MIN": 0.0,
+                    "LEFT_MAX": 10000.0
+                },
+                "leftAxisCustomUnit": "MilliSecond"
             },
             "filtersPerEntityType": {}
         }
@@ -687,7 +697,12 @@
                         "lastModified": 1603746557382,
                         "customColor": "#FFCB05"
                     }
-                }
+                },
+                "axisLimits": {
+                    "LEFT_MIN": 0.0,
+                    "LEFT_MAX": 10000.0
+                },
+                "leftAxisCustomUnit": "MilliSecond"
             },
             "filtersPerEntityType": {}
         }
@@ -778,7 +793,12 @@
                         "lastModified": 1603746557382,
                         "customColor": "#FFCB05"
                     }
-                }
+                },
+                "axisLimits": {
+                    "LEFT_MIN": 0.0,
+                    "LEFT_MAX": 10000.0
+                },
+                "leftAxisCustomUnit": "MilliSecond"
             },
             "filtersPerEntityType": {}
         }
@@ -869,7 +889,12 @@
                         "lastModified": 1603746557382,
                         "customColor": "#FFCB05"
                     }
-                }
+                },
+                "axisLimits": {
+                    "LEFT_MIN": 0.0,
+                    "LEFT_MAX": 10000.0
+                },
+                "leftAxisCustomUnit": "MilliSecond"
             },
             "filtersPerEntityType": {}
         }
