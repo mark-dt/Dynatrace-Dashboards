@@ -173,7 +173,7 @@
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
-        "name": "${value1}",
+        "name": "${MyString}",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -184,7 +184,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "${value1}",
+        "name": "${MyString2}",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
