@@ -128,7 +128,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var21,b:var22,c:var23,d:var24,e:var25;color=yellow"
+        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var21,b:var22,c:var23,d:var24,e:var25;color=green"
     }, {
         "name": "Average Speed Index",
         "tileType": "HEADER",
@@ -151,7 +151,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var31,b:var32,c:var33,d:var34,e:var35;color=red"
+        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var31,b:var32,c:var33,d:var34,e:var35;color=green"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
@@ -428,36 +428,75 @@
                 "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [{
-                    "metric": "builtin:apps.web.actionCount.category",
-                    "aggregation": "NONE",
+                    "metric": "builtin:apps.web.actionDuration.load.browser",
+                    "aggregation": "AVG",
                     "type": "AREA",
                     "entityType": "APPLICATION",
-                    "dimensions": [{
-                        "id": "1",
-                        "name": "Apdex category",
-                        "values": ["FRUSTRATED", "SATISFIED", "TOLERATING"],
-                        "entityDimension": false
-                    }],
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.actionDuration.xhr.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.visuallyComplete.load.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.visuallyComplete.xhr.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.speedIndex.load.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606426356,
-                        "customColor": "#ffe11c"
+                    "nullbuiltin:apps.web.visuallyComplete.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746561952,
+                        "customColor": "#FFCB05"
                     },
-                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606413009,
-                        "customColor": "#39ff14"
+                    "nullbuiltin:apps.web.speedIndex.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746577649,
+                        "customColor": "#3cb44b"
                     },
-                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606438893,
-                        "customColor": "#FF1C1C"
+                    "nullbuiltin:apps.web.actionDuration.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746538186,
+                        "customColor": "#4363d8"
+                    },
+                    "nullbuiltin:apps.web.actionDuration.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746542980,
+                        "customColor": "#4363d8"
+                    },
+                    "nullbuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746557382,
+                        "customColor": "#FFCB05"
                     }
                 }
             },
-            "filtersPerEntityType": {"APPLICATION": {"SPECIFIC_ENTITIES": ["${app.id}"]}}
+            "filtersPerEntityType": {}
         }
     }, {
         "name": "User Experience Over Time",
@@ -491,36 +530,75 @@
                 "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [{
-                    "metric": "builtin:apps.web.actionCount.category",
-                    "aggregation": "NONE",
+                    "metric": "builtin:apps.web.actionDuration.load.browser",
+                    "aggregation": "AVG",
                     "type": "AREA",
                     "entityType": "APPLICATION",
-                    "dimensions": [{
-                        "id": "1",
-                        "name": "Apdex category",
-                        "values": ["FRUSTRATED", "SATISFIED", "TOLERATING"],
-                        "entityDimension": false
-                    }],
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.actionDuration.xhr.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.visuallyComplete.load.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.visuallyComplete.xhr.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.speedIndex.load.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606426356,
-                        "customColor": "#ffe11c"
+                    "nullbuiltin:apps.web.visuallyComplete.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746561952,
+                        "customColor": "#FFCB05"
                     },
-                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606413009,
-                        "customColor": "#39ff14"
+                    "nullbuiltin:apps.web.speedIndex.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746577649,
+                        "customColor": "#3cb44b"
                     },
-                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606438893,
-                        "customColor": "#FF1C1C"
+                    "nullbuiltin:apps.web.actionDuration.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746538186,
+                        "customColor": "#4363d8"
+                    },
+                    "nullbuiltin:apps.web.actionDuration.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746542980,
+                        "customColor": "#4363d8"
+                    },
+                    "nullbuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746557382,
+                        "customColor": "#FFCB05"
                     }
                 }
             },
-            "filtersPerEntityType": {"APPLICATION": {"SPECIFIC_ENTITIES": ["${app.id}"]}}
+            "filtersPerEntityType": {}
         }
     }, {
         "name": "Custom chart",
@@ -543,36 +621,75 @@
                 "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [{
-                    "metric": "builtin:apps.web.actionCount.category",
-                    "aggregation": "NONE",
+                    "metric": "builtin:apps.web.actionDuration.load.browser",
+                    "aggregation": "AVG",
                     "type": "AREA",
                     "entityType": "APPLICATION",
-                    "dimensions": [{
-                        "id": "1",
-                        "name": "Apdex category",
-                        "values": ["FRUSTRATED", "SATISFIED", "TOLERATING"],
-                        "entityDimension": false
-                    }],
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.actionDuration.xhr.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.visuallyComplete.load.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.visuallyComplete.xhr.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.speedIndex.load.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606426356,
-                        "customColor": "#ffe11c"
+                    "nullbuiltin:apps.web.visuallyComplete.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746561952,
+                        "customColor": "#FFCB05"
                     },
-                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606413009,
-                        "customColor": "#39ff14"
+                    "nullbuiltin:apps.web.speedIndex.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746577649,
+                        "customColor": "#3cb44b"
                     },
-                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606438893,
-                        "customColor": "#FF1C1C"
+                    "nullbuiltin:apps.web.actionDuration.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746538186,
+                        "customColor": "#4363d8"
+                    },
+                    "nullbuiltin:apps.web.actionDuration.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746542980,
+                        "customColor": "#4363d8"
+                    },
+                    "nullbuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746557382,
+                        "customColor": "#FFCB05"
                     }
                 }
             },
-            "filtersPerEntityType": {"APPLICATION": {"SPECIFIC_ENTITIES": ["${app.id}"]}}
+            "filtersPerEntityType": {}
         }
     }, {
         "name": "Custom chart",
@@ -595,36 +712,75 @@
                 "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [{
-                    "metric": "builtin:apps.web.actionCount.category",
-                    "aggregation": "NONE",
+                    "metric": "builtin:apps.web.actionDuration.load.browser",
+                    "aggregation": "AVG",
                     "type": "AREA",
                     "entityType": "APPLICATION",
-                    "dimensions": [{
-                        "id": "1",
-                        "name": "Apdex category",
-                        "values": ["FRUSTRATED", "SATISFIED", "TOLERATING"],
-                        "entityDimension": false
-                    }],
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.actionDuration.xhr.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.visuallyComplete.load.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.visuallyComplete.xhr.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.speedIndex.load.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606426356,
-                        "customColor": "#ffe11c"
+                    "nullbuiltin:apps.web.visuallyComplete.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746561952,
+                        "customColor": "#FFCB05"
                     },
-                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606413009,
-                        "customColor": "#39ff14"
+                    "nullbuiltin:apps.web.speedIndex.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746577649,
+                        "customColor": "#3cb44b"
                     },
-                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606438893,
-                        "customColor": "#FF1C1C"
+                    "nullbuiltin:apps.web.actionDuration.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746538186,
+                        "customColor": "#4363d8"
+                    },
+                    "nullbuiltin:apps.web.actionDuration.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746542980,
+                        "customColor": "#4363d8"
+                    },
+                    "nullbuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746557382,
+                        "customColor": "#FFCB05"
                     }
                 }
             },
-            "filtersPerEntityType": {"APPLICATION": {"SPECIFIC_ENTITIES": ["${app.id}"]}}
+            "filtersPerEntityType": {}
         }
     }, {
         "name": "Custom chart",
@@ -647,36 +803,75 @@
                 "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [{
-                    "metric": "builtin:apps.web.actionCount.category",
-                    "aggregation": "NONE",
+                    "metric": "builtin:apps.web.actionDuration.load.browser",
+                    "aggregation": "AVG",
                     "type": "AREA",
                     "entityType": "APPLICATION",
-                    "dimensions": [{
-                        "id": "1",
-                        "name": "Apdex category",
-                        "values": ["FRUSTRATED", "SATISFIED", "TOLERATING"],
-                        "entityDimension": false
-                    }],
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.actionDuration.xhr.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.visuallyComplete.load.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.visuallyComplete.xhr.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.speedIndex.load.browser",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606426356,
-                        "customColor": "#ffe11c"
+                    "nullbuiltin:apps.web.visuallyComplete.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746561952,
+                        "customColor": "#FFCB05"
                     },
-                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606413009,
-                        "customColor": "#39ff14"
+                    "nullbuiltin:apps.web.speedIndex.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746577649,
+                        "customColor": "#3cb44b"
                     },
-                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1602606438893,
-                        "customColor": "#FF1C1C"
+                    "nullbuiltin:apps.web.actionDuration.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746538186,
+                        "customColor": "#4363d8"
+                    },
+                    "nullbuiltin:apps.web.actionDuration.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746542980,
+                        "customColor": "#4363d8"
+                    },
+                    "nullbuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1603746557382,
+                        "customColor": "#FFCB05"
                     }
                 }
             },
-            "filtersPerEntityType": {"APPLICATION": {"SPECIFIC_ENTITIES": ["${app.id}"]}}
+            "filtersPerEntityType": {}
         }
     }]
 }
