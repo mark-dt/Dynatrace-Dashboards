@@ -174,7 +174,7 @@
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
-        "name": "${value1}",
+        "name": "${MyString}",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -185,7 +185,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "${value1}",
+        "name": "${MyString2}",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -730,7 +730,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from useraction where application=\"${app.name}\" ${uspClause} and usersession.matchingConversionGoals is not null",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause} and useraction.matchingConversionGoals is not null",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -745,7 +745,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from useraction where application=\"${app.name}\" ${uspClause2} and usersession.matchingConversionGoals is not null",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause2} and useraction.matchingConversionGoals is not null",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -760,7 +760,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from useraction where application=\"${app.name}\" ${uspClause} and usersession.matchingConversionGoals is null",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause} and useraction.matchingConversionGoals is null",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -775,7 +775,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from useraction where application=\"${app.name}\" ${uspClause2} and usersession.matchingConversionGoals is null",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause2} and useraction.matchingConversionGoals is null",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -812,7 +812,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -827,7 +827,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause2}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }]
