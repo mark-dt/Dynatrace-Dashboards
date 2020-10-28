@@ -211,7 +211,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid,totalErrorCount%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${uspClause}%20${regionClause}%20and%20${journey.where-6}%20and%20${journey.where-7}%20and totalErrorCount%3E0%20order%20by%20totalErrorCount%20desc&visualization=TABLE)"
+      "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid,useraction.errorCount%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${uspClause}%20${regionClause}%20and%20${journey.where-6}%20and%20${journey.where-7}%20and useraction.errorCount%3E0%20order%20by%20useraction.errorCount%20desc&visualization=TABLE)"
     },
     {
       "name": "Markdown",
@@ -227,7 +227,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid,totalErrorCount%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${uspClause}%20${regionClause}%20and%20${journey.where-6}%20and%20not%20${journey.where-7}%20and totalErrorCount%3E0%20order%20by%20totalErrorCount%20DESC&visualization=TABLE)"
+      "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid,useraction.errorCount%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${uspClause}%20${regionClause}%20and%20${journey.where-6}%20and%20not%20${journey.where-7}%20and useraction.errorCount%3E0%20order%20by%20useraction.errorCount%20DESC&visualization=TABLE)"
     },
     {
       "name": "Markdown",
