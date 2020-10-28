@@ -27,7 +27,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "markdown": "!PU(math):exp=100-(b/a);scope=a:varA,b:varB;color=white"
+        "markdown": "!PU(math):exp=100-(100*(b/a));scope=a:varA,b:varB;color=white"
     }, {
         "name": "Number of Actions",
         "tileType": "HEADER",
@@ -127,7 +127,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "markdown": "!PU(math):exp=100-(b/a);scope=a:varM,b:varN;color=white"
+        "markdown": "!PU(math):exp=100-(100*(b/a));scope=a:varM,b:varN;color=white"
     }, {
         "name": "${app-2.name}",
         "tileType": "HEADER",
@@ -161,7 +161,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "markdown": "!PU(math):exp=100-(b/a);scope=a:varC,b:varD;color=white"
+        "markdown": "!PU(math):exp=100-(100*(b/a));scope=a:varC,b:varD;color=white"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -173,7 +173,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "markdown": "!PU(math):exp=100-(b/a);scope=a:varO,b:varP;color=white"
+        "markdown": "!PU(math):exp=100-(100*(b/a));scope=a:varO,b:varP;color=white"
     }, {
         "name": "${app-3.name}",
         "tileType": "HEADER",
@@ -229,7 +229,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "markdown": "!PU(math):exp=100-(b/a);scope=a:varE,b:varF;color=white"
+        "markdown": "!PU(math):exp=100-(100*(b/a));scope=a:varE,b:varF;color=white"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -241,7 +241,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "markdown": "!PU(math):exp=100-(b/a);scope=a:varQ,b:varR;color=white"
+        "markdown": "!PU(math):exp=100-(100*(b/a));scope=a:varQ,b:varR;color=white"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -253,7 +253,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "markdown": "!PU(math):exp=100-(b/a);scope=a:varG,b:varH;color=white"
+        "markdown": "!PU(math):exp=100-(100*(b/a));scope=a:varG,b:varH;color=white"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -265,7 +265,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "markdown": "!PU(math):exp=100-(b/a);scope=a:varS,b:varT;color=white"
+        "markdown": "!PU(math):exp=100-(100*(b/a));scope=a:varS,b:varT;color=white"
     }, {
         "name": "${app-5.name}",
         "tileType": "HEADER",
@@ -310,7 +310,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "markdown": "!PU(math):exp=100-(b/a);scope=a:varI,b:varJ;color=white"
+        "markdown": "!PU(math):exp=100-(100*(b/a));scope=a:varI,b:varJ;color=white"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -322,7 +322,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "markdown": "!PU(math):exp=100-(b/a);scope=a:varU,b:varV;color=white"
+        "markdown": "!PU(math):exp=100-(100*(b/a));scope=a:varU,b:varV;color=white"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -334,7 +334,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "markdown": "!PU(math):exp=100-(b/a);scope=a:varK,b:varL;color=white"
+        "markdown": "!PU(math):exp=100-(100*(b/a));scope=a:varK,b:varL;color=white"
     }, {
         "name": "User Action SLA",
         "tileType": "HEADER",
