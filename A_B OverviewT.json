@@ -459,7 +459,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link20;lt=green;gt=red;eq=yellow !PU(link):link19",
+        "customName": "!PU(compare):link=linkl;lt=green;gt=red;eq=yellow !PU(link):linkj",
         "query": "select avg(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -489,7 +489,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link10;lt=green;gt=red;eq=yellow !PU(link):link9",
+        "customName": "!PU(compare):link=linka;lt=green;gt=red;eq=yellow !PU(link):link9",
         "query": "select max(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -504,7 +504,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link12;lt=green;gt=red;eq=yellow !PU(link):link11",
+        "customName": "!PU(compare):link=linkc;lt=green;gt=red;eq=yellow !PU(link):linkb",
         "query": "select min(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -534,7 +534,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link9;lt=green;gt=red;eq=yellow !PU(link):link10",
+        "customName": "!PU(compare):link=link9;lt=green;gt=red;eq=yellow !PU(link):linka",
         "query": "select max(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -549,7 +549,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link11;lt=green;gt=red;eq=yellow !PU(link):link12",
+        "customName": "!PU(compare):link=linkb;lt=green;gt=red;eq=yellow !PU(link):linkc",
         "query": "select min(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -564,7 +564,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link14;lt=green;gt=red;eq=yellow !PU(link):link13",
+        "customName": "!PU(compare):link=linke;lt=green;gt=red;eq=yellow !PU(link):linkd",
         "query": "select avg(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -579,7 +579,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link16;lt=green;gt=red;eq=yellow !PU(link):link15",
+        "customName": "!PU(compare):link=linkg;lt=green;gt=red;eq=yellow !PU(link):linkf",
         "query": "select max(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -594,7 +594,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link18;lt=green;gt=red;eq=yellow !PU(link):link17",
+        "customName": "!PU(compare):link=linki;lt=green;gt=red;eq=yellow !PU(link):linkh",
         "query": "select min(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -609,7 +609,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link13;lt=green;gt=red;eq=yellow !PU(link):link14",
+        "customName": "!PU(compare):link=linkd;lt=green;gt=red;eq=yellow !PU(link):linke",
         "query": "select avg(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -624,7 +624,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link15;lt=green;gt=red;eq=yellow !PU(link):link16",
+        "customName": "!PU(compare):link=linkf;lt=green;gt=red;eq=yellow !PU(link):linkg",
         "query": "select max(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -639,7 +639,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link17;lt=green;gt=red;eq=yellow !PU(link):link18",
+        "customName": "!PU(compare):link=linkh;lt=green;gt=red;eq=yellow !PU(link):linki",
         "query": "select min(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -654,7 +654,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link22;lt=green;gt=red;eq=yellow !PU(link):link21",
+        "customName": "!PU(compare):link=linkn;lt=green;gt=red;eq=yellow !PU(link):linkm",
         "query": "select max(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -669,7 +669,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link24;lt=green;gt=red;eq=yellow !PU(link):link23",
+        "customName": "!PU(compare):link=linkp;lt=green;gt=red;eq=yellow !PU(link):linko",
         "query": "select min(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -684,7 +684,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link19;lt=green;gt=red;eq=yellow !PU(link):link20",
+        "customName": "!PU(compare):link=linkj;lt=green;gt=red;eq=yellow !PU(link):linkl",
         "query": "select avg(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -699,7 +699,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link21;lt=green;gt=red;eq=yellow !PU(link):link22",
+        "customName": "!PU(compare):link=linkm;lt=green;gt=red;eq=yellow !PU(link):linkn",
         "query": "select max(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -714,7 +714,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link23;lt=green;gt=red;eq=yellow !PU(link):link24",
+        "customName": "!PU(compare):link=linko;lt=green;gt=red;eq=yellow !PU(link):linkp",
         "query": "select min(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -729,7 +729,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link28;lt=red;gt=green;eq=yellow !PU(link):link27",
+        "customName": "!PU(compare):link=linkt;lt=red;gt=green;eq=yellow !PU(link):links",
         "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause} and useraction.matchingConversionGoals is not null",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -744,7 +744,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link27;lt=red;gt=green;eq=yellow !PU(link):link28",
+        "customName": "!PU(compare):link=links;lt=red;gt=green;eq=yellow !PU(link):linkt",
         "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause2} and useraction.matchingConversionGoals is not null",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -759,7 +759,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link30;lt=red;gt=green;eq=yellow !PU(link):link29",
+        "customName": "!PU(compare):link=linkv;lt=red;gt=green;eq=yellow !PU(link):linku",
         "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause} and useraction.matchingConversionGoals is null",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -774,7 +774,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link29;lt=red;gt=green;eq=yellow !PU(link):link30",
+        "customName": "!PU(compare):link=linku;lt=red;gt=green;eq=yellow !PU(link):linkv",
         "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause2} and useraction.matchingConversionGoals is null",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -811,7 +811,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link26;lt=red;gt=green;eq=yellow !PU(link):link25",
+        "customName": "!PU(compare):link=linkr;lt=red;gt=green;eq=yellow !PU(link):linkq",
         "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause}",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -826,7 +826,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link25;lt=red;gt=green;eq=yellow !PU(link):link26",
+        "customName": "!PU(compare):link=linkq;lt=red;gt=green;eq=yellow !PU(link):linkr",
         "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause2}",
         "type": "SINGLE_VALUE",
         "limit": 50
