@@ -1,0 +1,294 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.204.87.20201016-092901"
+    },
+    "id": "7ce12d01-c6a3-44e5-a5c5-6e3591f29dfe",
+    "dashboardMetadata": {
+        "name": "${overviewName} Revenue Analysis",
+        "shared": true,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": true
+        },
+        "dashboardFilter": {
+            "timeframe": "Today"
+        },
+        "tags": ["Analysis", "Revenue"]
+    },
+    "tiles": [{
+        "name": "Revenue by Apdex",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1292,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Revenue by ${MyString}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Revenue Over Time",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 0,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 380,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Revenue](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20${usp.id}%20as%20%22Revenue%22%20FROM%20usersession%20where%20useraction.application%3D%22${app.name}%22%20and%20useraction.matchingConversionGoals%3D%22${goal}%22%20${uspClause}%20order%20by%20${usp.id}%20DESC&visualization=TABLE&gtf=today&gf=all)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 380,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Avg Order Value](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20${usp.id}%20as%20%22Revenue%22%20FROM%20usersession%20where%20useraction.application%3D%22${app.name}%22%20and%20useraction.matchingConversionGoals%3D%22${goal}%22%20${uspClause}%20order%20by%20${usp.id}%20DESC&visualization=TABLE&gtf=today&gf=all)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 684,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Avg Risk Order Value](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20${usp.id}%20as%20%22Risk%20Revenue%22%20FROM%20usersession%20where%20useraction.application%3D%22${app.name}%22%20and%20useraction.matchingConversionGoals%3D%22${goal}%22%20and%20userExperienceScore!%3D%22SATISFIED%22%20${uspClause}%20order%20by%20${usp.id}%20DESC&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 988,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Avg Lost Order Value](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20${usp.id}%20as%20%22Lost%20Revenue%22%20FROM%20usersession%20where%20useraction.application%3D%22${app.name}%22%20and%20not%20useraction.matchingConversionGoals%3D%22${goal}%22%20${uspClause}%20ORDER%20BY%20${usp.id}%20DESC&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 798,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Lost Revenue Over Time](#dashboard;id=0fdec0a5-4a26-4e80-89bf-f8cee5d60776)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 380,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Risk Revenue Over Time](#dashboard;id=a66a009e-ca94-4afd-b34e-9a1069065b33)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 684,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Risk Revenue](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20${usp.id}%20as%20%22Risk%20Revenue%22%20FROM%20usersession%20where%20useraction.application%3D%22${app.name}%22%20and%20useraction.matchingConversionGoals%3D%22${goal}%22%20and%20userExperienceScore!%3D%22SATISFIED%22%20${uspClause}%20order%20by%20${usp.id}%20DESC&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 988,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Lost Revenue](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20${usp.id}%20as%20%22Lost%20Revenue%22%20FROM%20usersession%20where%20useraction.application%3D%22${app.name}%22%20and%20not%20useraction.matchingConversionGoals%3D%22${goal}%22%20${uspClause}%20ORDER%20BY%20${usp.id}%20DESC&visualization=TABLE)"
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 0,
+            "width": 1672,
+            "height": 456
+        },
+        "tileFilter": {},
+        "customName": " Revenue Over Time !PU(usqlstack):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
+        "query": "select distinct Datetime(endTime,\"HH:mm\") AS mytime,  sum(${usp.id}) as revenue, ${uspClause2.id} FROM useraction where application=\"${app.name}\" AND useraction.matchingConversionGoals=\"${goal}\" ${uspClause} and ${uspClause2.id} is not null group by mytime, ${uspClause2.id} ",
+        "type": "COLUMN_CHART",
+        "visualizationConfig": {
+            "hasAxisBucketing": true
+        },
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 380,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "!PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
+        "query": "select ${uspClause2.id}, sum(${usp.id}) FROM usersession where useraction.application=\"${app.name}\" and useraction.matchingConversionGoals=\"${goal}\" ${uspClause} group by ${uspClause2.id}",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 380,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " !PU(color):base=high;warn=${MyThreshold1};crit=${MyThreshold2}",
+        "query": "select sum(${usp.id}) as \" \" FROM usersession where useraction.application=\"${app.name}\" and useraction.matchingConversionGoals=\"${goal}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 684,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "   !PU(color):base=low;warn=${MyThreshold3};crit=${MyThreshold4}",
+        "query": "select sum(${usp.id}) as \" \" FROM usersession where useraction.application=\"${app.name}\" and useraction.matchingConversionGoals=\"${goal}\" and userExperienceScore!=\"SATISFIED\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 988,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "   !PU(color):base=low;warn=${MyThreshold5};crit=${MyThreshold5}",
+        "query": "select sum(${usp.id}) as \" \" FROM usersession where useraction.application=\"${app.name}\" and not useraction.matchingConversionGoals=\"${goal}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 380,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "    !PU(color):base=high;warn=${MyThreshold7};crit=${MyThreshold8}",
+        "query": "select avg(${usp.id}) as \" \" FROM usersession where useraction.application=\"${app.name}\" and useraction.matchingConversionGoals=\"${goal}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 684,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "    !PU(color):base=high;warn=${MyThreshold7};crit=${MyThreshold8}",
+        "query": "select avg(${usp.id}) as \" \" FROM usersession where useraction.application=\"${app.name}\" and useraction.matchingConversionGoals=\"${goal}\" and userExperienceScore!=\"SATISFIED\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 988,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "    !PU(color):base=high;warn=${MyThreshold7};crit=${MyThreshold8}",
+        "query": "select avg(${usp.id}) as \" \" FROM usersession where useraction.application=\"${app.name}\" and not useraction.matchingConversionGoals=\"${goal}\" ${uspClause}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1292,
+            "width": 380,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": " !PU(usqlcolor):colors=#39ff14,#ffe11c,#FF1C1C",
+        "query": "select userExperienceScore, sum(${usp.id}) FROM usersession where useraction.application=\"${app.name}\" and useraction.matchingConversionGoals=\"${goal}\" ${uspClause} group by userExperienceScore order by userExperienceScore",
+        "type": "PIE_CHART",
+        "limit": 50
+    }]
+}
