@@ -22,7 +22,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 0,
+            "top": 76,
             "left": 190,
             "width": 304,
             "height": 38
@@ -33,7 +33,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 38,
+            "top": 114,
             "left": 0,
             "width": 190,
             "height": 38
@@ -44,7 +44,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 114,
+            "top": 190,
             "left": 0,
             "width": 190,
             "height": 38
@@ -55,7 +55,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 266,
+            "top": 342,
             "left": 0,
             "width": 190,
             "height": 38
@@ -66,7 +66,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 418,
+            "top": 494,
             "left": 0,
             "width": 190,
             "height": 38
@@ -77,7 +77,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 570,
+            "top": 646,
             "left": 0,
             "width": 190,
             "height": 38
@@ -88,7 +88,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 722,
+            "top": 798,
             "left": 0,
             "width": 190,
             "height": 38
@@ -99,19 +99,19 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 38,
+            "top": 114,
             "left": 190,
             "width": 304,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var11,b:var12,c:var13,d:var14,e:var15;color=green"
+        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var11,b:var12,c:var13,d:var14,e:var15;color=#4363d8"
     }, {
         "name": "Average Visually Complete",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 0,
+            "top": 76,
             "left": 494,
             "width": 304,
             "height": 38
@@ -122,19 +122,19 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 38,
+            "top": 114,
             "left": 494,
             "width": 304,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var21,b:var22,c:var23,d:var24,e:var25;color=green"
+        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var21,b:var22,c:var23,d:var24,e:var25;color=#ffcb05"
     }, {
         "name": "Average Speed Index",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 0,
+            "top": 76,
             "left": 798,
             "width": 304,
             "height": 38
@@ -145,274 +145,19 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 38,
+            "top": 114,
             "left": 798,
             "width": 304,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var31,b:var32,c:var33,d:var34,e:var35;color=green"
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 798,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-14d to -8d"
-        },
-        "customName": " !PU(link):var32 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 380,
-            "left": 798,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-21d to -15d"
-        },
-        "customName": "  !PU(link):var33 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 532,
-            "left": 798,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-28d to -22d"
-        },
-        "customName": "  !PU(link):var34 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 684,
-            "left": 798,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-35d to -29d"
-        },
-        "customName": "  !PU(link):var35 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 76,
-            "left": 494,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-7d to -1d"
-        },
-        "customName": " !PU(link):var21 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 494,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-14d to -8d"
-        },
-        "customName": " !PU(link):var22 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 380,
-            "left": 494,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-21d to -15d"
-        },
-        "customName": "  !PU(link):var23 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 532,
-            "left": 494,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-28d to -22d"
-        },
-        "customName": "  !PU(link):var24 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 684,
-            "left": 494,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-35d to -29d"
-        },
-        "customName": "  !PU(link):var25 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 76,
-            "left": 190,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-7d to -1d"
-        },
-        "customName": " !PU(link):var11 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 190,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-14d to -8d"
-        },
-        "customName": " !PU(link):var12 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 380,
-            "left": 190,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-21d to -15d"
-        },
-        "customName": "  !PU(link):var13 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 532,
-            "left": 190,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-28d to -22d"
-        },
-        "customName": "  !PU(link):var14 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 684,
-            "left": 190,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-35d to -29d"
-        },
-        "customName": "  !PU(link):var15 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 76,
-            "left": 798,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-7d to -1d"
-        },
-        "customName": " !PU(link):var31 !PU(color):base=high;warn=0;crit=0",
-        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\" ",
-        "type": "SINGLE_VALUE",
-        "limit": 50
+        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var31,b:var32,c:var33,d:var34,e:var35;color=#3cb44b"
     }, {
         "name": "Custom chart",
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 76,
+            "top": 152,
             "left": 1102,
             "width": 570,
             "height": 152
@@ -508,7 +253,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 0,
+            "top": 76,
             "left": 1102,
             "width": 380,
             "height": 38
@@ -519,7 +264,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 228,
+            "top": 304,
             "left": 1102,
             "width": 570,
             "height": 152
@@ -615,7 +360,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 380,
+            "top": 456,
             "left": 1102,
             "width": 570,
             "height": 152
@@ -711,7 +456,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 532,
+            "top": 608,
             "left": 1102,
             "width": 570,
             "height": 152
@@ -807,7 +552,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 684,
+            "top": 760,
             "left": 1102,
             "width": 570,
             "height": 152
@@ -898,5 +643,272 @@
             },
             "filtersPerEntityType": {}
         }
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 1254,
+            "height": 76
+        },
+        "tileFilter": {},
+        "markdown": "##\uD83D\uDC8E Powerup Enabled Dashboard \uD83D\uDC8E\n\n##  [Install Chrome Extension](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)"
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 494,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-7d to -1d"
+        },
+        "customName": " !PU(link):var21 !PU(compare):link=var21;lt=red;gt=green;eq=#ffcb05",
+        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 494,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-14d to -8d"
+        },
+        "customName": " !PU(link):var22 !PU(compare):link=var22;lt=red;gt=green;eq=#ffcb05",
+        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 494,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-21d to -15d"
+        },
+        "customName": "  !PU(link):var23 !PU(compare):link=var23;lt=red;gt=green;eq=#ffcb05",
+        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 494,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-28d to -22d"
+        },
+        "customName": "  !PU(link):var24 !PU(compare):link=var24;lt=red;gt=green;eq=#ffcb05",
+        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 760,
+            "left": 494,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-35d to -29d"
+        },
+        "customName": "  !PU(link):var25 !PU(compare):link=var25;lt=red;gt=green;eq=#ffcb05",
+        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 798,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-7d to -1d"
+        },
+        "customName": " !PU(link):var31 !PU(compare):link=var31;lt=red;gt=green;eq=##3cb44b",
+        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\" ",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 798,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-14d to -8d"
+        },
+        "customName": " !PU(link):var32 !PU(compare):link=var32;lt=red;gt=green;eq=##3cb44b",
+        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 798,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-21d to -15d"
+        },
+        "customName": "  !PU(link):var33 !PU(compare):link=var33;lt=red;gt=green;eq=##3cb44b",
+        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 798,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-28d to -22d"
+        },
+        "customName": "  !PU(link):var34 !PU(compare):link=var34;lt=red;gt=green;eq=##3cb44b",
+        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 760,
+            "left": 798,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-35d to -29d"
+        },
+        "customName": "  !PU(link):var35 !PU(compare):link=var35;lt=red;gt=green;eq=##3cb44b",
+        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 190,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-7d to -1d"
+        },
+        "customName": " !PU(link):var11 !PU(compare):link=var11;lt=red;gt=green;eq=#4363d8",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 190,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-14d to -8d"
+        },
+        "customName": " !PU(link):var12 !PU(compare):link=var12;lt=red;gt=green;eq=#4363d8",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 190,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-21d to -15d"
+        },
+        "customName": "  !PU(link):var13 !PU(compare):link=var13;lt=red;gt=green;eq=#4363d8",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 760,
+            "left": 190,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-35d to -29d"
+        },
+        "customName": "  !PU(link):var15 !PU(compare):link=var15;lt=red;gt=green;eq=#4363d8",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 190,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-28d to -22d"
+        },
+        "customName": "  !PU(link):var14 !PU(compare):link=var14;lt=red;gt=green;eq=#4363d8",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "limit": 50
     }]
 }
