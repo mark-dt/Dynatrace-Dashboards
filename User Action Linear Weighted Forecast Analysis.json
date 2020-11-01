@@ -11,7 +11,7 @@
         "sharingDetails": {
             "linkShared": true,
             "published": true
-        },
+        },10
         "dashboardFilter": {
             "timeframe": ""
         },
@@ -242,7 +242,7 @@
                 },
                 "axisLimits": {
                     "LEFT_MIN": 0.0,
-                    "LEFT_MAX": 10000.0
+                    "LEFT_MAX": 18000.0
                 },
                 "leftAxisCustomUnit": "MilliSecond"
             },
@@ -349,7 +349,7 @@
                 },
                 "axisLimits": {
                     "LEFT_MIN": 0.0,
-                    "LEFT_MAX": 10000.0
+                    "LEFT_MAX": 18000.0
                 },
                 "leftAxisCustomUnit": "MilliSecond"
             },
@@ -445,7 +445,7 @@
                 },
                 "axisLimits": {
                     "LEFT_MIN": 0.0,
-                    "LEFT_MAX": 10000.0
+                    "LEFT_MAX": 18000.0
                 },
                 "leftAxisCustomUnit": "MilliSecond"
             },
@@ -541,7 +541,7 @@
                 },
                 "axisLimits": {
                     "LEFT_MIN": 0.0,
-                    "LEFT_MAX": 10000.0
+                    "LEFT_MAX": 18000.0
                 },
                 "leftAxisCustomUnit": "MilliSecond"
             },
@@ -637,7 +637,7 @@
                 },
                 "axisLimits": {
                     "LEFT_MIN": 0.0,
-                    "LEFT_MAX": 10000.0
+                    "LEFT_MAX": 18000.0
                 },
                 "leftAxisCustomUnit": "MilliSecond"
             },
