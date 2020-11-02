@@ -182,25 +182,7 @@
                     "sortColumn": false,
                     "aggregationRate": "TOTAL"
                 }, {
-                    "metric": "builtin:apps.web.actionDuration.xhr.browser",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": false,
-                    "aggregationRate": "TOTAL"
-                }, {
                     "metric": "builtin:apps.web.visuallyComplete.load.browser",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": false,
-                    "aggregationRate": "TOTAL"
-                }, {
-                    "metric": "builtin:apps.web.visuallyComplete.xhr.browser",
                     "aggregation": "AVG",
                     "type": "AREA",
                     "entityType": "APPLICATION",
@@ -219,10 +201,6 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "nullbuiltin:apps.web.visuallyComplete.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1603746561952,
-                        "customColor": "#FFCB05"
-                    },
                     "nullbuiltin:apps.web.speedIndex.load.browser|AVG|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1603746577649,
                         "customColor": "#3cb44b"
@@ -231,20 +209,11 @@
                         "lastModified": 1603746538186,
                         "customColor": "#4363d8"
                     },
-                    "nullbuiltin:apps.web.actionDuration.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1603746542980,
-                        "customColor": "#4363d8"
-                    },
                     "nullbuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1603746557382,
                         "customColor": "#FFCB05"
                     }
                 },
-                "axisLimits": {
-                    "LEFT_MIN": 0.0,
-                    "LEFT_MAX": 18000.0
-                },
-                "leftAxisCustomUnit": "MilliSecond"
             },
             "filtersPerEntityType": {}
         }
@@ -657,7 +626,7 @@
             "timeframe": "-7d to -1d"
         },
         "customName": " !PU(link):var21 !PU(compare):link=var21;lt=red;gt=green;eq=#ffcb05",
-        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -674,7 +643,7 @@
             "timeframe": "-14d to -8d"
         },
         "customName": " !PU(link):var22 !PU(compare):link=var22;lt=red;gt=green;eq=#ffcb05",
-        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -691,7 +660,7 @@
             "timeframe": "-21d to -15d"
         },
         "customName": "  !PU(link):var23 !PU(compare):link=var23;lt=red;gt=green;eq=#ffcb05",
-        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -708,7 +677,7 @@
             "timeframe": "-28d to -22d"
         },
         "customName": "  !PU(link):var24 !PU(compare):link=var24;lt=red;gt=green;eq=#ffcb05",
-        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -725,7 +694,7 @@
             "timeframe": "-35d to -29d"
         },
         "customName": "  !PU(link):var25 !PU(compare):link=var25;lt=red;gt=green;eq=#ffcb05",
-        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(visuallycompletetime) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -742,7 +711,7 @@
             "timeframe": "-7d to -1d"
         },
         "customName": " !PU(link):var31 !PU(compare):link=var31;lt=red;gt=green;eq=##3cb44b",
-        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\" ",
+        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\" ",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -759,7 +728,7 @@
             "timeframe": "-14d to -8d"
         },
         "customName": " !PU(link):var32 !PU(compare):link=var32;lt=red;gt=green;eq=##3cb44b",
-        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -776,7 +745,7 @@
             "timeframe": "-21d to -15d"
         },
         "customName": "  !PU(link):var33 !PU(compare):link=var33;lt=red;gt=green;eq=##3cb44b",
-        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -793,7 +762,7 @@
             "timeframe": "-28d to -22d"
         },
         "customName": "  !PU(link):var34 !PU(compare):link=var34;lt=red;gt=green;eq=##3cb44b",
-        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -810,7 +779,7 @@
             "timeframe": "-35d to -29d"
         },
         "customName": "  !PU(link):var35 !PU(compare):link=var35;lt=red;gt=green;eq=##3cb44b",
-        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(speedindex) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -827,7 +796,7 @@
             "timeframe": "-7d to -1d"
         },
         "customName": " !PU(link):var11 !PU(compare):link=var11;lt=red;gt=green;eq=#4363d8",
-        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -844,7 +813,7 @@
             "timeframe": "-14d to -8d"
         },
         "customName": " !PU(link):var12 !PU(compare):link=var12;lt=red;gt=green;eq=#4363d8",
-        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -861,7 +830,7 @@
             "timeframe": "-21d to -15d"
         },
         "customName": "  !PU(link):var13 !PU(compare):link=var13;lt=red;gt=green;eq=#4363d8",
-        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -878,7 +847,7 @@
             "timeframe": "-35d to -29d"
         },
         "customName": "  !PU(link):var15 !PU(compare):link=var15;lt=red;gt=green;eq=#4363d8",
-        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -895,7 +864,7 @@
             "timeframe": "-28d to -22d"
         },
         "customName": "  !PU(link):var14 !PU(compare):link=var14;lt=red;gt=green;eq=#4363d8",
-        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\"",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\" and type=\"Load\"",
         "type": "SINGLE_VALUE",
         "limit": 50
     }]
