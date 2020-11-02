@@ -130,7 +130,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.duration) as \" \" FROM usersession where ${uspCampaign.id} is not null",
+        "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspCampaign.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -146,7 +146,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.visuallycompletetime) as \" \" FROM usersession where ${uspCampaign.id} is not null",
+        "query": "select avg(useraction.visuallycompletetime) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspCampaign.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -162,7 +162,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where ${uspCampaign.id} is not null",
+        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspCampaign.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -178,7 +178,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(useraction.errorcount) as \" \" FROM useraction where ${uspCampaign.id} is not null",
+        "query": "select sum(useraction.errorcount) as \" \" FROM useraction where useraction.application in (\"${app.name}\") and ${uspCampaign.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -194,7 +194,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.matchingConversionGoals is not null and ${uspCampaign.id} is not null ",
+        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") and useraction.matchingConversionGoals is not null and ${uspCampaign.id} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -210,7 +210,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.matchingConversionGoals is null and ${uspCampaign.id} is not null",
+        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") and useraction.matchingConversionGoals is null and ${uspCampaign.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
