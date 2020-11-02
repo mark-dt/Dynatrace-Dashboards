@@ -62,7 +62,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where ${uspCampaign.id} IS NOT NULL and useraction.matchingConversionGoals is not null group by ${uspCampaign.id}",
+        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where ${uspCampaign.id} IS NOT NULL${uspCampaign.id} IS NOT NULL group by ${uspCampaign.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -88,7 +88,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where ${uspCampaign.id} IS NOT NULL and useraction.matchingConversionGoals is not null and userExperienceScore <> \"SATISFIED\" group by ${uspCampaign.id}",
+        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") ${conversionGoal} ${uspCampaign.id} IS NOT NULL and userExperienceScore <> \"SATISFIED\" group by ${uspCampaign.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -103,7 +103,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where ${uspCampaign.id} IS NOT NULL and not useraction.matchingConversionGoals is not null group by ${uspCampaign.id}",
+        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") ${conversionGoal} ${uspCampaign.id} IS NOT NULL group by ${uspCampaign.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -118,7 +118,7 @@
         },
         "tileFilter": {},
         "customName": "User sessions query results",
-        "query": "select distinct datetime(endtime,\"HH:mm\"), count(*) as \"Conversions\" from usersession where useraction.matchingConversionGoals is not null",
+        "query": "select distinct datetime(endtime,\"HH:mm\"), count(*) as \"Conversions\" from usersession where useraction.application in (\"${app.name}\") ${conversionGoal} ${uspCampaign.id} IS NOT NULL",
         "type": "COLUMN_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
