@@ -62,7 +62,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where ${uspCampaign.id} IS NOT NULL${uspCampaign.id} IS NOT NULL group by ${uspCampaign.id}",
+        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") ${conversionGoal} ${uspCampaign.id} IS NOT NULL group by ${uspCampaign.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
