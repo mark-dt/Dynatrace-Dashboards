@@ -170,7 +170,7 @@
             "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
-                "legendShown": true,
+                "legendShown": false,
                 "type": "TIMESERIES",
                 "series": [{
                     "metric": "builtin:apps.web.actionDuration.load.browser",
@@ -213,9 +213,13 @@
                         "lastModified": 1603746557382,
                         "customColor": "#FFCB05"
                     }
-                },
+                }
             },
-            "filtersPerEntityType": {}
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
         }
     }, {
         "name": "User Experience Over Time",
@@ -246,7 +250,7 @@
             "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
-                "legendShown": true,
+                "legendShown": false,
                 "type": "TIMESERIES",
                 "series": [{
                     "metric": "builtin:apps.web.actionDuration.load.browser",
@@ -258,25 +262,7 @@
                     "sortColumn": false,
                     "aggregationRate": "TOTAL"
                 }, {
-                    "metric": "builtin:apps.web.actionDuration.xhr.browser",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": false,
-                    "aggregationRate": "TOTAL"
-                }, {
                     "metric": "builtin:apps.web.visuallyComplete.load.browser",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": false,
-                    "aggregationRate": "TOTAL"
-                }, {
-                    "metric": "builtin:apps.web.visuallyComplete.xhr.browser",
                     "aggregation": "AVG",
                     "type": "AREA",
                     "entityType": "APPLICATION",
@@ -295,10 +281,6 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "nullbuiltin:apps.web.visuallyComplete.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1603746561952,
-                        "customColor": "#FFCB05"
-                    },
                     "nullbuiltin:apps.web.speedIndex.load.browser|AVG|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1603746577649,
                         "customColor": "#3cb44b"
@@ -307,22 +289,17 @@
                         "lastModified": 1603746538186,
                         "customColor": "#4363d8"
                     },
-                    "nullbuiltin:apps.web.actionDuration.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1603746542980,
-                        "customColor": "#4363d8"
-                    },
                     "nullbuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1603746557382,
                         "customColor": "#FFCB05"
                     }
-                },
-                "axisLimits": {
-                    "LEFT_MIN": 0.0,
-                    "LEFT_MAX": 18000.0
-                },
-                "leftAxisCustomUnit": "MilliSecond"
+                }
             },
-            "filtersPerEntityType": {}
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
         }
     }, {
         "name": "Custom chart",
@@ -342,7 +319,7 @@
             "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
-                "legendShown": true,
+                "legendShown": false,
                 "type": "TIMESERIES",
                 "series": [{
                     "metric": "builtin:apps.web.actionDuration.load.browser",
@@ -354,25 +331,7 @@
                     "sortColumn": false,
                     "aggregationRate": "TOTAL"
                 }, {
-                    "metric": "builtin:apps.web.actionDuration.xhr.browser",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": false,
-                    "aggregationRate": "TOTAL"
-                }, {
                     "metric": "builtin:apps.web.visuallyComplete.load.browser",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": false,
-                    "aggregationRate": "TOTAL"
-                }, {
-                    "metric": "builtin:apps.web.visuallyComplete.xhr.browser",
                     "aggregation": "AVG",
                     "type": "AREA",
                     "entityType": "APPLICATION",
@@ -391,10 +350,6 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "nullbuiltin:apps.web.visuallyComplete.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1603746561952,
-                        "customColor": "#FFCB05"
-                    },
                     "nullbuiltin:apps.web.speedIndex.load.browser|AVG|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1603746577649,
                         "customColor": "#3cb44b"
@@ -403,22 +358,17 @@
                         "lastModified": 1603746538186,
                         "customColor": "#4363d8"
                     },
-                    "nullbuiltin:apps.web.actionDuration.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1603746542980,
-                        "customColor": "#4363d8"
-                    },
                     "nullbuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1603746557382,
                         "customColor": "#FFCB05"
                     }
-                },
-                "axisLimits": {
-                    "LEFT_MIN": 0.0,
-                    "LEFT_MAX": 18000.0
-                },
-                "leftAxisCustomUnit": "MilliSecond"
+                }
             },
-            "filtersPerEntityType": {}
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
         }
     }, {
         "name": "Custom chart",
@@ -438,7 +388,7 @@
             "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
-                "legendShown": true,
+                "legendShown": false,
                 "type": "TIMESERIES",
                 "series": [{
                     "metric": "builtin:apps.web.actionDuration.load.browser",
@@ -450,25 +400,7 @@
                     "sortColumn": false,
                     "aggregationRate": "TOTAL"
                 }, {
-                    "metric": "builtin:apps.web.actionDuration.xhr.browser",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": false,
-                    "aggregationRate": "TOTAL"
-                }, {
                     "metric": "builtin:apps.web.visuallyComplete.load.browser",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": false,
-                    "aggregationRate": "TOTAL"
-                }, {
-                    "metric": "builtin:apps.web.visuallyComplete.xhr.browser",
                     "aggregation": "AVG",
                     "type": "AREA",
                     "entityType": "APPLICATION",
@@ -487,10 +419,6 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "nullbuiltin:apps.web.visuallyComplete.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1603746561952,
-                        "customColor": "#FFCB05"
-                    },
                     "nullbuiltin:apps.web.speedIndex.load.browser|AVG|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1603746577649,
                         "customColor": "#3cb44b"
@@ -499,22 +427,17 @@
                         "lastModified": 1603746538186,
                         "customColor": "#4363d8"
                     },
-                    "nullbuiltin:apps.web.actionDuration.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1603746542980,
-                        "customColor": "#4363d8"
-                    },
                     "nullbuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1603746557382,
                         "customColor": "#FFCB05"
                     }
-                },
-                "axisLimits": {
-                    "LEFT_MIN": 0.0,
-                    "LEFT_MAX": 18000.0
-                },
-                "leftAxisCustomUnit": "MilliSecond"
+                }
             },
-            "filtersPerEntityType": {}
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
         }
     }, {
         "name": "Custom chart",
@@ -534,7 +457,7 @@
             "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
-                "legendShown": true,
+                "legendShown": false,
                 "type": "TIMESERIES",
                 "series": [{
                     "metric": "builtin:apps.web.actionDuration.load.browser",
@@ -546,25 +469,7 @@
                     "sortColumn": false,
                     "aggregationRate": "TOTAL"
                 }, {
-                    "metric": "builtin:apps.web.actionDuration.xhr.browser",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": false,
-                    "aggregationRate": "TOTAL"
-                }, {
                     "metric": "builtin:apps.web.visuallyComplete.load.browser",
-                    "aggregation": "AVG",
-                    "type": "AREA",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": false,
-                    "aggregationRate": "TOTAL"
-                }, {
-                    "metric": "builtin:apps.web.visuallyComplete.xhr.browser",
                     "aggregation": "AVG",
                     "type": "AREA",
                     "entityType": "APPLICATION",
@@ -583,10 +488,6 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "nullbuiltin:apps.web.visuallyComplete.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1603746561952,
-                        "customColor": "#FFCB05"
-                    },
                     "nullbuiltin:apps.web.speedIndex.load.browser|AVG|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1603746577649,
                         "customColor": "#3cb44b"
@@ -595,22 +496,17 @@
                         "lastModified": 1603746538186,
                         "customColor": "#4363d8"
                     },
-                    "nullbuiltin:apps.web.actionDuration.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1603746542980,
-                        "customColor": "#4363d8"
-                    },
                     "nullbuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1603746557382,
                         "customColor": "#FFCB05"
                     }
-                },
-                "axisLimits": {
-                    "LEFT_MIN": 0.0,
-                    "LEFT_MAX": 18000.0
-                },
-                "leftAxisCustomUnit": "MilliSecond"
+                }
             },
-            "filtersPerEntityType": {}
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
         }
     }, {
         "name": "User Sessions Query",
