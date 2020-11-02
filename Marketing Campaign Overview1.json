@@ -178,7 +178,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") and useraction.matchingConversionGoals is not null and ${uspCampaign.id} is not null ",
+        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") ${conversionGoal} and ${uspCampaign.id} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -194,7 +194,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") and useraction.matchingConversionGoals is null and ${uspCampaign.id} is not null",
+        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") not ${conversionGoal} ${milestoneGoal} and ${uspCampaign.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
