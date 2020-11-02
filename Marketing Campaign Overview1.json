@@ -210,7 +210,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.duration) as \" \" FROM usersession useraction.application in (\"${app.name}\") and where ${uspCampaign.id} is not null",
+        "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspCampaign.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
