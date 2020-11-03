@@ -117,8 +117,8 @@
             "height": 342
         },
         "tileFilter": {},
-        "customName": "User sessions query results",
-        "query": "select distinct datetime(endtime,\"HH:mm\"), count(*) as \"Conversions\", usersession.stringProperties.web_utm_campaign13 from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspCampaign.id} IS NOT NULL",
+        "customName": " ",
+        "query": "select distinct datetime(endtime,\"HH:mm\"), count(*) as \"Conversions\", ${uspCampaign.id} from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspCampaign.id} IS NOT NULL",
         "type": "COLUMN_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false

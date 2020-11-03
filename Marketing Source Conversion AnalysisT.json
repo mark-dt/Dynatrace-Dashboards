@@ -3,9 +3,9 @@
         "configurationVersions": [3],
         "clusterVersion": "1.196.73.20200706-200807"
     },
-    "id": "33419458-0442-4e65-9b7e-28321b1755b7",
+    "id": "33319458-0442-4e65-9b7e-28321b1755b8",
     "dashboardMetadata": {
-        "name": "Marketing Campaign Conversion Analysis",
+        "name": "Marketing Source Conversion Analysis",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {
@@ -18,7 +18,7 @@
         "tags": ["Overview", "Marketing"]
     },
     "tiles": [{
-        "name": "Conversions by Campaign",
+        "name": "Conversions by Source",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -40,7 +40,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Lost Conversions by Campaign",
+        "name": "Lost Conversions by Source",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -62,11 +62,11 @@
         },
         "tileFilter": {},
         "customName": " !PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
-        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspCampaign.id} IS NOT NULL group by ${uspCampaign.id}",
+        "query": "SELECT ${uspSource.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspSource.id} IS NOT NULL group by ${uspSource.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
-        "name": "Risk Conversions by Campaign",
+        "name": "Risk Conversions by Source",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -88,7 +88,7 @@
         },
         "tileFilter": {},
         "customName": " !PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
-        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspCampaign.id} IS NOT NULL and userExperienceScore <> \"SATISFIED\" group by ${uspCampaign.id}",
+        "query": "SELECT ${uspSource.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspSource.id} IS NOT NULL and userExperienceScore <> \"SATISFIED\" group by ${uspSource.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -103,7 +103,7 @@
         },
         "tileFilter": {},
         "customName": " !PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
-        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and not ${conversionGoal} and ${milestoneGoal} and ${uspCampaign.id} IS NOT NULL group by ${uspCampaign.id}",
+        "query": "SELECT ${uspSource.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and not ${conversionGoal} and ${milestoneGoal} and ${uspSource.id} IS NOT NULL group by ${uspSource.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -118,7 +118,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(usqlstack):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
-        "query": "select distinct datetime(endtime,\"HH:mm\"), count(*) as \"Conversions\", ${uspCampaign.id} from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspCampaign.id} IS NOT NULL",
+        "query": "select distinct datetime(endtime,\"HH:mm\"), count(*) as \"Conversions\", ${uspSource.id} from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspSource.id} IS NOT NULL",
         "type": "COLUMN_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false

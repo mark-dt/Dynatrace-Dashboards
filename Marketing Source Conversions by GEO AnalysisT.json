@@ -1,0 +1,229 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.196.75.20200707-123349"
+    },
+    "id": "333bd2cc-c68e-45f1-9969-5688e16c8021",
+    "dashboardMetadata": {
+        "name": "Conversions by GEO Analysis",
+        "shared": false,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": ""
+        },
+        "tags": ["Overview", "Marketing", "Conversions"]
+    },
+    "tiles": [{
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 836,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " !PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
+        "query": "SELECT city, count(*) FROM usersession where ${conversionGoal} and ${uspSource.id} is not null GROUP BY city",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 1254,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " !PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
+        "query": "SELECT city, count(*) FROM usersession where ${uspSource.id} is not null GROUP BY city",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " !PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
+        "query": "SELECT continent, count(*) FROM usersession where ${conversionGoal} and ${uspSource.id} is not null GROUP BY continent",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 418,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " !PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
+        "query": "SELECT continent, count(*) FROM usersession where ${uspSource.id} is not null GROUP BY continent",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 836,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " !PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
+        "query": "SELECT country, count(*) FROM usersession where ${conversionGoal} and ${uspSource.id} is not null GROUP BY country",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1254,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " !PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
+        "query": "SELECT country, count(*) FROM usersession where ${uspSource.id} is not null GROUP BY country",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 0,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " !PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
+        "query": "SELECT region, count(*) FROM usersession where ${conversionGoal} and ${uspSource.id} is not null GROUP BY region",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 418,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " !PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
+        "query": "SELECT region, count(*) FROM usersession where ${uspSource.id} is not null GROUP BY region",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": "Conversions by Continent",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Responses by Continent",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 418,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Conversions by Country",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 836,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Conversions by Region",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 0,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Responses by Region",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 418,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Conversions by City",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 836,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Responses by Country",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1254,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Responses by City",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 1254,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }]
+}

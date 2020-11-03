@@ -18,50 +18,13 @@
         "tags": ["Overview", "Marketing"]
     },
     "tiles": [{
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 456,
-            "left": 0,
-            "width": 1672,
-            "height": 342
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TIMESERIES",
-                "series": [{
-                    "metric": "${metricRum.id}",
-                    "aggregation": "COUNT",
-                    "type": "AREA",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {
-                    "null${metricRum.id}|COUNT|TOTAL|AREA|APPLICATION": {
-                        "lastModified": 1594125749193,
-                        "customColor": "#39ff14"
-                    }
-                }
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
         "name": "Conversions by Source",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
             "top": 0,
             "left": 0,
-            "width": 304,
+            "width": 380,
             "height": 38
         },
         "tileFilter": {}
@@ -83,7 +46,7 @@
         "bounds": {
             "top": 0,
             "left": 1140,
-            "width": 304,
+            "width": 380,
             "height": 38
         },
         "tileFilter": {}
@@ -99,7 +62,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT ${uspSource.id}, count(*) FROM usersession where ${uspSource.id} IS NOT NULL and useraction.name=\"${kuaLastStep}\" group by ${uspSource.id}",
+        "query": "SELECT ${uspSource.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspSource.id} IS NOT NULL group by ${uspSource.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -109,7 +72,7 @@
         "bounds": {
             "top": 0,
             "left": 570,
-            "width": 304,
+            "width": 380,
             "height": 38
         },
         "tileFilter": {}
@@ -125,7 +88,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT ${uspSource.id}, count(*) FROM usersession where ${uspSource.id} IS NOT NULL and useraction.name=\"${kuaLastStep}\" and userExperienceScore <> \"SATISFIED\" group by ${uspSource.id}",
+        "query": "SELECT ${uspSource.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspSource.id} IS NOT NULL and userExperienceScore <> \"SATISFIED\" group by ${uspSource.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -140,8 +103,26 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT ${uspSource.id}, count(*) FROM usersession where ${uspSource.id} IS NOT NULL and not useraction.name=\"${kuaLastStep}\" group by ${uspSource.id}",
+        "query": "SELECT ${uspSource.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and not ${conversionGoal} and ${milestoneGoal} and ${uspSource.id} IS NOT NULL group by ${uspSource.id}",
         "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 0,
+            "width": 1672,
+            "height": 342
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select distinct datetime(endtime,\"HH:mm\"), count(*) as \"Conversions\", ${uspSource.id} from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspSource.id} IS NOT NULL",
+        "type": "COLUMN_CHART",
+        "visualizationConfig": {
+            "hasAxisBucketing": false
+        },
         "limit": 50
     }]
 }
