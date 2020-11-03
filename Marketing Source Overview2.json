@@ -144,7 +144,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
+        "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspSource.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -160,7 +160,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.visuallycompletetime) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
+        "query": "select avg(useraction.visuallycompletetime) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspSource.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -176,7 +176,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\"",
+        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspSource.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -192,7 +192,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(useraction.errorcount) as \" \" FROM useraction where useraction.name=\"${kuaLastStep}\"",
+        "query": "select sum(useraction.errorcount) as \" \" FROM useraction where useraction.application in (\"${app.name}\") and ${uspSource.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -208,7 +208,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.name=\"${kuaLastStep}\" ",
+        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspSource.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -224,7 +224,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where not useraction.name=\"${kuaLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") and not ${conversionGoal} and ${milestoneGoal} and ${uspSource.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
