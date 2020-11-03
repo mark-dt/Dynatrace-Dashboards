@@ -107,7 +107,7 @@
         "type": "PIE_CHART",
         "limit": 50
     }, {
-        "name": "User Sessions Query",
+        "name": " ",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
@@ -118,7 +118,7 @@
         },
         "tileFilter": {},
         "customName": "User sessions query results",
-        "query": "select distinct datetime(endtime,\"HH:mm\"), count(*) as \"Conversions\" from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspCampaign.id} IS NOT NULL",
+        "query": "select distinct datetime(endtime,\"HH:mm\"), count(*) as \"Conversions\", usersession.stringProperties.web_utm_campaign13 from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspCampaign.id} IS NOT NULL",
         "type": "COLUMN_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
