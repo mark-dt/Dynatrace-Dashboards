@@ -54,22 +54,8 @@
                     "sortAscending": false,
                     "sortColumn": false,
                     "aggregationRate": "TOTAL"
-                }, {
-                    "metric": "${metricRum.id}",
-                    "aggregation": "COUNT",
-                    "type": "LINE",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": false,
-                    "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {
-                    "null${metricRum.id}|COUNT|TOTAL|LINE|APPLICATION|APPLICATION": {
-                        "lastModified": 1591285527997,
-                        "customColor": "#39ff14"
-                    }
-                },
+                "resultMetadata": {},
                 "axisLimits": {
                     "LEFT_MIN": 0.0
                 },
@@ -142,7 +128,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and ${uspSource.key}=\"${uspSource.value}\"",
+        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspSource.key}=\"${uspSource.value}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -158,7 +144,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.visuallycompletetime) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and ${uspSource.key}=\"${uspSource.value}\"",
+        "query": "select avg(useraction.visuallycompletetime) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspSource.key}=\"${uspSource.value}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -174,7 +160,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(useraction.errorcount) as \" \" FROM useraction where useraction.name=\"${kuaLastStep}\" and ${uspSource.key}=\"${uspSource.value}\"",
+        "query": "select sum(useraction.errorcount) as \" \" FROM useraction where useraction.application in (\"${app.name}\") and ${uspSource.key}=\"${uspSource.value}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -190,7 +176,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where ${uspSource.key}=\"${uspSource.value}\" and useraction.name=\"${kuaLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") ${uspSource.key}=\"${uspSource.value}\" and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -206,7 +192,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where ${uspSource.key}=\"${uspSource.value}\" and not useraction.name=\"${kuaLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") ${uspSource.key}=\"${uspSource.value}\" and not ${conversionGoal} and ${milestoneGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -222,7 +208,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and ${uspSource.key}=\"${uspSource.value}\"",
+        "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspSource.key}=\"${uspSource.value}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
