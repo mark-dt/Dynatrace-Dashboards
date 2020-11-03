@@ -49,22 +49,8 @@
                     "sortAscending": false,
                     "aggregationRate": "TOTAL",
                     "sortColumn": true
-                }, {
-                    "metric": "${metricRum.id}",
-                    "aggregation": "COUNT",
-                    "type": "LINE",
-                    "entityType": "APPLICATION",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "aggregationRate": "TOTAL",
-                    "sortColumn": false
                 }],
-                "resultMetadata": {
-                    "null${metricRum.id}|COUNT|TOTAL|LINE|APPLICATION|APPLICATION": {
-                        "lastModified": 1591285527997,
-                        "customColor": "#39ff14"
-                    }
-					},
+                "resultMetadata": {},
                 "axisLimits": {
                     "LEFT_MIN": 0.0
                 },
