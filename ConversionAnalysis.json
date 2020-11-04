@@ -152,8 +152,8 @@
         "tileFilter": {},
         "markdown": "## [Overall Conversions](${url}/ui/user-sessions/query?sessionquery=select%20userId%20as%20%22User%22%20FROM%20usersession%20where%20${conversionGoal}%20${uspClause}%20${regionClause}%0A&visualization=TABLE)"
     }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
+        "name": " ",
+        "tileType": "DTAQL",
         "configured": true,
         "bounds": {
             "top": 380,
@@ -162,59 +162,13 @@
             "height": 418
         },
         "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TIMESERIES",
-                "series": [{
-                    "metric": "builtin:apps.web.action.count.load.browser",
-                    "aggregation": "NONE",
-                    "type": "AREA",
-                    "entityType": "APPLICATION_METHOD",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.application_method",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": false,
-                    "aggregationRate": "TOTAL"
-                }, {
-                    "metric": "builtin:apps.web.action.count.xhr.browser",
-                    "aggregation": "NONE",
-                    "type": "AREA",
-                    "entityType": "APPLICATION_METHOD",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.application_method",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {
-                    "${journey.methods-last}¦APPLICATION_METHOD»${journey.methods-last}»truebuiltin:apps.web.action.count.load.browser|NONE|TOTAL|AREA|APPLICATION_METHOD": {
-                        "lastModified": 1595003041958,
-                        "customColor": "#39ff14"
-                    },
-                    "${journey.methods-last}¦APPLICATION_METHOD»${journey.methods-last}»truebuiltin:apps.web.action.count.xhr.browser|NONE|TOTAL|AREA|APPLICATION_METHOD": {
-                        "lastModified": 1594998887772,
-                        "customColor": "#39ff14"
-                    }
-                }
-            },
-            "filtersPerEntityType": {
-                "APPLICATION_METHOD": {
-                    "SPECIFIC_ENTITIES": ["${journey.methods-last}"]
-                }
-            }
-        }
+        "customName": " ",
+        "query": "select distinct datetime(endtime,\"HH:mm\"), count(*) as \"Conversions\" from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspCampaign.id} IS NOT NULL",
+        "type": "COLUMN_CHART",
+        "visualizationConfig": {
+            "hasAxisBucketing": false
+        },
+        "limit": 50
     }, {
         "name": "Conversions by Browser",
         "tileType": "HEADER",
