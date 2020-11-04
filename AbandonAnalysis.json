@@ -163,7 +163,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select distinct datetime(endtime,\"HH:mm\"), count(*) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
+        "query": "select distinct datetime(endtime,\"HH:mm\"), count(*) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${milestoneGoal} and not ${conversionGoal}",
         "type": "COLUMN_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
