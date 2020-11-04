@@ -103,7 +103,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link2;lt=green;gt=red;eq=yellow !PU(link):link1",
       "query": "select AVG(useraction.duration) as \"Duration\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -122,7 +122,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link1;lt=green;gt=red;eq=yellow !PU(link):link2",
       "query": "select AVG(useraction.duration) as \"Duration\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -173,7 +173,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\uD83D\uDEA8",
+      "customName": "\uD83D\uDEA8 !PU(compare):link=link4;lt=green;gt=red;eq=yellow !PU(link):link3",
       "query": "select sum(useraction.errorCount) as \"Errors\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -192,7 +192,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\uD83D\uDEA8",
+      "customName": "\uD83D\uDEA8 !PU(compare):link=link3;lt=green;gt=red;eq=yellow !PU(link):link4",
       "query": "select sum(useraction.errorCount) as \"Errors\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -307,7 +307,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\uD83D\uDE21",
+      "customName": "\uD83D\uDE21 !PU(compare):link=link6;lt=green;gt=red;eq=yellow !PU(link):link5",
       "query": "select sum(numberOfRageClicks) as \"Rages\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and  numberOfRageClicks>0 and ${journey.where-1} and ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -326,7 +326,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\uD83D\uDE21",
+      "customName": "\uD83D\uDE21 !PU(compare):link=link5;lt=green;gt=red;eq=yellow !PU(link):link6",
       "query": "select sum(numberOfRageClicks) as \"Rages\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and  numberOfRageClicks>0 and ${journey.where-1} and not ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -345,7 +345,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\uD83D\uDE34",
+      "customName": "\uD83D\uDE34 !PU(compare):link=link8;lt=green;gt=red;eq=yellow !PU(link):link7",
       "query": "select count(usersessionid) as \"Sessions\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and usersession.duration>180000 and ${journey.where-1} and ${journey.where-2} and userActionCount<10",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -364,7 +364,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\uD83D\uDE34",
+      "customName": "\uD83D\uDE34 !PU(compare):link=link7;lt=green;gt=red;eq=yellow !PU(link):link8",
       "query": "select count(usersessionid) as \"Sessions\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and usersession.duration>180000 and ${journey.where-1} and not ${journey.where-2} and userActionCount<10",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
