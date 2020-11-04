@@ -32,7 +32,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=high;warn=35;crit=25",
         "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and userExperienceScore=\"SATISFIED\" and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -47,7 +47,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=high;warn=35;crit=25",
         "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and userExperienceScore=\"TOLERATED\" and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -62,7 +62,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=high;warn=35;crit=25",
         "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and userExperienceScore=\"FRUSTRATED\" and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -135,7 +135,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=high;warn=35;crit=25",
         "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -191,7 +191,7 @@
             "height": 304
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
         "query": "SELECT browserFamily, count(userSessionId) FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${conversionGoal} group by browserFamily order by count(userSessionId) desc",
         "type": "PIE_CHART",
         "limit": 50
@@ -206,7 +206,7 @@
             "height": 304
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
         "query": "SELECT City, count(userSessionId) FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${conversionGoal} group by City order by count(userSessionId) desc",
         "type": "PIE_CHART",
         "limit": 50
