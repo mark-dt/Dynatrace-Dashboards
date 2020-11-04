@@ -32,7 +32,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=high;warn=35;crit=25",
+        "customName": "!PU(color):base=high;warn=${MyConversionsSATW};crit=${MyConversionsSATC}",
         "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and userExperienceScore=\"SATISFIED\" and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -47,7 +47,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=high;warn=35;crit=25",
+        "customName": "!PU(color):base=high;warn=${MyConversionsSATW};crit=${MyConversionsSATC}",
         "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and userExperienceScore=\"TOLERATED\" and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -62,7 +62,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=high;warn=35;crit=25",
+        "customName": "!PU(color):base=high;warn=${MyConversionsSATW};crit=${MyConversionsSATC}",
         "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and userExperienceScore=\"FRUSTRATED\" and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -135,7 +135,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=high;warn=35;crit=25",
+        "customName": "!PU(color):base=high;warn=${MyConversionsSATW};crit=${MyConversionsSATC}",
         "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"

@@ -32,7 +32,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=low;warn=25;crit=35",
+        "customName": "!PU(color):base=low;warn=${MyAbandonsSATW};crit=${MyAbandonsSATC}",
         "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and userExperienceScore=\"SATISFIED\" and ${milestoneGoal} and not ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -47,7 +47,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=low;warn=25;crit=35",
+        "customName": "!PU(color):base=low;warn=${MyAbandonsSATW};crit=${MyAbandonsSATC}",
         "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and userExperienceScore=\"TOLERATED\" and ${milestoneGoal} and not ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -62,7 +62,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=low;warn=25;crit=35",
+        "customName": "!PU(color):base=low;warn=${MyAbandonsSATW};crit=${MyAbandonsSATC}",
         "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and userExperienceScore=\"FRUSTRATED\" and ${milestoneGoal} and not ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -135,7 +135,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=low;warn=25;crit=35",
+        "customName": "!PU(color):base=low;warn=${MyAbandonsSATW};crit=${MyAbandonsSATC}",
         "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${milestoneGoal} and not ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
