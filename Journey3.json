@@ -147,7 +147,7 @@
         }
     }, {
         "name": "Sessions",
-        "tileType": "HEADER",
+        "tileType": "Markdown",
         "configured": true,
         "bounds": {
             "top": 152,
@@ -155,10 +155,11 @@
             "width": 152,
             "height": 38
         },
-        "tileFilter": {}
+        "tileFilter": {},
+        "markdown": "## [Sessions](#usersearchoverview;filtrfilterApplication=${app.id})"
     }, {
         "name": "Abandons",
-        "tileType": "HEADER",
+        "tileType": "Markdown",
         "configured": true,
         "bounds": {
             "top": 380,
@@ -169,7 +170,7 @@
         "tileFilter": {}
     }, {
         "name": "Apdex",
-        "tileType": "HEADER",
+        "tileType": "Markdown",
         "configured": true,
         "bounds": {
             "top": 570,

@@ -380,7 +380,7 @@
         "markdown": "## [${journey.header-5}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda734)"
     }, {
         "name": "Sessions",
-        "tileType": "HEADER",
+        "tileType": "Markdown",
         "configured": true,
         "bounds": {
             "top": 152,
@@ -388,10 +388,11 @@
             "width": 152,
             "height": 38
         },
-        "tileFilter": {}
+        "tileFilter": {},
+        "markdown": "## [Sessions](#usersearchoverview;filtrfilterApplication=${app.id})"
     }, {
         "name": "Abandons",
-        "tileType": "HEADER",
+        "tileType": "Markdown",
         "configured": true,
         "bounds": {
             "top": 380,
@@ -402,7 +403,7 @@
         "tileFilter": {}
     }, {
         "name": "Apdex",
-        "tileType": "HEADER",
+        "tileType": "Markdown",
         "configured": true,
         "bounds": {
             "top": 570,
