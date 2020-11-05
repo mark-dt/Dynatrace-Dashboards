@@ -134,43 +134,55 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [NonEngaged](${url}/ui/user-sessions/query?sessionquerytileconfigid=55885bfd-7d70-450d-b0a6-8570fe60dd00&sessionquery=select%20userid%20from%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20%20%20and%20usersession.duration%3E180000%20and%20((useraction.application%3D%22${app.name}%22%20and%20${uspClause}%20${regionClause}%20and%20usersession.duration%3E180000%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20userActionCount%3C10&visualization=TABLE"
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 494,
-            "left": 4408,
-            "width": 304,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "## [NonEngaged](${url}/ui/user-sessions/query?sessionquerytileconfigid=dd66617c-b601-44f6-982c-a871cc80b8a0&sessionquery=select%20userid%20from%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20usersession.duration%3E180000%20and%20${journey.where-1}%20and%20not%20${journey.where-2}%20and%20userActionCount%3C10&visualization=TABLE"
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 114,
-            "left": 4712,
-            "width": 304,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "## [Rage](${url}/ui/user-sessions/query?sessionquery=select%20userid%2CnumberOfRageClicks%20from%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20numberOfRageClicks%3E0%20and%20${journey.where-1}%20and%20${journey.where-2}&visualization=TABLE)"
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 494,
-            "left": 4712,
-            "width": 304,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "## [Rage](${url}/ui/user-sessions/query?sessionquery=select%20userid%2CnumberOfRageClicks%20from%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20numberOfRageClicks%3E0%20and%20${journey.where-1}%20and%20not%20${journey.where-2}&visualization=TABLE)"
+      "markdown": "## [NonEngaged](${url}/ui/user-sessions/query?sessionquerytileconfigid=55885bfd-7d70-450d-b0a6-8570fe60dd00&sessionquery=select%20userid%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${uspClause}%20${regionClause}%20and%20usersession.duration%3E180000%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20userActionCount%3C10&visualization=TABLE)"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 4408,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "markdown": "## [NonEngaged](${url}/ui/user-sessions/query?sessionquerytileconfigid=dd66617c-b601-44f6-982c-a871cc80b8a0&sessionquery=select%20userid%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${uspClause}%20${regionClause}%20and%20usersession.duration%3E180000%20and%20${journey.where-1}%20and%20not%20${journey.where-2}%20and%20userActionCount%3C10&visualization=TABLE)"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 114,
+        "left": 4712,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "markdown": "## [Rage](${url}/ui/user-sessions/query?sessionquery=select%20userid,numberOfRageClicks%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${uspClause}%20${regionClause}%20and%20numberOfRageClicks%3E0%20and%20${journey.where-1}%20and%20${journey.where-2}&visualization=TABLE)"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 4712,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "markdown": "## [Rage](${url}/ui/user-sessions/query?sessionquery=select%20userid,numberOfRageClicks%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${uspClause}%20${regionClause}%20and%20numberOfRageClicks%3E0%20and%20${journey.where-1}%20and%20not%20${journey.where-2}&visualization=TABLE)"
     }, {
         "name": "DTAQL",
         "tileType": "DTAQL",
@@ -183,7 +195,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83D\uDE21 !PU(compare):link=link6;lt=green;gt=red;eq=yellow !PU(link):link5",
-        "query": "select sum(numberOfRageClicks) as \"Rages\" from usersession where useraction.application in (\"${app.name}\")   and  numberOfRageClicks>0 and ((useraction.application=\"${app.name}\"  ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2}",
+        "query": "select sum(numberOfRageClicks) as \"Rages\" from usersession where useraction.application in (\"${app.name}\")   and  numberOfRageClicks>0 ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -198,7 +210,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83D\uDE21 !PU(compare):link=link5;lt=green;gt=red;eq=yellow !PU(link):link6",
-        "query": "select sum(numberOfRageClicks) as \"Rages\" from usersession where useraction.application in (\"${app.name}\")   and  numberOfRageClicks>0 and ((useraction.application=\"${app.name}\"  ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2}",
+        "query": "select sum(numberOfRageClicks) as \"Rages\" from usersession where useraction.application in (\"${app.name}\")   and  numberOfRageClicks>0 ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -213,7 +225,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83D\uDE34 !PU(compare):link=link8;lt=green;gt=red;eq=yellow !PU(link):link7",
-        "query": "select count(usersessionid) as \"Sessions\" from usersession where useraction.application in (\"${app.name}\")   and usersession.duration>180000 and ((useraction.application=\"${app.name}\"  ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2} and userActionCount<10",
+        "query": "select count(usersessionid) as \"Sessions\" from usersession where useraction.application in (\"${app.name}\")   and usersession.duration>180000 ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2} and userActionCount<10",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -228,7 +240,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83D\uDE34 !PU(compare):link=link7;lt=green;gt=red;eq=yellow !PU(link):link8",
-        "query": "select count(usersessionid) as \"Sessions\" from usersession where useraction.application in (\"${app.name}\")   and usersession.duration>180000 and ((useraction.application=\"${app.name}\"  ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2} and userActionCount<10",
+        "query": "select count(usersessionid) as \"Sessions\" from usersession where useraction.application in (\"${app.name}\")   and usersession.duration>180000 ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2} and userActionCount<10",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
