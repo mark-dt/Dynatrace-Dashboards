@@ -1,26 +1,27 @@
 ﻿{
-  "metadata": {
-    "configurationVersions": [
-      3
-    ],
-    "clusterVersion": "1.187.0.20200124-105915"
-  },
+	"metadata": {
+		"configurationVersions": [
+			2
+		],
+		"clusterVersion": "1.175.0.20190729-125021"
+	},
   "id": "1fc1af04-a855-43cb-855c-c32f4ecda505",
-  "dashboardMetadata": {
-    "name": "${UserJourneyName} Forensics - ${journey.header-1}",
-    "shared": true,
-    "owner": "MyEmail",
-    "sharingDetails": {
-      "linkShared": true,
-      "published": true
-    },
-    "dashboardFilter": {
-      "timeframe": "l_2_HOURS",
-      "managementZone": null
-    },
+	"dashboardMetadata": {
+		"name": "${UserJourneyName} Forensics - ${journey.header-1}",
+		"shared": true,
+		"owner": "MyEmail",
+		"sharingDetails": {
+			"linkShared": true,
+			"published": true
+		},
+		"dashboardFilter": {
+			"timeframe": "l_2_HOURS",
+			"managementZone": null
+		},
     "tags": ["${UserJourneyName}", "${app.name}", "Forensics"]
-  },
+	},
   "tiles": [
+    {
         "name": "Markdown",
         "tileType": "MARKDOWN",
         "configured": true,
