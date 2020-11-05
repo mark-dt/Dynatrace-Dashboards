@@ -383,7 +383,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\ud83d\udc4d",
+      "customName": "\ud83d\udc4d !PU(compare):link=link10;lt=green;gt=red;eq=yellow !PU(link):link9",
       "query": "select count(usersessionid) as \"Requests\" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -402,7 +402,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\ud83d\udc4e",
+      "customName": "\ud83d\udc4e !PU(compare):link=link9;lt=green;gt=red;eq=yellow !PU(link):link10",
       "query": "select count(usersessionid) as \"Requests\" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -496,7 +496,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link12;lt=green;gt=red;eq=yellow !PU(link):link11",
       "query": "select AVG(useraction.serverTime) as \"Server\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -515,7 +515,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link11;lt=green;gt=red;eq=yellow !PU(link):link12",
       "query": "select AVG(useraction.serverTime) as \"Server\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -534,7 +534,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link14;lt=green;gt=red;eq=yellow !PU(link):link13",
       "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -553,7 +553,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link13;lt=green;gt=red;eq=yellow !PU(link):link14",
       "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -572,7 +572,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link16;lt=green;gt=red;eq=yellow !PU(link):link15",
       "query": "select AVG(useraction.requestStart) as \"Request Start\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -591,7 +591,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1!PU(compare):link=link15;lt=green;gt=red;eq=yellow !PU(link):link16",
       "query": "select AVG(useraction.requestStart) as \"Request Start\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -610,7 +610,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link18;lt=green;gt=red;eq=yellow !PU(link):link17",
       "query": "select AVG(useraction.loadEventEnd) as \"Load Event End\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -629,7 +629,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link17;lt=green;gt=red;eq=yellow !PU(link):link18",
       "query": "select AVG(useraction.loadEventEnd) as \"Load Event End\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -648,7 +648,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link20;lt=green;gt=red;eq=yellow !PU(link):link19",
       "query": "select AVG(useraction.documentInteractiveTime) as \"DOM Interactive\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -667,7 +667,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1!PU(compare):link=link19;lt=green;gt=red;eq=yellow !PU(link):link20",
       "query": "select AVG(useraction.documentInteractiveTime) as \"DOM Interactive\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -686,7 +686,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\uD83D\uDEA8",
+      "customName": "\uD83D\uDEA8 !PU(compare):link=link22;lt=green;gt=red;eq=yellow !PU(link):link21",
       "query": "select sum(useraction.failedImages) as \"Failed Images\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -705,7 +705,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\uD83D\uDEA8",
+      "customName": "\uD83D\uDEA8!PU(compare):link=link21;lt=green;gt=red;eq=yellow !PU(link):link22",
       "query": "select sum(useraction.failedImages) as \"Failed Images\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -724,7 +724,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link24;lt=green;gt=red;eq=yellow !PU(link):link23",
       "query": "select AVG(useraction.visuallyCompleteTime) as \"Visually Complete\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -743,7 +743,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link26;lt=green;gt=red;eq=yellow !PU(link):link25",
       "query": "select AVG(useraction.speedIndex) as \"Speed Index\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -762,7 +762,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link23;lt=green;gt=red;eq=yellow !PU(link):link24",
       "query": "select AVG(useraction.visuallyCompleteTime) as \"Visually Complete\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
@@ -781,7 +781,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "\u23F1",
+      "customName": "\u23F1 !PU(compare):link=link25;lt=green;gt=red;eq=yellow !PU(link):link26",
       "query": "select AVG(useraction.speedIndex) as \"Speed Index\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where-1} and not ${journey.where-2}",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
