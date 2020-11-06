@@ -253,7 +253,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(compare):link=linkg;lt=white;gt=yellow;eq=yellow !PU(link):linkh",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause1} ${uspClause1} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and not ${journey.where-8}",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause1} ${uspClause1} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and not $(journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -419,7 +419,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(compare):link=linkh;lt=white;gt=yellow;eq=yellow !PU(link):linkg",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause2} ${uspClause2} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and not ${journey.where-8}",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause2} ${uspClause2} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and not ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
