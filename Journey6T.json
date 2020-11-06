@@ -33,7 +33,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": " ",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -74,7 +74,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": " ",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -115,7 +115,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": " ",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -125,12 +125,7 @@
                     "aggregation": "AVG",
                     "type": "LINE",
                     "entityType": "APPLICATION_METHOD",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.application_method",
-                        "values": [],
-                        "entityDimension": true
-                    }],
+                    "dimensions": [],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
@@ -161,7 +156,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": " ",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -202,7 +197,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": " ",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -243,7 +238,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": " ",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
@@ -282,7 +277,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -297,7 +292,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and not ${journey.where-3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -312,7 +307,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and not ${journey.where-4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -327,7 +322,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and not ${journey.where-5}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -342,7 +337,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and not ${journey.where-6}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -357,7 +352,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": " ",
+        "customName": "!PU(color):base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}",
         "query": "select 0 as \"Abandons\" from usersession limit 1",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"

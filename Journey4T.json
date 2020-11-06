@@ -125,12 +125,7 @@
                     "aggregation": "AVG",
                     "type": "LINE",
                     "entityType": "APPLICATION_METHOD",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.application_method",
-                        "values": [],
-                        "entityDimension": true
-                    }],
+                    "dimensions": [],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
