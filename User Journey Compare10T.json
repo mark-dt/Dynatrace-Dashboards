@@ -88,7 +88,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 38,
+            "top": 0,
             "left": 2850,
             "width": 380,
             "height": 38
@@ -99,7 +99,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 456,
+            "top": 418,
             "left": 2850,
             "width": 380,
             "height": 38
