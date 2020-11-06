@@ -58,7 +58,7 @@
         "markdown": "## [${journey.header-3}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda734)"
     }, {
         "name": "Sessions",
-        "tileType": "HEADER",
+        "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
             "top": 152,
@@ -66,10 +66,11 @@
             "width": 152,
             "height": 38
         },
-        "tileFilter": {}
+        "tileFilter": {},
+        "markdown": "## [Sessions](#usersearchoverview;filtrfilterApplication=${app.id})"
     }, {
         "name": "Abandons",
-        "tileType": "HEADER",
+        "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
             "top": 342,
@@ -77,10 +78,11 @@
             "width": 152,
             "height": 38
         },
-        "tileFilter": {}
+        "tileFilter": {},
+        "markdown": "## [Abandons](#dashboard;id=0d81ee7c-f7ba-4626-a086-60b76ecda505)"
     }, {
         "name": "Duration",
-        "tileType": "HEADER",
+        "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
             "top": 494,
@@ -88,10 +90,11 @@
             "width": 152,
             "height": 38
         },
-        "tileFilter": {}
+        "tileFilter": {},
+        "markdown": "## [Duration](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=action)"
     }, {
         "name": "Errors",
-        "tileType": "HEADER",
+        "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
             "top": 646,
@@ -99,7 +102,8 @@
             "width": 152,
             "height": 38
         },
-        "tileFilter": {}
+        "tileFilter": {},
+        "markdown": "## [Errors](#uemapplications/uemappmetrics;uemapplicationId=${app.id};visiblepart=jserror-details)"
     }, {
         "name": "DTAQL",
         "tileType": "DTAQL",
