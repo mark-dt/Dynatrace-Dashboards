@@ -80,7 +80,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "\uD83D\uDEA8 !PU(compare):link=link4;lt=green;gt=red;eq=yellow !PU(link):link3",
+        "customName": "\uD83D\uDEA8 !PU(compare):link=link4;lt=white;gt=yellow;eq=white !PU(link):link3",
         "query": "select sum(useraction.errorCount) as \"Errors\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -95,7 +95,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "\uD83D\uDEA8 !PU(compare):link=link3;lt=green;gt=red;eq=yellow !PU(link):link4",
+        "customName": "\uD83D\uDEA8 !PU(compare):link=link3;lt=white;gt=yellow;eq=white !PU(link):link4",
         "query": "select sum(useraction.errorCount) as \"Errors\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and not ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -194,7 +194,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "\uD83D\uDE21 !PU(compare):link=link6;lt=green;gt=red;eq=yellow !PU(link):link5",
+        "customName": "\uD83D\uDE21 !PU(compare):link=link6;lt=white;gt=yellow;eq=white !PU(link):link5",
         "query": "select sum(numberOfRageClicks) as \"Rages\" from usersession where useraction.application in (\"${app.name}\")   and  numberOfRageClicks>0 ${uspClause} ${regionClause} and ${journey.where-8} and ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -209,7 +209,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "\uD83D\uDE21 !PU(compare):link=link5;lt=green;gt=red;eq=yellow !PU(link):link6",
+        "customName": "\uD83D\uDE21 !PU(compare):link=link5;lt=white;gt=yellow;eq=white !PU(link):link6",
         "query": "select sum(numberOfRageClicks) as \"Rages\" from usersession where useraction.application in (\"${app.name}\")   and  numberOfRageClicks>0 ${uspClause} ${regionClause} and ${journey.where-8} and not ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -224,7 +224,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "\uD83D\uDE34 !PU(compare):link=link8;lt=green;gt=red;eq=yellow !PU(link):link7",
+        "customName": "\uD83D\uDE34 !PU(compare):link=link8;lt=white;gt=yellow;eq=white !PU(link):link7",
         "query": "select count(usersessionid) as \"Sessions\" from usersession where useraction.application in (\"${app.name}\")   and usersession.duration>180000 ${uspClause} ${regionClause} and ${journey.where-8} and ${journey.where-9} and userActionCount<10",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -239,7 +239,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "\uD83D\uDE34 !PU(compare):link=link7;lt=green;gt=red;eq=yellow !PU(link):link8",
+        "customName": "\uD83D\uDE34 !PU(compare):link=link7;lt=white;gt=yellow;eq=white !PU(link):link8",
         "query": "select count(usersessionid) as \"Sessions\" from usersession where useraction.application in (\"${app.name}\")   and usersession.duration>180000 ${uspClause} ${regionClause} and ${journey.where-8} and not ${journey.where-9} and userActionCount<10",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -309,7 +309,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=link12;lt=green;gt=red;eq=yellow !PU(link):link11",
+        "customName": "⏱ !PU(compare):link=link12;lt=white;gt=yellow;eq=white !PU(link):link11",
         "query": "select AVG(useraction.serverTime) as \"Server\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -324,7 +324,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=link11;lt=green;gt=red;eq=yellow !PU(link):link12",
+        "customName": "⏱ !PU(compare):link=link11;lt=white;gt=yellow;eq=white !PU(link):link12",
         "query": "select AVG(useraction.serverTime) as \"Server\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and not ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -339,7 +339,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=link14;lt=green;gt=red;eq=yellow !PU(link):link13",
+        "customName": "⏱ !PU(compare):link=link14;lt=white;gt=yellow;eq=white !PU(link):link13",
         "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -354,7 +354,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=link13;lt=green;gt=red;eq=yellow !PU(link):link14",
+        "customName": "⏱ !PU(compare):link=link13;lt=white;gt=yellow;eq=white !PU(link):link14",
         "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and not ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -369,7 +369,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=link16;lt=green;gt=red;eq=yellow !PU(link):link15",
+        "customName": "⏱ !PU(compare):link=link16;lt=white;gt=yellow;eq=white !PU(link):link15",
         "query": "select AVG(useraction.requestStart) as \"Request Start\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -384,7 +384,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱!PU(compare):link=link15;lt=green;gt=red;eq=yellow !PU(link):link16",
+        "customName": "⏱!PU(compare):link=link15;lt=white;gt=yellow;eq=white !PU(link):link16",
         "query": "select AVG(useraction.requestStart) as \"Request Start\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and not ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -399,7 +399,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=link18;lt=green;gt=red;eq=yellow !PU(link):link17",
+        "customName": "⏱ !PU(compare):link=link18;lt=white;gt=yellow;eq=white !PU(link):link17",
         "query": "select AVG(useraction.loadEventEnd) as \"Load Event End\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -414,7 +414,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=link17;lt=green;gt=red;eq=yellow !PU(link):link18",
+        "customName": "⏱ !PU(compare):link=link17;lt=white;gt=yellow;eq=white !PU(link):link18",
         "query": "select AVG(useraction.loadEventEnd) as \"Load Event End\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and not ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -429,7 +429,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=link20;lt=green;gt=red;eq=yellow !PU(link):link19",
+        "customName": "⏱ !PU(compare):link=link20;lt=white;gt=yellow;eq=white !PU(link):link19",
         "query": "select AVG(useraction.documentInteractiveTime) as \"DOM Interactive\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -444,7 +444,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱!PU(compare):link=link19;lt=green;gt=red;eq=yellow !PU(link):link20",
+        "customName": "⏱!PU(compare):link=link19;lt=white;gt=yellow;eq=white !PU(link):link20",
         "query": "select AVG(useraction.documentInteractiveTime) as \"DOM Interactive\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and not ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -459,7 +459,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "\uD83D\uDEA8 !PU(compare):link=link22;lt=green;gt=red;eq=yellow !PU(link):link21",
+        "customName": "\uD83D\uDEA8 !PU(compare):link=link22;lt=white;gt=yellow;eq=white !PU(link):link21",
         "query": "select sum(useraction.failedImages) as \"Failed Images\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -474,7 +474,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "\uD83D\uDEA8!PU(compare):link=link21;lt=green;gt=red;eq=yellow !PU(link):link22",
+        "customName": "\uD83D\uDEA8!PU(compare):link=link21;lt=white;gt=yellow;eq=white !PU(link):link22",
         "query": "select sum(useraction.failedImages) as \"Failed Images\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and not ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -489,7 +489,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=link24;lt=green;gt=red;eq=yellow !PU(link):link23",
+        "customName": "⏱ !PU(compare):link=link24;lt=white;gt=yellow;eq=white !PU(link):link23",
         "query": "select AVG(useraction.visuallyCompleteTime) as \"Visually Complete\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -504,7 +504,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=link26;lt=green;gt=red;eq=yellow !PU(link):link25",
+        "customName": "⏱ !PU(compare):link=link26;lt=white;gt=yellow;eq=white !PU(link):link25",
         "query": "select AVG(useraction.speedIndex) as \"Speed Index\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -519,7 +519,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=link23;lt=green;gt=red;eq=yellow !PU(link):link24",
+        "customName": "⏱ !PU(compare):link=link23;lt=white;gt=yellow;eq=white !PU(link):link24",
         "query": "select AVG(useraction.visuallyCompleteTime) as \"Visually Complete\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and not ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -534,7 +534,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=link25;lt=green;gt=red;eq=yellow !PU(link):link26",
+        "customName": "⏱ !PU(compare):link=link25;lt=white;gt=yellow;eq=white !PU(link):link26",
         "query": "select AVG(useraction.speedIndex) as \"Speed Index\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and not ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -940,7 +940,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=linkb;lt=green;gt=red;eq=yellow !PU(link):linka",
+        "customName": "⏱ !PU(compare):link=linkb;lt=white;gt=yellow;eq=white !PU(link):linka",
         "query": "select AVG(useraction.duration) as \"Duration\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
@@ -956,7 +956,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "⏱ !PU(compare):link=linka;lt=green;gt=red;eq=yellow !PU(link):linkb",
+        "customName": "⏱ !PU(compare):link=linka;lt=white;gt=yellow;eq=white !PU(link):linkb",
         "query": "select AVG(useraction.duration) as \"Duration\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-8} and not ${journey.where-9}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
