@@ -92,7 +92,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Customer Satisfaction",
+        "name": "Crashes by OS",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -212,7 +212,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and newuser is true",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and hascrash is true",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -228,7 +228,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and useraction.name=\"${kuaFirstStep}\" and useraction.name=\"${kuaLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and useraction.name=\"${kuaFirstStep.name}\" and useraction.name=\"${kuaLastStep.name}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -244,7 +244,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and useraction.name=\"${kuaFirstStep}\" and not useraction.name=\"${kuaLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and useraction.name=\"${kuaFirstStep.name}\" and not useraction.name=\"${kuaLastStep.name}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -260,7 +260,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "New User Sessions",
+        "name": "Crash Count",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
