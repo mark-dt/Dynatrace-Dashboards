@@ -525,7 +525,7 @@
             "height": 228
         },
         "tileFilter": {},
-        "markdown": "![]()\n## Sessions![]()\n## That![]()\n## Continued![]()\n## To![]()\n## ${journey.where-2}"
+        "markdown": "![]()\n## Sessions![]()\n## That![]()\n## Continued![]()\n## To![]()\n## ${journey.header-2}"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -549,7 +549,7 @@
             "height": 228
         },
         "tileFilter": {},
-        "markdown": "![]()\n## Sessions![]()\n## That![]()\n## Exited![]()\n## At![]()\n## ${journey.where-1}"
+        "markdown": "![]()\n## Sessions![]()\n## That![]()\n## Exited![]()\n## At![]()\n## ${journey.header-1}"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
