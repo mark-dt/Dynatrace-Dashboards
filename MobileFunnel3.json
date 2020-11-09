@@ -91,7 +91,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Duration](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=action)"
+        "markdown": "## [Duration](#uemapplications/#mobileperformanceanalysis;appId=${app.id};visiblepart=action)"
     }, {
         "name": "Errors",
         "tileType": "MARKDOWN",
