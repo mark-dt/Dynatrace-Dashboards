@@ -46,10 +46,6 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
-                        "lastModified": 1595311472128,
-                        "customColor": "#7c38a1"
-                    }
                 }
             },
             "filtersPerEntityType": {
@@ -87,10 +83,6 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
-                        "lastModified": 1595311416699,
-                        "customColor": "#fff29a"
-                    }
                 }
             },
             "filtersPerEntityType": {
@@ -133,9 +125,6 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
-                        "lastModified": 1595311507997,
-                        "customColor": "#4fd5e0"
                     }
                 }
             },
