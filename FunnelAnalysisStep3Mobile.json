@@ -7,7 +7,7 @@
 	},
 	"id": "10a69069-74c2-4eba-b18a-6856d91da556",
 	"dashboardMetadata": {
-		"name": "${UserJourneyName} Forensics - ${journey.where-3}",
+		"name": "${UserJourneyName} Forensics - ${journey.header-3}",
 		"shared": true,
 		"owner": "MyEmail",
 		"sharingDetails": {
