@@ -114,7 +114,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Conversions by City",
+        "name": "Conversions by Carrier",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -170,7 +170,7 @@
         },
         "limit": 50
     }, {
-        "name": "Conversions by Browser",
+        "name": "Conversions by Device",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -192,7 +192,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT browserFamily, count(userSessionId) FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${kuaConversion} group by browserFamily order by count(userSessionId) desc",
+        "query": "SELECT device, count(userSessionId) FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${kuaConversion} group by device order by count(userSessionId) desc",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -207,7 +207,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT City, count(userSessionId) FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${kuaConversion} group by City order by count(userSessionId) desc",
+        "query": "SELECT carrier, count(userSessionId) FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${kuaConversion} group by carrier order by count(userSessionId) desc",
         "type": "PIE_CHART",
         "limit": 50
     }]
