@@ -402,7 +402,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Crashes](${url}/ui/user-sessions/query?sessionquery=select%20userid,useraction.failedImages%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-4}%20and%20${journey.where-5}%20and%20useraction.failedImages%3E0%20order%20by%20useraction.failedImages%20desc&visualization=TABLE)"
+        "markdown": "## [Crashes](${url}/ui/user-sessions/query?sessionquery=select%20userid%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-4}%20and%20${journey.where-5}%20and%20hascrash%20is%20true&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -414,7 +414,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Crashes](${url}/ui/user-sessions/query?sessionquery=select%20userid,useraction.failedImages%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-4}%20and%20not%20${journey.where-5}%20and%20useraction.failedImages%3E0%20order%20by%20useraction.failedImages%20DESC&visualization=TABLE)"
+        "markdown": "## [Crashes](${url}/ui/user-sessions/query?sessionquery=select%20userid%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-4}%20and%20not%20${journey.where-5}%20and%20hascrash%20is%20true&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
