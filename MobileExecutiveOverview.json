@@ -1,0 +1,360 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.199.0.20200713-183259"
+    },
+    "id": "4f08d265-a0a3-4bb9-93ee-c2f1221ddcd3",
+    "dashboardMetadata": {
+        "name": "${overviewName} ${app.name} Executive Overview",
+        "shared": false,
+        "owner": "techshadyjk@ruxitlabs.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "l_24_HOURS"
+        },
+        "tags": ["${app.name}", "Executive", "Overview"]
+    },
+    "tiles": [{
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 304,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:apps.other.uaCount.osAndApdex",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
+                    "dimensions": [{
+                        "id": "2",
+                        "name": "Apdex category",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+
+                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.other.uaCount.osAndApdex|NONE|TOTAL|LINE|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1604956001284,
+                        "customColor": "#FF1C1C"
+                    },
+                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.other.uaCount.osAndApdex|NONE|TOTAL|LINE|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1604955994717,
+                        "customColor": "#39ff14"
+                    },
+                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.other.uaCount.osAndApdex|NONE|TOTAL|LINE|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1604956007878,
+                        "customColor": "#ffe11c"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 0,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Customer Satisfaction Over Time"
+    }, {
+        "name": "Customer Satisfaction",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Customer Satisfaction",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1368,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 0,
+            "width": 1672,
+            "height": 456
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:apps.other.uaCount.osAndApdex",
+                    "aggregation": "NONE",
+                    "type": "AREA",
+                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
+                    "dimensions": [{
+                        "id": "2",
+                        "name": "Apdex category",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.other.uaCount.osAndApdex|NONE|TOTAL|AREA|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1604956401829,
+                        "customColor": "#FF1C1C"
+                    },
+                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.other.uaCount.osAndApdex|NONE|TOTAL|AREA|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1604956395057,
+                        "customColor": "#39ff14"
+                    },
+                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.other.uaCount.osAndApdex|NONE|TOTAL|AREA|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1604956407422,
+                        "customColor": "#ffe11c"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 342,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 684,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1026,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and bounce is true",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 342,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and newuser is true",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 684,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and useraction.name=\"${kuaFirstStep}\" and useraction.name=\"${kuaLastStep}\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 1026,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and useraction.name=\"${kuaFirstStep}\" and not useraction.name=\"${kuaLastStep}\"",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Total Sessions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 342,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "New User Sessions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 342,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Requests",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 684,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Bounces",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1026,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Conversions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 684,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Abandons",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 1026,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1368,
+            "width": 304,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:apps.other.crashCount.osAndGeo",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "dt.entity.os",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }]
+}
