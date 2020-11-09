@@ -66,11 +66,7 @@
                     }
                 }
             },
-            "filtersPerEntityType": {
-                "APPLICATION": {
-                    "SPECIFIC_ENTITIES": ["${app.id}"]
-                }
-            }
+            "filtersPerEntityType": {}
         }
     }, {
         "name": "Markdown",
