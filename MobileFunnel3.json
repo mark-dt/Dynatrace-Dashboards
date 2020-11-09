@@ -5,7 +5,7 @@
     },
     "id": "65312f05-ca6c-4896-b2b4-1bc8ce3da555",
     "dashboardMetadata": {
-        "name": "${UserJourneyName} User Journey ",
+        "name": "${UserJourneyName} User Journey",
         "shared": true,
         "owner": "MyEmail",
         "sharingDetails": {
@@ -18,129 +18,51 @@
         "tags": ["${UserJourneyName}", "${app.name}", "User Journey"]
     },
     "tiles": [{
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
+        "name": "DTAQL",
+        "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 494,
-            "left": 152,
-            "width": 304,
-            "height": 304
+            "top": 304,
+            "left": 494,
+            "width": 228,
+            "height": 152
         },
         "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "SINGLE_VALUE",
-                "series": [{
-                    "metric": "builtin:apps.other.keyUserActions.apdexValue.os",
-                    "aggregation": "NONE",
-                    "type": "LINE",
-                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION_METHOD",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {
-                }
-            },
-            "filtersPerEntityType": {
-                "APPLICATION_METHOD": {
-                    "SPECIFIC_ENTITIES": ["${journey.methods-1}"]
-                }
-            }
-        }
+        "customName": " ",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
     }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 494,
-            "left": 456,
-            "width": 304,
-            "height": 304
+            "top": 0,
+            "left": 494,
+            "width": 228,
+            "height": 38
         },
         "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "SINGLE_VALUE",
-                "series": [{
-                    "metric": "builtin:apps.other.keyUserActions.apdexValue.os",
-                    "aggregation": "NONE",
-                    "type": "LINE",
-                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION_METHOD",
-                    "dimensions": [],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {
-                }
-            },
-            "filtersPerEntityType": {
-                "APPLICATION_METHOD": {
-                    "SPECIFIC_ENTITIES": ["${journey.methods-2}"]
-                }
-            }
-        }
+        "markdown": "## [${journey.header-1}](#dashboard;id=1fc1af04-a855-43cb-855c-c32f4ecda734)"
     }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 494,
-            "left": 760,
-            "width": 304,
-            "height": 304
+            "top": 0,
+            "left": 950,
+            "width": 228,
+            "height": 38
         },
         "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "SINGLE_VALUE",
-                "series": [{
-                    "metric": "builtin:apps.other.keyUserActions.apdexValue.os",
-                    "aggregation": "NONE",
-                    "type": "LINE",
-                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION_METHOD",
-                    "dimensions": [{
-                        "id": "0",
-                        "name": "dt.entity.application_method",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {
-                    }
-                }
-            },
-            "filtersPerEntityType": {
-                "APPLICATION_METHOD": {
-                    "SPECIFIC_ENTITIES": ["${journey.methods-3}"]
-                }
-            }
-        }
+        "markdown": "## [${journey.header-3}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda734)"
     }, {
         "name": "Sessions",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
             "top": 152,
-            "left": 0,
+            "left": 342,
             "width": 152,
             "height": 38
         },
@@ -151,38 +73,50 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 380,
-            "left": 0,
+            "top": 342,
+            "left": 342,
             "width": 152,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Abandons](#dashboard;id=0d81ee7c-f7ba-4626-a086-60b76ecda555)"
+        "markdown": "## [Abandons](#dashboard;id=0d81ee7c-f7ba-4626-a086-60b76ecda505)"
     }, {
-        "name": "Apdex",
+        "name": "Duration",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 570,
-            "left": 0,
+            "top": 494,
+            "left": 342,
             "width": 152,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Apdex](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=action;a=Apdex)"
+        "markdown": "## [Duration](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=action)"
+    }, {
+        "name": "Errors",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 646,
+            "left": 342,
+            "width": 152,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Crashes](#mobileappoverview;appId=${app.id};visiblepart=Crashes"
     }, {
         "name": "DTAQL",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 342,
-            "left": 152,
-            "width": 304,
+            "top": 608,
+            "left": 494,
+            "width": 228,
             "height": 152
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
+        "query": "select count(*) as \"Crashess\" from usersession where hascrash=true useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -190,9 +124,24 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 342,
-            "left": 456,
-            "width": 304,
+            "top": 456,
+            "left": 494,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 722,
+            "width": 228,
             "height": 152
         },
         "tileFilter": {},
@@ -205,9 +154,9 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 342,
-            "left": 760,
-            "width": 304,
+            "top": 304,
+            "left": 950,
+            "width": 228,
             "height": 152
         },
         "tileFilter": {},
@@ -216,50 +165,86 @@
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
-        "name": "MARKDOWN",
-        "tileType": "MARKDOWN",
+        "name": "DTAQL",
+        "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 0,
-            "left": 152,
-            "width": 304,
-            "height": 38
+            "top": 456,
+            "left": 722,
+            "width": 228,
+            "height": 152
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-1}](#dashboard;id=1fc1af04-a855-43cb-855c-c32f4ecda555)"
+        "customName": " ",
+        "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-2} ",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
     }, {
-        "name": "MARKDOWN",
-        "tileType": "MARKDOWN",
+        "name": "DTAQL",
+        "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 0,
-            "left": 456,
-            "width": 304,
-            "height": 38
+            "top": 456,
+            "left": 950,
+            "width": 228,
+            "height": 152
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-2}](#dashboard;id=2662ddb8-dd6a-4345-a1bc-7ff069eda555)"
+        "customName": " ",
+        "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-3}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
     }, {
-        "name": "MARKDOWN",
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 722,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \"Crashess\" from usersession where hascrash=true useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 950,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \"Crashess\" from usersession where hascrash=true useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-3}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "Markdown",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 760,
-            "width": 304,
+            "left": 722,
+            "width": 228,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-3}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda555)"
+        "markdown": "## [${journey.header-2}](#dashboard;id=2662ddb8-dd6a-4345-a1bc-7ff069eda734)"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
             "top": 38,
-            "left": 152,
-            "width": 912,
-            "height": 304
+            "left": 494,
+            "width": 684,
+            "height": 266
         },
         "tileFilter": {},
         "customName": "${UserJourneyName} User Journey",
