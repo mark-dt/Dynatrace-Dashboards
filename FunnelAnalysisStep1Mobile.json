@@ -1,0 +1,566 @@
+﻿{
+  "metadata": {
+    "configurationVersions": [
+      3
+    ],
+    "clusterVersion": "1.187.0.20200124-105915"
+  },
+  "id": "1fc1af04-a855-43cb-855c-c32f4ecda556",
+  "dashboardMetadata": {
+    "name": "${UserJourneyName} Forensics - ${journey.where-1}",
+    "shared": true,
+    "owner": "MyEmail",
+    "sharingDetails": {
+      "linkShared": true,
+      "published": true
+    },
+    "dashboardFilter": {
+      "timeframe": "l_2_HOURS",
+      "managementZone": null
+    },
+    "tags": ["${app.name}","Forensics","User Journey"]
+  },
+    "tiles": [{
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 152,
+            "width": 380,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "Location",
+        "query": "select count(usersessionid) as \"Requests\",country FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and country!=\"synthetic\" and country IS NOT NULL group by country",
+        "type": "PIE_CHART"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 152,
+            "width": 380,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "Location",
+        "query": "select count(usersessionid) as \"Requests\",country FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2} and country!=\"synthetic\" and country IS NOT NULL group by country",
+        "type": "PIE_CHART"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 950,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Requests](${url}/ui/user-sessions/query?sessionquery=select%20UserId,duration%20FROM%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20order%20by%20duration%20desc&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 950,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Requests](${url}/ui/user-sessions/query?sessionquery=select%20UserId,duration%20FROM%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20not%20${journey.where-2}%20order%20by%20duration%20desc&visualization=TABLE)"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 1292,
+            "width": 304,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "⏱",
+        "query": "select AVG(useraction.duration) as \"Duration\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 1292,
+            "width": 304,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "⏱",
+        "query": "select AVG(useraction.duration) as \"Duration\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 1292,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Duration](${url}/ui/user-sessions/query?sessionquery=select%20userid,useraction.duration%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 1292,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Duration](${url}/ui/user-sessions/query?sessionquery=select%20userid,useraction.duration%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20not%20${journey.where-2}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 1634,
+            "width": 304,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "\uD83D\uDEA8",
+        "query": "select sum(useraction.errorCount) as \"Errors\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 1634,
+            "width": 304,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "\uD83D\uDEA8",
+        "query": "select sum(useraction.errorCount) as \"Errors\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 1634,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid,totalErrorCount%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and totalErrorCount%3E0%20order%20by%20totalErrorCount%20desc&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 1634,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid,totalErrorCount%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20not%20${journey.where-2}%20and totalErrorCount%3E0%20order%20by%20totalErrorCount%20DESC&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 2280,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [NonEngaged](${url}/ui/user-sessions/query?sessionquerytileconfigid=55885bfd-7d70-450d-b0a6-8570fe60dd00&sessionquery=select%20userid%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20usersession.duration%3E20000%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20userActionCount%3C5&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 2280,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [NonEngaged](${url}/ui/user-sessions/query?sessionquerytileconfigid=dd66617c-b601-44f6-982c-a871cc80b8a0&sessionquery=select%20userid%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20usersession.duration%3E20000%20and%20${journey.where-1}%20and%20not%20${journey.where-2}%20and%20userActionCount%3C5&visualization=TABLE)"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 2280,
+            "width": 304,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "\uD83D\uDE34",
+        "query": "select count(usersessionid) as \"Sessions\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and usersession.duration>20000 and ${journey.where-1} and ${journey.where-2} and userActionCount<5",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 2280,
+            "width": 304,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "\uD83D\uDE34",
+        "query": "select count(usersessionid) as \"Sessions\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and usersession.duration>20000 and ${journey.where-1} and not ${journey.where-2} and userActionCount<5",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 950,
+            "width": 304,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "\uD83D\uDC4D",
+        "query": "select count(usersessionid) as \"Requests\" FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 950,
+            "width": 304,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "\uD83D\uDC4E",
+        "query": "select count(usersessionid) as \"Requests\" FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "Request Breakdown",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 950,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Performance Breakdown",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1292,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 152,
+            "width": 2508,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Error Breakdown",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1634,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Usability Breakdown",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 2280,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 1102,
+            "left": 3724,
+            "width": 228,
+            "height": 228
+        },
+        "tileFilter": {},
+        "customName": "\uD83D\uDEA8",
+        "query": "select sum(useraction.httpRequestsWithErrors) as \"HTTP Errors\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 1938,
+            "width": 304,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "\uD83D\uDEA8",
+        "query": "select count(*) as \"Crashes\" from usersession where hascrash=true and useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 1938,
+            "width": 304,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "\uD83D\uDEA8",
+        "query": "select count(*) as \"Crashes\" from usersession where hascrash=true and useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 1102,
+            "left": 4180,
+            "width": 228,
+            "height": 228
+        },
+        "tileFilter": {},
+        "customName": "\uD83D\uDEA8",
+        "query": "select sum(useraction.failedXhrRequests) as \"Failed Xhr Requests\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1064,
+            "left": 3724,
+            "width": 228,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [HTTP Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid,useraction.httpRequestsWithErrors%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20not%20${journey.where-2}%20and%20useraction.httpRequestsWithErrors%3E0%20order%20by%20useraction.httpRequestsWithErrors%20DESC&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 1938,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Crashes](${url}/ui/user-sessions/query?sessionquery=select%20userid,useraction.failedImages%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20useraction.failedImages%3E0%20order%20by%20useraction.failedImages%20desc&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 1938,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Crashes](${url}/ui/user-sessions/query?sessionquery=select%20userid,useraction.failedImages%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20not%20${journey.where-2}%20and%20useraction.failedImages%3E0%20order%20by%20useraction.failedImages%20DESC&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1064,
+            "left": 4180,
+            "width": 228,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Failed Xhr Requests](${url}/ui/user-sessions/query?sessionquery=select%20userid,useraction.failedXhrRequests%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20not%20${journey.where-2}%20and%20useraction.failedXhrRequests%3E0%20order%20by%20useraction.failedXhrRequests%20DESC&visualization=TABLE)"
+    }, {
+        "name": "Environment Breakdown",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 152,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 152,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Requests by Location](${url}/ui/user-sessions/query?sessionquery=select%20UserId,country,duration%20FROM%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20country%21%3D%22synthetic%22%20order%20by%20duration%20desc&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 152,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Requests by Location](${url}/ui/user-sessions/query?sessionquery=select%20UserId,country,duration%20FROM%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20not%20${journey.where-2}%20and%20country%21%3D%22synthetic%22%20order%20by%20duration%20desc&visualization=TABLE)"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 532,
+            "width": 380,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "City",
+        "query": "select count(usersessionid) as \"Requests\",City FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} group by City",
+        "type": "PIE_CHART"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 532,
+            "width": 380,
+            "height": 266
+        },
+        "tileFilter": {},
+        "customName": "City",
+        "query": "select count(usersessionid) as \"Requests\",City FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2} group by City",
+        "type": "PIE_CHART"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 532,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Requests by City](${url}/ui/user-sessions/query?sessionquery=select%20UserId,City,duration%20FROM%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20order%20by%20duration%20desc&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 532,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Requests by City](${url}/ui/user-sessions/query?sessionquery=select%20UserId,City,duration%20FROM%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-1}%20and%20not%20${journey.where-2}%20order%20by%20duration%20desc&visualization=TABLE)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 0,
+            "width": 114,
+            "height": 228
+        },
+        "tileFilter": {},
+        "markdown": "![]()\n## Sessions![]()\n## That![]()\n## Continued![]()\n## To![]()\n## ${journey.where-2}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 114,
+            "width": 38,
+            "height": 76
+        },
+        "tileFilter": {},
+        "markdown": "![]()\n![]()\n # ▶"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 0,
+            "width": 114,
+            "height": 228
+        },
+        "tileFilter": {},
+        "markdown": "![]()\n## Sessions![]()\n## That![]()\n## Exited![]()\n## At![]()\n## ${journey.where-1}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 114,
+            "width": 38,
+            "height": 76
+        },
+        "tileFilter": {},
+        "markdown": "![]()\n![]()\n # ▶"
+    }]
+}
