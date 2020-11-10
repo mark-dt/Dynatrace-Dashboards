@@ -324,21 +324,6 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 1102,
-            "left": 3724,
-            "width": 228,
-            "height": 228
-        },
-        "tileFilter": {},
-        "customName": "\uD83D\uDEA8",
-        "query": "select sum(useraction.httpRequestsWithErrors) as \"HTTP Errors\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-4} and not ${journey.where-5}",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic"
-    }, {
-        "name": "DTAQL",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
             "top": 152,
             "left": 1938,
             "width": 304,
@@ -365,33 +350,6 @@
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
-        "name": "DTAQL",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 1102,
-            "left": 4180,
-            "width": 228,
-            "height": 228
-        },
-        "tileFilter": {},
-        "customName": "\uD83D\uDEA8",
-        "query": "select sum(useraction.failedXhrRequests) as \"Failed Xhr Requests\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-4} and not ${journey.where-5}",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic"
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 1064,
-            "left": 3724,
-            "width": 228,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "## [HTTP Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid,useraction.httpRequestsWithErrors%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-4}%20and%20not%20${journey.where-5}%20and%20useraction.httpRequestsWithErrors%3E0%20order%20by%20useraction.httpRequestsWithErrors%20DESC&visualization=TABLE)"
-    }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -415,18 +373,6 @@
         },
         "tileFilter": {},
         "markdown": "## [Crashes](${url}/ui/user-sessions/query?sessionquery=select%20userid%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-4}%20and%20not%20${journey.where-5}%20and%20hascrash%20is%20true&visualization=TABLE)"
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 1064,
-            "left": 4180,
-            "width": 228,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "## [Failed Xhr Requests](${url}/ui/user-sessions/query?sessionquery=select%20userid,useraction.failedXhrRequests%20from%20usersession%20where%20useraction.application%20in%20%28\"${app.name}\"%29%20${regionClause}%20${uspClause}%20and%20${journey.where-4}%20and%20not%20${journey.where-5}%20and%20useraction.failedXhrRequests%3E0%20order%20by%20useraction.failedXhrRequests%20DESC&visualization=TABLE)"
     }, {
         "name": "Environment Breakdown",
         "tileType": "HEADER",
