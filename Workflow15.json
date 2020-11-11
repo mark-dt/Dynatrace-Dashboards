@@ -375,7 +375,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-1.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-1.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -426,7 +426,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-2.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-2.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -526,7 +526,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-3.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-3.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -626,7 +626,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-4.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-4.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -726,7 +726,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-5.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-5.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -826,7 +826,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-6.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-6.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -926,7 +926,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-7.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-7.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1026,7 +1026,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-8.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-8.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1126,7 +1126,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-9.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-9.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1226,7 +1226,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-10.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-10.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1326,7 +1326,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-11.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-11.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1426,7 +1426,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-12.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-12.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1526,7 +1526,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-13.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-13.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1626,7 +1626,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-14.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-14.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1726,7 +1726,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-15.name}\"\" AND useraction.application IN (\"${app.name}\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-15.name}\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
