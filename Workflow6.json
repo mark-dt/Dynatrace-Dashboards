@@ -121,8 +121,21 @@
       "chartVisible": false
     },
     {
-      "name": "${method-1.name}",
-      "tileType": "HEADER",
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 152,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+        "markdown": "${method-1.name}"
+    },
+    {
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
         "top": 0,
@@ -130,11 +143,12 @@
         "width": 228,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+        "markdown": "${method-2.name}"
     },
     {
-      "name": "${method-2.name}",
-      "tileType": "HEADER",
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
         "top": 0,
@@ -142,11 +156,12 @@
         "width": 228,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+        "markdown": "${method-3.name}"
     },
     {
-      "name": "${method-3.name}",
-      "tileType": "HEADER",
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
         "top": 0,
@@ -154,11 +169,12 @@
         "width": 228,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+        "markdown": "${method-4.name}"
     },
     {
-      "name": "${method-4.name}",
-      "tileType": "HEADER",
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
         "top": 0,
@@ -166,11 +182,12 @@
         "width": 228,
         "height": 38
       },
-      "tileFilter": {}
+      "tileFilter": {},
+        "markdown": "${method-5.name}"
     },
     {
-      "name": "${method-5.name}",
-      "tileType": "HEADER",
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
         "top": 0,
@@ -178,19 +195,8 @@
         "width": 228,
         "height": 38
       },
-      "tileFilter": {}
-    },
-    {
-      "name": "${method-6.name}",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 1520,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
+      "tileFilter": {},
+        "markdown": "${method-6.name}"
     },
     {
       "name": "DTAQL",
