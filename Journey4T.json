@@ -43,7 +43,7 @@
                     "aggregation": "AVG",
                     "type": "LINE",
                     "entityType": "APPLICATION_METHOD",
-                    "dimensions": [],
+                    "dimensions": [{"id": "0","name": "dt.entity.application_method","values": [],"entityDimension": true}],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
@@ -84,7 +84,7 @@
                     "aggregation": "AVG",
                     "type": "LINE",
                     "entityType": "APPLICATION_METHOD",
-                    "dimensions": [],
+                    "dimensions": [{"id": "0","name": "dt.entity.application_method","values": [],"entityDimension": true}],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
@@ -125,7 +125,7 @@
                     "aggregation": "AVG",
                     "type": "LINE",
                     "entityType": "APPLICATION_METHOD",
-                    "dimensions": [],
+                    "dimensions": [{"id": "0","name": "dt.entity.application_method","values": [],"entityDimension": true}],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
@@ -166,7 +166,7 @@
                     "aggregation": "AVG",
                     "type": "LINE",
                     "entityType": "APPLICATION_METHOD",
-                    "dimensions": [],
+                    "dimensions": [{"id": "0","name": "dt.entity.application_method","values": [],"entityDimension": true}],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
