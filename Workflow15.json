@@ -121,6 +121,186 @@
       "chartVisible": false
     },
     {
+      "name": "${method-1.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 380,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-2.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 608,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-3.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 836,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-4.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1064,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-5.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1292,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-6.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1520,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-7.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1748,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-8.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1976,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-9.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 2204,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-10.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 2432,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-11name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 2660,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-12.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 2888,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-13.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 3116,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-14.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 3344,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "${method-15.name}",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 152,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
       "name": "DTAQL",
       "tileType": "DTAQL",
       "configured": true,
@@ -233,18 +413,6 @@
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 152,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
     },
     {
       "name": "User Sessions Query",
@@ -1645,174 +1813,5 @@
       "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-15.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 380,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 608,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 836,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 1064,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 1292,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 1520,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 1748,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 1976,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 2204,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 2432,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 2660,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 2888,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 3116,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
-      "name": "Home",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 0,
-        "left": 3344,
-        "width": 228,
-        "height": 38
-      },
-      "tileFilter": {}
-    }
-  ]
+    }  ]
 }
