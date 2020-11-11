@@ -5,7 +5,7 @@
     },
     "id": "a845bac4-dc19-42de-a486-2ac21e9fcb0c",
     "dashboardMetadata": {
-        "name": "Workflow Template",
+        "name": "${overviewName} User Workflow",
         "shared": false,
         "owner": "aoc4810",
         "sharingDetails": {
@@ -15,7 +15,7 @@
         "dashboardFilter": {
             "timeframe": "l_2_HOURS"
         },
-        "tags": ["User Journey"]
+        "tags": ["User Workflow"]
     },
   "tiles": [
     {
@@ -24,6 +24,18 @@
       "configured": true,
       "bounds": {
         "top": 190,
+        "left": 0,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Availibility",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 1140,
         "left": 0,
         "width": 152,
         "height": 38
@@ -41,38 +53,6 @@
         "height": 38
       },
       "tileFilter": {}
-    },
-    {
-      "name": "DTAQL",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 646,
-        "left": 152,
-        "width": 228,
-        "height": 152
-      },
-      "tileFilter": {},
-      "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\")   and ((useraction.application=\"${app.name}\" and useraction.name=\"${method-1.name}\"))",
-      "type": "SINGLE_VALUE",
-      "timeFrameShift": "dynamic"
-    },
-    {
-      "name": "User Sessions Query",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 798,
-        "left": 152,
-        "width": 228,
-        "height": 266
-      },
-      "tileFilter": {},
-      "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
-      "type": "TABLE",
-      "limit": 50
     },
     {
       "name": "Apdex",
@@ -134,11 +114,43 @@
       },
       "tileFilter": {
         "managementZone": {
-          "id": "-1445999404697096081",
-          "name": "MyHumana"
+          "id": "${mz.id}",
+          "name": "${mz.name}"
         }
       },
       "chartVisible": false
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 152,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-1.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic"
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 798,
+        "left": 152,
+        "width": 228,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-1.name}\" GROUP BY useraction.apdexCategory ",
+      "type": "TABLE",
+      "limit": 50
     },
     {
       "name": "Browser monitor",
@@ -151,7 +163,7 @@
         "height": 304
       },
       "tileFilter": {},
-      "assignedEntities": [ "SYNTHETIC_TEST-0CBA555F8DDA599E" ],
+      "assignedEntities": [ "${synth.id}" ],
       "excludeMaintenanceWindows": true
     },
     {
@@ -166,22 +178,10 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-1.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
-    },
-    {
-      "name": "Availibility",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-        "top": 1140,
-        "left": 0,
-        "width": 152,
-        "height": 38
-      },
-      "tileFilter": {}
     },
     {
       "name": "User Sessions Query",
@@ -195,7 +195,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-1.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -212,7 +212,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-1.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -229,7 +229,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-1.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -258,7 +258,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-2.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -275,7 +275,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-2.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -292,7 +292,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-2.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -309,7 +309,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-2.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -326,7 +326,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-2.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -342,7 +342,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-2.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
@@ -358,7 +358,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-3.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -375,7 +375,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-3.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -392,7 +392,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-3.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -409,7 +409,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-3.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -426,7 +426,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-3.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -442,7 +442,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-3.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
@@ -458,7 +458,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-4.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -475,7 +475,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-4.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -492,7 +492,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-4.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -509,7 +509,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-4.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -526,7 +526,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-4.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -542,7 +542,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-4.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
@@ -558,7 +558,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-5.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -575,7 +575,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-5.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -592,7 +592,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-5.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -609,7 +609,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-5.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -626,7 +626,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-5.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -642,7 +642,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-5.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
@@ -658,7 +658,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-6.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -675,7 +675,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-6.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -692,7 +692,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-6.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -709,7 +709,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-6.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -726,7 +726,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-6.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -742,7 +742,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-6.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
@@ -758,7 +758,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-7.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -775,7 +775,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-7.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -792,7 +792,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-7.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -809,7 +809,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-7.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -826,7 +826,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-7.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -842,7 +842,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-7.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
@@ -858,7 +858,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-8.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -875,7 +875,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-8.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -892,7 +892,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-8.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -909,7 +909,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-8.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -926,7 +926,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-8.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -942,7 +942,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-8.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
@@ -958,7 +958,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-9.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -975,7 +975,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-9.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -992,7 +992,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-9.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1009,7 +1009,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-9.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1026,7 +1026,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-9.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -1042,7 +1042,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-9.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
@@ -1058,7 +1058,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-10.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1075,7 +1075,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-10.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1092,7 +1092,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-10.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1109,7 +1109,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-10.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1126,7 +1126,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-10.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -1142,7 +1142,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-10.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
@@ -1158,7 +1158,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-11.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1175,7 +1175,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-11.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1192,7 +1192,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-11.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1209,7 +1209,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-11.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1226,7 +1226,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-11.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -1242,7 +1242,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-11.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
@@ -1258,7 +1258,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-12.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1275,7 +1275,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-12.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1292,7 +1292,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-12.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1309,7 +1309,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-12.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1326,7 +1326,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-12.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -1342,7 +1342,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-12.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
@@ -1358,7 +1358,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-13.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1375,7 +1375,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-13.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1392,7 +1392,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-13.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1409,7 +1409,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-13.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1426,7 +1426,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-13.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -1442,7 +1442,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-13.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
@@ -1458,7 +1458,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-14.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1475,7 +1475,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-14.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1492,7 +1492,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-14.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1509,7 +1509,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-14.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1526,7 +1526,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-14.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -1542,7 +1542,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-14.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
@@ -1558,7 +1558,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"Loading of page /\" AND useraction.application IN (\"Myhumana Member Portal\")",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-15.name}\"\" AND useraction.application IN (\"${app.name}\")",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1575,7 +1575,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-15.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1592,7 +1592,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-15.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1609,7 +1609,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"Myhumana Member Portal\") and useraction.name=\"Loading of page /\"",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-15.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
@@ -1626,7 +1626,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\"))",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-15.name}\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic"
     },
@@ -1642,7 +1642,7 @@
       },
       "tileFilter": {},
       "customName": " ",
-      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"Myhumana Member Portal\")   and ((useraction.application=\"Myhumana Member Portal\" and useraction.name=\"Loading of page /\")) GROUP BY useraction.apdexCategory ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-15.name}\" GROUP BY useraction.apdexCategory ",
       "type": "TABLE",
       "limit": 50
     },
