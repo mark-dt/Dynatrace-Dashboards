@@ -759,7 +759,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=linkv;lt=red;gt=green;eq=yellow !PU(link):linku",
+        "customName": "!PU(compare):link=linkv;lt=green;gt=red;eq=yellow !PU(link):linku",
         "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause} and useraction.matchingConversionGoals is null",
         "type": "SINGLE_VALUE",
         "limit": 50
@@ -774,7 +774,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=linku;lt=red;gt=green;eq=yellow !PU(link):linkv",
+        "customName": "!PU(compare):link=linku;lt=green;gt=red;eq=yellow !PU(link):linkv",
         "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause2} and useraction.matchingConversionGoals is null",
         "type": "SINGLE_VALUE",
         "limit": 50
