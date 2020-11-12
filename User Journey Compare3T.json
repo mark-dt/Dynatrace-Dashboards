@@ -5,7 +5,7 @@
     },
     "id": "0889abb8-116f-4109-8019-b35bf478c809",
     "dashboardMetadata": {
-        "name": "${MyString1} vs ${MyString2} User Journey Compare",
+        "name": "💎 ${MyString1} vs ${MyString2} User Journey Compare",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {

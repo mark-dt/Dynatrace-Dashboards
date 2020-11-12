@@ -3,9 +3,9 @@
         "configurationVersions": [3],
         "clusterVersion": "1.204.87.20201016-092901"
     },
-    "id": "0889abb8-116f-4109-8019-b35bf478c809",
+    "id": "0889abb8-116f-4109-8019-b35bf478c810",
     "dashboardMetadata": {
-        "name": "💎 ${MyString1} vs ${MyString2} User Journey Compare",
+        "name": "${MyString1} vs ${MyString2} User Journey Compare",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {
@@ -89,7 +89,7 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 1520,
+            "left": 2850,
             "width": 380,
             "height": 38
         },
@@ -100,7 +100,7 @@
         "configured": true,
         "bounds": {
             "top": 418,
-            "left": 1520,
+            "left": 2850,
             "width": 380,
             "height": 38
         },
@@ -112,7 +112,7 @@
         "bounds": {
             "top": 38,
             "left": 152,
-            "width": 1330,
+            "width": 2660,
             "height": 228
         },
         "tileFilter": {},
@@ -126,13 +126,13 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 38,
-            "left": 1520,
+            "top": 76,
+            "left": 2850,
             "width": 380,
             "height": 342
         },
         "tileFilter": {},
-        "customName": "!PU(usqlcolor):colors=#39ff14,#ffe11c,#FF1C1C",
+        "customName": " ",
         "query": "select userExperienceScore,count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause1} ${uspClause1} and ${journey.where-1} group by userExperienceScore order by count(*) DESC",
         "type": "PIE_CHART",
         "limit": 50
@@ -147,7 +147,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link1;lt=white;gt=yellow;eq=yellow !PU(link):link2",
+        "customName": " ",
         "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause1} ${uspClause1} and ${journey.where-1} and not ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -162,7 +162,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link3;lt=white;gt=yellow;eq=yellow !PU(link):link4",
+        "customName": " ",
         "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause1} ${uspClause1} and ${journey.where-1} and ${journey.where-2} and not ${journey.where-3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -177,7 +177,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link5;lt=white;gt=yellow;eq=yellow !PU(link):link6",
+        "customName": " ",
         "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause1} ${uspClause1} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and not ${journey.where-4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -192,7 +192,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link7;lt=white;gt=yellow;eq=yellow !PU(link):link8",
+        "customName": " ",
         "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause1} ${uspClause1} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and not ${journey.where-5}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -208,6 +208,81 @@
         },
         "tileFilter": {},
         "customName": " ",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause1} ${uspClause1} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and not ${journey.where-6}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 1482,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause1} ${uspClause1} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and not ${journey.where-7}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 1748,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause1} ${uspClause1} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and not ${journey.where-8}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 2014,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause1} ${uspClause1} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and not ${journey.where-9}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 2280,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause1} ${uspClause1} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and ${journey.where-9} and not ${journey.where-10}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 2546,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
         "query": "select 0 as \" \" from usersession limit 1",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -218,7 +293,7 @@
         "bounds": {
             "top": 456,
             "left": 152,
-            "width": 1330,
+            "width": 2660,
             "height": 228
         },
         "tileFilter": {},
@@ -232,13 +307,13 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 456,
-            "left": 1520,
+            "top": 494,
+            "left": 2850,
             "width": 380,
             "height": 342
         },
         "tileFilter": {},
-        "customName": "!PU(usqlcolor):colors=#39ff14,#ffe11c,#FF1C1C",
+        "customName": " ",
         "query": "select userExperienceScore,count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause2} ${uspClause2} and ${journey.where-1} group by userExperienceScore order by count(*) DESC",
         "type": "PIE_CHART",
         "limit": 50
@@ -253,7 +328,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link2;lt=white;gt=yellow;eq=yellow !PU(link):link1",
+        "customName": " ",
         "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause2} ${uspClause2} and ${journey.where-1} and not ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -268,7 +343,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link4;lt=white;gt=yellow;eq=yellow !PU(link):link3",
+        "customName": " ",
         "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause2} ${uspClause2} and ${journey.where-1} and ${journey.where-2} and not ${journey.where-3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -283,7 +358,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link6;lt=white;gt=yellow;eq=yellow !PU(link):link5",
+        "customName": " ",
         "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause2} ${uspClause2} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and not ${journey.where-4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -298,7 +373,7 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(compare):link=link8;lt=white;gt=yellow;eq=yellow !PU(link):link7",
+        "customName": " ",
         "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause2} ${uspClause2} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and not ${journey.where-5}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -309,6 +384,81 @@
         "bounds": {
             "top": 684,
             "left": 1216,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause2} ${uspClause2} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and not ${journey.where-6}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 1482,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause2} ${uspClause2} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and not ${journey.where-7}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 1748,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause2} ${uspClause2} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and not ${journey.where-8}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 2014,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause2} ${uspClause2} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and not ${journey.where-9}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 2280,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") ${regionClause2} ${uspClause2} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and ${journey.where-9} and not ${journey.where-10}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "DTAQL",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 2546,
             "width": 266,
             "height": 114
         },
