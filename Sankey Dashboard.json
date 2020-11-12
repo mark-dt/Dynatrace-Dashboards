@@ -5,7 +5,7 @@
     },
     "id": "c98ef606-eb1a-4adf-bb8e-926b5bf49efa",
     "dashboardMetadata": {
-        "name": "${overviewName} Sankey Dashboard",
+        "name": "💎 ${overviewName} Sankey Dashboard",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {
