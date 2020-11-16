@@ -22,12 +22,14 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 342,
-            "left": 0,
-            "width": 1672,
-            "height": 456
+            "top": 494,
+            "left": 380,
+            "width": 1292,
+            "height": 304
         },
-        "tileFilter": {},
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
         "filterConfig": {
             "type": "MIXED",
             "customName": " ",
@@ -66,7 +68,7 @@
             "top": 38,
             "left": 0,
             "width": 380,
-            "height": 266
+            "height": 418
         },
         "tileFilter": {},
         "filterConfig": {
@@ -88,15 +90,15 @@
                         "entityDimension": false
                     }],
                     "sortAscending": false,
-                    "aggregationRate": "TOTAL",
-                    "sortColumn": true
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {}
             },
             "filtersPerEntityType": {}
         }
     }, {
-        "name": "Responses",
+        "name": "Campaign Responses",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -117,175 +119,9 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Links ▲](#dashboard;id=734deee7-8446-4d58-b9ec-623f368e1313)"
+        "markdown": "## [Links ▲](#dashboard;id=bbbbbbbb-a006-a012-0001-000000000001)"
     }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 988,
-            "width": 304,
-            "height": 114
-        },
-        "tileFilter": {},
-        "customName": " ",
-        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspCampaign.id} is not null",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 684,
-            "width": 304,
-            "height": 114
-        },
-        "tileFilter": {},
-        "customName": " ",
-        "query": "select avg(useraction.visuallycompletetime) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspCampaign.id} is not null",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 190,
-            "left": 380,
-            "width": 304,
-            "height": 114
-        },
-        "tileFilter": {},
-        "customName": " ",
-        "query": "select sum(useraction.errorcount) as \" \" FROM useraction where useraction.application in (\"${app.name}\") and ${uspCampaign.id} is not null",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 190,
-            "left": 684,
-            "width": 304,
-            "height": 114
-        },
-        "tileFilter": {},
-        "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspCampaign.id} is not null ",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 190,
-            "left": 988,
-            "width": 304,
-            "height": 114
-        },
-        "tileFilter": {},
-        "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") and not ${conversionGoal} and ${milestoneGoal} and ${uspCampaign.id} is not null",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 380,
-            "width": 304,
-            "height": 114
-        },
-        "tileFilter": {},
-        "customName": " ",
-        "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspCampaign.id} is not null",
-        "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic",
-        "limit": 50
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 1292,
-            "width": 380,
-            "height": 266
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "${Campaign.id}",
-                    "aggregation": "COUNT",
-                    "type": "LINE",
-                    "entityType": "APPLICATION",
-                    "dimensions": [{
-                        "id": "2",
-                        "name": "dt.entity.geolocation",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "Duration",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 380,
-            "width": 304,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Visually Complete",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 684,
-            "width": 304,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Speed Index",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 988,
-            "width": 304,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Responses by Geo",
+        "name": "Campaign Apdex",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -296,11 +132,61 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Errors",
+        "name": "Responses vs Conversions Over Time",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 152,
+            "top": 456,
+            "left": 380,
+            "width": 570,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 0,
+            "width": 190,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "today"
+        },
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Today",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${TopCampaign.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspCampaign.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Sessions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
             "left": 380,
             "width": 304,
             "height": 38
@@ -311,7 +197,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 152,
+            "top": 0,
             "left": 684,
             "width": 304,
             "height": 38
@@ -322,6 +208,181 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
+            "top": 0,
+            "left": 988,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1292,
+            "width": 380,
+            "height": 418
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${Campaign.id}apdex",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspCampaign.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }, {
+                        "id": "2",
+                        "name": "Apdex type",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "null¦${uspCampaign.name}»resource-hub»false¦Apdex type»Satisfied»false${Campaign.id}apdex|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1605302193796,
+                        "customColor": "#39ff14"
+                    },
+                    "null¦${uspCampaign.name}»mx_display_cloud»false¦Apdex type»Tolerating»false${Campaign.id}apdex|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1605302378929,
+                        "customColor": "#ffe11c"
+                    },
+                    "null¦${uspCampaign.name}»custom-intent-product-ads»false¦Apdex type»Frustrated»false${Campaign.id}apdex|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1605302254536,
+                        "customColor": "#FF1C1C"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 646,
+            "left": 0,
+            "width": 190,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-7d to now"
+        },
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Last 7 Days",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${TopCampaign.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspCampaign.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 380,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "",
+        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 988,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "",
+        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null and ${milestoneGoal} and not ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 684,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "",
+        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null and ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Sessions Yesterday",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 380,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Conversions Yesterday",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 684,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Abandons Yesterday",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
             "top": 152,
             "left": 988,
             "width": 304,
@@ -329,13 +390,232 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Responses Over Time",
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 684,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {
+            "timeframe": "yesterday"
+        },
+        "customName": "",
+        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null and ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 988,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {
+            "timeframe": "yesterday"
+        },
+        "customName": "",
+        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null and ${milestoneGoal} and not ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 380,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {
+            "timeframe": "yesterday"
+        },
+        "customName": "",
+        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Sessions Last 7 Days",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
             "top": 304,
+            "left": 380,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Conversions Last 7 Days",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 684,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Abandons Last 7 Days",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 988,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 380,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {
+            "timeframe": "-7d to now"
+        },
+        "customName": "",
+        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 988,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {
+            "timeframe": "-7d to now"
+        },
+        "customName": "",
+        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null and ${milestoneGoal} and not ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 684,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {
+            "timeframe": "-7d to now"
+        },
+        "customName": "",
+        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null and ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 190,
+            "width": 190,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "yesterday"
+        },
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Yesterday",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${TopCampaign.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspCampaign.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 646,
+            "left": 190,
+            "width": 190,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-30d to now"
+        },
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Last 30 Days",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${TopCampaign.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspCampaign.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Top Campaigns",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 456,
             "left": 0,
-            "width": 570,
+            "width": 228,
             "height": 38
         },
         "tileFilter": {}
