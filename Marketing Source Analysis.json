@@ -15,7 +15,7 @@
         "dashboardFilter": {
             "timeframe": "Today"
         },
-        "tags": ["${uspSource.value}", "Overview", "Marketing"]
+        "tags": ["${uspSource.value}", "Analysis", "Marketing"]
     },
     "tiles": [{
         "name": "",

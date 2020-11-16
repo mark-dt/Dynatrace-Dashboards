@@ -15,7 +15,7 @@
         "dashboardFilter": {
             "timeframe": "Today"
         },
-        "tags": ["${uspCampaign.value}", "Overview", "Marketing"]
+        "tags": ["${uspCampaign.value}", "Analysis", "Marketing"]
     },
     "tiles": [{
         "name": "",
