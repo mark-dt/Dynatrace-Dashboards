@@ -132,7 +132,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Responses vs Conversions Over Time",
+        "name": "Responses Over Time",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
