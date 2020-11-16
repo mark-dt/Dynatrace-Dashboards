@@ -31,7 +31,7 @@
             "timeframe": "today"
         },
         "customName": " ",
-        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and not ${conversionGoal} and  ${uspCampaign.id} IS NOT NULL group by ${uspCampaign.id}",
+        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal} and  ${uspCampaign.id} IS NOT NULL group by ${uspCampaign.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -48,7 +48,7 @@
             "timeframe": "today"
         },
         "customName": " ",
-        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and not ${conversionGoal} and  ${uspCampaign.id} IS NOT NULL and userExperienceScore <> \"SATISFIED\" group by ${uspCampaign.id}",
+        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal} and  ${uspCampaign.id} IS NOT NULL and userExperienceScore <> \"SATISFIED\" group by ${uspCampaign.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -62,7 +62,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Conversions by Campaign (Today)](${url}/ui/user-sessions/query?sessionquery=SELECT%20usersessionid,%20${uspCampaign.id},%20hasSessionReplay,%20numberOfRageClicks,%20totalErrorCount,%20useraction.duration%20FROM%20usersession%20where%20useraction.application%20in%20(\"${app.name}\")%20and%20not%20${conversionGoal}%20and%20${uspCampaign.id}%20IS%20NOT%20NULL%20order%20by%20totalerrorcount,%20numberOfRageClicks%20DESC&gtf=today)"
+        "markdown": "## [Conversions by Campaign (Today)](${url}/ui/user-sessions/query?sessionquery=SELECT%20usersessionid,%20${uspCampaign.id},%20hasSessionReplay,%20numberOfRageClicks,%20totalErrorCount,%20useraction.duration%20FROM%20usersession%20where%20useraction.application%20in%20(\"${app.name}\")%20and%20${milestoneGoal}%20and%20not%20${conversionGoal}%20and%20${uspCampaign.id}%20IS%20NOT%20NULL%20order%20by%20totalerrorcount,%20numberOfRageClicks%20DESC&gtf=today)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -74,7 +74,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Risk Conversions by Campaign (Today)](${url}/ui/user-sessions/query?sessionquery=SELECT%20usersessionid,%20${uspCampaign.id},%20hasSessionReplay,%20numberOfRageClicks,%20totalErrorCount,%20useraction.duration%20FROM%20usersession%20where%20useraction.application%20in%20(\"${app.name}\")%20and%20not%20${conversionGoal}%20and%20${uspCampaign.id}%20IS%20NOT%20NULL%20and%20userExperienceScore%3C%3E%22SATISFIED%22%20order%20by%20totalerrorcount,%20numberOfRageClicks%20DESC&gtf=today)"
+        "markdown": "## [Risk Conversions by Campaign (Today)](${url}/ui/user-sessions/query?sessionquery=SELECT%20usersessionid,%20${uspCampaign.id},%20hasSessionReplay,%20numberOfRageClicks,%20totalErrorCount,%20useraction.duration%20FROM%20usersession%20where%20useraction.application%20in%20(\"${app.name}\")%20and%20${milestoneGoal}%20and%20not%20${conversionGoal}%20and%20${uspCampaign.id}%20IS%20NOT%20NULL%20and%20userExperienceScore%3C%3E%22SATISFIED%22%20order%20by%20totalerrorcount,%20numberOfRageClicks%20DESC&gtf=today)"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
@@ -89,7 +89,7 @@
             "timeframe": "yesterday"
         },
         "customName": " ",
-        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and not ${conversionGoal} and  ${uspCampaign.id} IS NOT NULL group by ${uspCampaign.id}",
+        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal} and  ${uspCampaign.id} IS NOT NULL group by ${uspCampaign.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -103,7 +103,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Conversions by Campaign (Yesterday)](${url}/ui/user-sessions/query?sessionquery=SELECT%20usersessionid,%20${uspCampaign.id},%20hasSessionReplay,%20numberOfRageClicks,%20totalErrorCount,%20useraction.duration%20FROM%20usersession%20where%20useraction.application%20in%20(\"${app.name}\")%20and%20not%20${conversionGoal}%20and%20${uspCampaign.id}%20IS%20NOT%20NULL%20order%20by%20totalerrorcount,%20numberOfRageClicks%20DESC&gtf=yesterday)"
+        "markdown": "## [Conversions by Campaign (Yesterday)](${url}/ui/user-sessions/query?sessionquery=SELECT%20usersessionid,%20${uspCampaign.id},%20hasSessionReplay,%20numberOfRageClicks,%20totalErrorCount,%20useraction.duration%20FROM%20usersession%20where%20useraction.application%20in%20(\"${app.name}\")%20and%20${milestoneGoal}%20and%20not%20${conversionGoal}%20and%20${uspCampaign.id}%20IS%20NOT%20NULL%20order%20by%20totalerrorcount,%20numberOfRageClicks%20DESC&gtf=yesterday)"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
@@ -118,7 +118,7 @@
             "timeframe": "-7d to now"
         },
         "customName": " ",
-        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and not ${conversionGoal} and  ${uspCampaign.id} IS NOT NULL group by ${uspCampaign.id}",
+        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal} and  ${uspCampaign.id} IS NOT NULL group by ${uspCampaign.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -132,7 +132,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Conversions by Campaign (Last 7 Days)](${url}/ui/user-sessions/query?sessionquery=SELECT%20usersessionid,%20${uspCampaign.id},%20hasSessionReplay,%20numberOfRageClicks,%20totalErrorCount,%20useraction.duration%20FROM%20usersession%20where%20useraction.application%20in%20(\"${app.name}\")%20and%20not%20${conversionGoal}%20and%20${uspCampaign.id}%20IS%20NOT%20NULL%20order%20by%20totalerrorcount,%20numberOfRageClicks%20DESC&gtf=-7d)"
+        "markdown": "## [Conversions by Campaign (Last 7 Days)](${url}/ui/user-sessions/query?sessionquery=SELECT%20usersessionid,%20${uspCampaign.id},%20hasSessionReplay,%20numberOfRageClicks,%20totalErrorCount,%20useraction.duration%20FROM%20usersession%20where%20useraction.application%20in%20(\"${app.name}\")%20and%20${milestoneGoal}%20and%20not%20${conversionGoal}%20and%20${uspCampaign.id}%20IS%20NOT%20NULL%20order%20by%20totalerrorcount,%20numberOfRageClicks%20DESC&gtf=-7d)"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
@@ -147,7 +147,7 @@
             "timeframe": "yesterday"
         },
         "customName": " ",
-        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and not ${conversionGoal} and  ${uspCampaign.id} IS NOT NULL and userExperienceScore <> \"SATISFIED\" group by ${uspCampaign.id}",
+        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal} and  ${uspCampaign.id} IS NOT NULL and userExperienceScore <> \"SATISFIED\" group by ${uspCampaign.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -161,7 +161,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Risk Conversions by Campaign (Yesterday)](${url}/ui/user-sessions/query?sessionquery=SELECT%20usersessionid,%20${uspCampaign.id},%20hasSessionReplay,%20numberOfRageClicks,%20totalErrorCount,%20useraction.duration%20FROM%20usersession%20where%20useraction.application%20in%20(\"${app.name}\")%20and%20not%20${conversionGoal}%20and%20${uspCampaign.id}%20IS%20NOT%20NULL%20and%20userExperienceScore%3C%3E%22SATISFIED%22%20order%20by%20totalerrorcount,%20numberOfRageClicks%20DESC&gtf=yesterday)"
+        "markdown": "## [Risk Conversions by Campaign (Yesterday)](${url}/ui/user-sessions/query?sessionquery=SELECT%20usersessionid,%20${uspCampaign.id},%20hasSessionReplay,%20numberOfRageClicks,%20totalErrorCount,%20useraction.duration%20FROM%20usersession%20where%20useraction.application%20in%20(\"${app.name}\")%20and%20${milestoneGoal}%20and%20not%20${conversionGoal}%20and%20${uspCampaign.id}%20IS%20NOT%20NULL%20and%20userExperienceScore%3C%3E%22SATISFIED%22%20order%20by%20totalerrorcount,%20numberOfRageClicks%20DESC&gtf=yesterday)"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
@@ -176,7 +176,7 @@
             "timeframe": "-7d to now"
         },
         "customName": " ",
-        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and not ${conversionGoal} and  ${uspCampaign.id} IS NOT NULL and userExperienceScore <> \"SATISFIED\" group by ${uspCampaign.id}",
+        "query": "SELECT ${uspCampaign.id}, count(*) FROM usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal} and  ${uspCampaign.id} IS NOT NULL and userExperienceScore <> \"SATISFIED\" group by ${uspCampaign.id}",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -190,6 +190,6 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Risk Conversions by Campaign (Last 7 Days)](${url}/ui/user-sessions/query?sessionquery=SELECT%20usersessionid,%20${uspCampaign.id},%20hasSessionReplay,%20numberOfRageClicks,%20totalErrorCount,%20useraction.duration%20FROM%20usersession%20where%20useraction.application%20in%20(\"${app.name}\")%20and%20not%20${conversionGoal}%20and%20${uspCampaign.id}%20IS%20NOT%20NULL%20and%20userExperienceScore%3C%3E%22SATISFIED%22%20order%20by%20totalerrorcount,%20numberOfRageClicks%20DESC&gtf=-7d)"
+        "markdown": "## [Risk Conversions by Campaign (Last 7 Days)](${url}/ui/user-sessions/query?sessionquery=SELECT%20usersessionid,%20${uspCampaign.id},%20hasSessionReplay,%20numberOfRageClicks,%20totalErrorCount,%20useraction.duration%20FROM%20usersession%20where%20useraction.application%20in%20(\"${app.name}\")%20and%20${milestoneGoal}%20and%20not%20${conversionGoal}%20and%20${uspCampaign.id}%20IS%20NOT%20NULL%20and%20userExperienceScore%3C%3E%22SATISFIED%22%20order%20by%20totalerrorcount,%20numberOfRageClicks%20DESC&gtf=-7d)"
     }]
 }
