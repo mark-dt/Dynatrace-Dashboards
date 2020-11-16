@@ -233,7 +233,7 @@
                 "legendShown": true,
                 "type": "TOP_LIST",
                 "series": [{
-                    "metric": "${Campaign.id}apdex",
+                    "metric": "${Campaign.id}",
                     "aggregation": "COUNT",
                     "type": "LINE",
                     "entityType": "APPLICATION",
@@ -253,15 +253,15 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "null¦${uspCampaign.name}»resource-hub»false¦Apdex type»Satisfied»false${Campaign.id}apdex|COUNT|TOTAL|LINE|APPLICATION": {
+                    "null¦${uspCampaign.name}»resource-hub»false¦Apdex type»Satisfied»false${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1605302193796,
                         "customColor": "#39ff14"
                     },
-                    "null¦${uspCampaign.name}»mx_display_cloud»false¦Apdex type»Tolerating»false${Campaign.id}apdex|COUNT|TOTAL|LINE|APPLICATION": {
+                    "null¦${uspCampaign.name}»mx_display_cloud»false¦Apdex type»Tolerating»false${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1605302378929,
                         "customColor": "#ffe11c"
                     },
-                    "null¦${uspCampaign.name}»custom-intent-product-ads»false¦Apdex type»Frustrated»false${Campaign.id}apdex|COUNT|TOTAL|LINE|APPLICATION": {
+                    "null¦${uspCampaign.name}»custom-intent-product-ads»false¦Apdex type»Frustrated»false${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1605302254536,
                         "customColor": "#FF1C1C"
                     }
