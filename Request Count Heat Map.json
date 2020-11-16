@@ -1,11 +1,11 @@
 {
     "metadata": {
         "configurationVersions": [3],
-        "clusterVersion": "1.200.99.20200828-133130"
+        "clusterVersion": "1.204.87.20201016-092901"
     },
-    "id": "f520ca5d-c56b-4593-9fbd-29aad19c6ffd",
+    "id": "c69ef9bc-2cc1-4865-bf83-5813721c16f5",
     "dashboardMetadata": {
-        "name": "💎 ${overviewName} Apdex Heatmap",
+        "name": "💎 ${overviewName} Request Count Heatmap",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {
@@ -22,22 +22,22 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 0,
+            "top": 114,
             "left": 0,
-            "width": 1482,
-            "height": 532
+            "width": 1900,
+            "height": 570
         },
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Apdex (by app) !PU(heatmap):vals=.5,.7,.85,.94;names=Unacceptable,Poor,Fair,Good,Excellent;colors=#dc172a,#ef651f,#ffe11c,#6bcb8b,#2ab06f",
+            "customName": "Request Count !PU(heatmap):minColor=yellow;maxColor=green;txtColor=black",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [{
-                    "metric": "builtin:apps.web.apdex.userType",
-                    "aggregation": "AVG",
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
                     "type": "BAR",
                     "entityType": "APPLICATION",
                     "dimensions": [{
