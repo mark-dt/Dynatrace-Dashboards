@@ -3,7 +3,7 @@
         "configurationVersions": [3],
         "clusterVersion": "1.192.87.20200501-000127"
     },
-    "id": "734deee7-8446-4d58-b9ec-623f368e1214",
+    "id": "734deee7-8446-4d58-b9ec-623f368e1211",
     "dashboardMetadata": {
         "name": "${overviewName} Marketing Source Overview",
         "shared": true,
@@ -117,7 +117,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Links ▼](#dashboard;id=734c030d-ef73-4fda-985d-225a9219b563)"
+        "markdown": "## [Links ▼](#dashboard;id=734c030d-ef73-4fda-985d-225a9219b567)"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
@@ -193,8 +193,8 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=high;warn=${Warning};crit=${Critical}",
-        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspSource.id} is not null",
+        "customName": "!PU(color):base=high;warn=${Warning5};crit=${Critical5}",
+        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspSource.id} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -329,7 +329,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Responses vs Conversions Over Time",
+        "name": "Responses Over Time",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -350,7 +350,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [User Journey](#dashboard;id=${MyJourneyLink})"
+        "markdown": "## [User Journey](${url}/ui/dashboards?gtf=today&gf=all&filters=tag:User%20Journey%7CUser%20Journey)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -362,7 +362,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Conversions Analysis](#dashboard;id=33319458-0442-4e65-9b7e-28321b1755b8)"
+        "markdown": "## [Conversions Analysis](#dashboard;id=33419458-0442-4e65-9b7e-28321b1755b7)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -374,6 +374,6 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Conversions by GEO](#dashboard;id=333bd2cc-c68e-45f1-9969-5688e16c8021)"
+        "markdown": "## [Conversions by GEO](#dashboard;id=73419458-0442-4e65-9b7e-28321b1744b6)"
     }]
 }

@@ -3,7 +3,7 @@
         "configurationVersions": [3],
         "clusterVersion": "1.192.87.20200501-000127"
     },
-    "id": "734c030d-ef73-4fda-985d-225a9219b563",
+    "id": "734c030d-ef73-4fda-985d-225a9219b567",
     "dashboardMetadata": {
         "name": "${overviewName} Marketing Source Overview",
         "shared": true,
@@ -117,7 +117,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Links ▲](#dashboard;id=734deee7-8446-4d58-b9ec-623f368e1214)"
+        "markdown": "## [Links ▲](#dashboard;id=734deee7-8446-4d58-b9ec-623f368e1211)"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
@@ -130,7 +130,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(color):base=low;warn=${Warning3};crit=${Critical3}",
-        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and ${uspSource.id} is not null",
+        "query": "select avg(useraction.speedindex) as \" \" FROM usersession where ${uspSource.id} is not null",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -177,8 +177,8 @@
             "height": 114
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=high;warn=${Warning};crit=${Critical}",
-        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspSource.id} is not null",
+        "customName": "!PU(color):base=high;warn=${Warning5};crit=${Critical5}",
+        "query": "select count(*) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal} and ${uspSource.id} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -329,7 +329,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Responses vs Conversions Over Time",
+        "name": "Responses Over Time",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
