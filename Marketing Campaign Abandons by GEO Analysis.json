@@ -138,7 +138,7 @@
         "type": "PIE_CHART",
         "limit": 50
     }, {
-        "name": "Conversions by Continent",
+        "name": "Abandons by Continent",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -160,7 +160,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Conversions by Country",
+        "name": "Abandons by Country",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -171,7 +171,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Conversions by Region",
+        "name": "Abandons by Region",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -193,7 +193,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Conversions by City",
+        "name": "Abandons by City",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
