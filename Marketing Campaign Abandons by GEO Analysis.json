@@ -1,0 +1,229 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.196.75.20200707-123349"
+    },
+    "id": "733bd2cc-c68e-45f1-9969-5688e16c8025",
+    "dashboardMetadata": {
+        "name": "Marketing Abandons by GEO Analysis",
+        "shared": false,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": ""
+        },
+        "tags": ["Overview", "Marketing", "Abandons"]
+    },
+    "tiles": [{
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 836,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "SELECT city, count(*) FROM usersession where ${milestoneGoal} and not ${conversionGoal} and ${uspCampaign.id} is not null GROUP BY city",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 1254,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "SELECT city, count(*) FROM usersession where ${uspCampaign.id} is not null GROUP BY city",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "SELECT continent, count(*) FROM usersession where ${milestoneGoal} and not ${conversionGoal} and ${uspCampaign.id} is not null GROUP BY continent",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 418,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "SELECT continent, count(*) FROM usersession where ${uspCampaign.id} is not null GROUP BY continent",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 836,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "SELECT country, count(*) FROM usersession where ${milestoneGoal} and not ${conversionGoal} and ${uspCampaign.id} is not null GROUP BY country",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1254,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "SELECT country, count(*) FROM usersession where ${uspCampaign.id} is not null GROUP BY country",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 0,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "SELECT region, count(*) FROM usersession where ${milestoneGoal} and not ${conversionGoal} and ${uspCampaign.id} is not null GROUP BY region",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 418,
+            "width": 418,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "SELECT region, count(*) FROM usersession where ${uspCampaign.id} is not null GROUP BY region",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": "Conversions by Continent",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Responses by Continent",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 418,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Conversions by Country",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 836,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Conversions by Region",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 0,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Responses by Region",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 418,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Conversions by City",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 836,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Responses by Country",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1254,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Responses by City",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 1254,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }]
+}
