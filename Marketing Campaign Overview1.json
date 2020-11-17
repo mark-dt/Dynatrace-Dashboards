@@ -619,5 +619,66 @@
             "height": 38
         },
         "tileFilter": {}
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 0,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "PIE",
+                "series": [{
+                    "metric": "${Campaign.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "2",
+                        "name": "Apdex type",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "null¦Apdex type»Tolerating»falsecalc:${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1605643190800,
+                        "customColor": "#FFCB05"
+                    },
+                    "null¦Apdex type»Frustrated»falsecalc:${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1605643225871,
+                        "customColor": "#FF1C1C"
+                    },
+                    "null¦Apdex type»Satisfied»falsecalc:${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1605643202649,
+                        "customColor": "#008000"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Campaign Apdex",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 0,
+            "width": 228,
+            "height": 38
+        },
+        "tileFilter": {}
     }]
 }

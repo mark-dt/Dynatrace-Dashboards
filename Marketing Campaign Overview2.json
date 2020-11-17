@@ -526,7 +526,7 @@
         "configured": true,
         "bounds": {
             "top": 494,
-            "left": 190,
+            "left": 1292,
             "width": 190,
             "height": 152
         },
@@ -693,5 +693,66 @@
         },
         "tileFilter": {},
         "markdown": "## [Abandons by GEO](#dashboard;id=733bd2cc-c68e-45f1-9969-5688e16c8025)"
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 0,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "PIE",
+                "series": [{
+                    "metric": "${Campaign.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "2",
+                        "name": "Apdex type",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "null¦Apdex type»Tolerating»falsecalc:${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1605643190800,
+                        "customColor": "#FFCB05"
+                    },
+                    "null¦Apdex type»Frustrated»falsecalc:${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1605643225871,
+                        "customColor": "#FF1C1C"
+                    },
+                    "null¦Apdex type»Satisfied»falsecalc:${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1605643202649,
+                        "customColor": "#008000"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Campaign Apdex",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 0,
+            "width": 228,
+            "height": 38
+        },
+        "tileFilter": {}
     }]
 }
