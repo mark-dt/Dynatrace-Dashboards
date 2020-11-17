@@ -24,7 +24,7 @@
         "bounds": {
             "top": 494,
             "left": 380,
-            "width": 1292,
+            "width": 912,
             "height": 304
         },
         "tileFilter": {
@@ -148,7 +148,7 @@
         "configured": true,
         "bounds": {
             "top": 494,
-            "left": 0,
+            "left": 1292,
             "width": 190,
             "height": 152
         },
@@ -245,7 +245,7 @@
                     }, {
                         "id": "2",
                         "name": "Apdex type",
-                        "values": [],
+                        "values": ["Frustrated"],
                         "entityDimension": false
                     }],
                     "sortAscending": false,
@@ -275,7 +275,7 @@
         "configured": true,
         "bounds": {
             "top": 646,
-            "left": 0,
+            "left": 1292,
             "width": 190,
             "height": 152
         },
@@ -536,7 +536,7 @@
         "configured": true,
         "bounds": {
             "top": 494,
-            "left": 190,
+            "left": 1482,
             "width": 190,
             "height": 152
         },
@@ -575,7 +575,7 @@
         "configured": true,
         "bounds": {
             "top": 646,
-            "left": 190,
+            "left": 1482,
             "width": 190,
             "height": 152
         },
@@ -610,6 +610,67 @@
         }
     }, {
         "name": "Top Sources",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 1292,
+            "width": 228,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 0,
+            "width": 380,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "PIE",
+                "series": [{
+                    "metric": "${Source.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "2",
+                        "name": "Apdex type",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "null¦Apdex type»Tolerating»false${Source.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1605643190800,
+                        "customColor": "#FFCB05"
+                    },
+                    "null¦Apdex type»Frustrated»false${Source.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1605643225871,
+                        "customColor": "#FF1C1C"
+                    },
+                    "null¦Apdex type»Satisfied»false${Source.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1605643202649,
+                        "customColor": "#008000"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Source Apdex",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {

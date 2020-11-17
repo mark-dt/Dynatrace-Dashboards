@@ -653,15 +653,15 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "null¦Apdex type»Tolerating»falsecalc:${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                    "null¦Apdex type»Tolerating»false${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1605643190800,
                         "customColor": "#FFCB05"
                     },
-                    "null¦Apdex type»Frustrated»falsecalc:${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                    "null¦Apdex type»Frustrated»false${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1605643225871,
                         "customColor": "#FF1C1C"
                     },
-                    "null¦Apdex type»Satisfied»falsecalc:${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                    "null¦Apdex type»Satisfied»false${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1605643202649,
                         "customColor": "#008000"
                     }
