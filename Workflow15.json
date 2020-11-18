@@ -31,7 +31,7 @@
       "tileFilter": {}
     },
     {
-      "name": "Availibility",
+      "name": "Availability",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -107,7 +107,7 @@
       "tileType": "HOSTS",
       "configured": true,
       "bounds": {
-        "top": 1178,
+        "top": 1216,
         "left": 0,
         "width": 152,
         "height": 152
