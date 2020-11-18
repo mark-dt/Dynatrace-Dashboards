@@ -2,5 +2,5 @@
 
 # REquest Count Heat Map Dashboard
 
-![Request Counr Heat Map Dashboard](RCHM.png)
+![Request Count Heat Map Dashboard](RCHeatMap.png)
 
