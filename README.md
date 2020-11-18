@@ -7,4 +7,6 @@ This dashboard pack provides a quick overview of your user journey with a focus 
 
 # Prerequisites Highlights
 
-Mark each user action step as a key user action for the user journey.
+1. Create a conversion goal(s) for user actions that indicate a converted user session (i.e. Order Confirmation)
+2. Create a milestone goal(s) for user actions that indicate the start of a potential converted session (i.e. Add to Cart)
+3. Mark each user action step as a key user action for the user journey.
