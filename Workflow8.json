@@ -1,0 +1,1041 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.200.99.20200828-133130"
+    },
+    "id": "a815bac4-dc19-42de-a486-2ac21e9fcb0c",
+    "dashboardMetadata": {
+        "name": "${overviewName} User Workflow",
+        "shared": false,
+        "owner": "aoc4810",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "l_2_HOURS"
+        },
+        "tags": ["User Workflow"]
+    },
+  "tiles": [
+    {
+      "name": "Duration",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 190,
+        "left": 0,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Availibility",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 1140,
+        "left": 0,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Errors",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 0,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Apdex",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 798,
+        "left": 0,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Actions",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 0,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Visual",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 0,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Latency",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 0,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Host health",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 1178,
+        "left": 0,
+        "width": 152,
+        "height": 152
+      },
+      "tileFilter": {
+        "managementZone": {
+          "id": "${mz.id}",
+          "name": "${mz.name}"
+        }
+      },
+      "chartVisible": false
+    },
+    {
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 152,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+        "markdown": "${method-1.name}"
+    },
+    {
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 380,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+        "markdown": "${method-2.name}"
+    },
+    {
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 608,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+        "markdown": "${method-3.name}"
+    },
+    {
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 836,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+        "markdown": "${method-4.name}"
+    },
+    {
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1064,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+        "markdown": "${method-5.name}"
+    },
+    {
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1292,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+        "markdown": "${method-6.name}"
+    },
+    {
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1520,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+        "markdown": "${method-7.name}"
+    },
+    {
+	        "name": "Markdown",
+        "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1748,
+        "width": 228,
+        "height": 38
+      },
+      "tileFilter": {},
+        "markdown": "${method-8.name}"
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 152,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-1.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic"
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 798,
+        "left": 152,
+        "width": 228,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-1.name}\" GROUP BY useraction.apdexCategory ",
+      "type": "TABLE",
+      "limit": 50
+    },
+    {
+      "name": "Browser monitor",
+      "tileType": "SYNTHETIC_SINGLE_WEBCHECK",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 152,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {},
+      "assignedEntities": [ "${synth.id}" ],
+      "excludeMaintenanceWindows": true
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 190,
+        "left": 152,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-1.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 152,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-1.name}\" AND useraction.application IN (\"${app.name}\")",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 152,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-1.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 152,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-1.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 380,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-2.name}\" AND useraction.application IN (\"${app.name}\")",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 190,
+        "left": 380,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-2.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 380,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-2.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 380,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-2.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 380,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-2.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic"
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 798,
+        "left": 380,
+        "width": 228,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-2.name}\" GROUP BY useraction.apdexCategory ",
+      "type": "TABLE",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 608,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-3.name}\" AND useraction.application IN (\"${app.name}\")",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 190,
+        "left": 608,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-3.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 608,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-3.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 608,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-3.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 608,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-3.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic"
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 798,
+        "left": 608,
+        "width": 228,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-3.name}\" GROUP BY useraction.apdexCategory ",
+      "type": "TABLE",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 836,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-4.name}\" AND useraction.application IN (\"${app.name}\")",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 190,
+        "left": 836,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-4.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 836,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-4.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 836,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-4.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 836,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-4.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic"
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 798,
+        "left": 836,
+        "width": 228,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-4.name}\" GROUP BY useraction.apdexCategory ",
+      "type": "TABLE",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1064,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-5.name}\" AND useraction.application IN (\"${app.name}\")",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 190,
+        "left": 1064,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-5.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 1064,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-5.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 1064,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-5.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 1064,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-5.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic"
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 798,
+        "left": 1064,
+        "width": 228,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-5.name}\" GROUP BY useraction.apdexCategory ",
+      "type": "TABLE",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1292,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-6.name}\" AND useraction.application IN (\"${app.name}\")",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 190,
+        "left": 1292,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-6.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 1292,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-6.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 1292,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-6.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 1292,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-6.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic"
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 798,
+        "left": 1292,
+        "width": 228,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-6.name}\" GROUP BY useraction.apdexCategory ",
+      "type": "TABLE",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1520,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-7.name}\" AND useraction.application IN (\"${app.name}\")",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 190,
+        "left": 1520,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-7.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 1520,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-7.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 1520,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-7.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 1520,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-7.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic"
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 798,
+        "left": 1520,
+        "width": 228,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-7.name}\" GROUP BY useraction.apdexCategory ",
+      "type": "TABLE",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1748,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT COUNT(userSessionId) as \"Action Count\" FROM usersession WHERE useraction.name=\"${method-8.name}\" AND useraction.application IN (\"${app.name}\")",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 190,
+        "left": 1748,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select avg(useraction.duration) as \"Duration\" from useraction where useraction.application=\"${app.name}\" and useraction.name=\"${method-8.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 1748,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT AVG(useraction.visuallyCompleteTime) AS \"Visually Complete\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-8.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 494,
+        "left": 1748,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-8.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic",
+      "limit": 50
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 1748,
+        "width": 228,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-8.name}\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "dynamic"
+    },
+    {
+      "name": "User Sessions Query",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 798,
+        "left": 1748,
+        "width": 228,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": " ",
+      "query": "SELECT useraction.apdexCategory AS \"Apdex Category\", COUNT(DISTINCT userSessionId) AS \"# of Users\" FROM usersession where useraction.application in (\"${app.name}\") and useraction.name=\"${method-8.name}\" GROUP BY useraction.apdexCategory ",
+      "type": "TABLE",
+      "limit": 50
+    }]
+}
