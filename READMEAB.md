@@ -5,4 +5,4 @@ This dashboard pack provides an comparison of KPIs based on session property fil
 
 # Prerequisites Highlights
 
-1. Define session properties
+1. Define session properties (i.e. CSS Selector ReleaseA and ReleaseB).
