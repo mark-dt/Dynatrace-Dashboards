@@ -3,8 +3,6 @@ This dashboard pack provides a quick overview of your user journey with a focus 
 
 ![User Journey Dashboard](UJ.png)
 
-[Usage Video Coming Soon]()
-
 # Prerequisites Highlights
 
 1. Create a conversion goal(s) for user actions that indicate a converted user session (i.e. Order Confirmation)
