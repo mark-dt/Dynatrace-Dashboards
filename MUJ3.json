@@ -1,0 +1,101 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.206.95.20201116-094826"
+    },
+    "id": "911030e2-2d04-4989-bdc9-faed1efcd842",
+    "dashboardMetadata": {
+        "name": "User Journey Overview",
+        "shared": false,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": ""
+        }
+    },
+    "tiles": [{
+        "name": "${MyString1}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 456,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${MyString2}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 456,
+            "width": 456,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${MyString3}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 912,
+            "width": 456,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 456,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "SELECT FUNNEL(${journey1.funnel}) FROM usersession where useraction.application in (\"${app.name}\")",
+        "type": "FUNNEL",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 456,
+            "width": 456,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "SELECT FUNNEL(${journey2.funnel}) FROM usersession where useraction.application in (\"${app.name}\")",
+        "type": "FUNNEL",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 912,
+            "width": 456,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "SELECT FUNNEL(${journey3.funnel}) FROM usersession where useraction.application in (\"${app.name}\")",
+        "type": "FUNNEL",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }]
+}
