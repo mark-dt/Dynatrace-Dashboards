@@ -43,7 +43,7 @@
         },
         "tileFilter": {},
         "customName": "Location",
-        "query": "select count(usersessionid) as \"Requests\",country FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null  and country!=\"synthetic\" and country IS NOT NULL group by country",
+        "query": "select count(usersessionid) as \"Requests\",country FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null  and country!=\"synthetic\" and country IS NOT NULL group by country",
         "type": "PIE_CHART"
     }, {
         "name": "Markdown",
@@ -96,7 +96,7 @@
         },
         "tileFilter": {},
         "customName": "⏱",
-        "query": "select AVG(useraction.duration) as \"Duration\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null ",
+        "query": "select AVG(useraction.duration) as \"Duration\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -150,7 +150,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83D\uDEA8",
-        "query": "select sum(useraction.errorCount) as \"Errors\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null ",
+        "query": "select sum(useraction.errorCount) as \"Errors\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -252,7 +252,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83D\uDE21",
-        "query": "select sum(numberOfRageClicks) as \"Rages\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and  numberOfRageClicks>0 and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null ",
+        "query": "select sum(numberOfRageClicks) as \"Rages\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and  numberOfRageClicks>0 and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -282,7 +282,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83D\uDE34",
-        "query": "select count(usersessionid) as \"Sessions\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and usersession.duration>180000 and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null  and userActionCount<10",
+        "query": "select count(usersessionid) as \"Sessions\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and usersession.duration>180000 and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null  and userActionCount<10",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -312,7 +312,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83D\uDC4E",
-        "query": "select count(usersessionid) as \"Requests\" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null ",
+        "query": "select count(usersessionid) as \"Requests\" FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -397,7 +397,7 @@
         },
         "tileFilter": {},
         "customName": "⏱",
-        "query": "select AVG(useraction.serverTime) as \"Server\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null ",
+        "query": "select AVG(useraction.serverTime) as \"Server\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -427,7 +427,7 @@
         },
         "tileFilter": {},
         "customName": "⏱",
-        "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null ",
+        "query": "select AVG(useraction.networkTime) as \"Network\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -457,7 +457,7 @@
         },
         "tileFilter": {},
         "customName": "⏱",
-        "query": "select AVG(useraction.requestStart) as \"Request Start\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null ",
+        "query": "select AVG(useraction.requestStart) as \"Request Start\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -487,7 +487,7 @@
         },
         "tileFilter": {},
         "customName": "⏱",
-        "query": "select AVG(useraction.loadEventEnd) as \"Load Event End\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null ",
+        "query": "select AVG(useraction.loadEventEnd) as \"Load Event End\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -517,7 +517,7 @@
         },
         "tileFilter": {},
         "customName": "⏱",
-        "query": "select AVG(useraction.documentInteractiveTime) as \"DOM Interactive\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null ",
+        "query": "select AVG(useraction.documentInteractiveTime) as \"DOM Interactive\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -547,7 +547,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83D\uDEA8",
-        "query": "select sum(useraction.failedImages) as \"Failed Images\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null ",
+        "query": "select sum(useraction.failedImages) as \"Failed Images\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -592,7 +592,7 @@
         },
         "tileFilter": {},
         "customName": "⏱",
-        "query": "select AVG(useraction.visuallyCompleteTime) as \"Visually Complete\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null ",
+        "query": "select AVG(useraction.visuallyCompleteTime) as \"Visually Complete\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -607,7 +607,7 @@
         },
         "tileFilter": {},
         "customName": "⏱",
-        "query": "select AVG(useraction.speedIndex) as \"Speed Index\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null ",
+        "query": "select AVG(useraction.speedIndex) as \"Speed Index\" from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null ",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -863,7 +863,7 @@
         },
         "tileFilter": {},
         "customName": "City",
-        "query": "select count(usersessionid) as \"Requests\",City FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage} and ${ConfirmMessage.key} is not null  group by City",
+        "query": "select count(usersessionid) as \"Requests\",City FROM usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" and ${ConfirmMessage.key} is not null  group by City",
         "type": "PIE_CHART"
     }, {
         "name": "Markdown",
