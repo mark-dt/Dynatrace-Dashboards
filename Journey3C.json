@@ -223,7 +223,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and not ${journey.where-3} ${ConfirmMessage}",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -274,7 +274,7 @@
         },
         "tileFilter": {},
         "customName": "${UserJourneyName} User Journey",
-        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} ${ConfirmMessage}",
+        "query": "SELECT FUNNEL(${journey.funnel},${journey.where-last} ${ConfirmMessage} as \"Confirmed\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} ${ConfirmMessage}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
         "limit": 50
