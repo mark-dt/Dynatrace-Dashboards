@@ -156,6 +156,55 @@
             }
         }
     }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 1064,
+            "width": 304,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${metricConversion.id}",
+                    "aggregation": "SUM",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "null¦Apdex type»Tolerating»false${metricConversion.id}|SUM|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1606239233446,
+                        "customColor": "#ffe11c"
+                    },
+                    "null¦Apdex type»Satisfied»false${metricConversion.id}|SUM|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1606239238181,
+                        "customColor": "#39ff14"
+                    },
+                    "null¦Apdex type»Frustrated»false${metricConversion.id}|SUM|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1606239238181,
+                        "customColor": "#FF1C1C"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
         "name": "Sessions",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -233,7 +282,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(link):step3 !PU(color):base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}",
-        "query": "select 0 as \"Abandons\" from usersession limit 1",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and not ${journey.where-3} and ${ConfirmMessage.key} != \"${ConfirmMessage.value}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -334,7 +383,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=step1;base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}"
+        "markdown": "!PU(svg):icon=analyze;link=step3;base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -346,7 +395,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=step1;base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}"
+        "markdown": "!PU(svg):icon=analyze;link=step4;base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
