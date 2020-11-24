@@ -315,54 +315,5 @@
         },
         "tileFilter": {},
         "markdown": "## [${journey.header-3}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda505)"
-    }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 494,
-            "left": 1064,
-            "width": 304,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "${metricConversion.id}",
-                    "aggregation": "SUM",
-                    "type": "LINE",
-                    "entityType": "APPLICATION",
-                    "dimensions": [{
-                        "id": "1",
-                        "values": [],
-                        "entityDimension": false
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {
-                    "null¦Apdex type»Tolerating»false${metricConversion.id}|SUM|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1606239233446,
-                        "customColor": "#ffe11c"
-                    },
-                    "null¦Apdex type»Satisfied»false${metricConversion.id}|SUM|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1606239238181,
-                        "customColor": "#39ff14"
-                    },
-                    "null¦Apdex type»Frustrated»false${metricConversion.id}|SUM|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1606239238181,
-                        "customColor": "#FF1C1C"
-                    }
-                }
-            },
-            "filtersPerEntityType": {}
-        }
     }]
 }
