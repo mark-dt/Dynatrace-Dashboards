@@ -177,7 +177,7 @@
             "timeframe": "-7d to -1d"
         },
         "customName": " !PU(link):var21 !PU(compare):link=var21;lt=red;gt=green;eq=#ffcb05",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -194,7 +194,7 @@
             "timeframe": "-14d to -8d"
         },
         "customName": " !PU(link):var22 !PU(compare):link=var22;lt=red;gt=green;eq=#ffcb05",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -211,7 +211,7 @@
             "timeframe": "-21d to -15d"
         },
         "customName": "  !PU(link):var23 !PU(compare):link=var23;lt=red;gt=green;eq=#ffcb05",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -228,7 +228,7 @@
             "timeframe": "-28d to -22d"
         },
         "customName": "  !PU(link):var24 !PU(compare):link=var24;lt=red;gt=green;eq=#ffcb05",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -245,7 +245,7 @@
             "timeframe": "-35d to -29d"
         },
         "customName": "  !PU(link):var25 !PU(compare):link=var25;lt=red;gt=green;eq=#ffcb05",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -262,7 +262,7 @@
             "timeframe": "-7d to -1d"
         },
         "customName": " !PU(link):var31 !PU(compare):link=var31;lt=red;gt=green;eq=##FF1C1C",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -279,7 +279,7 @@
             "timeframe": "-14d to -8d"
         },
         "customName": " !PU(link):var32 !PU(compare):link=var32;lt=red;gt=green;eq=##FF1C1C",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -296,7 +296,7 @@
             "timeframe": "-21d to -15d"
         },
         "customName": "  !PU(link):var33 !PU(compare):link=var33;lt=red;gt=green;eq=##FF1C1C",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -313,7 +313,7 @@
             "timeframe": "-28d to -22d"
         },
         "customName": "  !PU(link):var34 !PU(compare):link=var34;lt=red;gt=green;eq=##FF1C1C",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -330,7 +330,7 @@
             "timeframe": "-35d to -29d"
         },
         "customName": "  !PU(link):var35 !PU(compare):link=var35;lt=red;gt=green;eq=##FF1C1C",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -347,7 +347,7 @@
             "timeframe": "-7d to -1d"
         },
         "customName": " !PU(link):var11 !PU(compare):link=var11;lt=red;gt=green;eq=#39ff14",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${conversionGoal}",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -364,7 +364,7 @@
             "timeframe": "-14d to -8d"
         },
         "customName": " !PU(link):var12 !PU(compare):link=var12;lt=red;gt=green;eq=#39ff14",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${conversionGoal}",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -381,7 +381,7 @@
             "timeframe": "-21d to -15d"
         },
         "customName": "  !PU(link):var13 !PU(compare):link=var13;lt=red;gt=green;eq=#39ff14",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${conversionGoal}",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -398,7 +398,7 @@
             "timeframe": "-28d to -22d"
         },
         "customName": "  !PU(link):var14 !PU(compare):link=var14;lt=red;gt=green;eq=#39ff14",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${conversionGoal}",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -415,7 +415,7 @@
             "timeframe": "-35d to -29d"
         },
         "customName": "  !PU(link):var15 !PU(compare):link=var15;lt=red;gt=green;eq=#39ff14",
-        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${conversionGoal}",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -432,7 +432,7 @@
             "timeframe": "-7d to now"
         },
         "customName": "",
-        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where application in (\"${app.name}\")",
+        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where useraction.application in (\"${app.name}\")",
         "type": "FUNNEL",
         "limit": 50
     }, {
@@ -449,7 +449,7 @@
             "timeframe": "-14d to -8d"
         },
         "customName": "",
-        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where application in (\"${app.name}\")",
+        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where useraction.application in (\"${app.name}\")",
         "type": "FUNNEL",
         "limit": 50
     }, {
@@ -466,7 +466,7 @@
             "timeframe": "-21d to -15d"
         },
         "customName": "",
-        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where application in (\"${app.name}\")",
+        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where useraction.application in (\"${app.name}\")",
         "type": "FUNNEL",
         "limit": 50
     }, {
@@ -483,7 +483,7 @@
             "timeframe": "-28d to -22d"
         },
         "customName": "",
-        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where application in (\"${app.name}\")",
+        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where useraction.application in (\"${app.name}\")",
         "type": "FUNNEL",
         "limit": 50
     }, {
@@ -500,7 +500,7 @@
             "timeframe": "-35d to -29d"
         },
         "customName": "",
-        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where application in (\"${app.name}\")",
+        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where useraction.application in (\"${app.name}\")",
         "type": "FUNNEL",
         "limit": 50
     }]
