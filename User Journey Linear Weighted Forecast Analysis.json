@@ -1,0 +1,507 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.204.87.20201016-092901"
+    },
+    "id": "b026616e-e0fd-4e26-936f-e61c40ec0a6b",
+    "dashboardMetadata": {
+        "name": "\uD83D\uDC8E ${overviewName} User Journey Linear Weighted Forecast Analysis",
+        "shared": false,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": ""
+        },
+        "tags": ["Forecast", "User Journey"]
+    },
+    "tiles": [{
+        "name": "Conversion Count",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 190,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Forecast",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 0,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Last Week",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 0,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "2 Weeks Ago",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 0,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "3 Weeks Ago",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 0,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "4 Weeks Ago",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 798,
+            "left": 0,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "5 Weeks Ago",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 988,
+            "left": 0,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 190,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var11,b:var12,c:var13,d:var14,e:var15;color=#39ff14"
+    }, {
+        "name": "Non Engagement Count",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 494,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 494,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var21,b:var22,c:var23,d:var24,e:var25;color=#ffcb05"
+    }, {
+        "name": "Abandon Count",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 798,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 798,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var31,b:var32,c:var33,d:var34,e:var35;color=#FF1C1C"
+    }, {
+        "name": "User Journey",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 1102,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 494,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-7d to -1d"
+        },
+        "customName": " !PU(link):var21 !PU(compare):link=var21;lt=red;gt=green;eq=#ffcb05",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 494,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-14d to -8d"
+        },
+        "customName": " !PU(link):var22 !PU(compare):link=var22;lt=red;gt=green;eq=#ffcb05",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 494,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-21d to -15d"
+        },
+        "customName": "  !PU(link):var23 !PU(compare):link=var23;lt=red;gt=green;eq=#ffcb05",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 722,
+            "left": 494,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-28d to -22d"
+        },
+        "customName": "  !PU(link):var24 !PU(compare):link=var24;lt=red;gt=green;eq=#ffcb05",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 912,
+            "left": 494,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-35d to -29d"
+        },
+        "customName": "  !PU(link):var25 !PU(compare):link=var25;lt=red;gt=green;eq=#ffcb05",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and usersession.duration>180000 and userActionCount<10",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 798,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-7d to -1d"
+        },
+        "customName": " !PU(link):var31 !PU(compare):link=var31;lt=red;gt=green;eq=##FF1C1C",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 798,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-14d to -8d"
+        },
+        "customName": " !PU(link):var32 !PU(compare):link=var32;lt=red;gt=green;eq=##FF1C1C",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 798,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-21d to -15d"
+        },
+        "customName": "  !PU(link):var33 !PU(compare):link=var33;lt=red;gt=green;eq=##FF1C1C",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 722,
+            "left": 798,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-28d to -22d"
+        },
+        "customName": "  !PU(link):var34 !PU(compare):link=var34;lt=red;gt=green;eq=##FF1C1C",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 912,
+            "left": 798,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-35d to -29d"
+        },
+        "customName": "  !PU(link):var35 !PU(compare):link=var35;lt=red;gt=green;eq=##FF1C1C",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${milestoneGoal} and not ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 190,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-7d to -1d"
+        },
+        "customName": " !PU(link):var11 !PU(compare):link=var11;lt=red;gt=green;eq=#39ff14",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 190,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-14d to -8d"
+        },
+        "customName": " !PU(link):var12 !PU(compare):link=var12;lt=red;gt=green;eq=#39ff14",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 190,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-21d to -15d"
+        },
+        "customName": "  !PU(link):var13 !PU(compare):link=var13;lt=red;gt=green;eq=#39ff14",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 722,
+            "left": 190,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-28d to -22d"
+        },
+        "customName": "  !PU(link):var14 !PU(compare):link=var14;lt=red;gt=green;eq=#39ff14",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 912,
+            "left": 190,
+            "width": 304,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-35d to -29d"
+        },
+        "customName": "  !PU(link):var15 !PU(compare):link=var15;lt=red;gt=green;eq=#39ff14",
+        "query": "select count(usersessionid) as \" \" from usersession where application in (\"${app.name}\") and ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 1102,
+            "width": 570,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-7d to now"
+        },
+        "customName": "",
+        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where application in (\"${app.name}\")",
+        "type": "FUNNEL",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 1102,
+            "width": 570,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-14d to -8d"
+        },
+        "customName": "",
+        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where application in (\"${app.name}\")",
+        "type": "FUNNEL",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 1102,
+            "width": 570,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-21d to -15d"
+        },
+        "customName": "",
+        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where application in (\"${app.name}\")",
+        "type": "FUNNEL",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 722,
+            "left": 1102,
+            "width": 570,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-28d to -22d"
+        },
+        "customName": "",
+        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where application in (\"${app.name}\")",
+        "type": "FUNNEL",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 912,
+            "left": 1102,
+            "width": 570,
+            "height": 190
+        },
+        "tileFilter": {
+            "timeframe": "-35d to -29d"
+        },
+        "customName": "",
+        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where application in (\"${app.name}\")",
+        "type": "FUNNEL",
+        "limit": 50
+    }]
+}
