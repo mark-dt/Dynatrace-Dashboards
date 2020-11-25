@@ -398,7 +398,7 @@
             "timeframe": "-28d to -22d"
         },
         "customName": "  !PU(link):var14 !PU(compare):link=var14;lt=red;gt=green;eq=#39ff14",
-        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal and ${conversionGoal}",
+        "query": "select count(usersessionid) as \" \" from usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and ${conversionGoal}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
