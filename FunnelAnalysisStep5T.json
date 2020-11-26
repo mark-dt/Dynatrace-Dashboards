@@ -878,7 +878,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "\uD83C\uDFC6 !PU(usqlcolor):colors=#39ff14,#ffe11c,#FF1C1C",
+        "customName": "\uD83C\uDFC6 !PU(usqlcolor):vals=satisfied,tolerating,frustrated;colors=#39ff14,#ffe11c,#FF1C1C",
         "query": "select count(usersessionid) as \"Requests\", userExperienceScore FROM usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-5} and ${journey.where-6} group by userExperienceScore",
         "type": "PIE_CHART",
         "limit": 50
@@ -893,7 +893,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "\uD83C\uDFC6 !PU(usqlcolor):colors=#39ff14,#ffe11c,#FF1C1C",
+        "customName": "\uD83C\uDFC6 !PU(usqlcolor):vals=satisfied,tolerating,frustrated;colors=#39ff14,#ffe11c,#FF1C1C",
         "query": "select count(usersessionid) as \"Requests\", userExperienceScore FROM usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-5} and not ${journey.where-6} group by userExperienceScore",
         "type": "PIE_CHART",
         "limit": 50
