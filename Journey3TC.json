@@ -156,55 +156,6 @@
             }
         }
     }, {
-        "name": "Custom chart",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 494,
-            "left": 1064,
-            "width": 304,
-            "height": 304
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "${metricConversion.id}",
-                    "aggregation": "SUM",
-                    "type": "LINE",
-                    "entityType": "APPLICATION",
-                    "dimensions": [{
-                        "id": "1",
-                        "values": [],
-                        "entityDimension": false
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {
-                    "null¦Apdex type»Tolerating»false${metricConversion.id}|SUM|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1606239233446,
-                        "customColor": "#ffe11c"
-                    },
-                    "null¦Apdex type»Satisfied»false${metricConversion.id}|SUM|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1606239238181,
-                        "customColor": "#39ff14"
-                    },
-                    "null¦Apdex type»Frustrated»false${metricConversion.id}|SUM|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1606239238181,
-                        "customColor": "#FF1C1C"
-                    }
-                }
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
         "name": "Sessions",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -335,7 +286,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-3}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda505)"
+        "markdown": "## [${journey.header-3}](#dashboard;id=321cb468-c80b-44f1-9b49-36544aea744a)"
     }, {
         "name": "MARKDOWN",
         "tileType": "MARKDOWN",
@@ -347,7 +298,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Converted](#dashboard;id=321cb468-c80b-44f1-9b49-36544aea744a)"
+        "markdown": "## [Converted](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda505)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -411,6 +362,21 @@
         "query": "SELECT FUNNEL(${journey.funnel},${journey.where-last} ${ConfirmMessage} as \"Converted\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 1064,
+            "width": 304,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": "!PU(usqlcolor):vals=satisfied,tolerated,frustrated;colors=#39ff14,#ffe11c,#FF1C1C",
+        "query": "select distinct userexperiencescore, count(usersessionid) from usersession where useraction.application in (\"${app.name}\")  ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${ConfirmMessage.key} = \"${ConfirmMessage.value}\"",
+        "type": "PIE_CHART",
         "limit": 50
     }]
 }
