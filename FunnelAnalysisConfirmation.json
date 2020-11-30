@@ -5,7 +5,7 @@
     },
     "id": "321cb468-c80b-44f1-9b49-36544aea744a",
     "dashboardMetadata": {
-        "name": "${UserJourneyName} Forensics - Confirmation",
+        "name": "${UserJourneyName} Forensics - ${journey.header-last}",
         "shared": true,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {
@@ -797,7 +797,7 @@
             "height": 228
         },
         "tileFilter": {},
-        "markdown": "![]()\n## Sessions![]()\n## That![]()\n## Continued![]()\n## To![]()\n## ${journey.header-2}"
+        "markdown": "![]()\n## Converted![]()\n## Sessions![]()\n##"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -821,7 +821,7 @@
             "height": 228
         },
         "tileFilter": {},
-        "markdown": "![]()\n## Sessions![]()\n## That![]()\n## Exited![]()\n## At![]()\n## ${journey.header-1}"
+        "markdown": "![]()\n## Failed![]()\n## Sessions![]()\n##"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -875,7 +875,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "\uD83C\uDFC6 !PU(usqlcolor):vals=satisfied,tolerating,frustrated;colors=#39ff14,#ffe11c,#FF1C1C",
+        "customName": "\uD83C\uDFC6 !PU(usqlcolor):vals=satisfied,tolerated,frustrated;colors=#39ff14,#ffe11c,#FF1C1C",
         "query": "select count(usersessionid) as \"Requests\", userExperienceScore FROM usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where} ${ConfirmMessage} group by userExperienceScore",
         "type": "PIE_CHART",
         "limit": 50
@@ -890,7 +890,7 @@
             "height": 266
         },
         "tileFilter": {},
-        "customName": "\uD83C\uDFC6 !PU(usqlcolor):vals=satisfied,tolerating,frustrated;colors=#39ff14,#ffe11c,#FF1C1C",
+        "customName": "\uD83C\uDFC6 !PU(usqlcolor):vals=satisfied,tolerated,frustrated;colors=#39ff14,#ffe11c,#FF1C1C",
         "query": "select count(usersessionid) as \"Requests\", userExperienceScore FROM usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where}  and ${ConfirmMessage.key}!=\"${ConfirmMessage.value}\" group by userExperienceScore",
         "type": "PIE_CHART",
         "limit": 50
