@@ -803,13 +803,13 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 228,
+            "top": 190,
             "left": 114,
             "width": 38,
             "height": 76
         },
         "tileFilter": {},
-        "markdown": "![]()\n![]()\n # ▶"
+        "markdown": "![]()\n![]()\n ▶"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -827,13 +827,13 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 608,
+            "top": 570,
             "left": 114,
             "width": 38,
             "height": 76
         },
         "tileFilter": {},
-        "markdown": "![]()\n![]()\n # ▶"
+        "markdown": "![]()\n![]()\n ▶"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
