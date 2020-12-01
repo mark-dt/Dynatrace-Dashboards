@@ -1,0 +1,248 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.206.95.20201116-094826"
+    },
+    "id": "3fef019a-1d06-4285-a930-bd919f410aa3",
+    "dashboardMetadata": {
+        "name": "Journey Overview",
+        "shared": false,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "-72h to now"
+        }
+    },
+    "tiles": [{
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1064,
+            "left": 0,
+            "width": 152,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "PU(link):shady\n1=https://dwypuwjjgx.live.dynatrace.com/ui/dashboards?gtf=-72h%20to%20now&gf=all&filters=tag:User%20Journey%7CUser%20Journey\n2=https://dwypuwjjgx.live.dynatrace.com/ui/dashboards?gtf=-72h%20to%20now&gf=all&filters=tag:User%20Journey%7CUser%20Journey\n3=https://dwypuwjjgx.live.dynatrace.com/ui/dashboards?gtf=-72h%20to%20now&gf=all&filters=tag:User%20Journey%7CUser%20Journey"
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 38,
+            "width": 494,
+            "height": 456
+        },
+        "tileFilter": {},
+        "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
+        "query": "SELECT FUNNEL(${journey1.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "type": "FUNNEL",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 570,
+            "width": 494,
+            "height": 456
+        },
+        "tileFilter": {},
+        "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
+        "query": "SELECT FUNNEL(${journey2.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "type": "FUNNEL",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1102,
+            "width": 494,
+            "height": 456
+        },
+        "tileFilter": {},
+        "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
+        "query": "SELECT FUNNEL(${journey3.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "type": "FUNNEL",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1634,
+            "width": 494,
+            "height": 456
+        },
+        "tileFilter": {},
+        "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
+        "query": "SELECT FUNNEL(${journey4.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "type": "FUNNEL",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 38,
+            "width": 494,
+            "height": 456
+        },
+        "tileFilter": {},
+        "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
+        "query": "SELECT FUNNEL(${journey5.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "type": "FUNNEL",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 570,
+            "width": 494,
+            "height": 456
+        },
+        "tileFilter": {},
+        "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
+        "query": "SELECT FUNNEL(${journey6.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "type": "FUNNEL",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 1102,
+            "width": 494,
+            "height": 456
+        },
+        "tileFilter": {},
+        "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
+        "query": "SELECT FUNNEL(${journey7.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "type": "FUNNEL",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": " ",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 1634,
+            "width": 494,
+            "height": 456
+        },
+        "tileFilter": {},
+        "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
+        "query": "SELECT FUNNEL(${journey8.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "type": "FUNNEL",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "${MyString1}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 38,
+            "width": 494,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${MyString2}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 570,
+            "width": 494,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${MyString3}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1102,
+            "width": 494,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${MyString4}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1634,
+            "width": 494,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${MyString5}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 38,
+            "width": 494,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${MyString6}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 570,
+            "width": 494,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${MyString7}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 1102,
+            "width": 494,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${MyString8}",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 1634,
+            "width": 494,
+            "height": 38
+        },
+        "tileFilter": {}
+    }]
+}
