@@ -14,7 +14,8 @@
         },
         "dashboardFilter": {
             "timeframe": "-72h to now"
-        }
+        },
+        "tags": ["User Journey"]
     },
     "tiles": [{
         "name": "Markdown",
@@ -27,7 +28,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "PU(link):shady\n1=https://dwypuwjjgx.live.dynatrace.com/ui/dashboards?gtf=-72h%20to%20now&gf=all&filters=tag:User%20Journey%7CUser%20Journey\n2=https://dwypuwjjgx.live.dynatrace.com/ui/dashboards?gtf=-72h%20to%20now&gf=all&filters=tag:User%20Journey%7CUser%20Journey\n3=https://dwypuwjjgx.live.dynatrace.com/ui/dashboards?gtf=-72h%20to%20now&gf=all&filters=tag:User%20Journey%7CUser%20Journey"
+        "markdown": "!PU(link):shady\n1=${url}/ui/dashboards?gtf=-72h%20to%20now&gf=all&filters=tag:User%20Journey%7CUser%20Journey\n2=${url}/ui/dashboards?gtf=-72h%20to%20now&gf=all&filters=tag:User%20Journey%7CUser%20Journey\n3=${url}/ui/dashboards?gtf=-72h%20to%20now&gf=all&filters=tag:User%20Journey%7CUser%20Journey\n4=${url}/ui/dashboards?gtf=-72h%20to%20now&gf=all&filters=tag:User%20Journey%7CUser%20Journey"
     }, {
         "name": " ",
         "tileType": "DTAQL",
