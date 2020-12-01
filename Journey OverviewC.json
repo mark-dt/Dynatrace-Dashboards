@@ -3,7 +3,7 @@
         "configurationVersions": [3],
         "clusterVersion": "1.206.95.20201116-094826"
     },
-    "id": "3fef019a-1d06-4285-a930-bd919f410aa3",
+    "id": "3fef019a-1d06-4285-a930-bd919f410aa4",
     "dashboardMetadata": {
         "name": "💎 ${overviewName} Journey Overview",
         "shared": false,
@@ -28,7 +28,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(link):shady\n1=${url}/ui/dashboards?filters=tag:User%20Journey%7CUser%20Journey&filters=name:Trial\n2=${url}/ui/dashboards?filters=tag:User%20Journey%7CUser%20Journey&filters=name:Trial\n3=${url}/ui/dashboards?filters=tag:User%20Journey%7CUser%20Journey&filters=name:Trial\n4=${url}/ui/dashboards?filters=tag:User%20Journey%7CUser%20Journey&filters=name:Trial"
+        "markdown": "!PU(link):shady\n1=${url}/ui/dashboards?filters=tag:User%20Journey%7CUser%20Journey&filters=name:${overviewName}\n2=${url}/ui/dashboards?filters=tag:User%20Journey%7CUser%20Journey&filters=name:${overviewName}\n3=${url}/ui/dashboards?filters=tag:User%20Journey%7CUser%20Journey&filters=name:${overviewName}\n4=${url}/ui/dashboards?filters=tag:User%20Journey%7CUser%20Journey&filters=name:${overviewName}"
     }, {
         "name": " ",
         "tileType": "DTAQL",
@@ -41,7 +41,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
-        "query": "SELECT FUNNEL(${journey1.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "query": "SELECT FUNNEL(${journey1.funnel},${journey.where-last} ${ConfirmMessage} as \"Converted\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -57,7 +57,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
-        "query": "SELECT FUNNEL(${journey2.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "query": "SELECT FUNNEL(${journey2.funnel},${journey.where-last} ${ConfirmMessage} as \"Converted\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -73,7 +73,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
-        "query": "SELECT FUNNEL(${journey3.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "query": "SELECT FUNNEL(${journey3.funnel},${journey.where-last} ${ConfirmMessage} as \"Converted\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -89,7 +89,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
-        "query": "SELECT FUNNEL(${journey4.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "query": "SELECT FUNNEL(${journey4.funnel},${journey.where-last} ${ConfirmMessage} as \"Converted\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -105,7 +105,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
-        "query": "SELECT FUNNEL(${journey5.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "query": "SELECT FUNNEL(${journey5.funnel},${journey.where-last} ${ConfirmMessage} as \"Converted\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -121,7 +121,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
-        "query": "SELECT FUNNEL(${journey6.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "query": "SELECT FUNNEL(${journey6.funnel},${journey.where-last} ${ConfirmMessage} as \"Converted\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -137,7 +137,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
-        "query": "SELECT FUNNEL(${journey7.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "query": "SELECT FUNNEL(${journey7.funnel},${journey.where-last} ${ConfirmMessage} as \"Converted\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -153,7 +153,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(funnel):mode=height;small=5;big=20;links=shady",
-        "query": "SELECT FUNNEL(${journey8.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "query": "SELECT FUNNEL(${journey8.funnel},${journey.where-last} ${ConfirmMessage} as \"Converted\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
         "limit": 50
