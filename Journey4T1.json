@@ -25,14 +25,14 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 570,
+            "top": 494,
             "left": 152,
             "width": 1520,
             "height": 304
         },
         "tileFilter": {},
         "customName": "!PU(usqlstack):colors=#7c38a1,#fff29a,#aeebf0,#debbf3,#ffa86c,#f5d30f,#008cdb,#ffcc99,#a972cc,#ffcba4;dataLabels=true",
-        "query": "SELECT distinct datetime(endtime,\"HH\"), CONDITION(count(*), WHERE useraction.application=\"${app.name}\" and ${journey.where-1}) AS \"${journey.header-1}\", CONDITION(count(*), WHERE useraction.application=\"${app.name}\" and ${journey.where-1}) and ${journey.where-2}) AS \"${journey.header-2}\", CONDITION(count(*), WHERE useraction.application=\"${app.name}\" and ${journey.where-1}) and ${journey.where-2} and ${journey.where-3}) AS \"${journey.header-3}\", CONDITION(count(*), WHERE useraction.application=\"${app.name}\" and ${journey.where-1}) and ${journey.where-2} and ${journey.where-3} and ${journey.where-4}) AS \"${journey.header-4}\" from usersession",
+        "query": "SELECT distinct datetime(endtime,\"HH\"), CONDITION(count(*), WHERE ${journey.where-1}) AS \"${journey.header-1}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2}) AS \"${journey.header-2}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3}) AS \"${journey.header-3}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4}) AS \"${journey.header-4}\" from usersession",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
