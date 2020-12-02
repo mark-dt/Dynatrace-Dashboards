@@ -24,7 +24,7 @@
         "bounds": {
             "top": 494,
             "left": 152,
-            "width": 304,
+            "width": 494,
             "height": 304
         },
         "tileFilter": {},
@@ -40,7 +40,12 @@
                     "aggregation": "AVG",
                     "type": "LINE",
                     "entityType": "APPLICATION_METHOD",
-                    "dimensions": [{"id": "0","name": "dt.entity.application_method","values": [],"entityDimension": true}],
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
@@ -64,8 +69,8 @@
         "configured": true,
         "bounds": {
             "top": 494,
-            "left": 456,
-            "width": 304,
+            "left": 646,
+            "width": 494,
             "height": 304
         },
         "tileFilter": {},
@@ -81,7 +86,12 @@
                     "aggregation": "AVG",
                     "type": "LINE",
                     "entityType": "APPLICATION_METHOD",
-                    "dimensions": [{"id": "0","name": "dt.entity.application_method","values": [],"entityDimension": true}],
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
@@ -105,8 +115,8 @@
         "configured": true,
         "bounds": {
             "top": 494,
-            "left": 760,
-            "width": 304,
+            "left": 1140,
+            "width": 494,
             "height": 304
         },
         "tileFilter": {},
@@ -122,7 +132,12 @@
                     "aggregation": "AVG",
                     "type": "LINE",
                     "entityType": "APPLICATION_METHOD",
-                    "dimensions": [{"id": "0","name": "dt.entity.application_method","values": [],"entityDimension": true}],
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
                     "sortAscending": false,
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
@@ -183,7 +198,7 @@
         "bounds": {
             "top": 342,
             "left": 152,
-            "width": 304,
+            "width": 494,
             "height": 152
         },
         "tileFilter": {},
@@ -197,8 +212,8 @@
         "configured": true,
         "bounds": {
             "top": 342,
-            "left": 456,
-            "width": 304,
+            "left": 646,
+            "width": 494,
             "height": 152
         },
         "tileFilter": {},
@@ -212,8 +227,8 @@
         "configured": true,
         "bounds": {
             "top": 342,
-            "left": 760,
-            "width": 304,
+            "left": 1140,
+            "width": 494,
             "height": 152
         },
         "tileFilter": {},
@@ -228,7 +243,7 @@
         "bounds": {
             "top": 0,
             "left": 152,
-            "width": 304,
+            "width": 494,
             "height": 38
         },
         "tileFilter": {},
@@ -239,8 +254,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 456,
-            "width": 304,
+            "left": 646,
+            "width": 494,
             "height": 38
         },
         "tileFilter": {},
@@ -251,8 +266,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 760,
-            "width": 304,
+            "left": 1140,
+            "width": 494,
             "height": 38
         },
         "tileFilter": {},
@@ -264,7 +279,7 @@
         "bounds": {
             "top": 38,
             "left": 152,
-            "width": 912,
+            "width": 1482,
             "height": 304
         },
         "tileFilter": {},
