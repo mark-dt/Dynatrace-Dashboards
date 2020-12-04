@@ -136,7 +136,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Sessions](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal})"
+        "markdown": "## [Sessions](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20useraction.matchingConversionGoals=%22${milestoneGoal.name}%22)"
     }, {
         "name": "AbandonsIcon",
         "tileType": "MARKDOWN",
