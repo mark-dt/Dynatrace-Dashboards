@@ -149,7 +149,7 @@
         },
         "tileFilter": {},
         "markdown": "## [Sessions](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal})"
-    }, {
+		}, {
         "name": "AbandonsIcon",
         "tileType": "MARKDOWN",
         "configured": true,
