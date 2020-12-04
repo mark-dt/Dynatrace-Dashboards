@@ -136,7 +136,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Sessi](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20)"
+        "markdown": "## [Session](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20${milestoneGoal}&visualization=TABLE)"
     }, {
         "name": "AbandonsIcon",
         "tileType": "MARKDOWN",
@@ -231,7 +231,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Steps](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal})"
+        "markdown": "## [Steps](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal}&visualization=TABLE)"
     }, {
         "name": "Apdex2Pin",
         "tileType": "MARKDOWN",
@@ -303,7 +303,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Engage](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useractioncount,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(userActionCount%20%3E%202%20and%20userActionCount%20%3C%2010%20and%20duration%3E180000%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20duration%20DESC)"
+        "markdown": "## [Engage](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useractioncount,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(userActionCount%20%3E%202%20and%20userActionCount%20%3C%2010%20and%20duration%3E180000%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20duration%20DESC&visualization=TABLE)"
     }, {
         "name": "DurationPin",
         "tileType": "MARKDOWN",
@@ -339,7 +339,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Duration](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(duration%3E300000%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20duration%20DESC)"
+        "markdown": "## [Duration](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(duration%3E300000%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20duration%20DESC&visualization=TABLE)"
     }, {
         "name": "ErrorsPin",
         "tileType": "MARKDOWN",
@@ -375,7 +375,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20totalErrorCount%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(totalErrorCount%20%3E%205%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20totalErrorCount%20DESC)"
+        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20totalErrorCount%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(totalErrorCount%20%3E%205%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20totalErrorCount%20DESC&visualization=TABLE)"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
