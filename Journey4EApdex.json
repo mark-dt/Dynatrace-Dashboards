@@ -22,7 +22,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 76,
+            "top": 0,
             "left": 152,
             "width": 38,
             "height": 38
@@ -34,7 +34,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 76,
+            "top": 0,
             "left": 190,
             "width": 342,
             "height": 38
@@ -46,7 +46,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 76,
+            "top": 0,
             "left": 532,
             "width": 38,
             "height": 38
@@ -58,7 +58,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 76,
+            "top": 0,
             "left": 570,
             "width": 342,
             "height": 38
@@ -70,7 +70,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 76,
+            "top": 0,
             "left": 912,
             "width": 38,
             "height": 38
@@ -82,7 +82,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 76,
+            "top": 0,
             "left": 950,
             "width": 342,
             "height": 38
@@ -94,7 +94,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 76,
+            "top": 0,
             "left": 1292,
             "width": 38,
             "height": 38
@@ -106,7 +106,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 76,
+            "top": 0,
             "left": 1330,
             "width": 342,
             "height": 38
@@ -118,7 +118,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 228,
+            "top": 152,
             "left": 0,
             "width": 38,
             "height": 38
@@ -130,19 +130,19 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 228,
+            "top": 152,
             "left": 38,
             "width": 114,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Sessions](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal})"
+        "markdown": "## [Sessions](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal}&visualization=TABLE))"
     }, {
         "name": "AbandonsIcon",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 456,
+            "top": 380,
             "left": 0,
             "width": 38,
             "height": 38
@@ -154,7 +154,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 456,
+            "top": 380,
             "left": 38,
             "width": 114,
             "height": 38
@@ -166,7 +166,7 @@
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 836,
+            "top": 760,
             "left": 0,
             "width": 152,
             "height": 38
@@ -177,7 +177,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 646,
+            "top": 570,
             "left": 0,
             "width": 38,
             "height": 38
@@ -189,7 +189,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 646,
+            "top": 570,
             "left": 38,
             "width": 114,
             "height": 38
@@ -201,7 +201,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 912,
+            "top": 836,
             "left": 114,
             "width": 38,
             "height": 38
@@ -213,7 +213,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1026,
+            "top": 950,
             "left": 0,
             "width": 38,
             "height": 38
@@ -225,19 +225,19 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1026,
+            "top": 950,
             "left": 38,
             "width": 114,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Steps](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal})"
+        "markdown": "## [Steps](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal}&visualization=TABLE))"
     }, {
         "name": "Apdex2Pin",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1216,
+            "top": 1140,
             "left": 114,
             "width": 38,
             "height": 38
@@ -249,7 +249,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1330,
+            "top": 1254,
             "left": 0,
             "width": 38,
             "height": 38
@@ -261,7 +261,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1330,
+            "top": 1254,
             "left": 38,
             "width": 114,
             "height": 38
@@ -273,7 +273,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1520,
+            "top": 1444,
             "left": 114,
             "width": 38,
             "height": 38
@@ -285,7 +285,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1634,
+            "top": 1558,
             "left": 0,
             "width": 38,
             "height": 38
@@ -297,19 +297,19 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1634,
+            "top": 1558,
             "left": 38,
             "width": 114,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Engage](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useractioncount,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(userActionCount%20%3E%202%20and%20userActionCount%20%3C%2010%20and%20duration%3E180000%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20duration%20DESC)"
+        "markdown": "## [Engage](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useractioncount,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(userActionCount%20%3E%202%20and%20userActionCount%20%3C%2010%20and%20duration%3E180000%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20duration%20DESC&visualization=TABLE))"
     }, {
         "name": "DurationPin",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1824,
+            "top": 1748,
             "left": 114,
             "width": 38,
             "height": 38
@@ -321,7 +321,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1938,
+            "top": 1862,
             "left": 0,
             "width": 38,
             "height": 38
@@ -333,19 +333,19 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1938,
+            "top": 1862,
             "left": 38,
             "width": 114,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Duration](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(duration%3E300000%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20duration%20DESC)"
+        "markdown": "## [Duration](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(duration%3E300000%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20duration%20DESC&visualization=TABLE))"
     }, {
         "name": "ErrorsPin",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 2128,
+            "top": 2052,
             "left": 114,
             "width": 38,
             "height": 38
@@ -357,7 +357,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 2242,
+            "top": 2166,
             "left": 0,
             "width": 38,
             "height": 38
@@ -369,19 +369,19 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 2242,
+            "top": 2166,
             "left": 38,
             "width": 114,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20totalErrorCount%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(totalErrorCount%20%3E%205%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20totalErrorCount%20DESC)"
+        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20totalErrorCount%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(totalErrorCount%20%3E%205%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20totalErrorCount%20DESC&visualization=TABLE))"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 114,
+            "top": 38,
             "left": 152,
             "width": 1520,
             "height": 304
@@ -397,7 +397,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 418,
+            "top": 342,
             "left": 152,
             "width": 380,
             "height": 152
@@ -413,7 +413,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 418,
+            "top": 342,
             "left": 532,
             "width": 380,
             "height": 152
@@ -429,7 +429,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 418,
+            "top": 342,
             "left": 912,
             "width": 380,
             "height": 152
@@ -445,7 +445,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 418,
+            "top": 342,
             "left": 1292,
             "width": 380,
             "height": 152
@@ -460,7 +460,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 570,
+            "top": 494,
             "left": 152,
             "width": 380,
             "height": 304
@@ -506,7 +506,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 570,
+            "top": 494,
             "left": 532,
             "width": 380,
             "height": 304
@@ -552,7 +552,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 570,
+            "top": 494,
             "left": 912,
             "width": 380,
             "height": 304
@@ -598,7 +598,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 570,
+            "top": 494,
             "left": 1292,
             "width": 380,
             "height": 304
@@ -644,7 +644,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 912,
+            "top": 836,
             "left": 152,
             "width": 1520,
             "height": 304
@@ -662,7 +662,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 1216,
+            "top": 1140,
             "left": 152,
             "width": 1520,
             "height": 304
@@ -680,7 +680,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 1520,
+            "top": 1444,
             "left": 152,
             "width": 1520,
             "height": 304
@@ -698,7 +698,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 1824,
+            "top": 1748,
             "left": 152,
             "width": 1520,
             "height": 304
@@ -716,7 +716,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 2128,
+            "top": 2052,
             "left": 152,
             "width": 1520,
             "height": 304
