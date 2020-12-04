@@ -18,18 +18,6 @@
         "tags": ["User Journey", "${app.name}"]
     },
     "tiles": [{
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 0,
-            "width": 1254,
-            "height": 76
-        },
-        "tileFilter": {},
-        "markdown": "##\uD83D\uDC8E Powerup Enabled Dashboard \uD83D\uDC8E\n\n##  [Install Chrome Extension](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)"
-    }, {
         "name": "Step1Icon",
         "tileType": "MARKDOWN",
         "configured": true,
