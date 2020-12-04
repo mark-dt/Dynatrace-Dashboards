@@ -472,7 +472,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 494,
+            "top": 570,
             "left": 152,
             "width": 380,
             "height": 304
@@ -518,7 +518,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 494,
+            "top": 570,
             "left": 532,
             "width": 380,
             "height": 304
@@ -564,7 +564,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 494,
+            "top": 570,
             "left": 912,
             "width": 380,
             "height": 304
@@ -610,7 +610,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 494,
+            "top": 570,
             "left": 1292,
             "width": 380,
             "height": 304
