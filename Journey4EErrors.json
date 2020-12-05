@@ -651,7 +651,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(usqlstack):colors=#7c38a1,#fff29a,#aeebf0,#debbf3,#ffa86c,#f5d30f,#008cdb,#ffcc99,#a972cc,#ffcba4;dataLabels=true",
-        "query": "SELECT distinct datetime(endtime,\"HH\"), \nCONDITION(count(*), WHERE ((useraction.application=\"${app.name}\" and ${journey.where-1}))) AS \"${journey.header-1}\", \nCONDITION(count(*), WHERE ((useraction.application=\"${app.name}\" and ${journey.where-1})) and ((useraction.application=\"${app.name}\" and ${journey.where-2}))) AS \"${journey.header-2}\", \nCONDITION(count(*), WHERE useraction.application=\"${app.name}\" and ((useraction.application=\"${app.name}\" and ${journey.where-1})) and ((useraction.application=\"${app.name}\" and ${journey.where-2})) and ((useraction.application=\"${app.name}\" and ${journey.where-3}))) AS \"${journey.header-3}\", CONDITION(count(*), WHERE useraction.application=\"${app.name}\" and ((useraction.application=\"${app.name}\" and ${journey.where-1})) and ((useraction.application=\"${app.name}\" and ${journey.where-2})) and ((useraction.application=\"${app.name}\" and ${journey.where-3})) and ((useraction.application=\"${app.name}\" and ${journey.where-4}))) AS \"${journey.header-4}\" \nfrom usersession WHERE useraction.application=\"${app.name}\"",
+        "query": "SELECT distinct datetime(endtime,\"HH\"), \nCONDITION(count(*), WHERE (( ${journey.where-1}))) AS \"${journey.header-1}\", \nCONDITION(count(*), WHERE (( ${journey.where-1})) and (( ${journey.where-2}))) AS \"${journey.header-2}\", \nCONDITION(count(*), WHERE  and ${journey.where-1})) and (( ${journey.where-2})) and (( ${journey.where-3}))) AS \"${journey.header-3}\", CONDITION(count(*), WHERE  and ${journey.where-1})) and (( ${journey.where-2})) and (( ${journey.where-3})) and (( ${journey.where-4}))) AS \"${journey.header-4}\" \nfrom usersession WHERE useraction.application=\"${app.name}\"",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
@@ -669,7 +669,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(usqlstack):colors=green,yellow,red,blue;dataLabels=true",
-        "query": "SELECT distinct datetime(endtime,\"HH\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"SATISFIED\") as \"Satisfied\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"TOLERATED\") as \"Tolerated\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"FRUSTRATED\") as \"Frustrated\",\nCONDITION(count(*), WHERE ${milestoneGoal} and useraction.application=\"${app.name}\" and ((useraction.application=\"${app.name}\" and ${journey.where-1})) and ((useraction.application=\"${app.name}\" and ${journey.where-2})) and ((useraction.application=\"${app.name}\" and ${journey.where-3})) and ((useraction.application=\"${app.name}\" and ${journey.where-4}))) AS \"Conversions\" \nFROM usersession \nWHERE useraction.application=\"${app.name}\" and not useraction.name like \"%blog%\" and userActionCount>2",
+        "query": "SELECT distinct datetime(endtime,\"HH\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"SATISFIED\") as \"Satisfied\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"TOLERATED\") as \"Tolerated\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"FRUSTRATED\") as \"Frustrated\",\nCONDITION(count(*), WHERE ${milestoneGoal} and  and ${journey.where-1})) and (( ${journey.where-2})) and (( ${journey.where-3})) and (( ${journey.where-4}))) AS \"Conversions\" \nFROM usersession \nWHERE  not useraction.name like \"%blog%\" and userActionCount>2",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
@@ -687,7 +687,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(usqlstack):colors=green,yellow,red,blue;dataLabels=true",
-        "query": "SELECT distinct datetime(endtime,\"HH\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount>3 and duration<180000) as \"Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount<10 and duration>180000) as \"Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount<5 and duration>180000) as \"Very Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and useraction.application=\"${app.name}\" and ((useraction.application=\"${app.name}\" and ${journey.where-1})) and ((useraction.application=\"${app.name}\" and ${journey.where-2})) and ((useraction.application=\"${app.name}\" and ${journey.where-3})) and ((useraction.application=\"${app.name}\" and ${journey.where-4}))) AS \"Conversions\" \nFROM usersession \nWHERE useraction.application=\"${app.name}\" and not useraction.name like \"%blog%\" and userActionCount>2",
+        "query": "SELECT distinct datetime(endtime,\"HH\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount>3 and duration<180000) as \"Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount<10 and duration>180000) as \"Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount<5 and duration>180000) as \"Very Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and  and ${journey.where-1})) and (( ${journey.where-2})) and (( ${journey.where-3})) and (( ${journey.where-4}))) AS \"Conversions\" \nFROM usersession \nWHERE  not useraction.name like \"%blog%\" and userActionCount>2",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
@@ -705,7 +705,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(usqlstack):colors=green,lightgreen,yellow,red,blue;dataLabels=true",
-        "query": "SELECT distinct datetime(endtime,\"HH\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and duration<30000) as Fast, \nCONDITION(count(*), WHERE ${milestoneGoal} and duration BETWEEN 30000 and 60000) as Medium,\nCONDITION(count(*), WHERE ${milestoneGoal} and duration between 60000 and 300000) as Slow,\nCONDITION(count(*), WHERE ${milestoneGoal} and duration>300000) as \"Very Slow\",\nCONDITION(count(*), WHERE useraction.application=\"${app.name}\" and ((useraction.application=\"${app.name}\" and ${journey.where-1})) and ((useraction.application=\"${app.name}\" and ${journey.where-2})) and ((useraction.application=\"${app.name}\" and ${journey.where-3})) and ((useraction.application=\"${app.name}\" and ${journey.where-4}))) AS \"Conversions\" \nFROM usersession\nWHERE useraction.application=\"${app.name}\" and not useraction.name like \"%blog%\"",
+        "query": "SELECT distinct datetime(endtime,\"HH\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and duration<30000) as Fast, \nCONDITION(count(*), WHERE ${milestoneGoal} and duration BETWEEN 30000 and 60000) as Medium,\nCONDITION(count(*), WHERE ${milestoneGoal} and duration between 60000 and 300000) as Slow,\nCONDITION(count(*), WHERE ${milestoneGoal} and duration>300000) as \"Very Slow\",\nCONDITION(count(*), WHERE  and ${journey.where-1})) and (( ${journey.where-2})) and (( ${journey.where-3})) and (( ${journey.where-4}))) AS \"Conversions\" \nFROM usersession\nWHERE  not useraction.name like \"%blog%\"",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
@@ -723,7 +723,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(usqlstack):colors=green,yellow,red,blue;dataLabels=true",
-        "query": "SELECT distinct datetime(endtime,\"HH\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount=0) as \"No Errors\", \nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount BETWEEN 1 and 5) as \"Low Errors\",\nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount > 5) as \"High Errors\",\nCONDITION(count(*), WHERE useraction.application=\"${app.name}\" and ((useraction.application=\"${app.name}\" and ${journey.where-1})) and ((useraction.application=\"${app.name}\" and ${journey.where-2})) and ((useraction.application=\"${app.name}\" and ${journey.where-3})) and ((useraction.application=\"${app.name}\" and ${journey.where-4}))) AS \"Conversions\" \nFROM usersession\nWHERE useraction.application=\"${app.name}\" and not useraction.name like \"%blog%\"",
+        "query": "SELECT distinct datetime(endtime,\"HH\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount=0) as \"No Errors\", \nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount BETWEEN 1 and 5) as \"Low Errors\",\nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount > 5) as \"High Errors\",\nCONDITION(count(*), WHERE  and ${journey.where-1})) and (( ${journey.where-2})) and (( ${journey.where-3})) and (( ${journey.where-4}))) AS \"Conversions\" \nFROM usersession\nWHERE  not useraction.name like \"%blog%\"",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
