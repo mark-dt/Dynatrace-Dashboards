@@ -15,7 +15,7 @@
         "dashboardFilter": {
             "timeframe": "-7d to now"
         },
-        "tags": ["User Journey", "${app.name}"]
+        "tags": ["${app.name}"]
     },
     "tiles": [{
         "name": "Step1Icon",
