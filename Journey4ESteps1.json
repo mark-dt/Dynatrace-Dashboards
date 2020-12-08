@@ -213,7 +213,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 684,
+            "top": 608,
             "left": 0,
             "width": 38,
             "height": 38
@@ -225,7 +225,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 684,
+            "top": 608,
             "left": 38,
             "width": 114,
             "height": 38
@@ -839,7 +839,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 570,
+            "top": 494,
             "left": 38,
             "width": 114,
             "height": 38
@@ -851,7 +851,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 608,
+            "top": 532,
             "left": 38,
             "width": 114,
             "height": 38
