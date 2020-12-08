@@ -847,7 +847,7 @@
         "tileFilter": {},
         "markdown": "[10m Interval ->](#dashboard;id=d3f74940-9953-44c1-96c5-9464d707de43)"
     }, {
-        "name": "1HInterval",
+        "name": "8HInterval",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -857,6 +857,6 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "[1h Interval ->](#dashboard;id=d3f74940-9953-44c1-96c5-9464d708de43)"
+        "markdown": "[8h Interval ->](#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de43)"
     }]
 }

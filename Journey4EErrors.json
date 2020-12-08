@@ -357,7 +357,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 570,
+            "top": 608,
             "left": 0,
             "width": 38,
             "height": 38
@@ -369,7 +369,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 570,
+            "top": 608,
             "left": 38,
             "width": 114,
             "height": 38
@@ -834,5 +834,29 @@
         "query": "SELECT count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (userActionCount > 2 and userActionCount < 10 and duration>180000 and not useraction.name like \"%blog%\")\n",
         "type": "SINGLE_VALUE",
         "limit": 50
+    }, {
+        "name": "10MInterval",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "[10m Interval ->](#dashboard;id=d3f74940-9953-44c1-96c5-9464d707de46)"
+    }, {
+        "name": "1HInterval",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "[1h Interval ->](#dashboard;id=d3f74940-9953-44c1-96c5-9464d708de46)"
     }]
 }
