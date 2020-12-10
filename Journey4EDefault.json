@@ -28,7 +28,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnk1;base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnk1;base=low;warn=${MyStep1W};crit=${MyStep1C}"
     }, {
         "name": "Step1Link",
         "tileType": "MARKDOWN",
@@ -52,7 +52,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnk2;base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnk2;base=low;warn=${MyStepMW};crit=${MyStepMC}"
     }, {
         "name": "Step2Link",
         "tileType": "MARKDOWN",
@@ -76,7 +76,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnk3;base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnk3;base=low;warn=${MyStepMW};crit=${MyStepMC}"
     }, {
         "name": "Step3Link",
         "tileType": "MARKDOWN",
@@ -100,7 +100,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyStepLW};crit=${MyStepLC}"
     }, {
         "name": "Step4Link",
         "tileType": "MARKDOWN",
@@ -124,7 +124,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=val1;base=high;warn=${MySessionsW};crit=${MySessionsC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnksessions;base=high;warn=${MySessionsW};crit=${MySessionsC}"
     }, {
         "name": "SessionsLink",
         "tileType": "MARKDOWN",
@@ -219,7 +219,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyStepLW};crit=${MyStepLC}"
     }, {
         "name": "StepsLink",
         "tileType": "MARKDOWN",
@@ -388,7 +388,7 @@
         },
         "tileFilter": {},
         "customName": "${UserJourneyName} User Journey",
-        "query": "SELECT FUNNEL(${journey.where-1} AS \"${journey.header-1}\",${journey.where-2} AS \"${journey.header-2}\",${journey.where-3} AS \"${journey.header-3}\",${journey.where-4} ${conversionMessage} AS \"${journey.header-4}\"}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "query": "SELECT FUNNEL(${journey.where-1} AS \"${journey.header-1}\",${journey.where-2} AS \"${journey.header-2}\",${journey.where-3} AS \"${journey.header-3}\",${journey.where-4} ${conversionMessage} AS \"${journey.header-4}\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
         "limit": 50
