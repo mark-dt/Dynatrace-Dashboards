@@ -388,7 +388,7 @@
         },
         "tileFilter": {},
         "customName": "${UserJourneyName} User Journey",
-        "query": "SELECT FUNNEL(${journey.funnel}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "query": "SELECT FUNNEL(${journey.where-1} AS \"${journey.header-1}\",${journey.where-2} AS \"${journey.header-2}\",${journey.where-3} AS \"${journey.header-3}\",${journey.where-4} ${conversionMessage} AS \"${journey.header-4}\"}) FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -403,7 +403,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC} !PU(link):lnk1",
+        "customName": "!PU(color):base=low;warn=${MyStep1W};crit=${MyStep1C} !PU(link):lnk1",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
@@ -419,7 +419,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC} !PU(link):lnk2",
+        "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk2",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and not ${journey.where-3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
@@ -435,7 +435,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC} !PU(link):lnk3",
+        "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk3",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and not ${journey.where-4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
@@ -451,7 +451,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}",
+        "customName": "!PU(color):base=low;warn=${MyStepLW};crit=${MyStepLC}",
         "query": "select 0 as \"Abandons\" from usersession limit 1",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
