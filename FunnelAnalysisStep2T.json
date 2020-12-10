@@ -32,7 +32,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Requests](${url}/ui/user-sessions/query?sessionquery=select%20UserId%2Cduration,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
+        "markdown": "## [Requests](${url}/ui/user-sessions/query?sessionquery=select%20UserId%2Cduration,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -44,7 +44,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Requests](${url}/ui/user-sessions/query?sessionquery=select%20UserId%2Cduration,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
+        "markdown": "## [Requests](${url}/ui/user-sessions/query?sessionquery=select%20UserId%2Cduration,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -56,7 +56,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Duration](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.duration,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
+        "markdown": "## [Duration](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.duration,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -68,7 +68,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Duration](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.duration,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
+        "markdown": "## [Duration](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.duration,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
     }, {
         "name": "DTAQL",
         "tileType": "DTAQL",
@@ -110,7 +110,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.errorCount,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20and%20useraction.errorCount%3E0%20order%20by%20useraction.errorCount%20desc&visualization=TABLE)"
+        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.errorCount,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20and%20useraction.errorCount%3E0%20order%20by%20useraction.errorCount%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -122,7 +122,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.errorCount,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20and%20useraction.errorCount%3E0%20order%20by%20useraction.errorCount%20DESC&visualization=TABLE)"
+        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.errorCount,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20and%20useraction.errorCount%3E0%20order%20by%20useraction.errorCount%20DESC&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -549,7 +549,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Visually Complete](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.visuallyCompleteTime,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.visuallyCompleteTime%20desc&visualization=TABLE)"
+        "markdown": "## [Visually Complete](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.visuallyCompleteTime,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.visuallyCompleteTime%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -561,7 +561,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Visually Complete](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.visuallyCompleteTime,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.visuallyCompleteTime%20desc&visualization=TABLE)"
+        "markdown": "## [Visually Complete](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.visuallyCompleteTime,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.visuallyCompleteTime%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -573,7 +573,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Speed Index](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.speedIndex,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.speedIndex%20desc&visualization=TABLE)"
+        "markdown": "## [Speed Index](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.speedIndex,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.speedIndex%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -585,7 +585,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Speed Index](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.speedIndex,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.speedIndex%20desc&visualization=TABLE)"
+        "markdown": "## [Speed Index](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.speedIndex,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.speedIndex%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -597,7 +597,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Server](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.serverTime,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.serverTime%20desc&visualization=TABLE)"
+        "markdown": "## [Server](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.serverTime,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.serverTime%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -609,7 +609,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Server](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.serverTime,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.serverTime%20desc&visualization=TABLE)"
+        "markdown": "## [Server](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.serverTime,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.serverTime%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -621,7 +621,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Network](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.networkTime,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.networkTime%20desc&visualization=TABLE)"
+        "markdown": "## [Network](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.networkTime,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.networkTime%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -633,7 +633,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Network](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.networkTime,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.networkTime%20desc&visualization=TABLE)"
+        "markdown": "## [Network](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.networkTime,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.networkTime%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -645,7 +645,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Request Start](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.requestStart,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.requestStart%20desc&visualization=TABLE)"
+        "markdown": "## [Request Start](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.requestStart,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.requestStart%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -657,7 +657,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Request Start](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.requestStart,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.requestStart%20desc&visualization=TABLE)"
+        "markdown": "## [Request Start](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.requestStart,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.requestStart%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -669,7 +669,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Load Event End](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.loadEventEnd,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.loadEventEnd%20desc&visualization=TABLE)"
+        "markdown": "## [Load Event End](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.loadEventEnd,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.loadEventEnd%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -681,7 +681,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Load Event End](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.loadEventEnd,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.loadEventEnd%20desc&visualization=TABLE)"
+        "markdown": "## [Load Event End](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.loadEventEnd,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.loadEventEnd%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -693,7 +693,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [DOM Interactive](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.documentInteractiveTime,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.documentInteractiveTime%20desc&visualization=TABLE)"
+        "markdown": "## [DOM Interactive](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.documentInteractiveTime,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.documentInteractiveTime%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -705,7 +705,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [DOM Interactive](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.documentInteractiveTime,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.documentInteractiveTime%20desc&visualization=TABLE)"
+        "markdown": "## [DOM Interactive](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.documentInteractiveTime,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.documentInteractiveTime%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -717,7 +717,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Failed Images](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.failedImages,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20and%20useraction.failedImages%3E0%20order%20by%20useraction.failedImages%20desc&visualization=TABLE)"
+        "markdown": "## [Failed Images](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.failedImages,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20and%20useraction.failedImages%3E0%20order%20by%20useraction.failedImages%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -729,7 +729,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Failed Images](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.failedImages,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20and%20useraction.failedImages%3E0%20order%20by%20useraction.failedImages%20DESC&visualization=TABLE)"
+        "markdown": "## [Failed Images](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.failedImages,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20and%20useraction.failedImages%3E0%20order%20by%20useraction.failedImages%20DESC&visualization=TABLE)"
     }, {
         "name": "Environment Breakdown",
         "tileType": "HEADER",
@@ -752,7 +752,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Apdex](${url}/ui/user-sessions/query?sessionquery=select%20UserId%2Cuserexperiencescore%2Cduration,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
+        "markdown": "## [Apdex](${url}/ui/user-sessions/query?sessionquery=select%20UserId%2Cuserexperiencescore%2Cduration,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -764,7 +764,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Apdex](${url}/ui/user-sessions/query?sessionquery=select%20UserId%2Cuserexperiencescore%2Cduration,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
+        "markdown": "## [Apdex](${url}/ui/user-sessions/query?sessionquery=select%20UserId%2Cuserexperiencescore%2Cduration,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -776,7 +776,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Requests by City](${url}/ui/user-sessions/query?sessionquery=select%20UserId%2CCity%2Cduration,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
+        "markdown": "## [Requests by City](${url}/ui/user-sessions/query?sessionquery=select%20UserId%2CCity%2Cduration,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -788,7 +788,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Requests by City](${url}/ui/user-sessions/query?sessionquery=select%20UserId%2CCity%2Cduration,usersession.hassessionreplay%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20${uspClause}%20${regionClause}%20and%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
+        "markdown": "## [Requests by City](${url}/ui/user-sessions/query?sessionquery=select%20UserId%2CCity%2Cduration,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-1}%20and%20${journey.where-2}%20and%20not%20${journey.where-3}%20order%20by%20useraction.duration%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
