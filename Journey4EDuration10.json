@@ -303,7 +303,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Engage](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useractioncount,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(userActionCount%20%3E%202%20and%20userActionCount%20%3C%2010%20and%20duration%3E180000%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20duration%20DESC&visualization=TABLE))"
+        "markdown": "## [Engage](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useractioncount,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(userActionCount%20%3E%202%20and%20userActionCount%20%3C%20${actionLimit}%20and%20duration%3E${durationLimit}%20and%20not%20useraction.name%20like%20%22%25blog%25%22)%20ORDER%20BY%20duration%20DESC&visualization=TABLE))"
     }, {
         "name": "DurationPin",
         "tileType": "MARKDOWN",
@@ -687,7 +687,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(usqlstack):colors=green,yellow,red,blue;dataLabels=true",
-        "query": "SELECT distinct datetime(endtime,\"M-d HH:mm\",\"10m\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount>3 and duration<180000) as \"Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount<10 and duration>180000) as \"Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount<5 and duration>180000) as \"Very Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4}) AS \"Conversions\" \nFROM usersession \nWHERE  not useraction.name like \"%blog%\" and userActionCount>2",
+        "query": "SELECT distinct datetime(endtime,\"M-d HH:mm\",\"10m\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount>3 and duration<${durationLimit}) as \"Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount< ${actionLimit} and duration>${durationLimit}) as \"Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount<5 and duration>${durationLimit}) as \"Very Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4}) AS \"Conversions\" \nFROM usersession \nWHERE  not useraction.name like \"%blog%\" and userActionCount>2",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
@@ -831,7 +831,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(link):lnkengage",
-        "query": "SELECT count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (userActionCount > 2 and userActionCount < 10 and duration>180000 and not useraction.name like \"%blog%\")\n",
+        "query": "SELECT count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (userActionCount > 2 and userActionCount < ${actionLimit} and duration>${durationLimit} and not useraction.name like \"%blog%\")\n",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
