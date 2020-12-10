@@ -100,7 +100,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyStepLW};crit=${MyStepLC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC}"
     }, {
         "name": "Step4Link",
         "tileType": "MARKDOWN",
@@ -219,7 +219,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyStepLW};crit=${MyStepLC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC}"
     }, {
         "name": "StepsLink",
         "tileType": "MARKDOWN",
@@ -451,7 +451,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=low;warn=${MyStepLW};crit=${MyStepLC}",
+        "customName": "!PU(color):base=low;warn=10;crit=20",
         "query": "select 0 as \"Abandons\" from usersession limit 1",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
