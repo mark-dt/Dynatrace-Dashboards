@@ -100,7 +100,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnk4;base=high;warn=${MyStepMW};crit=${MyStepMC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnk4;base=low;warn=${MyStepMW};crit=${MyStepMC}"
     }, {
         "name": "Step4Link",
         "tileType": "MARKDOWN",
