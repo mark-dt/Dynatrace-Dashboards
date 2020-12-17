@@ -201,7 +201,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 570,
+            "top": 2166,
             "left": 0,
             "width": 38,
             "height": 38
@@ -213,7 +213,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 570,
+            "top": 2166,
             "left": 38,
             "width": 114,
             "height": 38
@@ -375,13 +375,13 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [\uD83D\uDCCC](#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de56)"
+        "markdown": "## [\uD83D\uDCCC](#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de51)"
     }, {
         "name": "ErrorsIcon",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 2166,
+            "top": 608,
             "left": 0,
             "width": 38,
             "height": 38
@@ -393,7 +393,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 2166,
+            "top": 608,
             "left": 38,
             "width": 114,
             "height": 38
@@ -500,7 +500,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 494,
+            "top": 2052,
             "left": 152,
             "width": 304,
             "height": 304
@@ -546,7 +546,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 494,
+            "top": 2052,
             "left": 456,
             "width": 304,
             "height": 304
@@ -592,7 +592,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 494,
+            "top": 2052,
             "left": 760,
             "width": 304,
             "height": 304
@@ -638,7 +638,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 494,
+            "top": 2052,
             "left": 1064,
             "width": 304,
             "height": 304
@@ -684,7 +684,7 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 494,
+            "top": 2052,
             "left": 1368,
             "width": 304,
             "height": 304
@@ -802,7 +802,7 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 2052,
+            "top": 494,
             "left": 152,
             "width": 1520,
             "height": 304
@@ -920,5 +920,29 @@
         "query": "SELECT count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (userActionCount > 2 and userActionCount < ${actionLimit} and duration>${durationLimit} and",
         "type": "SINGLE_VALUE",
         "limit": 50
+    }, {
+        "name": "10MInterval",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "[10m Interval ->](#dashboard;id=d3f74940-9953-44c1-96c5-9464d707de56)"
+    }, {
+        "name": "8HInterval",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "[8h Interval ->](#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de56)"
     }]
 }
