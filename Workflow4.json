@@ -43,18 +43,6 @@
       "tileFilter": {}
     },
     {
-      "name": "Errors",
-      "tileType": "HEADER",
-      "configured": true,
-      "bounds": {
-            "top": 722,
-            "left": 0,
-            "width": 152,
-            "height": 38
-      },
-      "tileFilter": {}
-    },
-    {
       "name": "Apdex",
       "tileType": "HEADER",
       "configured": true,
@@ -171,22 +159,6 @@
       },
       "tileFilter": {},
         "markdown": "${method-3.name}"
-    },
-    {
-      "name": "DTAQL",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 684,
-        "left": 152,
-        "width": 228,
-        "height": 152
-      },
-      "tileFilter": {},
-      "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-0.name}\"",
-      "type": "SINGLE_VALUE",
-      "timeFrameShift": "dynamic"
     },
     {
       "name": "User Sessions Query",
@@ -355,22 +327,6 @@
       "limit": 50
     },
     {
-      "name": "DTAQL",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 684,
-        "left": 380,
-        "width": 228,
-        "height": 152
-      },
-      "tileFilter": {},
-      "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-1.name}\"",
-      "type": "SINGLE_VALUE",
-      "timeFrameShift": "dynamic"
-    },
-    {
       "name": "User Sessions Query",
       "tileType": "DTAQL",
       "configured": true,
@@ -455,22 +411,6 @@
       "limit": 50
     },
     {
-      "name": "DTAQL",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 684,
-        "left": 608,
-        "width": 228,
-        "height": 152
-      },
-      "tileFilter": {},
-      "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-2.name}\"",
-      "type": "SINGLE_VALUE",
-      "timeFrameShift": "dynamic"
-    },
-    {
       "name": "User Sessions Query",
       "tileType": "DTAQL",
       "configured": true,
@@ -553,22 +493,6 @@
       "type": "SINGLE_VALUE",
       "timeFrameShift": "dynamic",
       "limit": 50
-    },
-    {
-      "name": "DTAQL",
-      "tileType": "DTAQL",
-      "configured": true,
-      "bounds": {
-        "top": 684,
-        "left": 836,
-        "width": 228,
-        "height": 152
-      },
-      "tileFilter": {},
-      "customName": " ",
-      "query": "select sum(useraction.errorCount) as \"Errors\" from useraction where useraction.application in (\"${app.name}\") and useraction.name=\"${method-3.name}\"",
-      "type": "SINGLE_VALUE",
-      "timeFrameShift": "dynamic"
     },
     {
       "name": "User Sessions Query",
