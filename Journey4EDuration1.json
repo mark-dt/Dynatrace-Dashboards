@@ -148,7 +148,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkabandons;base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnkabandons;base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC};url=#dashboard;id=0d81ee7c-f7ba-4626-a086-60b76ecda505"
     }, {
         "name": "AbandonsLink",
         "tileType": "MARKDOWN",
@@ -160,7 +160,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Abandons](#dashboard;id=0d81ee7c-f7ba-4626-a086-60b76ecda505)"
+        "markdown": "## Abandons"
     }, {
         "name": "Graphs ▼",
         "tileType": "HEADER",
@@ -183,7 +183,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkapdex;base=low;warn=${MyApdexCountW};crit=${MyApdexCountC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnkapdex;base=low;warn=${MyApdexCountW};crit=${MyApdexCountC};url=#uemapplications/uemappmetrics;uemapplicationId=${app.id};visiblepart=apdex-details"
     }, {
         "name": "ApdexLink",
         "tileType": "MARKDOWN",
@@ -195,7 +195,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Apdex](#uemapplications/uemappmetrics;uemapplicationId=${app.id};visiblepart=apdex-details)"
+        "markdown": "## Apdex"
     }, {
         "name": "StepsPin",
         "tileType": "MARKDOWN",
@@ -219,7 +219,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC};url=#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda505"
+        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal}&visualization=TABLE"
     }, {
         "name": "StepsLink",
         "tileType": "MARKDOWN",
@@ -231,7 +231,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Steps](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal}&visualization=TABLE))"
+        "markdown": "## Steps"
     }, {
         "name": "Apdex2Pin",
         "tileType": "MARKDOWN",
@@ -255,7 +255,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkapdex;base=low;warn=${MyApdexCountW};crit=${MyApdexCountC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnkapdex;base=low;warn=${MyApdexCountW};crit=${MyApdexCountC};url=#uemapplications/uemappmetrics;uemapplicationId=${app.id};visiblepart=apdex-details"
     }, {
         "name": "Apdex2Link",
         "tileType": "MARKDOWN",
@@ -267,7 +267,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Apdex](#uemapplications/uemappmetrics;uemapplicationId=${app.id};visiblepart=apdex-details)"
+        "markdown": "## Apdex"
     }, {
         "name": "EngagePin",
         "tileType": "MARKDOWN",
