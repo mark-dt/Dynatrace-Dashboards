@@ -124,7 +124,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnksessions;base=high;warn=${MySessionsW};crit=${MySessionsC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnksessions;base=high;warn=${MySessionsW};crit=${MySessionsC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal}&visualization=TABLE"
     }, {
         "name": "SessionsLink",
         "tileType": "MARKDOWN",
@@ -136,7 +136,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Sessions](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal}&visualization=TABLE))"
+        "markdown": "## Sessions"
     }, {
         "name": "AbandonsIcon",
         "tileType": "MARKDOWN",
