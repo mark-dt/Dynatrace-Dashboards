@@ -291,7 +291,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkengage;base=low;warn=${MyEngageW};crit=${MyEngageC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnkengage;base=low;warn=${MyEngageW};crit=${MyEngageC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useractioncount,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(userActionCount%20%3E%202%20and%20userActionCount%20%3C%20${actionLimit}%20and%20duration%3E${durationLimit}%20)%20ORDER%20BY%20duration%20DESC&visualization=TABLE"
     }, {
         "name": "EngageLink",
         "tileType": "MARKDOWN",
@@ -303,7 +303,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Engage](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useractioncount,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(userActionCount%20%3E%202%20and%20userActionCount%20%3C%20${actionLimit}%20and%20duration%3E${durationLimit}%20)%20ORDER%20BY%20duration%20DESC&visualization=TABLE))"
+        "markdown": "## Engage)"
     }, {
         "name": "DurationPin",
         "tileType": "MARKDOWN",
@@ -327,7 +327,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkduration;base=low;warn=${MyDurationW};crit=${MyDurationC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnkduration;base=low;warn=${MyDurationW};crit=${MyDurationC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(duration%3E300000%20)%20ORDER%20BY%20duration%20DESC&visualization=TABLE"
     }, {
         "name": "DurationLink",
         "tileType": "MARKDOWN",
@@ -339,7 +339,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Duration](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(duration%3E300000%20)%20ORDER%20BY%20duration%20DESC&visualization=TABLE))"
+        "markdown": "## Duration)"
     }, {
         "name": "ErrorsPin",
         "tileType": "MARKDOWN",
@@ -363,7 +363,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkerrors;base=low;warn=${MyErrorsW};crit=${MyErrorsC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnkerrors;base=low;warn=${MyErrorsW};crit=${MyErrorsC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20totalErrorCount%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(totalErrorCount%20%3E%205%20)%20ORDER%20BY%20totalErrorCount%20DESC&visualization=TABLE"
     }, {
         "name": "ErrorsLink",
         "tileType": "MARKDOWN",
@@ -375,7 +375,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20totalErrorCount%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(totalErrorCount%20%3E%205%20)%20ORDER%20BY%20totalErrorCount%20DESC&visualization=TABLE))"
+        "markdown": "## Errors)"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
