@@ -869,6 +869,6 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=help-bubble;link=lnk4;base=low;warn=0;crit=3;url=#dashboard;id=0ac9409a-3e01-456b-b2ff-1e401695dbd5"
+        "markdown": "!PU(svg):icon=help-bubble;link=lnk4;base=high;warn=-1;crit=-1;url=#dashboard;id=0ac9409a-3e01-456b-b2ff-1e401695dbd5"
     }]
 }
