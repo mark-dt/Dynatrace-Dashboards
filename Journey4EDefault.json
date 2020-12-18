@@ -451,7 +451,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=low;warn=10;crit=20",
+        "customName": "!PU(color):base=low;warn=10;crit=20  !PU(link):lnk4",
         "query": "select 0 as \"Abandons\" from usersession limit 1",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
@@ -839,7 +839,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 76,
+            "top": 0,
             "left": 0,
             "width": 38,
             "height": 38
