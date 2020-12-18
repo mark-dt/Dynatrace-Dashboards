@@ -28,7 +28,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnk1;base=low;warn=${MyStep1W};crit=${MyStep1C}"
+        "markdown": "!PU(svg):icon=analyze;link=lnk1;base=low;warn=${MyStep1W};crit=${MyStep1C};url=#dashboard;id=1fc1af04-a855-43cb-855c-c32f4ecda505"
     }, {
         "name": "Step1Link",
         "tileType": "MARKDOWN",
@@ -40,7 +40,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-1}](#dashboard;id=1fc1af04-a855-43cb-855c-c32f4ecda505)"
+        "markdown": "## ${journey.header-1}"
     }, {
         "name": "Step2Icon",
         "tileType": "MARKDOWN",
@@ -52,7 +52,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnk2;base=low;warn=${MyStepMW};crit=${MyStepMC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnk2;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=2662ddb8-dd6a-4345-a1bc-7ff069eda505"
     }, {
         "name": "Step2Link",
         "tileType": "MARKDOWN",
@@ -64,7 +64,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-2}](#dashboard;id=2662ddb8-dd6a-4345-a1bc-7ff069eda505)"
+        "markdown": "## ${journey.header-2}"
     }, {
         "name": "Step3Icon",
         "tileType": "MARKDOWN",
@@ -76,7 +76,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnk3;base=low;warn=${MyStepMW};crit=${MyStepMC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnk3;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=10a69069-74c2-4eba-b18a-6856d91da505"
     }, {
         "name": "Step3Link",
         "tileType": "MARKDOWN",
@@ -88,7 +88,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-3}](#dashboard;id=10a69069-74c2-4eba-b18a-6856d91da505)"
+        "markdown": "## ${journey.header-3}"
     }, {
         "name": "Step4Icon",
         "tileType": "MARKDOWN",
@@ -100,7 +100,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC};url=#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda505"
     }, {
         "name": "Step4Link",
         "tileType": "MARKDOWN",
@@ -112,7 +112,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-4}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda505)"
+        "markdown": "## ${journey.header-4}"
     }, {
         "name": "SessionsIcon",
         "tileType": "MARKDOWN",
@@ -136,7 +136,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Sessions](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20${milestoneGoal}&visualization=TABLE)"
+        "markdown": "## [Sessions](${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal}&visualization=TABLE)"
     }, {
         "name": "AbandonsIcon",
         "tileType": "MARKDOWN",
@@ -219,7 +219,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC}"
+        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC};url=#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda505"
     }, {
         "name": "StepsLink",
         "tileType": "MARKDOWN",
