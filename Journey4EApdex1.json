@@ -207,7 +207,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## !PU(svg):icon=pin;link=lnklast;base=high;warn=-1;crit=-1;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de42"
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de42"
     }, {
         "name": "StepsIcon",
         "tileType": "MARKDOWN",
@@ -243,7 +243,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## !PU(svg):icon=pin;link=lnklast;base=high;warn=-1;crit=-1;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de41"
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de41"
     }, {
         "name": "Apdex2Icon",
         "tileType": "MARKDOWN",
@@ -279,7 +279,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## !PU(svg):icon=pin;link=lnklast;base=high;warn=-1;crit=-1;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de44"
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de44"
     }, {
         "name": "EngageIcon",
         "tileType": "MARKDOWN",
@@ -315,7 +315,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## !PU(svg):icon=pin;link=lnklast;base=high;warn=-1;crit=-1;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de45"
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de45"
     }, {
         "name": "DurationIcon",
         "tileType": "MARKDOWN",
@@ -351,7 +351,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## !PU(svg):icon=pin;link=lnklast;base=high;warn=-1;crit=-1;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de46"
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de46"
     }, {
         "name": "ErrorsIcon",
         "tileType": "MARKDOWN",
@@ -869,6 +869,6 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=help-bubble;link=lnklast;base=high;warn=-1;crit=-1;url=#dashboard;id=0ac9409a-3e01-456b-b2ff-1e401695dbd5"
+        "markdown": "!PU(svg):icon=help-bubble;link=lnklast;color=lightblue;url=#dashboard;id=0ac9409a-3e01-456b-b2ff-1e401695dbd5"
     }]
 }
