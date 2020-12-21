@@ -162,8 +162,8 @@
             "height": 418
         },
         "tileFilter": {},
-        "customName": "!PU(usqlstack):colors=#39ff14,#ffe11c,#FF1C1C",
-        "query": "select distinct datetime(endtime,\"HH:mm\"), count(*) as \"Conversions\", userExperienceScore from usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and ${conversionGoal} ${conversionMessage}",
+        "customName": "!PU(usqlstack):vals=SATISFIED,TOLERATED,FRUSTRATED;colors=green,yellow,red",
+        "query": "select distinct datetime(endtime,\"HH:mm\","10m"), count(*) as \"Conversions\", userExperienceScore from usersession where useraction.application in (\"${app.name}\") and ${milestoneGoal} and ${conversionGoal} ${conversionMessage}",
         "type": "COLUMN_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
