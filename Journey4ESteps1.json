@@ -30,7 +30,7 @@
         "tileFilter": {},
         "markdown": "!PU(svg):icon=analyze;link=lnk1;base=low;warn=${MyStep1W};crit=${MyStep1C};url=#dashboard;id=1fc1af04-a855-43cb-855c-c32f4ecda505"
     }, {
-        "name": "Step1Link",
+        "name": "Step1Header",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -54,7 +54,7 @@
         "tileFilter": {},
         "markdown": "!PU(svg):icon=analyze;link=lnk2;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=2662ddb8-dd6a-4345-a1bc-7ff069eda505"
     }, {
-        "name": "Step2Link",
+        "name": "Step2Header",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -78,7 +78,7 @@
         "tileFilter": {},
         "markdown": "!PU(svg):icon=analyze;link=lnk3;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=10a69069-74c2-4eba-b18a-6856d91da505"
     }, {
-        "name": "Step3Link",
+        "name": "Step3Header",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -102,7 +102,7 @@
         "tileFilter": {},
         "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC};url=#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda505"
     }, {
-        "name": "Step4Link",
+        "name": "Step4Header",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -126,7 +126,7 @@
         "tileFilter": {},
         "markdown": "!PU(svg):icon=analyze;link=lnksessions;base=high;warn=${MySessionsW};crit=${MySessionsC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal}&visualization=TABLE"
     }, {
-        "name": "SessionsLink",
+        "name": "SessionsHeader",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -150,7 +150,7 @@
         "tileFilter": {},
         "markdown": "!PU(svg):icon=analyze;link=lnkabandons;base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC};url=#dashboard;id=0d81ee7c-f7ba-4626-a086-60b76ecda505"
     }, {
-        "name": "AbandonsLink",
+        "name": "AbandonsHeader",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -185,7 +185,7 @@
         "tileFilter": {},
         "markdown": "!PU(svg):icon=analyze;link=lnkapdex;base=low;warn=${MyApdexCountW};crit=${MyApdexCountC};url=#uemapplications/uemappmetrics;uemapplicationId=${app.id};visiblepart=apdex-details"
     }, {
-        "name": "ApdexLink",
+        "name": "ApdexHeader",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -207,7 +207,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## !PU(svg):icon=pin;link=lnk4;base=high;warn=-1;crit=-1;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de41"
+        "markdown": "## !PU(svg):icon=pin;link=lnk4;base=high;warn=-1;crit=-1;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de42"
     }, {
         "name": "StepsIcon",
         "tileType": "MARKDOWN",
@@ -221,7 +221,7 @@
         "tileFilter": {},
         "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal}&visualization=TABLE"
     }, {
-        "name": "StepsLink",
+        "name": "StepsHeader",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -257,7 +257,7 @@
         "tileFilter": {},
         "markdown": "!PU(svg):icon=analyze;link=lnkapdex;base=low;warn=${MyApdexCountW};crit=${MyApdexCountC};url=#uemapplications/uemappmetrics;uemapplicationId=${app.id};visiblepart=apdex-details"
     }, {
-        "name": "Apdex2Link",
+        "name": "Apdex2Header",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -293,7 +293,7 @@
         "tileFilter": {},
         "markdown": "!PU(svg):icon=analyze;link=lnkengage;base=low;warn=${MyEngageW};crit=${MyEngageC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useractioncount,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(userActionCount%20%3E%202%20and%20userActionCount%20%3C%20${actionLimit}%20and%20duration%3E${durationLimit}%20)%20ORDER%20BY%20duration%20DESC&visualization=TABLE"
     }, {
-        "name": "EngageLink",
+        "name": "EngageHeader",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -329,7 +329,7 @@
         "tileFilter": {},
         "markdown": "!PU(svg):icon=analyze;link=lnkduration;base=low;warn=${MyDurationW};crit=${MyDurationC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(duration%3E300000%20)%20ORDER%20BY%20duration%20DESC&visualization=TABLE"
     }, {
-        "name": "DurationLink",
+        "name": "DurationHeader",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -351,7 +351,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## !PU(svg):icon=pin;link=lnk4;base=high;warn=-1;crit=-1;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de42"
+        "markdown": "## !PU(svg):icon=pin;link=lnk4;base=high;warn=-1;crit=-1;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de46"
     }, {
         "name": "ErrorsIcon",
         "tileType": "MARKDOWN",
@@ -365,7 +365,7 @@
         "tileFilter": {},
         "markdown": "!PU(svg):icon=analyze;link=lnkerrors;base=low;warn=${MyErrorsW};crit=${MyErrorsC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20totalErrorCount%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(totalErrorCount%20%3E%205%20)%20ORDER%20BY%20totalErrorCount%20DESC&visualization=TABLE"
     }, {
-        "name": "ErrorsLink",
+        "name": "ErrorsHeader",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
