@@ -303,7 +303,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## Engage)"
+        "markdown": "## Engage"
     }, {
         "name": "DurationPin",
         "tileType": "MARKDOWN",
@@ -339,7 +339,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## Duration)"
+        "markdown": "## Duration"
     }, {
         "name": "ErrorsPin",
         "tileType": "MARKDOWN",
@@ -375,7 +375,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## Errors)"
+        "markdown": "## Errors"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
