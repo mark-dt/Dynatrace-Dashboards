@@ -163,7 +163,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(usqlstack):vals=SATISFIED,TOLERATED,FRUSTRATED;colors=green,yellow,red",
-        "query": "select distinct datetime(endtime,\"HH:mm\","10m"), count(*) as \"Abandons\", userExperienceScore from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${milestoneGoal} and not (${conversionGoal} ${conversionMessage})",
+        "query": "select distinct datetime(endtime,\"HH:mm\",\"10m\"), count(*) as \"Abandons\", userExperienceScore from usersession where useraction.application in (\"${app.name}\") ${uspClause} ${regionClause} and ${milestoneGoal} and not (${conversionGoal} ${conversionMessage})",
         "type": "COLUMN_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
