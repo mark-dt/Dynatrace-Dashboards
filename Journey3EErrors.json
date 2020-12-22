@@ -700,7 +700,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(link):lnkerrors",
-        "query": "SELECT count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (totalErrorCount > 5 and",
+        "query": "SELECT count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (totalErrorCount > 5 )",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -715,7 +715,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(link):lnkduration",
-        "query": "SELECT count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (duration>300000 and",
+        "query": "SELECT count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (duration>300000 )",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -745,7 +745,7 @@
         },
         "tileFilter": {},
         "customName": "!PU(link):lnkengage",
-        "query": "SELECT count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (userActionCount > 2 and userActionCount < ${actionLimit} and duration>${durationLimit} and",
+        "query": "SELECT count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (userActionCount > 2 and userActionCount < ${actionLimit} and duration>${durationLimit} )",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
