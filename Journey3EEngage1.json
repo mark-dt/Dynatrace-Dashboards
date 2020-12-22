@@ -375,7 +375,7 @@
         "bounds": {
             "top": 342,
             "left": 152,
-            "width": 380,
+            "width": 494,
             "height": 152
         },
         "tileFilter": {},
@@ -391,7 +391,7 @@
         "bounds": {
             "top": 342,
             "left": 646,
-            "width": 380,
+            "width": 494,
             "height": 152
         },
         "tileFilter": {},
@@ -407,7 +407,7 @@
         "bounds": {
             "top": 342,
             "left": 1140,
-            "width": 380,
+            "width": 494,
             "height": 152
         },
         "tileFilter": {},
@@ -422,7 +422,7 @@
         "bounds": {
             "top": 1444,
             "left": 152,
-            "width": 380,
+            "width": 494,
             "height": 304
         },
         "tileFilter": {},
@@ -468,7 +468,7 @@
         "bounds": {
             "top": 1444,
             "left": 646,
-            "width": 380,
+            "width": 494,
             "height": 304
         },
         "tileFilter": {},
@@ -514,7 +514,7 @@
         "bounds": {
             "top": 1444,
             "left": 1140,
-            "width": 380,
+            "width": 494,
             "height": 304
         },
         "tileFilter": {},
