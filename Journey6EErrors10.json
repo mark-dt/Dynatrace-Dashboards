@@ -3,7 +3,7 @@
         "configurationVersions": [3],
         "clusterVersion": "1.206.95.20201116-094826"
     },
-    "id": "d3f74940-9953-44c1-96c5-9464d709de55",
+    "id": "d3f74940-9953-44c1-96c5-9464d707de66",
     "dashboardMetadata": {
         "name": "\uD83D\uDC8E ${UserJourneyName} User Journey",
         "shared": false,
@@ -36,7 +36,7 @@
         "bounds": {
             "top": 0,
             "left": 190,
-            "width": 266,
+            "width": 190,
             "height": 38
         },
         "tileFilter": {},
@@ -47,7 +47,7 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 456,
+            "left": 380,
             "width": 38,
             "height": 38
         },
@@ -59,8 +59,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 494,
-            "width": 266,
+            "left": 418,
+            "width": 190,
             "height": 38
         },
         "tileFilter": {},
@@ -71,7 +71,7 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 760,
+            "left": 608,
             "width": 38,
             "height": 38
         },
@@ -83,8 +83,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 798,
-            "width": 266,
+            "left": 646,
+            "width": 190,
             "height": 38
         },
         "tileFilter": {},
@@ -95,7 +95,7 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 1064,
+            "left": 836,
             "width": 38,
             "height": 38
         },
@@ -107,19 +107,43 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 1102,
-            "width": 266,
+            "left": 874,
+            "width": 190,
             "height": 38
         },
         "tileFilter": {},
         "markdown": "## ${journey.header-4}"
+    }, {
+        "name": "Step5Icon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1064,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnk5;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=a7340848-3f03-4155-ac15-d8ea4a7da505"
+    }, {
+        "name": "Step5Header",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1102,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${journey.header-5}"
     }, {
         "name": "StepLastIcon",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 1368,
+            "left": 1292,
             "width": 38,
             "height": 38
         },
@@ -131,8 +155,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 1406,
-            "width": 266,
+            "left": 1330,
+            "width": 190,
             "height": 38
         },
         "tileFilter": {},
@@ -201,7 +225,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1862,
+            "top": 2166,
             "left": 0,
             "width": 38,
             "height": 38
@@ -213,7 +237,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 1862,
+            "top": 2166,
             "left": 38,
             "width": 114,
             "height": 38
@@ -231,7 +255,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de52"
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de62"
     }, {
         "name": "StepsIcon",
         "tileType": "MARKDOWN",
@@ -267,7 +291,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de53"
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de63"
     }, {
         "name": "Apdex2Icon",
         "tileType": "MARKDOWN",
@@ -303,7 +327,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de54"
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de64"
     }, {
         "name": "EngageIcon",
         "tileType": "MARKDOWN",
@@ -339,13 +363,13 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de51"
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de65"
     }, {
         "name": "DurationIcon",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 608,
+            "top": 1862,
             "left": 0,
             "width": 38,
             "height": 38
@@ -357,7 +381,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 608,
+            "top": 1862,
             "left": 38,
             "width": 114,
             "height": 38
@@ -375,13 +399,13 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de56"
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de61"
     }, {
         "name": "ErrorsIcon",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 2166,
+            "top": 608,
             "left": 0,
             "width": 38,
             "height": 38
@@ -393,7 +417,7 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 2166,
+            "top": 608,
             "left": 38,
             "width": 114,
             "height": 38
@@ -407,12 +431,12 @@
         "bounds": {
             "top": 38,
             "left": 152,
-            "width": 1520,
+            "width": 1368,
             "height": 304
         },
         "tileFilter": {},
         "customName": "${UserJourneyName} User Journey",
-        "query": "SELECT FUNNEL(${journey.where-1} AS \"${journey.header-1}\",${journey.where-2} AS \"${journey.header-2}\",${journey.where-3} AS \"${journey.header-3}\",${journey.where-4} AS \"${journey.header-4}\",${journey.where-last} ${conversionMessage} AS \"${journey.header-last}\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "query": "SELECT FUNNEL(${journey.where-1} AS \"${journey.header-1}\",${journey.where-2} AS \"${journey.header-2}\",${journey.where-3} AS \"${journey.header-3}\",${journey.where-4} AS \"${journey.header-4}\",${journey.where-5} AS \"${journey.header-5}\",${journey.where-last} ${conversionMessage} AS \"${journey.header-last}\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -423,7 +447,7 @@
         "bounds": {
             "top": 342,
             "left": 152,
-            "width": 304,
+            "width": 228,
             "height": 152
         },
         "tileFilter": {},
@@ -438,8 +462,8 @@
         "configured": true,
         "bounds": {
             "top": 342,
-            "left": 456,
-            "width": 304,
+            "left": 380,
+            "width": 228,
             "height": 152
         },
         "tileFilter": {},
@@ -454,8 +478,8 @@
         "configured": true,
         "bounds": {
             "top": 342,
-            "left": 760,
-            "width": 304,
+            "left": 608,
+            "width": 228,
             "height": 152
         },
         "tileFilter": {},
@@ -470,13 +494,29 @@
         "configured": true,
         "bounds": {
             "top": 342,
-            "left": 1064,
-            "width": 304,
+            "left": 836,
+            "width": 228,
             "height": 152
         },
         "tileFilter": {},
         "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk4",
-        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and not ${journey.where-last}",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and not ${journey.where-5}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Step5Abandons",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 1064,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk5",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and not ${journey.where-last}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -486,8 +526,8 @@
         "configured": true,
         "bounds": {
             "top": 342,
-            "left": 1368,
-            "width": 304,
+            "left": 1292,
+            "width": 228,
             "height": 152
         },
         "tileFilter": {},
@@ -500,9 +540,9 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 1748,
+            "top": 2052,
             "left": 152,
-            "width": 304,
+            "width": 228,
             "height": 304
         },
         "tileFilter": {},
@@ -546,9 +586,9 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 1748,
-            "left": 456,
-            "width": 304,
+            "top": 2052,
+            "left": 380,
+            "width": 228,
             "height": 304
         },
         "tileFilter": {},
@@ -592,9 +632,9 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 1748,
-            "left": 760,
-            "width": 304,
+            "top": 2052,
+            "left": 608,
+            "width": 228,
             "height": 304
         },
         "tileFilter": {},
@@ -638,9 +678,9 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 1748,
-            "left": 1064,
-            "width": 304,
+            "top": 2052,
+            "left": 836,
+            "width": 228,
             "height": 304
         },
         "tileFilter": {},
@@ -684,9 +724,55 @@
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
-            "top": 1748,
-            "left": 1368,
-            "width": 304,
+            "top": 2052,
+            "left": 1064,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.action.apdex",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "APPLICATION_METHOD",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
+                        "lastModified": 1595311507997,
+                        "customColor": "#4fd5e0"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "APPLICATION_METHOD": {
+                    "SPECIFIC_ENTITIES": ["${journey.methods-5}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 2052,
+            "left": 1292,
+            "width": 228,
             "height": 304
         },
         "tileFilter": {},
@@ -732,12 +818,12 @@
         "bounds": {
             "top": 836,
             "left": 152,
-            "width": 1520,
+            "width": 1368,
             "height": 304
         },
         "tileFilter": {},
         "customName": "!PU(usqlcolor):colors=#7c38a1,#fff29a,#aeebf0,#debbf3,#ffa86c,#f5d30f,#008cdb,#ffcc99,#a972cc,#ffcba4;dataLabels=true",
-        "query": "SELECT distinct datetime(endtime,\"M-d HH\",\"8h\"), \nCONDITION(count(*), WHERE ${journey.where-1}) AS \"${journey.header-1}\", \nCONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2}) AS \"${journey.header-2}\", \nCONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3}) AS \"${journey.header-3}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4}) AS \"${journey.header-4}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-last}) AS \"${journey.header-last}\" \nfrom usersession",
+        "query": "SELECT distinct datetime(endtime,\"M-d HH:mm\",\"10m\"), \nCONDITION(count(*), WHERE ${journey.where-1}) AS \"${journey.header-1}\", \nCONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2}) AS \"${journey.header-2}\", \nCONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3}) AS \"${journey.header-3}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4}) AS \"${journey.header-4}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5}) AS \"${journey.header-5}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-last}) AS \"${journey.header-last}\" \nfrom usersession",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
@@ -750,12 +836,12 @@
         "bounds": {
             "top": 1140,
             "left": 152,
-            "width": 1520,
+            "width": 1368,
             "height": 304
         },
         "tileFilter": {},
         "customName": "!PU(usqlcolor):colors=green,yellow,red,blue;dataLabels=true",
-        "query": "SELECT distinct datetime(endtime,\"M-d HH\",\"8h\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"SATISFIED\") as \"Satisfied\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"TOLERATED\") as \"Tolerated\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"FRUSTRATED\") as \"Frustrated\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-last}) AS \"Conversions\" \nFROM usersession \nWHERE userActionCount>2",
+        "query": "SELECT distinct datetime(endtime,\"M-d HH:mm\",\"10m\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"SATISFIED\") as \"Satisfied\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"TOLERATED\") as \"Tolerated\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"FRUSTRATED\") as \"Frustrated\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-last}) AS \"Conversions\" \nFROM usersession \nWHERE userActionCount>2",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
@@ -768,12 +854,12 @@
         "bounds": {
             "top": 1444,
             "left": 152,
-            "width": 1520,
+            "width": 1368,
             "height": 304
         },
         "tileFilter": {},
         "customName": "!PU(usqlcolor):colors=green,yellow,red,blue;dataLabels=true",
-        "query": "SELECT distinct datetime(endtime,\"M-d HH\",\"8h\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount>3 and duration<${durationLimit}) as \"Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount< ${actionLimit} and duration>${durationLimit}) as \"Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount<5 and duration>${durationLimit}) as \"Very Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-last}) AS \"Conversions\" \nFROM usersession \nWHERE userActionCount>2",
+        "query": "SELECT distinct datetime(endtime,\"M-d HH:mm\",\"10m\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount>3 and duration<${durationLimit}) as \"Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount< ${actionLimit} and duration>${durationLimit}) as \"Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount<5 and duration>${durationLimit}) as \"Very Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-last}) AS \"Conversions\" \nFROM usersession \nWHERE userActionCount>2",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
@@ -784,14 +870,14 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 494,
+            "top": 1748,
             "left": 152,
-            "width": 1520,
+            "width": 1368,
             "height": 304
         },
         "tileFilter": {},
         "customName": "!PU(usqlcolor):colors=green,lightgreen,yellow,red,blue;dataLabels=true",
-        "query": "SELECT distinct datetime(endtime,\"M-d HH\",\"8h\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and duration<30000) as Fast, \nCONDITION(count(*), WHERE ${milestoneGoal} and duration BETWEEN 30000 and 60000) as Medium,\nCONDITION(count(*), WHERE ${milestoneGoal} and duration between 60000 and 300000) as Slow,\nCONDITION(count(*), WHERE ${milestoneGoal} and duration>${SessionDurationLimit}) as \"Very Slow\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-last}) AS \"Conversions\" \nFROM usersession\nWHERE userActionCount>2",
+        "query": "SELECT distinct datetime(endtime,\"M-d HH:mm\",\"10m\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and duration<30000) as Fast, \nCONDITION(count(*), WHERE ${milestoneGoal} and duration BETWEEN 30000 and 60000) as Medium,\nCONDITION(count(*), WHERE ${milestoneGoal} and duration between 60000 and 300000) as Slow,\nCONDITION(count(*), WHERE ${milestoneGoal} and duration>${SessionDurationLimit}) as \"Very Slow\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-last}) AS \"Conversions\" \nFROM usersession\nWHERE userActionCount>2",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
@@ -802,14 +888,14 @@
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
-            "top": 2052,
+            "top": 494,
             "left": 152,
-            "width": 1520,
+            "width": 1368,
             "height": 304
         },
         "tileFilter": {},
         "customName": "!PU(usqlcolor):colors=green,yellow,red,blue;dataLabels=true",
-        "query": "SELECT distinct datetime(endtime,\"M-d HH\",\"8h\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount=0) as \"No Errors\", \nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount BETWEEN 1 and 5) as \"Low Errors\",\nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount > ${SessionErrorLimit}) as \"High Errors\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-last}) AS \"Conversions\" \nFROM usersession\nWHERE userActionCount>2",
+        "query": "SELECT distinct datetime(endtime,\"M-d HH:mm\",\"10m\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount=0) as \"No Errors\", \nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount BETWEEN 1 and 5) as \"Low Errors\",\nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount > ${SessionErrorLimit}) as \"High Errors\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-last}) AS \"Conversions\" \nFROM usersession\nWHERE userActionCount>2",
         "type": "LINE_CHART",
         "visualizationConfig": {
             "hasAxisBucketing": false
@@ -921,7 +1007,7 @@
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
-        "name": "10MInterval",
+        "name": "1HInterval",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -931,9 +1017,9 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "[10m Interval ->](#dashboard;id=d3f74940-9953-44c1-96c5-9464d707de55)"
+        "markdown": "[1h Interval ->](#dashboard;id=d3f74940-9953-44c1-96c5-9464d708de66)"
     }, {
-        "name": "1HInterval",
+        "name": "8HInterval",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -943,7 +1029,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "[1h Interval ->](#dashboard;id=d3f74940-9953-44c1-96c5-9464d708de55)"
+        "markdown": "[8h Interval ->](#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de66)"
     }, {
         "name": "HelpIcon",
         "tileType": "MARKDOWN",
