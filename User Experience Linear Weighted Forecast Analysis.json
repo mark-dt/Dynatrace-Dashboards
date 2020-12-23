@@ -29,6 +29,39 @@
         },
         "tileFilter": {}
     }, {
+        "name": "Tolerated Users Count",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 494,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Frustrated Users Count",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 798,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Experience Over Time",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1102,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
         "name": "Forecast",
         "tileType": "HEADER",
         "configured": true,
@@ -95,219 +128,8 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 190,
-            "width": 304,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var11,b:var12,c:var13,d:var14,e:var15;color=green"
-    }, {
-        "name": "Tolerated Users Count",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 494,
-            "width": 304,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 494,
-            "width": 304,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var21,b:var22,c:var23,d:var24,e:var25;color=yellow"
-    }, {
-        "name": "Frustrated Users Count",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 798,
-            "width": 304,
-            "height": 38
-        },
-        "tileFilter": {}
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 798,
-            "width": 304,
-            "height": 38
-        },
-        "tileFilter": {},
-        "markdown": "[Extension Required](https://chrome.google.com/webstore/detail/dynatrace-dashboard-power/dmpgdhbpdodhddciokonbahhbpaalmco)\n\n!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var31,b:var32,c:var33,d:var34,e:var35;color=red"
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 798,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-14d to -8d"
-        },
-        "customName": " !PU(link):var32 !PU(color):base=low;warn=0;crit=0",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"FRUSTRATED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 380,
-            "left": 798,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-21d to -15d"
-        },
-        "customName": "  !PU(link):var33 !PU(color):base=low;warn=0;crit=0",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"FRUSTRATED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 532,
-            "left": 798,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-28d to -22d"
-        },
-        "customName": "  !PU(link):var34 !PU(color):base=low;warn=0;crit=0",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"FRUSTRATED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 684,
-            "left": 798,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-35d to -29d"
-        },
-        "customName": "  !PU(link):var35 !PU(color):base=low;warn=0;crit=0",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"FRUSTRATED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 76,
-            "left": 494,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-7d to -1d"
-        },
-        "customName": " !PU(link):var21 !PU(color):base=low;warn=0;crit=100000000",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"TOLERATED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 494,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-14d to -8d"
-        },
-        "customName": " !PU(link):var22 !PU(color):base=low;warn=0;crit=100000000",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"TOLERATED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 380,
-            "left": 494,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-21d to -15d"
-        },
-        "customName": "  !PU(link):var23 !PU(color):base=low;warn=0;crit=100000000",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"TOLERATED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 532,
-            "left": 494,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-28d to -22d"
-        },
-        "customName": "  !PU(link):var24 !PU(color):base=low;warn=0;crit=100000000",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"TOLERATED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
-        "configured": true,
-        "bounds": {
-            "top": 684,
-            "left": 494,
-            "width": 304,
-            "height": 152
-        },
-        "tileFilter": {
-            "timeframe": "-35d to -29d"
-        },
-        "customName": "  !PU(link):var25 !PU(color):base=low;warn=0;crit=100000000",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"TOLERATED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
-    }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
             "top": 76,
@@ -318,13 +140,44 @@
         "tileFilter": {
             "timeframe": "-7d to -1d"
         },
-        "customName": " !PU(link):var11 !PU(color):base=high;warn=0;crit=0",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"SATISFIED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " !PU(link):var11 !PU(color):base=high;warn=0;crit=0",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["SATISFIED"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
     }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
             "top": 228,
@@ -335,13 +188,44 @@
         "tileFilter": {
             "timeframe": "-14d to -8d"
         },
-        "customName": " !PU(link):var12 !PU(color):base=high;warn=0;crit=0",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"SATISFIED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " !PU(link):var12 !PU(color):base=high;warn=0;crit=0",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["SATISFIED"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
     }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
             "top": 380,
@@ -352,13 +236,44 @@
         "tileFilter": {
             "timeframe": "-21d to -15d"
         },
-        "customName": "  !PU(link):var13 !PU(color):base=high;warn=0;crit=0",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"SATISFIED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " !PU(link):var13 !PU(color):base=high;warn=0;crit=0",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["SATISFIED"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
     }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
             "top": 532,
@@ -369,13 +284,44 @@
         "tileFilter": {
             "timeframe": "-28d to -22d"
         },
-        "customName": "  !PU(link):var14 !PU(color):base=high;warn=0;crit=0",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"SATISFIED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " !PU(link):var14 !PU(color):base=high;warn=0;crit=0",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["SATISFIED"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
     }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
             "top": 684,
@@ -386,13 +332,284 @@
         "tileFilter": {
             "timeframe": "-35d to -29d"
         },
-        "customName": "  !PU(link):var15 !PU(color):base=high;warn=0;crit=0",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"SATISFIED\"",
-        "type": "SINGLE_VALUE",
-        "limit": 50
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " !PU(link):var15 !PU(color):base=high;warn=0;crit=0",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["SATISFIED"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
     }, {
-        "name": "User Sessions Query",
-        "tileType": "DTAQL",
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 494,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-7d to -1d"
+        },
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(link):var21 !PU(color):base=low;warn=0;crit=100000000",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["TOLERATING"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 494,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-14d to -8d"
+        },
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(link):var22 !PU(color):base=low;warn=0;crit=100000000",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["TOLERATING"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 494,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-21d to -15d"
+        },
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(link):var23 !PU(color):base=low;warn=0;crit=100000000",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["TOLERATING"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 494,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-28d to -22d"
+        },
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(link):var24 !PU(color):base=low;warn=0;crit=100000000",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["TOLERATING"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 494,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-35d to -29d"
+        },
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(link):var25 !PU(color):base=low;warn=0;crit=100000000",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["TOLERATING"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
             "top": 76,
@@ -403,10 +620,233 @@
         "tileFilter": {
             "timeframe": "-7d to -1d"
         },
-        "customName": " !PU(link):var31 !PU(color):base=low;warn=0;crit=0",
-        "query": "select count(*) as \" \" from useraction where useraction.application=\"${app.name}\" and usersession.userExperienceScore=\"FRUSTRATED\" ",
-        "type": "SINGLE_VALUE",
-        "limit": 50
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(link):var31 !PU(color):base=low;warn=0;crit=0",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["FRUSTRATED"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 798,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-14d to -8d"
+        },
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(link):var32 !PU(color):base=low;warn=0;crit=0",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["FRUSTRATED"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 798,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-21d to -15d"
+        },
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(link):var33 !PU(color):base=low;warn=0;crit=0",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["FRUSTRATED"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 798,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-28d to -22d"
+        },
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(link):var34 !PU(color):base=low;warn=0;crit=0",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["FRUSTRATED"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 798,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {
+            "timeframe": "-35d to -29d"
+        },
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(link):var35 !PU(color):base=low;warn=0;crit=0",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["FRUSTRATED"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
+        }
     }, {
         "name": "Custom chart",
         "tileType": "CUSTOM_CHARTING",
@@ -459,17 +899,6 @@
             },
             "filtersPerEntityType": {"APPLICATION": {"SPECIFIC_ENTITIES": ["${app.id}"]}}
         }
-    }, {
-        "name": "User Experience Over Time",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-            "top": 0,
-            "left": 1102,
-            "width": 380,
-            "height": 38
-        },
-        "tileFilter": {}
     }, {
         "name": "Custom chart",
         "tileType": "CUSTOM_CHARTING",
