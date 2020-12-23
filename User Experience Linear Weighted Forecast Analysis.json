@@ -167,7 +167,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -215,7 +216,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -263,7 +265,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -311,7 +314,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -359,7 +363,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -407,7 +412,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -455,7 +461,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -503,7 +510,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -551,7 +559,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -599,7 +608,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -647,7 +657,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -695,7 +706,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -743,7 +755,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -791,7 +804,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
@@ -839,7 +853,8 @@
                     "sortColumn": true,
                     "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {},
+                "leftAxisCustomUnit": "Count"
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
