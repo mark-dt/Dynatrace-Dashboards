@@ -900,15 +900,15 @@
                 "resultMetadata": {
                     "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606426356,
-                        "customColor": "#ffe11c"
+                        "customColor": "green"
                     },
                     "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606413009,
-                        "customColor": "#39ff14"
+                        "customColor": "yellow"
                     },
                     "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606438893,
-                        "customColor": "#FF1C1C"
+                        "customColor": "red"
                     }
                 }
             },
@@ -952,15 +952,15 @@
                 "resultMetadata": {
                     "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606426356,
-                        "customColor": "#ffe11c"
+                        "customColor": "green"
                     },
                     "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606413009,
-                        "customColor": "#39ff14"
+                        "customColor": "yellow"
                     },
                     "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606438893,
-                        "customColor": "#FF1C1C"
+                        "customColor": "red"
                     }
                 }
             },
@@ -1004,15 +1004,15 @@
                 "resultMetadata": {
                     "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606426356,
-                        "customColor": "#ffe11c"
+                        "customColor": "green"
                     },
                     "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606413009,
-                        "customColor": "#39ff14"
+                        "customColor": "yellow"
                     },
                     "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606438893,
-                        "customColor": "#FF1C1C"
+                        "customColor": "red"
                     }
                 }
             },
@@ -1056,15 +1056,15 @@
                 "resultMetadata": {
                     "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606426356,
-                        "customColor": "#ffe11c"
+                        "customColor": "green"
                     },
                     "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606413009,
-                        "customColor": "#39ff14"
+                        "customColor": "yellow"
                     },
                     "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606438893,
-                        "customColor": "#FF1C1C"
+                        "customColor": "red"
                     }
                 }
             },
@@ -1108,19 +1108,55 @@
                 "resultMetadata": {
                     "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606426356,
-                        "customColor": "#ffe11c"
+                        "customColor": "green"
                     },
                     "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606413009,
-                        "customColor": "#39ff14"
+                        "customColor": "yellow"
                     },
                     "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1602606438893,
-                        "customColor": "#FF1C1C"
+                        "customColor": "red"
                     }
                 }
             },
             "filtersPerEntityType": {"APPLICATION": {"SPECIFIC_ENTITIES": ["${app.id}"]}}
         }
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 190,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var11,b:var12,c:var13,d:var14,e:var15;color=green"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 494,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var21,b:var22,c:var23,d:var24,e:var25;color=yellow"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 798,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=(((a*256 + b*16 + c*4 + d*2 + e)/279) + (a + ((((a-b) - (b-c))) - (((b-c) - (c-d))) + ((a-b) - (b-c)) + (a-b) + ((b-c) - (c-d)) + (b-c) + ((c-d) - (d-e)) + (c-d) + (d-e))/10)*2)/3;scope=a:var31,b:var32,c:var33,d:var34,e:var35;color=red"
     }]
 }
