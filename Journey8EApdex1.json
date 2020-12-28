@@ -172,7 +172,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnk6;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=a7340848-3f03-4155-ac07-d8ea4a7da505"
+        "markdown": "!PU(svg):icon=analyze;link=lnk7;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=a7340848-3f03-4155-ac07-d8ea4a7da505"
     }, {
         "name": "Step7Header",
         "tileType": "MARKDOWN",
@@ -595,7 +595,7 @@
             "height": 152
         },
         "tileFilter": {},
-        "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk6",
+        "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk7",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and not ${journey.where-last}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
