@@ -1,0 +1,1390 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.206.95.20201116-094826"
+    },
+    "id": "d3f74940-9953-44c1-96c5-9464d707de05",
+    "dashboardMetadata": {
+        "name": "\uD83D\uDC8E ${UserJourneyName} User Journey",
+        "shared": false,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "-7d to now"
+        },
+        "tags": ["${app.name}"]
+    },
+    "tiles": [{
+        "name": "Step1Icon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 152,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnk1;base=low;warn=${MyStep1W};crit=${MyStep1C};url=#dashboard;id=1fc1af04-a855-43cb-855c-c32f4ecda505"
+    }, {
+        "name": "Step1Header",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 190,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${journey.header-1}"
+    }, {
+        "name": "Step2Icon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 380,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnk2;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=2662ddb8-dd6a-4345-a1bc-7ff069eda505"
+    }, {
+        "name": "Step2Header",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 418,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${journey.header-2}"
+    }, {
+        "name": "Step3Icon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 608,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnk3;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=10a69069-74c2-4eba-b18a-6856d91da505"
+    }, {
+        "name": "Step3Header",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 646,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${journey.header-3}"
+    }, {
+        "name": "Step4Icon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 836,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnk4;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=7f64e3ef-239c-416a-b3a4-66b99beda505"
+    }, {
+        "name": "Step4Header",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 874,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${journey.header-4}"
+    }, {
+        "name": "Step5Icon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1064,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnk5;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=a7340848-3f03-4155-ac15-d8ea4a7da505"
+    }, {
+        "name": "Step5Header",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1102,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${journey.header-5}"
+    }, {
+        "name": "Step6Icon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1292,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnk6;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=a7340848-3f03-4155-ac06-d8ea4a7da505"
+    }, {
+        "name": "Step6Header",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1330,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${journey.header-6}"
+    }, {
+        "name": "Step7Icon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1520,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnk7;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=a7340848-3f03-4155-ac07-d8ea4a7da505"
+    }, {
+        "name": "Step7Header",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1558,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${journey.header-7}"
+    }, {
+        "name": "Step8Icon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1748,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnk8;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=927566e7-030d-4f27-9bc8-684a08ea9398"
+    }, {
+        "name": "Step8Header",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1786,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${journey.header-8}"
+    }, {
+        "name": "Step9Icon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1976,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnk9;base=low;warn=${MyStepMW};crit=${MyStepMC};url=#dashboard;id=927566e7-030d-4f27-9bc8-684a08ea9399"
+    }, {
+        "name": "Step9Header",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 2014,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${journey.header-9}"
+    }, {
+        "name": "StepLastIcon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 2204,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC};url=#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda505"
+    }, {
+        "name": "StepLastHeader",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 2242,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${journey.header-last}"
+    }, {
+        "name": "SessionsIcon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 0,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnksessions;base=high;warn=${MySessionsW};crit=${MySessionsC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal}&visualization=TABLE"
+    }, {
+        "name": "SessionsHeader",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Sessions"
+    }, {
+        "name": "AbandonsIcon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 0,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnkabandons;base=low;warn=${MyAbandonsOverallW};crit=${MyAbandonsOverallC};url=#dashboard;id=0d81ee7c-f7ba-4626-a086-60b76ecda505"
+    }, {
+        "name": "AbandonsHeader",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 380,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Abandons"
+    }, {
+        "name": "Graphs ▼",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 760,
+            "left": 0,
+            "width": 152,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "ApdexIcon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1862,
+            "left": 0,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnkapdex;base=low;warn=${MyApdexCountW};crit=${MyApdexCountC};url=#uemapplications/uemappmetrics;uemapplicationId=${app.id};visiblepart=apdex-details"
+    }, {
+        "name": "ApdexHeader",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1862,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Apdex"
+    }, {
+        "name": "StepsPin",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 114,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de02"
+    }, {
+        "name": "StepsIcon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 0,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnkfunnel;base=high;warn=${MyConversionsOverallW};crit=${MyConversionsOverallC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useraction.matchingConversionGoals%20FROM%20usersession%20where%20${milestoneGoal}&visualization=TABLE"
+    }, {
+        "name": "StepsHeader",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Steps"
+    }, {
+        "name": "Apdex2Pin",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1140,
+            "left": 114,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de03"
+    }, {
+        "name": "Apdex2Icon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1254,
+            "left": 0,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnkapdex;base=low;warn=${MyApdexCountW};crit=${MyApdexCountC};url=#uemapplications/uemappmetrics;uemapplicationId=${app.id};visiblepart=apdex-details"
+    }, {
+        "name": "Apdex2Header",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1254,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Apdex"
+    }, {
+        "name": "EngagePin",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1444,
+            "left": 114,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de04"
+    }, {
+        "name": "EngageIcon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1558,
+            "left": 0,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnkengage;base=low;warn=${MyEngageW};crit=${MyEngageC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20useractioncount,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(userActionCount%20%3E%202%20and%20userActionCount%20%3C%20${actionLimit}%20and%20duration%3E${durationLimit}%20)%20ORDER%20BY%20duration%20DESC&visualization=TABLE"
+    }, {
+        "name": "EngageHeader",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1558,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Engage"
+    }, {
+        "name": "DurationPin",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1748,
+            "left": 114,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de01"
+    }, {
+        "name": "DurationIcon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 0,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnkduration;base=low;warn=${MyDurationW};crit=${MyDurationC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20duration%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(duration%3E${SessionDurationLimit}%20)%20ORDER%20BY%20duration%20DESC&visualization=TABLE"
+    }, {
+        "name": "DurationHeader",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Duration"
+    }, {
+        "name": "ErrorsPin",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 2052,
+            "left": 114,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## !PU(svg):icon=pin;link=lnklast;color=lightblue;url=#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de06"
+    }, {
+        "name": "ErrorsIcon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 2166,
+            "left": 0,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=analyze;link=lnkerrors;base=low;warn=${MyErrorsW};crit=${MyErrorsC};url=${url}/ui/user-sessions/query?sessionquery=select%20userid,%20hasSessionReplay,%20totalErrorCount%20FROM%20usersession%20where%20useraction.application%20in%20(%22${app.name}%22)%20and%20${milestoneGoal}%20and%20(totalErrorCount%20%3E%20${SessionErrorLimit}%20)%20ORDER%20BY%20totalErrorCount%20DESC&visualization=TABLE"
+    }, {
+        "name": "ErrorsHeader",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 2166,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Errors"
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 152,
+            "width": 2280,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": "${UserJourneyName} User Journey",
+        "query": "SELECT FUNNEL(${journey.where-1} AS \"${journey.header-1}\",${journey.where-2} AS \"${journey.header-2}\",${journey.where-3} AS \"${journey.header-3}\",${journey.where-4} AS \"${journey.header-4}\",${journey.where-5} AS \"${journey.header-5}\",${journey.where-6} AS \"${journey.header-6}\",${journey.where-7} AS \"${journey.header-7}\",${journey.where-8} AS \"${journey.header-8}\",${journey.where-9} AS \"${journey.header-9}\",${journey.where-last} ${conversionMessage} AS \"${journey.header-last}\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "type": "FUNNEL",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Step1Abandons",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 152,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${MyStep1W};crit=${MyStep1C} !PU(link):lnk1",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Step2Abandons",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 380,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk2",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and not ${journey.where-3}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Step3Abandons",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 608,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk3",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and not ${journey.where-4}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Step4Abandons",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 836,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk4",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and not ${journey.where-5}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Step5Abandons",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 1064,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk5",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and not ${journey.where-6}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Step6Abandons",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 1292,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk6",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and not ${journey.where-7}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Step7Abandons",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 1520,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk7",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and not ${journey.where-8}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Step8Abandons",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 1748,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk8",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and not ${journey.where-9}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Step9Abandons",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 1976,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${MyStepMW};crit=${MyStepMC} !PU(link):lnk9",
+        "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and ${journey.where-9}and not ${journey.where-last}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "StepLastAbandons",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 342,
+            "left": 2204,
+            "width": 228,
+            "height": 152
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=10;crit=20  !PU(link):lnklast",
+        "query": "select 0 as \"Abandons\" from usersession limit 1",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic"
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1748,
+            "left": 152,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.action.apdex",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "APPLICATION_METHOD",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
+                        "lastModified": 1595311472128,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "APPLICATION_METHOD": {
+                    "SPECIFIC_ENTITIES": ["${journey.methods-1}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1748,
+            "left": 380,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.action.apdex",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "APPLICATION_METHOD",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
+                        "lastModified": 1595311416699,
+                        "customColor": "#fff29a"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "APPLICATION_METHOD": {
+                    "SPECIFIC_ENTITIES": ["${journey.methods-2}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1748,
+            "left": 608,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.action.apdex",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "APPLICATION_METHOD",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
+                        "lastModified": 1595311507997,
+                        "customColor": "#4fd5e0"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "APPLICATION_METHOD": {
+                    "SPECIFIC_ENTITIES": ["${journey.methods-3}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1748,
+            "left": 836,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.action.apdex",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "APPLICATION_METHOD",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
+                        "lastModified": 1595311507997,
+                        "customColor": "#4fd5e0"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "APPLICATION_METHOD": {
+                    "SPECIFIC_ENTITIES": ["${journey.methods-4}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1748,
+            "left": 1064,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.action.apdex",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "APPLICATION_METHOD",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
+                        "lastModified": 1595311507997,
+                        "customColor": "#4fd5e0"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "APPLICATION_METHOD": {
+                    "SPECIFIC_ENTITIES": ["${journey.methods-5}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1748,
+            "left": 1292,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.action.apdex",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "APPLICATION_METHOD",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
+                        "lastModified": 1595311507997,
+                        "customColor": "#4fd5e0"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "APPLICATION_METHOD": {
+                    "SPECIFIC_ENTITIES": ["${journey.methods-6}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1748,
+            "left": 1520,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.action.apdex",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "APPLICATION_METHOD",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
+                        "lastModified": 1595311507997,
+                        "customColor": "#4fd5e0"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "APPLICATION_METHOD": {
+                    "SPECIFIC_ENTITIES": ["${journey.methods-7}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1748,
+            "left": 1748,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.action.apdex",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "APPLICATION_METHOD",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
+                        "lastModified": 1595311507997,
+                        "customColor": "#4fd5e0"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "APPLICATION_METHOD": {
+                    "SPECIFIC_ENTITIES": ["${journey.methods-8}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1748,
+            "left": 1976,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.action.apdex",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "APPLICATION_METHOD",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
+                        "lastModified": 1595311507997,
+                        "customColor": "#4fd5e0"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "APPLICATION_METHOD": {
+                    "SPECIFIC_ENTITIES": ["${journey.methods-9}"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1748,
+            "left": 2204,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "!PU(color):base=high;warn=${MyApdexW};crit=${MyApdexC}",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.action.apdex",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "APPLICATION_METHOD",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:apps.web.action.apdex|AVG|TOTAL|LINE|APPLICATION_METHOD": {
+                        "lastModified": 1595311542450,
+                        "customColor": "#debbf3"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "APPLICATION_METHOD": {
+                    "SPECIFIC_ENTITIES": ["${journey.methods-last}"]
+                }
+            }
+        }
+    }, {
+        "name": "StepsQuery",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 152,
+            "width": 2280,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": "!PU(usqlcolor):colors=#7c38a1,#fff29a,#aeebf0,#debbf3,#ffa86c,#f5d30f,#008cdb,#ffcc99,#a972cc,#ffcba4;dataLabels=true",
+        "query": "SELECT distinct datetime(endtime,\"M-d HH:mm\",\"10m\"), \nCONDITION(count(*), WHERE ${journey.where-1}) AS \"${journey.header-1}\", \nCONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2}) AS \"${journey.header-2}\", \nCONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3}) AS \"${journey.header-3}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4}) AS \"${journey.header-4}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5}) AS \"${journey.header-5}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6}) AS \"${journey.header-6}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7}) AS \"${journey.header-7}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8}) AS \"${journey.header-8}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and ${journey.where-9}) AS \"${journey.header-9}\", CONDITION(count(*), WHERE ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and ${journey.where-9} and ${journey.where-last}) AS \"${journey.header-last}\" \nfrom usersession",
+        "type": "LINE_CHART",
+        "visualizationConfig": {
+            "hasAxisBucketing": false
+        },
+        "limit": 50
+    }, {
+        "name": "Apdex2Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 1140,
+            "left": 152,
+            "width": 2280,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": "!PU(usqlcolor):colors=green,yellow,red,blue;dataLabels=true",
+        "query": "SELECT distinct datetime(endtime,\"M-d HH:mm\",\"10m\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"SATISFIED\") as \"Satisfied\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"TOLERATED\") as \"Tolerated\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userexperiencescore=\"FRUSTRATED\") as \"Frustrated\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and ${journey.where-9} and ${journey.where-last}) AS \"Conversions\" \nFROM usersession \nWHERE userActionCount>2",
+        "type": "LINE_CHART",
+        "visualizationConfig": {
+            "hasAxisBucketing": false
+        },
+        "limit": 50
+    }, {
+        "name": "EngageQuery",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 1444,
+            "left": 152,
+            "width": 2280,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": "!PU(usqlcolor):colors=green,yellow,red,blue;dataLabels=true",
+        "query": "SELECT distinct datetime(endtime,\"M-d HH:mm\",\"10m\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount>3 and duration<${durationLimit}) as \"Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount< ${actionLimit} and duration>${durationLimit}) as \"Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and userActionCount<5 and duration>${durationLimit}) as \"Very Non Engaged\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and ${journey.where-9} and ${journey.where-last}) AS \"Conversions\" \nFROM usersession \nWHERE userActionCount>2",
+        "type": "LINE_CHART",
+        "visualizationConfig": {
+            "hasAxisBucketing": false
+        },
+        "limit": 50
+    }, {
+        "name": "DurationQuery",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 152,
+            "width": 2280,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": "!PU(usqlcolor):colors=green,lightgreen,yellow,red,blue;dataLabels=true",
+        "query": "SELECT distinct datetime(endtime,\"M-d HH:mm\",\"10m\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and duration<30000) as Fast, \nCONDITION(count(*), WHERE ${milestoneGoal} and duration BETWEEN 30000 and 60000) as Medium,\nCONDITION(count(*), WHERE ${milestoneGoal} and duration between 60000 and 300000) as Slow,\nCONDITION(count(*), WHERE ${milestoneGoal} and duration>${SessionDurationLimit}) as \"Very Slow\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and ${journey.where-9} and ${journey.where-last}) AS \"Conversions\" \nFROM usersession\nWHERE userActionCount>2",
+        "type": "LINE_CHART",
+        "visualizationConfig": {
+            "hasAxisBucketing": false
+        },
+        "limit": 50
+    }, {
+        "name": "ErrorsQuery",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 2052,
+            "left": 152,
+            "width": 2280,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": "!PU(usqlcolor):colors=green,yellow,red,blue;dataLabels=true",
+        "query": "SELECT distinct datetime(endtime,\"M-d HH:mm\",\"10m\"),\nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount=0) as \"No Errors\", \nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount BETWEEN 1 and 5) as \"Low Errors\",\nCONDITION(count(*), WHERE ${milestoneGoal} and totalErrorCount > ${SessionErrorLimit}) as \"High Errors\",\nCONDITION(count(*), WHERE ${milestoneGoal} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and ${journey.where-6} and ${journey.where-7} and ${journey.where-8} and ${journey.where-9} and ${journey.where-last}) AS \"Conversions\" \nFROM usersession\nWHERE userActionCount>2",
+        "type": "LINE_CHART",
+        "visualizationConfig": {
+            "hasAxisBucketing": false
+        },
+        "limit": 50
+    }, {
+        "name": "ConversionsThresholdQuery",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 2964,
+            "left": 152,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):lnkfunnel",
+        "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and  (${conversionGoal})",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "AbandonsThresholdQuery",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 2964,
+            "left": 304,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):lnkabandons",
+        "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and not  (${conversionGoal})",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "SessionsThresholdQuery",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 2964,
+            "left": 456,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):lnksessions",
+        "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) \n",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "ErrorsThresholdQuery",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 2964,
+            "left": 1064,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):lnkerrors",
+        "query": "SELECT count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (totalErrorCount > ${SessionErrorLimit} )",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "DurationThresholdQuery",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 2964,
+            "left": 912,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):lnkduration",
+        "query": "SELECT count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (duration>${SessionDurationLimit} )",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "ApdexThresholdQuery",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 2964,
+            "left": 608,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):lnkapdex",
+        "query": "select count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (userexperiencescore!=\"SATISFIED\") \n",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "EngageThresholdQuery",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 2964,
+            "left": 760,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "customName": "!PU(link):lnkengage",
+        "query": "SELECT count(distinct userSessionId) as \" \" FROM usersession where useraction.application in (\"${app.name}\") and (${milestoneGoal}) and (userActionCount > 2 and userActionCount < ${actionLimit} and duration>${durationLimit} )",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "1HInterval",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "[1h Interval ->](#dashboard;id=d3f74940-9953-44c1-96c5-9464d708de05)"
+    }, {
+        "name": "8HInterval",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 38,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "[8h Interval ->](#dashboard;id=d3f74940-9953-44c1-96c5-9464d709de05)"
+    }, {
+        "name": "HelpIcon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=help-bubble;link=lnklast;color=lightblue;url=#dashboard;id=0ac9409a-3e01-456b-b2ff-1e401695dbd5"
+    }]
+}
