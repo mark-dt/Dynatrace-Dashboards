@@ -460,7 +460,7 @@
         },
         "tileFilter": {},
         "customName": "${UserJourneyName} User Journey",
-        "query": "SELECT FUNNEL(${journey.where-1} AS \"${journey.header-1}\",${journey.where-2} AS \"${journey.header-2}\",${journey.where-3} AS \"${journey.header-3}\",${journey.where-4} AS \"${journey.header-4}\",${journey.where-5} AS \"${journey.header-5}\",${journey.where-last} ${conversionMessage} AS \"${journey.header-last}\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
+        "query": "SELECT FUNNEL(${journey.where-1} AS \"${journey.header-1}\",${journey.where-2} AS \"${journey.header-2}\",${journey.where-3} AS \"${journey.header-3}\",${journey.where-4} AS \"${journey.header-4}\",${journey.where-5} AS \"${journey.header-5}\",${journey.where-6} AS \"${journey.header-6}\",${journey.where-last} ${conversionMessage} AS \"${journey.header-last}\") FROM usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause}",
         "type": "FUNNEL",
         "timeFrameShift": "dynamic",
         "limit": 50
