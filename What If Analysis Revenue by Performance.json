@@ -14,7 +14,8 @@
         },
         "dashboardFilter": {
             "timeframe": "-24h to now"
-        }
+        },
+        "tags": ["What If", "${app.name}"]
     },
     "tiles": [{
         "name": "User Sessions Query",
