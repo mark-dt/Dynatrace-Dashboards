@@ -1,0 +1,308 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.206.97.20201117-135321"
+    },
+    "id": "fbbd5b83-175d-4ddc-85bd-358badf30c63",
+    "dashboardMetadata": {
+        "name": "\uD83D\uDC8E ${overviewName} What If Analysis - Conversions by Performance",
+        "shared": true,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": true
+        },
+        "dashboardFilter": {
+            "timeframe": "-24h to now"
+        },
+        "tags": ["What If", "${app.name}"]
+    },
+    "tiles": [{
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 608,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=(x1/2000*x3);scope=x1:lnk1,x3:lnk3;base=high;warn=${conversionsWarningThreshold};crit=${conversionsCriticalThreshold};size=${fontSize}px"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 1140,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=(x1/4000*x3);scope=x1:lnk1,x3:lnk3;base=high;warn=${conversionsWarningThreshold};crit=${conversionsCriticalThreshold};size=${fontSize}px"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 874,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=(x1/3000*x3);scope=x1:lnk1,x3:lnk3;base=high;warn=${conversionsWarningThreshold};crit=${conversionsCriticalThreshold};size=${fontSize}px"
+    }, {
+        "name": "Current Conversions by Duration Splits",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 0,
+            "width": 418,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 0,
+            "width": 1672,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "___\n\n___\n\n"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 1406,
+            "width": 266,
+            "height": 114
+        },
+        "tileFilter": {},
+        "markdown": "!PU(math):exp=(x1/5000*x3);scope=x1:lnk1,x3:lnk3;base=high;warn=${conversionsWarningThreshold};crit=${conversionsCriticalThreshold};size=${fontSize}px"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 38,
+            "width": 1634,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "___\n\n___\n\n"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 608,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## What If Duration = 2s"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 874,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## What If Duration = 3s"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1140,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## What If Duration = 4s"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1406,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## What If Duration = 5s"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 304,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Current Timeframe"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Current Timeframe"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 608,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Projected Conversions"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 874,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Projected Conversions"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 1140,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Projected Conversions"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 1406,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Projected Conversions"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Conversions"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 304,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Average Duration"
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 304,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=low;warn=${durationWarningThreshold};crit=${durationCriticalThreshold} !PU(link):lnk1",
+        "query": "select avg(useraction.duration) as \" \" FROM usersession where useraction.application=\"${app.name}\" and ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 0,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": "!PU(color):base=high;warn=${conversionsWarningThreshold};crit=${conversionsCriticalThreshold} !PU(link):lnk3",
+        "query": "select count(*) as \" \" FROM usersession where useraction.application=\"${app.name}\" and ${conversionGoal}",
+        "type": "SINGLE_VALUE",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 0,
+            "width": 1672,
+            "height": 532
+        },
+        "tileFilter": {},
+        "customName": "!PU(usqlcolor):colors=green,blue,yellow,orange,red,blue;dataLabels=true",
+        "query": "Select distinct DATETIME(usersession.endtime,\"dd-HH\") as \"Date\",count(*) as \"Conversions\", CONDITION(count(*), where useraction.duration between 0 and 2000) as \"Duration: 0s - 2s\",CONDITION(count(*), where useraction.duration between 2000 and 3000) as \"Duration: 2s - 3s\",CONDITION(count(*), where useraction.duration between 3000 and 6000)  as \"Duration: 3s - 6s\",CONDITION(count(*), where useraction.duration > 6000)  as \"Duration: >6s\" FROM useraction where useraction.application=\"${app.name}\" and ${conversionGoal}",
+        "type": "LINE_CHART",
+        "visualizationConfig": {
+            "hasAxisBucketing": false
+        },
+        "limit": 50
+    }, {
+        "name": "HelpIcon",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 38,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "!PU(svg):icon=help-bubble;link=lnklast;color=lightblue;url=#dashboard;id=1ac9409a-3e01-456b-b2ff-1e401695dbd5"
+    }]
+}
