@@ -116,7 +116,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \"Crashess\" from usersession where hascrash=true and useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1}",
+        "query": "select count(*) as \"Crashes\" from usersession where hascrash=true and useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -206,7 +206,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \"Crashess\" from usersession where hascrash=true and useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-2}",
+        "query": "select count(*) as \"Crashes\" from usersession where hascrash=true and useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -221,7 +221,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \"Crashess\" from usersession where hascrash=true and useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-3}",
+        "query": "select count(*) as \"Crashes\" from usersession where hascrash=true and useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
