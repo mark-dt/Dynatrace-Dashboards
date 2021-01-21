@@ -1,0 +1,477 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.206.119.20201208-162938"
+    },
+    "id": "8fb7f5c9-4943-4ac3-ab23-5fe1087f28a3",
+    "dashboardMetadata": {
+        "name": "${overviewName} Memory Utilization",
+        "shared": false,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": ""
+        },
+        "tags": ["Infrastructure"]
+    },
+    "tiles": [{
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 266,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Memory used",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:host.mem.usage",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 266,
+            "width": 570,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Memory used",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:host.mem.usage",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 0,
+            "width": 266,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Swap Available",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:host.mem.swap.avail",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 266,
+            "width": 570,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Swap Available",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:host.mem.swap.avail",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 836,
+            "width": 266,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Swap used",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:host.mem.swap.used",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 1102,
+            "width": 570,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Swap used",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:host.mem.swap.used",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 836,
+            "width": 266,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Memory available %",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:host.mem.avail.pct",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1102,
+            "width": 570,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Memory available %",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:host.mem.avail.pct",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 0,
+            "width": 266,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Process memory",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:tech.generic.mem.workingSetSize",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.process_group_instance",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 266,
+            "width": 570,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Process memory",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.generic.mem.workingSetSize",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.process_group_instance",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 836,
+            "width": 266,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Kernel memory",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:host.mem.kernel",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 1102,
+            "width": 570,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Kernel memory",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:host.mem.kernel",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 988,
+            "left": 0,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "!PU(background):url=${MyBackground}"
+    }]
+}
