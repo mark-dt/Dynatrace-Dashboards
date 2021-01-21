@@ -472,6 +472,6 @@
             "height": 152
         },
         "tileFilter": {},
-        "markdown": "!PU(background):url=${MyBackground}"
+        "markdown": "!PU(background):url=${MyBackground.value}"
     }]
 }
