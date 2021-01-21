@@ -431,5 +431,17 @@
             },
             "filtersPerEntityType": {}
         }
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 988,
+            "left": 0,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "!PU(background):url=${MyBackground.value}"
     }]
 }
