@@ -81,7 +81,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83D\uDEA8 !PU(compare):link=link4;lt=white;gt=yellow;eq=white !PU(link):link3",
-        "query": "select sum(useraction.errorCount) as \"Errors\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-6} and ${journey.where-7}",
+        "query": "select sum(useraction.requestErrorCount) as \"Errors\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-6} and ${journey.where-7}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -96,7 +96,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83D\uDEA8 !PU(compare):link=link3;lt=white;gt=yellow;eq=white !PU(link):link4",
-        "query": "select sum(useraction.errorCount) as \"Errors\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-6} and not ${journey.where-7}",
+        "query": "select sum(useraction.requestErrorCount) as \"Errors\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-6} and not ${journey.where-7}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -110,7 +110,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.errorCount,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-6}%20and%20${journey.where-7}%20and%20useraction.errorCount%3E0%20order%20by%20useraction.errorCount%20desc&visualization=TABLE)"
+        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.requestErrorCount,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-6}%20and%20${journey.where-7}%20and%20useraction.requestErrorCount%3E0%20order%20by%20useraction.requestErrorCount%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -122,7 +122,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.errorCount,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-6}%20and%20not%20${journey.where-7}%20and%20useraction.errorCount%3E0%20order%20by%20useraction.errorCount%20DESC&visualization=TABLE)"
+        "markdown": "## [Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.requestErrorCount,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-6}%20and%20not%20${journey.where-7}%20and%20useraction.requestErrorCount%3E0%20order%20by%20useraction.requestErrorCount%20DESC&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -460,7 +460,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83D\uDEA8 !PU(compare):link=link22;lt=white;gt=yellow;eq=white !PU(link):link21",
-        "query": "select sum(useraction.failedImages) as \"Failed Images\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-6} and ${journey.where-7}",
+        "query": "select sum(useraction.javascriptErrorCount) as \"JS Errors\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-6} and ${journey.where-7}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -475,7 +475,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83D\uDEA8!PU(compare):link=link21;lt=white;gt=yellow;eq=white !PU(link):link22",
-        "query": "select sum(useraction.failedImages) as \"Failed Images\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-6} and not ${journey.where-7}",
+        "query": "select sum(useraction.javascriptErrorCount) as \"JS Errors\" from usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-6} and not ${journey.where-7}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
@@ -717,7 +717,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Failed Images](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.failedImages,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-6}%20and%20${journey.where-7}%20and%20useraction.failedImages%3E0%20order%20by%20useraction.failedImages%20desc&visualization=TABLE)"
+        "markdown": "## [JS Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.javascriptErrorCount,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-6}%20and%20${journey.where-7}%20and%20useraction.javascriptErrorCount%3E0%20order%20by%20useraction.javascriptErrorCount%20desc&visualization=TABLE)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -729,7 +729,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Failed Images](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.failedImages,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-6}%20and%20not%20${journey.where-7}%20and%20useraction.failedImages%3E0%20order%20by%20useraction.failedImages%20DESC&visualization=TABLE)"
+        "markdown": "## [JS Errors](${url}/ui/user-sessions/query?sessionquery=select%20userid%2Cuseraction.javascriptErrorCount,usersession.hassessionreplay%20FROM%20usersession%20where%20${journey.where-6}%20and%20not%20${journey.where-7}%20and%20useraction.javascriptErrorCount%3E0%20order%20by%20useraction.javascriptErrorCount%20DESC&visualization=TABLE)"
     }, {
         "name": "Environment Breakdown",
         "tileType": "HEADER",
