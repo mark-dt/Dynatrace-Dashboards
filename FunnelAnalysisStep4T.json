@@ -849,7 +849,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83C\uDFD9 !PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
-        "query": "select count(usersessionid) as \"Requests\",City FROM usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-4} and ${journey.where-5} group by City",
+        "query": "select count(usersessionid) as \"Requests\",City FROM usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-4} and ${journey.where-5} and City is not null group by City",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -864,7 +864,7 @@
         },
         "tileFilter": {},
         "customName": "\uD83C\uDFD9 !PU(usqlcolor):colors=#4363d8,#FFCB05,#3cb44b,#f58231,#911eb4,#42d4f4,#f032e6,#bfef45,#fabed4,#469990,#e6beff,#9a6324,#fffac8,#800000,#aaffc3,#808000,#ffd8b1,#000075,#a9a9a9,#ffffff,#000000",
-        "query": "select count(usersessionid) as \"Requests\",City FROM usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-4} and not ${journey.where-5} group by City",
+        "query": "select count(usersessionid) as \"Requests\",City FROM usersession where useraction.application in (\"${app.name}\")   ${uspClause} ${regionClause} and ${journey.where-4} and not ${journey.where-5} and City is not null group by City",
         "type": "PIE_CHART",
         "limit": 50
     }, {
