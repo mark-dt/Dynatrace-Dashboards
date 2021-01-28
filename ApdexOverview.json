@@ -134,6 +134,8 @@
             "filtersPerEntityType": {
                 "APPLICATION": {
                     "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
         }
     }, {
         "name": "Custom chart",
@@ -188,6 +190,8 @@
             "filtersPerEntityType": {
                 "APPLICATION": {
                     "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
         }
     }, {
         "name": "Custom chart",
@@ -242,6 +246,8 @@
             "filtersPerEntityType": {
                 "APPLICATION": {
                     "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
         }
     }, {
         "name": "Custom chart",
@@ -296,6 +302,8 @@
             "filtersPerEntityType": {
                 "APPLICATION": {
                     "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
         }
     }, {
         "name": "Custom chart",
@@ -350,6 +358,8 @@
             "filtersPerEntityType": {
                 "APPLICATION": {
                     "SPECIFIC_ENTITIES": ["${app.id}"]
+                }
+            }
         }
     }, {
         "name": "Markdown",
