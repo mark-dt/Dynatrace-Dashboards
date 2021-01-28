@@ -303,7 +303,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkapdex;base=low;warn=${MyApdexCountW};crit=${MyApdexCountC};url=#uemapplications/uemappmetrics;uemapplicationId=${app.id};visiblepart=apdex-details"
+        "markdown": "!PU(svg):icon=analyze;link=lnkapdex;base=low;warn=${MyApdexCountW};crit=${MyApdexCountC};url=#dashboard;id=2680879a-a684-428c-839b-0945597f87bb"
     }, {
         "name": "ApdexHeader",
         "tileType": "MARKDOWN",
@@ -375,7 +375,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "!PU(svg):icon=analyze;link=lnkapdex;base=low;warn=${MyApdexCountW};crit=${MyApdexCountC};url=#uemapplications/uemappmetrics;uemapplicationId=${app.id};visiblepart=apdex-details"
+        "markdown": "!PU(svg):icon=analyze;link=lnkapdex;base=low;warn=${MyApdexCountW};crit=${MyApdexCountC};url=#dashboard;id=2680879a-a684-428c-839b-0945597f87bb"
     }, {
         "name": "Apdex2Header",
         "tileType": "MARKDOWN",
