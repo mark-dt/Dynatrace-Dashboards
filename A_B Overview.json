@@ -3,7 +3,7 @@
         "configurationVersions": [3],
         "clusterVersion": "1.206.7.20201023-161501"
     },
-    "id": "ce1b66a7-6346-4c70-96b2-2b212107bfe9",
+    "id": "ce1b66a7-6346-4c70-96b2-2b212107bfe8",
     "dashboardMetadata": {
         "name": "${overviewName} A/B Testing Overview",
         "shared": false,
@@ -29,7 +29,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseA}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -66,7 +66,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select max(duration) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "query": "select max(duration) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseA}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -92,7 +92,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select min(duration) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "query": "select min(duration) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseA}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -140,7 +140,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
+        "query": "select avg(duration) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseB}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -155,7 +155,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select max(duration) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
+        "query": "select max(duration) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseB}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -170,28 +170,28 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select min(duration) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
+        "query": "select min(duration) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseB}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
-        "name": "${MyString}",
+        "name": "${propertyA.id} - ${uspClauseA.name}",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
             "top": 0,
             "left": 304,
-            "width": 304,
+            "width": 494,
             "height": 38
         },
         "tileFilter": {}
     }, {
-        "name": "${MyString2}",
+        "name": "${propertyB.id} - ${uspClauseB.name}",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
             "top": 0,
             "left": 1254,
-            "width": 304,
+            "width": 494,
             "height": 38
         },
         "tileFilter": {}
@@ -460,7 +460,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "query": "select avg(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseA}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -475,7 +475,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "query": "select avg(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseA}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -490,7 +490,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select max(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "query": "select max(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseA}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -505,7 +505,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select min(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "query": "select min(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseA}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -520,7 +520,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
+        "query": "select avg(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseB}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -535,7 +535,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select max(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
+        "query": "select max(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseB}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -550,7 +550,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select min(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
+        "query": "select min(visuallyCompleteTime) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseB}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -565,7 +565,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "query": "select avg(speedIndex) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseA}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -580,7 +580,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select max(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "query": "select max(speedIndex) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseA}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -595,7 +595,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select min(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "query": "select min(speedIndex) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseA}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -610,7 +610,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
+        "query": "select avg(speedIndex) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseB}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -625,7 +625,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select max(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
+        "query": "select max(speedIndex) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseB}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -640,7 +640,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select min(speedIndex) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
+        "query": "select min(speedIndex) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseB}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -655,7 +655,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select max(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "query": "select max(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseA}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -670,7 +670,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select min(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause}",
+        "query": "select min(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseA}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -685,7 +685,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
+        "query": "select avg(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseB}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -700,7 +700,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select max(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
+        "query": "select max(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseB}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -715,7 +715,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select min(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" ${uspClause2}",
+        "query": "select min(domCompleteTime) as \" \" from useraction where application=\"${app.name}\" and ${uspClauseB}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -730,7 +730,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause} and useraction.matchingConversionGoals is not null",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and ${uspClauseA} and useraction.matchingConversionGoals is not null",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -745,7 +745,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause2} and useraction.matchingConversionGoals is not null",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and ${uspClauseB} and useraction.matchingConversionGoals is not null",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -760,7 +760,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause} and useraction.matchingConversionGoals is null",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and ${uspClauseA} and useraction.matchingConversionGoals is null",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -775,7 +775,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause2} and useraction.matchingConversionGoals is null",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and ${uspClauseB} and useraction.matchingConversionGoals is null",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -812,7 +812,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause}",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and ${uspClauseA}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }, {
@@ -827,7 +827,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" ${uspClause2}",
+        "query": "select count(*) as \" \" from usersession where useraction.application=\"${app.name}\" and ${uspClauseB}",
         "type": "SINGLE_VALUE",
         "limit": 50
     }]
