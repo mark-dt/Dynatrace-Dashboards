@@ -180,7 +180,7 @@
         "bounds": {
             "top": 0,
             "left": 304,
-            "width": 304,
+            "width": 494,
             "height": 38
         },
         "tileFilter": {}
@@ -191,7 +191,7 @@
         "bounds": {
             "top": 0,
             "left": 1254,
-            "width": 304,
+            "width": 494,
             "height": 38
         },
         "tileFilter": {}
