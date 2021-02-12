@@ -210,7 +210,7 @@
         },
         "markdown": "## ${app-1.name}"
     }, {
-        "name": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "tileType": "DATA_EXPLORER",
         "configured": true,
         "bounds": {
@@ -269,7 +269,7 @@
             }]
         }
     }, {
-        "name": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "tileType": "DATA_EXPLORER",
         "configured": true,
         "bounds": {
@@ -328,7 +328,7 @@
             }]
         }
     }, {
-        "name": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "tileType": "DATA_EXPLORER",
         "configured": true,
         "bounds": {
@@ -387,7 +387,7 @@
             }]
         }
     }, {
-        "name": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "tileType": "DATA_EXPLORER",
         "configured": true,
         "bounds": {
@@ -446,7 +446,7 @@
             }]
         }
     }, {
-        "name": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "tileType": "DATA_EXPLORER",
         "configured": true,
         "bounds": {
@@ -505,7 +505,7 @@
             }]
         }
     }, {
-        "name": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "tileType": "DATA_EXPLORER",
         "configured": true,
         "bounds": {
@@ -564,7 +564,7 @@
             }]
         }
     }, {
-        "name": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "tileType": "DATA_EXPLORER",
         "configured": true,
         "bounds": {
@@ -623,7 +623,7 @@
             }]
         }
     }, {
-        "name": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "tileType": "DATA_EXPLORER",
         "configured": true,
         "bounds": {
@@ -682,7 +682,7 @@
             }]
         }
     }, {
-        "name": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "tileType": "DATA_EXPLORER",
         "configured": true,
         "bounds": {
@@ -741,7 +741,7 @@
             }]
         }
     }, {
-        "name": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "tileType": "DATA_EXPLORER",
         "configured": true,
         "bounds": {
@@ -800,7 +800,7 @@
             }]
         }
     }, {
-        "name": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "tileType": "DATA_EXPLORER",
         "configured": true,
         "bounds": {
@@ -859,7 +859,7 @@
             }]
         }
     }, {
-        "name": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "tileType": "DATA_EXPLORER",
         "configured": true,
         "bounds": {
