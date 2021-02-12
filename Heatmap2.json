@@ -917,8 +917,7 @@
                 }
             }]
         }
-    }]
-}, {
+    }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
         "configured": true,
