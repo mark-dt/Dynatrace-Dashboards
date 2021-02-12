@@ -1,0 +1,957 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.210.92.20210209-151321"
+    },
+    "id": "e2a778c3-e67c-4d19-9ddf-bf120d06327a",
+    "dashboardMetadata": {
+        "name": "${overviewName} ${MyAggregation.key} Heatmap",
+        "shared": false,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        }
+    },
+    "tiles": [{
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 228,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "## Applications"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 228,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "!PU(date):res=now to now${MyInterval};fmt=MM/DD HH:mm;color=${MyColor}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 342,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "!PU(date):res=now${MyInterval} to now${MyInterval}${MyInterval};fmt=MM/DD HH:mm;color=${MyColor}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 456,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "!PU(date):res=now${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval};fmt=MM/DD HH:mm;color=${MyColor}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 570,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "!PU(date):res=now${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval};fmt=MM/DD HH:mm;color=${MyColor}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 684,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "!PU(date):res=now${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval};fmt=MM/DD HH:mm;color=${MyColor}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 798,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "!PU(date):res=now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval};fmt=MM/DD HH:mm;color=${MyColor}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 912,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "!PU(date):res=now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval};fmt=MM/DD HH:mm;color=${MyColor}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1026,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "!PU(date):res=now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval};fmt=MM/DD HH:mm;color=${MyColor}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1140,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "!PU(date):res=now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval};fmt=MM/DD HH:mm;color=${MyColor}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1254,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "!PU(date):res=now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval};fmt=MM/DD HH:mm;color=${MyColor}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1368,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "!PU(date):res=now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval};fmt=MM/DD HH:mm;color=${MyColor}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1482,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "!PU(date):res=now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval};fmt=MM/DD HH:mm;color=${MyColor}"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 0,
+            "width": 228,
+            "height": 38
+        },
+        "tileFilter": {
+            "timeframe": "Last 2 hours"
+        },
+        "markdown": "## ${app-1.name}"
+    }, {
+        "name": "",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 228,
+            "width": 114,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval} to now"
+        },
+        "customName": "Explorer results",
+        "queries": [{
+            "id": "C",
+            "metric": "${metricRum.id}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "value": ${MyApp1GoodThreshold}.0,
+                        "color": "#7dc540"
+                    }, {
+                        "value": ${MyApp1WarningThreshold}.0,
+                        "color": "#f5d30f"
+                    }, {
+                        "value": ${MyApp1CriticalThreshold}.0,
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }, {
+        "name": "",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 342,
+            "width": 114,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval}${MyInterval} to now${MyInterval}"
+        },
+        "customName": "Explorer results",
+        "queries": [{
+            "id": "C",
+            "metric": "${metricRum.id}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "value": ${MyApp1GoodThreshold}.0,
+                        "color": "#7dc540"
+                    }, {
+                        "value": ${MyApp1WarningThreshold}.0,
+                        "color": "#f5d30f"
+                    }, {
+                        "value": ${MyApp1CriticalThreshold}.0,
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }, {
+        "name": "",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 456,
+            "width": 114,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}"
+        },
+        "customName": "Explorer results",
+        "queries": [{
+            "id": "C",
+            "metric": "${metricRum.id}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "value": ${MyApp1GoodThreshold}.0,
+                        "color": "#7dc540"
+                    }, {
+                        "value": ${MyApp1WarningThreshold}.0,
+                        "color": "#f5d30f"
+                    }, {
+                        "value": ${MyApp1CriticalThreshold}.0,
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }, {
+        "name": "",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 570,
+            "width": 114,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}"
+        },
+        "customName": "Explorer results",
+        "queries": [{
+            "id": "C",
+            "metric": "${metricRum.id}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "value": ${MyApp1GoodThreshold}.0,
+                        "color": "#7dc540"
+                    }, {
+                        "value": ${MyApp1WarningThreshold}.0,
+                        "color": "#f5d30f"
+                    }, {
+                        "value": ${MyApp1CriticalThreshold}.0,
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }, {
+        "name": "",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 684,
+            "width": 114,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
+        },
+        "customName": "Explorer results",
+        "queries": [{
+            "id": "C",
+            "metric": "${metricRum.id}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "value": ${MyApp1GoodThreshold}.0,
+                        "color": "#7dc540"
+                    }, {
+                        "value": ${MyApp1WarningThreshold}.0,
+                        "color": "#f5d30f"
+                    }, {
+                        "value": ${MyApp1CriticalThreshold}.0,
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }, {
+        "name": "",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 798,
+            "width": 114,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
+        },
+        "customName": "Explorer results",
+        "queries": [{
+            "id": "C",
+            "metric": "${metricRum.id}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "value": ${MyApp1GoodThreshold}.0,
+                        "color": "#7dc540"
+                    }, {
+                        "value": ${MyApp1WarningThreshold}.0,
+                        "color": "#f5d30f"
+                    }, {
+                        "value": ${MyApp1CriticalThreshold}.0,
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }, {
+        "name": "",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1026,
+            "width": 114,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
+        },
+        "customName": "Explorer results",
+        "queries": [{
+            "id": "C",
+            "metric": "${metricRum.id}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "value": ${MyApp1GoodThreshold}.0,
+                        "color": "#7dc540"
+                    }, {
+                        "value": ${MyApp1WarningThreshold}.0,
+                        "color": "#f5d30f"
+                    }, {
+                        "value": ${MyApp1CriticalThreshold}.0,
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }, {
+        "name": "",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 912,
+            "width": 114,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
+        },
+        "customName": "Explorer results",
+        "queries": [{
+            "id": "C",
+            "metric": "${metricRum.id}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "value": ${MyApp1GoodThreshold}.0,
+                        "color": "#7dc540"
+                    }, {
+                        "value": ${MyApp1WarningThreshold}.0,
+                        "color": "#f5d30f"
+                    }, {
+                        "value": ${MyApp1CriticalThreshold}.0,
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }, {
+        "name": "",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1140,
+            "width": 114,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
+        },
+        "customName": "Explorer results",
+        "queries": [{
+            "id": "C",
+            "metric": "${metricRum.id}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "value": ${MyApp1GoodThreshold}.0,
+                        "color": "#7dc540"
+                    }, {
+                        "value": ${MyApp1WarningThreshold}.0,
+                        "color": "#f5d30f"
+                    }, {
+                        "value": ${MyApp1CriticalThreshold}.0,
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }, {
+        "name": "",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1254,
+            "width": 114,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
+        },
+        "customName": "Explorer results",
+        "queries": [{
+            "id": "C",
+            "metric": "${metricRum.id}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "value": ${MyApp1GoodThreshold}.0,
+                        "color": "#7dc540"
+                    }, {
+                        "value": ${MyApp1WarningThreshold}.0,
+                        "color": "#f5d30f"
+                    }, {
+                        "value": ${MyApp1CriticalThreshold}.0,
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }, {
+        "name": "",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1368,
+            "width": 114,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
+        },
+        "customName": "Explorer results",
+        "queries": [{
+            "id": "C",
+            "metric": "${metricRum.id}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "value": ${MyApp1GoodThreshold}.0,
+                        "color": "#7dc540"
+                    }, {
+                        "value": ${MyApp1WarningThreshold}.0,
+                        "color": "#f5d30f"
+                    }, {
+                        "value": ${MyApp1CriticalThreshold}.0,
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }, {
+        "name": "",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1482,
+            "width": 114,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
+        },
+        "customName": "Explorer results",
+        "queries": [{
+            "id": "C",
+            "metric": "${metricRum.id}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "value": ${MyApp1GoodThreshold}.0,
+                        "color": "#7dc540"
+                    }, {
+                        "value": ${MyApp1WarningThreshold}.0,
+                        "color": "#f5d30f"
+                    }, {
+                        "value": ${MyApp1CriticalThreshold}.0,
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }]
+}
