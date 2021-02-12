@@ -222,7 +222,7 @@
         "tileFilter": {
             "timeframe": "now${MyInterval} to now"
         },
-        "customName": "Explorer results",
+        "customName": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "queries": [{
             "id": "C",
             "metric": "${metricRum.id}",
@@ -252,13 +252,10 @@
                 "threshold": {
                     "axisTarget": "LEFT",
                     "rules": [{
-                        "value": ${MyApp1GoodThreshold}.0,
                         "color": "#7dc540"
                     }, {
-                        "value": ${MyApp1WarningThreshold}.0,
                         "color": "#f5d30f"
                     }, {
-                        "value": ${MyApp1CriticalThreshold}.0,
                         "color": "#dc172a"
                     }]
                 },
@@ -284,7 +281,7 @@
         "tileFilter": {
             "timeframe": "now${MyInterval}${MyInterval} to now${MyInterval}"
         },
-        "customName": "Explorer results",
+        "customName": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "queries": [{
             "id": "C",
             "metric": "${metricRum.id}",
@@ -314,13 +311,10 @@
                 "threshold": {
                     "axisTarget": "LEFT",
                     "rules": [{
-                        "value": ${MyApp1GoodThreshold}.0,
                         "color": "#7dc540"
                     }, {
-                        "value": ${MyApp1WarningThreshold}.0,
                         "color": "#f5d30f"
                     }, {
-                        "value": ${MyApp1CriticalThreshold}.0,
                         "color": "#dc172a"
                     }]
                 },
@@ -346,7 +340,7 @@
         "tileFilter": {
             "timeframe": "now${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}"
         },
-        "customName": "Explorer results",
+        "customName": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "queries": [{
             "id": "C",
             "metric": "${metricRum.id}",
@@ -376,13 +370,10 @@
                 "threshold": {
                     "axisTarget": "LEFT",
                     "rules": [{
-                        "value": ${MyApp1GoodThreshold}.0,
                         "color": "#7dc540"
                     }, {
-                        "value": ${MyApp1WarningThreshold}.0,
                         "color": "#f5d30f"
                     }, {
-                        "value": ${MyApp1CriticalThreshold}.0,
                         "color": "#dc172a"
                     }]
                 },
@@ -408,7 +399,7 @@
         "tileFilter": {
             "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}"
         },
-        "customName": "Explorer results",
+        "customName": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "queries": [{
             "id": "C",
             "metric": "${metricRum.id}",
@@ -438,13 +429,10 @@
                 "threshold": {
                     "axisTarget": "LEFT",
                     "rules": [{
-                        "value": ${MyApp1GoodThreshold}.0,
                         "color": "#7dc540"
                     }, {
-                        "value": ${MyApp1WarningThreshold}.0,
                         "color": "#f5d30f"
                     }, {
-                        "value": ${MyApp1CriticalThreshold}.0,
                         "color": "#dc172a"
                     }]
                 },
@@ -470,7 +458,7 @@
         "tileFilter": {
             "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
         },
-        "customName": "Explorer results",
+        "customName": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "queries": [{
             "id": "C",
             "metric": "${metricRum.id}",
@@ -500,13 +488,10 @@
                 "threshold": {
                     "axisTarget": "LEFT",
                     "rules": [{
-                        "value": ${MyApp1GoodThreshold}.0,
                         "color": "#7dc540"
                     }, {
-                        "value": ${MyApp1WarningThreshold}.0,
                         "color": "#f5d30f"
                     }, {
-                        "value": ${MyApp1CriticalThreshold}.0,
                         "color": "#dc172a"
                     }]
                 },
@@ -532,7 +517,7 @@
         "tileFilter": {
             "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
         },
-        "customName": "Explorer results",
+        "customName": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "queries": [{
             "id": "C",
             "metric": "${metricRum.id}",
@@ -562,13 +547,10 @@
                 "threshold": {
                     "axisTarget": "LEFT",
                     "rules": [{
-                        "value": ${MyApp1GoodThreshold}.0,
                         "color": "#7dc540"
                     }, {
-                        "value": ${MyApp1WarningThreshold}.0,
                         "color": "#f5d30f"
                     }, {
-                        "value": ${MyApp1CriticalThreshold}.0,
                         "color": "#dc172a"
                     }]
                 },
@@ -594,7 +576,7 @@
         "tileFilter": {
             "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
         },
-        "customName": "Explorer results",
+        "customName": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "queries": [{
             "id": "C",
             "metric": "${metricRum.id}",
@@ -624,13 +606,10 @@
                 "threshold": {
                     "axisTarget": "LEFT",
                     "rules": [{
-                        "value": ${MyApp1GoodThreshold}.0,
                         "color": "#7dc540"
                     }, {
-                        "value": ${MyApp1WarningThreshold}.0,
                         "color": "#f5d30f"
                     }, {
-                        "value": ${MyApp1CriticalThreshold}.0,
                         "color": "#dc172a"
                     }]
                 },
@@ -656,7 +635,7 @@
         "tileFilter": {
             "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
         },
-        "customName": "Explorer results",
+        "customName": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "queries": [{
             "id": "C",
             "metric": "${metricRum.id}",
@@ -686,13 +665,10 @@
                 "threshold": {
                     "axisTarget": "LEFT",
                     "rules": [{
-                        "value": ${MyApp1GoodThreshold}.0,
                         "color": "#7dc540"
                     }, {
-                        "value": ${MyApp1WarningThreshold}.0,
                         "color": "#f5d30f"
                     }, {
-                        "value": ${MyApp1CriticalThreshold}.0,
                         "color": "#dc172a"
                     }]
                 },
@@ -718,7 +694,7 @@
         "tileFilter": {
             "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
         },
-        "customName": "Explorer results",
+        "customName": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "queries": [{
             "id": "C",
             "metric": "${metricRum.id}",
@@ -748,13 +724,10 @@
                 "threshold": {
                     "axisTarget": "LEFT",
                     "rules": [{
-                        "value": ${MyApp1GoodThreshold}.0,
                         "color": "#7dc540"
                     }, {
-                        "value": ${MyApp1WarningThreshold}.0,
                         "color": "#f5d30f"
                     }, {
-                        "value": ${MyApp1CriticalThreshold}.0,
                         "color": "#dc172a"
                     }]
                 },
@@ -780,7 +753,7 @@
         "tileFilter": {
             "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
         },
-        "customName": "Explorer results",
+        "customName": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "queries": [{
             "id": "C",
             "metric": "${metricRum.id}",
@@ -810,13 +783,10 @@
                 "threshold": {
                     "axisTarget": "LEFT",
                     "rules": [{
-                        "value": ${MyApp1GoodThreshold}.0,
                         "color": "#7dc540"
                     }, {
-                        "value": ${MyApp1WarningThreshold}.0,
                         "color": "#f5d30f"
                     }, {
-                        "value": ${MyApp1CriticalThreshold}.0,
                         "color": "#dc172a"
                     }]
                 },
@@ -842,7 +812,7 @@
         "tileFilter": {
             "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
         },
-        "customName": "Explorer results",
+        "customName": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "queries": [{
             "id": "C",
             "metric": "${metricRum.id}",
@@ -872,13 +842,10 @@
                 "threshold": {
                     "axisTarget": "LEFT",
                     "rules": [{
-                        "value": ${MyApp1GoodThreshold}.0,
                         "color": "#7dc540"
                     }, {
-                        "value": ${MyApp1WarningThreshold}.0,
                         "color": "#f5d30f"
                     }, {
-                        "value": ${MyApp1CriticalThreshold}.0,
                         "color": "#dc172a"
                     }]
                 },
@@ -904,7 +871,7 @@
         "tileFilter": {
             "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
         },
-        "customName": "Explorer results",
+        "customName": "!PU(color):base=high;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "queries": [{
             "id": "C",
             "metric": "${metricRum.id}",
@@ -934,13 +901,10 @@
                 "threshold": {
                     "axisTarget": "LEFT",
                     "rules": [{
-                        "value": ${MyApp1GoodThreshold}.0,
                         "color": "#7dc540"
                     }, {
-                        "value": ${MyApp1WarningThreshold}.0,
                         "color": "#f5d30f"
                     }, {
-                        "value": ${MyApp1CriticalThreshold}.0,
                         "color": "#dc172a"
                     }]
                 },
