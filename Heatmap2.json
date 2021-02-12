@@ -3,7 +3,7 @@
         "configurationVersions": [3],
         "clusterVersion": "1.210.92.20210209-151321"
     },
-    "id": "e2a778c3-e67c-4d19-9ddf-bf120d063270",
+    "id": "e2a778c3-e67c-4d19-9ddf-bf120d06327a",
     "dashboardMetadata": {
         "name": "💎 ${overviewName} ${MyAggregation.key} Heatmap",
         "shared": false,
@@ -225,7 +225,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-1.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -243,7 +243,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -284,7 +284,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-1.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -302,7 +302,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -343,7 +343,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-1.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -361,7 +361,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -402,7 +402,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-1.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -420,7 +420,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -461,7 +461,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-1.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -479,7 +479,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -520,7 +520,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-1.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -538,7 +538,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -579,7 +579,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-1.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -597,7 +597,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -638,7 +638,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-1.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -656,7 +656,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -697,7 +697,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-1.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -715,7 +715,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -756,7 +756,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-1.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -774,7 +774,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -815,7 +815,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-1.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -833,7 +833,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -874,7 +874,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-1.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -892,7 +892,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -947,7 +947,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-2.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -959,13 +959,13 @@
                     "filterOperator": "OR",
                     "nestedFilters": [],
                     "criteria": [{
-                        "value": "${app-1.id}",
+                        "value": "${app-2.id}",
                         "evaluator": "EQ"
                     }]
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-2.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-2.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -1006,7 +1006,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-2.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -1018,13 +1018,13 @@
                     "filterOperator": "OR",
                     "nestedFilters": [],
                     "criteria": [{
-                        "value": "${app-1.id}",
+                        "value": "${app-2.id}",
                         "evaluator": "EQ"
                     }]
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-2.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-2.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -1065,7 +1065,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-2.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -1077,13 +1077,13 @@
                     "filterOperator": "OR",
                     "nestedFilters": [],
                     "criteria": [{
-                        "value": "${app-1.id}",
+                        "value": "${app-2.id}",
                         "evaluator": "EQ"
                     }]
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-2.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-2.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -1124,7 +1124,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-2.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -1136,13 +1136,13 @@
                     "filterOperator": "OR",
                     "nestedFilters": [],
                     "criteria": [{
-                        "value": "${app-1.id}",
+                        "value": "${app-2.id}",
                         "evaluator": "EQ"
                     }]
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-2.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-2.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -1183,7 +1183,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-2.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -1195,13 +1195,13 @@
                     "filterOperator": "OR",
                     "nestedFilters": [],
                     "criteria": [{
-                        "value": "${app-1.id}",
+                        "value": "${app-2.id}",
                         "evaluator": "EQ"
                     }]
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-2.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-2.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -1242,7 +1242,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-2.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -1254,13 +1254,13 @@
                     "filterOperator": "OR",
                     "nestedFilters": [],
                     "criteria": [{
-                        "value": "${app-1.id}",
+                        "value": "${app-2.id}",
                         "evaluator": "EQ"
                     }]
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-2.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-2.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -1301,7 +1301,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-2.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -1313,13 +1313,13 @@
                     "filterOperator": "OR",
                     "nestedFilters": [],
                     "criteria": [{
-                        "value": "${app-1.id}",
+                        "value": "${app-2.id}",
                         "evaluator": "EQ"
                     }]
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-2.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-2.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -1360,7 +1360,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-2.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -1372,13 +1372,13 @@
                     "filterOperator": "OR",
                     "nestedFilters": [],
                     "criteria": [{
-                        "value": "${app-1.id}",
+                        "value": "${app-2.id}",
                         "evaluator": "EQ"
                     }]
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-2.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-2.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -1419,7 +1419,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-2.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -1431,13 +1431,13 @@
                     "filterOperator": "OR",
                     "nestedFilters": [],
                     "criteria": [{
-                        "value": "${app-1.id}",
+                        "value": "${app-2.id}",
                         "evaluator": "EQ"
                     }]
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-2.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-2.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -1478,7 +1478,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-2.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -1490,13 +1490,13 @@
                     "filterOperator": "OR",
                     "nestedFilters": [],
                     "criteria": [{
-                        "value": "${app-1.id}",
+                        "value": "${app-2.id}",
                         "evaluator": "EQ"
                     }]
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-2.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-2.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -1537,7 +1537,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-2.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -1549,13 +1549,13 @@
                     "filterOperator": "OR",
                     "nestedFilters": [],
                     "criteria": [{
-                        "value": "${app-1.id}",
+                        "value": "${app-2.id}",
                         "evaluator": "EQ"
                     }]
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-2.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-2.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -1596,7 +1596,7 @@
         "customName": "",
         "queries": [{
             "id": "C",
-            "metric": "${metricRum.id}",
+            "metric": "calc.apps.web.${app-2.name}.${metricRum.name}",
             "spaceAggregation": "${MyAggregation.value}",
             "timeAggregation": "DEFAULT",
             "splitBy": [],
@@ -1608,13 +1608,13 @@
                     "filterOperator": "OR",
                     "nestedFilters": [],
                     "criteria": [{
-                        "value": "${app-1.id}",
+                        "value": "${app-2.id}",
                         "evaluator": "EQ"
                     }]
                 }],
                 "criteria": []
             },
-            "metricSelector": "${metricRum.id}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc.apps.web.${app-2.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-2.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
