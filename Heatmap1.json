@@ -34,7 +34,7 @@
         "bounds": {
             "top": 0,
             "left": 228,
-            "width": 114,
+            "width": 152,
             "height": 38
         },
         "tileFilter": {
@@ -47,8 +47,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 342,
-            "width": 114,
+            "left": 380,
+            "width": 152,
             "height": 38
         },
         "tileFilter": {
@@ -61,8 +61,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 456,
-            "width": 114,
+            "left": 532,
+            "width": 152,
             "height": 38
         },
         "tileFilter": {
@@ -75,8 +75,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 570,
-            "width": 114,
+            "left": 684,
+            "width": 152,
             "height": 38
         },
         "tileFilter": {
@@ -89,8 +89,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 684,
-            "width": 114,
+            "left": 836,
+            "width": 152,
             "height": 38
         },
         "tileFilter": {
@@ -103,8 +103,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 798,
-            "width": 114,
+            "left": 988,
+            "width": 152,
             "height": 38
         },
         "tileFilter": {
@@ -117,8 +117,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 912,
-            "width": 114,
+            "left": 1140,
+            "width": 152,
             "height": 38
         },
         "tileFilter": {
@@ -131,8 +131,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 1026,
-            "width": 114,
+            "left": 1292,
+            "width": 152,
             "height": 38
         },
         "tileFilter": {
@@ -145,8 +145,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 1140,
-            "width": 114,
+            "left": 1444,
+            "width": 152,
             "height": 38
         },
         "tileFilter": {
@@ -159,8 +159,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 1254,
-            "width": 114,
+            "left": 1596,
+            "width": 152,
             "height": 38
         },
         "tileFilter": {
@@ -173,8 +173,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 1368,
-            "width": 114,
+            "left": 1748,
+            "width": 152,
             "height": 38
         },
         "tileFilter": {
@@ -187,8 +187,8 @@
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 1482,
-            "width": 114,
+            "left": 1900,
+            "width": 152,
             "height": 38
         },
         "tileFilter": {
@@ -208,7 +208,7 @@
         "tileFilter": {
             "timeframe": "Last 2 hours"
         },
-        "markdown": "## ${app-1.name}"
+        "markdown": "## help.dynatrace.com"
     }, {
         "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
         "tileType": "DATA_EXPLORER",
@@ -216,7 +216,7 @@
         "bounds": {
             "top": 38,
             "left": 228,
-            "width": 114,
+            "width": 152,
             "height": 76
         },
         "tileFilter": {
@@ -243,7 +243,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(${MyAggregation.value},descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -274,8 +274,8 @@
         "configured": true,
         "bounds": {
             "top": 38,
-            "left": 342,
-            "width": 114,
+            "left": 380,
+            "width": 152,
             "height": 76
         },
         "tileFilter": {
@@ -302,7 +302,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(${MyAggregation.value},descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -333,8 +333,8 @@
         "configured": true,
         "bounds": {
             "top": 38,
-            "left": 456,
-            "width": 114,
+            "left": 532,
+            "width": 152,
             "height": 76
         },
         "tileFilter": {
@@ -361,66 +361,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
-        }],
-        "visualConfig": {
-            "type": "SINGLE_VALUE",
-            "global": {
-                "theme": "DEFAULT",
-                "threshold": {
-                    "axisTarget": "LEFT",
-                    "rules": [{
-                        "color": "#7dc540"
-                    }, {
-                        "color": "#f5d30f"
-                    }, {
-                        "color": "#dc172a"
-                    }]
-                },
-                "seriesType": "LINE"
-            },
-            "rules": [{
-                "matcher": "C:",
-                "properties": {
-                    "seriesType": "LINE"
-                }
-            }]
-        }
-    }, {
-        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
-        "tileType": "DATA_EXPLORER",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 570,
-            "width": 114,
-            "height": 76
-        },
-        "tileFilter": {
-            "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}"
-        },
-        "customName": "",
-        "queries": [{
-            "id": "C",
-            "metric": "calc:apps.web.${app-1.name}.${metricRum.name}",
-            "spaceAggregation": "${MyAggregation.value}",
-            "timeAggregation": "DEFAULT",
-            "splitBy": [],
-            "filterBy": {
-                "filterOperator": "AND",
-                "nestedFilters": [{
-                    "filter": "dt.entity.application",
-                    "filterType": "DIMENSION",
-                    "filterOperator": "OR",
-                    "nestedFilters": [],
-                    "criteria": [{
-                        "value": "${app-1.id}",
-                        "evaluator": "EQ"
-                    }]
-                }],
-                "criteria": []
-            },
-            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(${MyAggregation.value},descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -452,7 +393,66 @@
         "bounds": {
             "top": 38,
             "left": 684,
-            "width": 114,
+            "width": 152,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}"
+        },
+        "customName": "",
+        "queries": [{
+            "id": "C",
+            "metric": "calc:apps.web.${app-1.name}.${metricRum.name}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(${MyAggregation.value},descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "color": "#7dc540"
+                    }, {
+                        "color": "#f5d30f"
+                    }, {
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }, {
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 836,
+            "width": 152,
             "height": 76
         },
         "tileFilter": {
@@ -479,7 +479,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(${MyAggregation.value},descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -510,8 +510,8 @@
         "configured": true,
         "bounds": {
             "top": 38,
-            "left": 798,
-            "width": 114,
+            "left": 988,
+            "width": 152,
             "height": 76
         },
         "tileFilter": {
@@ -538,7 +538,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(${MyAggregation.value},descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -569,8 +569,8 @@
         "configured": true,
         "bounds": {
             "top": 38,
-            "left": 1026,
-            "width": 114,
+            "left": 1292,
+            "width": 152,
             "height": 76
         },
         "tileFilter": {
@@ -597,66 +597,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
-        }],
-        "visualConfig": {
-            "type": "SINGLE_VALUE",
-            "global": {
-                "theme": "DEFAULT",
-                "threshold": {
-                    "axisTarget": "LEFT",
-                    "rules": [{
-                        "color": "#7dc540"
-                    }, {
-                        "color": "#f5d30f"
-                    }, {
-                        "color": "#dc172a"
-                    }]
-                },
-                "seriesType": "LINE"
-            },
-            "rules": [{
-                "matcher": "C:",
-                "properties": {
-                    "seriesType": "LINE"
-                }
-            }]
-        }
-    }, {
-        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
-        "tileType": "DATA_EXPLORER",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 912,
-            "width": 114,
-            "height": 76
-        },
-        "tileFilter": {
-            "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
-        },
-        "customName": "",
-        "queries": [{
-            "id": "C",
-            "metric": "calc:apps.web.${app-1.name}.${metricRum.name}",
-            "spaceAggregation": "${MyAggregation.value}",
-            "timeAggregation": "DEFAULT",
-            "splitBy": [],
-            "filterBy": {
-                "filterOperator": "AND",
-                "nestedFilters": [{
-                    "filter": "dt.entity.application",
-                    "filterType": "DIMENSION",
-                    "filterOperator": "OR",
-                    "nestedFilters": [],
-                    "criteria": [{
-                        "value": "${app-1.id}",
-                        "evaluator": "EQ"
-                    }]
-                }],
-                "criteria": []
-            },
-            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(${MyAggregation.value},descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -688,7 +629,66 @@
         "bounds": {
             "top": 38,
             "left": 1140,
-            "width": 114,
+            "width": 152,
+            "height": 76
+        },
+        "tileFilter": {
+            "timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"
+        },
+        "customName": "",
+        "queries": [{
+            "id": "C",
+            "metric": "calc:apps.web.${app-1.name}.${metricRum.name}",
+            "spaceAggregation": "${MyAggregation.value}",
+            "timeAggregation": "DEFAULT",
+            "splitBy": [],
+            "filterBy": {
+                "filterOperator": "AND",
+                "nestedFilters": [{
+                    "filter": "dt.entity.application",
+                    "filterType": "DIMENSION",
+                    "filterOperator": "OR",
+                    "nestedFilters": [],
+                    "criteria": [{
+                        "value": "${app-1.id}",
+                        "evaluator": "EQ"
+                    }]
+                }],
+                "criteria": []
+            },
+            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(${MyAggregation.value},descending)):limit(1)"
+        }],
+        "visualConfig": {
+            "type": "SINGLE_VALUE",
+            "global": {
+                "theme": "DEFAULT",
+                "threshold": {
+                    "axisTarget": "LEFT",
+                    "rules": [{
+                        "color": "#7dc540"
+                    }, {
+                        "color": "#f5d30f"
+                    }, {
+                        "color": "#dc172a"
+                    }]
+                },
+                "seriesType": "LINE"
+            },
+            "rules": [{
+                "matcher": "C:",
+                "properties": {
+                    "seriesType": "LINE"
+                }
+            }]
+        }
+    }, {
+        "name": "!PU(color):base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold}",
+        "tileType": "DATA_EXPLORER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1444,
+            "width": 152,
             "height": 76
         },
         "tileFilter": {
@@ -715,7 +715,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(${MyAggregation.value},descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -746,8 +746,8 @@
         "configured": true,
         "bounds": {
             "top": 38,
-            "left": 1254,
-            "width": 114,
+            "left": 1596,
+            "width": 152,
             "height": 76
         },
         "tileFilter": {
@@ -774,7 +774,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(${MyAggregation.value},descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -805,8 +805,8 @@
         "configured": true,
         "bounds": {
             "top": 38,
-            "left": 1368,
-            "width": 114,
+            "left": 1748,
+            "width": 152,
             "height": 76
         },
         "tileFilter": {
@@ -833,7 +833,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(${MyAggregation.value},descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
@@ -864,8 +864,8 @@
         "configured": true,
         "bounds": {
             "top": 38,
-            "left": 1482,
-            "width": 114,
+            "left": 1900,
+            "width": 152,
             "height": 76
         },
         "tileFilter": {
@@ -892,7 +892,7 @@
                 }],
                 "criteria": []
             },
-            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(avg,descending)):limit(1)"
+            "metricSelector": "calc:apps.web.${app-1.name}.${metricRum.name}:(fold,):filter(and(eq(dt.entity.application,${app-1.id}))):splitBy():count:auto:sort(value(${MyAggregation.value},descending)):limit(1)"
         }],
         "visualConfig": {
             "type": "SINGLE_VALUE",
