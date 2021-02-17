@@ -1,0 +1,70 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.210.92.20210209-151321"
+    },
+    "id": "6928edcb-5b18-40d7-9e49-64e0968e1c60",
+    "dashboardMetadata": {
+        "name": "${overviewName} Application Overview",
+        "shared": false,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "Today"
+        },
+        "tags": ["Overview"]
+    },
+    "tiles": [{
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1558,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Links ▲](#dashboard;id=797e9622-0f2e-4fb5-9e93-9e4a19696cfe)"
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 1672,
+            "height": 760
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Active Sessions",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:apps.web.activeSessions",
+                    "aggregation": "NONE",
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }]
+}
