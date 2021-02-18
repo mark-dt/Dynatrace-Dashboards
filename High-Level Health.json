@@ -1,0 +1,219 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.208.124.20210129-093941"
+    },
+    "id": "cf86952b-2837-4ea6-8eaf-eb189220ccba",
+    "dashboardMetadata": {
+        "name": "${overviewName} Overall Health Dashboard",
+        "shared": false,
+        "owner": "cd855ebf",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        }
+    },
+    "tiles": [{
+        "name": "",
+        "tileType": "SERVICES",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 38,
+            "width": 380,
+            "height": 342
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "SERVICE",
+            "customName": "Applications",
+            "defaultName": "Applications",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["1"]
+                }
+            }
+        },
+        "chartVisible": true
+    }, {
+        "name": "Host health",
+        "tileType": "HOSTS",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 798,
+            "width": 380,
+            "height": 342
+        },
+        "tileFilter": {},
+        "chartVisible": true
+    }, {
+        "name": "Service health",
+        "tileType": "SERVICES",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 418,
+            "width": 380,
+            "height": 342
+        },
+        "tileFilter": {},
+        "chartVisible": true
+    }, {
+        "name": "Database health",
+        "tileType": "DATABASES_OVERVIEW",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 1178,
+            "width": 380,
+            "height": 342
+        },
+        "tileFilter": {},
+        "chartVisible": true
+    }, {
+        "name": "Application Health",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 38,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Service Health",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 418,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Database Health",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 1178,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Infrastructure Health",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 114,
+            "left": 798,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Problems",
+        "tileType": "OPEN_PROBLEMS",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 38,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Smartscape",
+        "tileType": "PURE_MODEL",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 266,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 38,
+            "width": 1140,
+            "height": 114
+        },
+        "tileFilter": {},
+        "markdown": "#Red lights represent entities which are part of an in-flight problem (click to drill in)\n\nVisit __https://www.dynatrace.com/ai__ for a quick overview of Davis AI"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 608,
+            "width": 950,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "A key feature of Dynatrace is Davis™, the Dynatrace AI-driven causation engine. Davis relies on artificial intelligence to continuously monitor every aspect of your applications, services, and infrastructure to automatically learn the baseline performance metrics and dependencies of all these components. Dynatrace also automatically learns the baseline response times and failure rates of the key requests that are vital to the success of your business (customer newletter signups, customers adding items to an online shopping cart, requesting a live demo, etc) so that you can track success toward your business' conversion goals. Problem detection and reporting is based on these baseline values. Dynatrace determines for example when a detected slowdown or error-rate increase justifies the generation of a new problem event."
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 684,
+            "left": 38,
+            "width": 494,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "###[What is Dynatrace?](https://www.dynatrace.com/support/help/shortlink/intro)\n###[Who is Davis?](https://www.dynatrace.com/ai)\n###[How are problems detected?](https://www.dynatrace.com/support/help/shortlink/problems-hub)\n###[How the __heck__ does Davis find the real root-cause?](https://www.dynatrace.com/support/help/shortlink/root-cause-analysis)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 38,
+            "width": 228,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "####Click here for problem feed"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 266,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "####Click here for real-time dependency map"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1254,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "####(hint: choose a management zone)"
+    }]
+}
