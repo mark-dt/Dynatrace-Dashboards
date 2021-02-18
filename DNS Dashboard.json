@@ -1,0 +1,640 @@
+ {
+  "metadata": {
+    "configurationVersions": [
+      3
+    ],
+    "clusterVersion": "1.211.90.20210216-141629"
+  },
+  "id": "989817ba-9151-42da-814a-0127f82c0694",
+  "dashboardMetadata": {
+    "name": "${overviewName} DNS Dashboard",
+    "shared": true,
+    "owner": "josh.wood@dynatrace.com"
+  },
+  "tiles": [
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 38,
+        "width": 532,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Number of DNS errors by type (Count)",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [
+            {
+              "metric": "builtin:host.dns.errorCount",
+              "aggregation": "COUNT",
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.host",
+                  "values": [],
+                  "entityDimension": true
+                },
+                {
+                  "id": "1",
+                  "name": "dnsServerIp",
+                  "values": [],
+                  "entityDimension": false
+                },
+                {
+                  "id": "2",
+                  "name": "errorType",
+                  "values": [
+                    "ServFail(2)"
+                  ],
+                  "entityDimension": false
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954469030,
+              "customColor": "#00ff00"
+            },
+            "HOST-6063C7248B58227E¦HOST»HOST-6063C7248B58227E»true¦dnsServerIp»10.155.17.68»false¦errorType»ServFail(2)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1612393523219,
+              "customColor": "#ff0000"
+            },
+            "HOST-CCE20A31C7E47AA9¦HOST»HOST-CCE20A31C7E47AA9»true¦dnsServerIp»10.155.17.68»false¦errorType»ServFail(2)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1612393533518,
+              "customColor": "#00aaff"
+            },
+            "HOST-CCE20A31C7E47AA9¦HOST»HOST-CCE20A31C7E47AA9»true¦dnsServerIp»10.155.17.69»false¦errorType»ServFail(2)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1612393535902,
+              "customColor": "#f5d30f"
+            },
+            "HOST-6063C7248B58227E¦HOST»HOST-6063C7248B58227E»true¦dnsServerIp»10.155.17.69»false¦errorType»ServFail(2)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1612393527554,
+              "customColor": "#00ff00"
+            },
+            "HOST-2D7D8D4C18F4EBF2¦HOST»HOST-2D7D8D4C18F4EBF2»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954473248,
+              "customColor": "#00aaff"
+            },
+            "HOST-2BCE4198797125E9¦HOST»HOST-2BCE4198797125E9»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954479339,
+              "customColor": "#fff29a"
+            },
+            "HOST-1A79F2FB1E832F15¦HOST»HOST-1A79F2FB1E832F15»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954459747,
+              "customColor": "#ff0000"
+            },
+            "HOST-CCE20A31C7E47AA9¦HOST»HOST-CCE20A31C7E47AA9»true¦dnsServerIp»10.5.2.7»false¦errorType»ServFail(2)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1612393537818,
+              "customColor": "#ef651f"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "DNS Error Overview",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 38,
+        "width": 532,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "DNS Queries",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 608,
+        "width": 1102,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 38,
+        "width": 532,
+        "height": 228
+      },
+      "tileFilter": {},
+      "markdown": "###`XYZ` | `IP Address` | `Error`\n---\n* `XYZ` => HOSTNAME\n* `IP Address` => DNS Server Address\n* `Error` => Error Itself\n---"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 608,
+        "width": 532,
+        "height": 228
+      },
+      "tileFilter": {},
+      "markdown": "##Descriptions of errors:\n---\n* `NOERROR(0)`: *DNS query completed successfully*\n* `FORMERR(1)`: *DNS query format error*\n* `SERVFAIL(2)`: *Server failed to complete the DNS request*\n* `NXDOMAIN(3)`: *Domain name does not exist*\n* `NOTIMP(4)`: *Function not implemented*\n* `REFUSED(5)`: *The server refused to answer for the query*\n* `YXDOMAIN(6)`: *Name that should not exist, does exist*\n* `NOTAUTH(8)`, `NOTAUTH(9)`: *Server not authoritative for the zone*"
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 608,
+        "width": 532,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "DNS queries (count / hr)",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [
+            {
+              "metric": "builtin:host.dns.queryCount",
+              "aggregation": "COUNT",
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.host",
+                  "values": [],
+                  "entityDimension": true
+                },
+                {
+                  "id": "1",
+                  "name": "dnsServerIp",
+                  "values": [],
+                  "entityDimension": false
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "HOUR"
+            }
+          ],
+          "resultMetadata": {
+            "HOST-ED4994D67702F25F¦HOST»HOST-ED4994D67702F25F»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955626434,
+              "customColor": "#00ff00"
+            },
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955636575,
+              "customColor": "#fff29a"
+            },
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954469030,
+              "customColor": "#00ff00"
+            },
+            "HOST-5F68A370535D7B0F¦HOST»HOST-5F68A370535D7B0F»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955631542,
+              "customColor": "#00aaff"
+            },
+            "HOST-1A79F2FB1E832F15¦HOST»HOST-1A79F2FB1E832F15»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955633926,
+              "customColor": "#7c38a1"
+            },
+            "HOST-2D7D8D4C18F4EBF2¦HOST»HOST-2D7D8D4C18F4EBF2»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955620095,
+              "customColor": "#ff0000"
+            },
+            "HOST-2D7D8D4C18F4EBF2¦HOST»HOST-2D7D8D4C18F4EBF2»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954473248,
+              "customColor": "#00aaff"
+            },
+            "HOST-2BCE4198797125E9¦HOST»HOST-2BCE4198797125E9»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954479339,
+              "customColor": "#fff29a"
+            },
+            "HOST-1A79F2FB1E832F15¦HOST»HOST-1A79F2FB1E832F15»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954459747,
+              "customColor": "#ff0000"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 608,
+        "width": 532,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "DNS queries (count / hr)",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.dns.queryCount",
+              "aggregation": "COUNT",
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.host",
+                  "values": [],
+                  "entityDimension": true
+                },
+                {
+                  "id": "1",
+                  "name": "dnsServerIp",
+                  "values": [],
+                  "entityDimension": false
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "HOUR"
+            }
+          ],
+          "resultMetadata": {
+            "HOST-ED4994D67702F25F¦HOST»HOST-ED4994D67702F25F»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955626434,
+              "customColor": "#00ff00"
+            },
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955636575,
+              "customColor": "#fff29a"
+            },
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954469030,
+              "customColor": "#00ff00"
+            },
+            "HOST-5F68A370535D7B0F¦HOST»HOST-5F68A370535D7B0F»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955631542,
+              "customColor": "#00aaff"
+            },
+            "HOST-1A79F2FB1E832F15¦HOST»HOST-1A79F2FB1E832F15»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955633926,
+              "customColor": "#7c38a1"
+            },
+            "HOST-2D7D8D4C18F4EBF2¦HOST»HOST-2D7D8D4C18F4EBF2»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955620095,
+              "customColor": "#ff0000"
+            },
+            "HOST-2D7D8D4C18F4EBF2¦HOST»HOST-2D7D8D4C18F4EBF2»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954473248,
+              "customColor": "#00aaff"
+            },
+            "HOST-2BCE4198797125E9¦HOST»HOST-2BCE4198797125E9»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954479339,
+              "customColor": "#fff29a"
+            },
+            "HOST-1A79F2FB1E832F15¦HOST»HOST-1A79F2FB1E832F15»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954459747,
+              "customColor": "#ff0000"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1178,
+        "width": 532,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "DNS query time (max)",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TIMESERIES",
+          "series": [
+            {
+              "metric": "builtin:host.dns.queryTime",
+              "aggregation": "MAX",
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.host",
+                  "values": [],
+                  "entityDimension": true
+                },
+                {
+                  "id": "1",
+                  "name": "dnsServerIp",
+                  "values": [],
+                  "entityDimension": false
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955636575,
+              "customColor": "#fff29a"
+            },
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954469030,
+              "customColor": "#00ff00"
+            },
+            "HOST-5F68A370535D7B0F¦HOST»HOST-5F68A370535D7B0F»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955631542,
+              "customColor": "#00aaff"
+            },
+            "HOST-1A79F2FB1E832F15¦HOST»HOST-1A79F2FB1E832F15»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955633926,
+              "customColor": "#7c38a1"
+            },
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryTime|MAX|TOTAL|LINE|HOST": {
+              "lastModified": 1609957878836,
+              "customColor": "#f5d30f"
+            },
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.32»falsebuiltin:host.dns.queryTime|MAX|TOTAL|LINE|HOST": {
+              "lastModified": 1609957877007,
+              "customColor": "#7c38a1"
+            },
+            "HOST-ED4994D67702F25F¦HOST»HOST-ED4994D67702F25F»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955626434,
+              "customColor": "#00ff00"
+            },
+            "HOST-D57A07EA6FA7B698¦HOST»HOST-D57A07EA6FA7B698»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryTime|MAX|TOTAL|LINE|HOST": {
+              "lastModified": 1609957869942,
+              "customColor": "#00ff00"
+            },
+            "HOST-2D7D8D4C18F4EBF2¦HOST»HOST-2D7D8D4C18F4EBF2»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryTime|MAX|TOTAL|LINE|HOST": {
+              "lastModified": 1609957875006,
+              "customColor": "#00aaff"
+            },
+            "HOST-2D7D8D4C18F4EBF2¦HOST»HOST-2D7D8D4C18F4EBF2»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955620095,
+              "customColor": "#ff0000"
+            },
+            "HOST-D57A07EA6FA7B698¦HOST»HOST-D57A07EA6FA7B698»true¦dnsServerIp»10.10.17.32»falsebuiltin:host.dns.queryTime|MAX|TOTAL|LINE|HOST": {
+              "lastModified": 1609957809830,
+              "customColor": "#ff0000"
+            },
+            "HOST-2D7D8D4C18F4EBF2¦HOST»HOST-2D7D8D4C18F4EBF2»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954473248,
+              "customColor": "#00aaff"
+            },
+            "HOST-2BCE4198797125E9¦HOST»HOST-2BCE4198797125E9»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954479339,
+              "customColor": "#fff29a"
+            },
+            "HOST-1A79F2FB1E832F15¦HOST»HOST-1A79F2FB1E832F15»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954459747,
+              "customColor": "#ff0000"
+            },
+            "HOST-E9368265A65E6525¦HOST»HOST-E9368265A65E6525»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryTime|MAX|TOTAL|LINE|HOST": {
+              "lastModified": 1609957880268,
+              "customColor": "#b4e5f9"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 1178,
+        "width": 532,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "DNS query time (max)",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.dns.queryTime",
+              "aggregation": "MAX",
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.host",
+                  "values": [],
+                  "entityDimension": true
+                },
+                {
+                  "id": "1",
+                  "name": "dnsServerIp",
+                  "values": [],
+                  "entityDimension": false
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955636575,
+              "customColor": "#fff29a"
+            },
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954469030,
+              "customColor": "#00ff00"
+            },
+            "HOST-5F68A370535D7B0F¦HOST»HOST-5F68A370535D7B0F»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955631542,
+              "customColor": "#00aaff"
+            },
+            "HOST-1A79F2FB1E832F15¦HOST»HOST-1A79F2FB1E832F15»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955633926,
+              "customColor": "#7c38a1"
+            },
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryTime|MAX|TOTAL|LINE|HOST": {
+              "lastModified": 1609957878836,
+              "customColor": "#f5d30f"
+            },
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.32»falsebuiltin:host.dns.queryTime|MAX|TOTAL|LINE|HOST": {
+              "lastModified": 1609957877007,
+              "customColor": "#7c38a1"
+            },
+            "HOST-ED4994D67702F25F¦HOST»HOST-ED4994D67702F25F»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955626434,
+              "customColor": "#00ff00"
+            },
+            "HOST-D57A07EA6FA7B698¦HOST»HOST-D57A07EA6FA7B698»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryTime|MAX|TOTAL|LINE|HOST": {
+              "lastModified": 1609957869942,
+              "customColor": "#00ff00"
+            },
+            "HOST-2D7D8D4C18F4EBF2¦HOST»HOST-2D7D8D4C18F4EBF2»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryTime|MAX|TOTAL|LINE|HOST": {
+              "lastModified": 1609957875006,
+              "customColor": "#00aaff"
+            },
+            "HOST-2D7D8D4C18F4EBF2¦HOST»HOST-2D7D8D4C18F4EBF2»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryCount|COUNT|HOUR|LINE|HOST": {
+              "lastModified": 1609955620095,
+              "customColor": "#ff0000"
+            },
+            "HOST-D57A07EA6FA7B698¦HOST»HOST-D57A07EA6FA7B698»true¦dnsServerIp»10.10.17.32»falsebuiltin:host.dns.queryTime|MAX|TOTAL|LINE|HOST": {
+              "lastModified": 1609957809830,
+              "customColor": "#ff0000"
+            },
+            "HOST-2D7D8D4C18F4EBF2¦HOST»HOST-2D7D8D4C18F4EBF2»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954473248,
+              "customColor": "#00aaff"
+            },
+            "HOST-2BCE4198797125E9¦HOST»HOST-2BCE4198797125E9»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954479339,
+              "customColor": "#fff29a"
+            },
+            "HOST-1A79F2FB1E832F15¦HOST»HOST-1A79F2FB1E832F15»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954459747,
+              "customColor": "#ff0000"
+            },
+            "HOST-E9368265A65E6525¦HOST»HOST-E9368265A65E6525»true¦dnsServerIp»10.10.17.31»falsebuiltin:host.dns.queryTime|MAX|TOTAL|LINE|HOST": {
+              "lastModified": 1609957880268,
+              "customColor": "#b4e5f9"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 38,
+        "width": 532,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Number of DNS errors by type (Count)",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.dns.errorCount",
+              "aggregation": "COUNT",
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.host",
+                  "values": [],
+                  "entityDimension": true
+                },
+                {
+                  "id": "1",
+                  "name": "dnsServerIp",
+                  "values": [],
+                  "entityDimension": false
+                },
+                {
+                  "id": "2",
+                  "name": "errorType",
+                  "values": [
+                    "ServFail(2)"
+                  ],
+                  "entityDimension": false
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {
+            "HOST-32AD2D09E281116B¦HOST»HOST-32AD2D09E281116B»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954469030,
+              "customColor": "#00ff00"
+            },
+            "HOST-6063C7248B58227E¦HOST»HOST-6063C7248B58227E»true¦dnsServerIp»10.155.17.68»false¦errorType»ServFail(2)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1612393523219,
+              "customColor": "#ff0000"
+            },
+            "HOST-CCE20A31C7E47AA9¦HOST»HOST-CCE20A31C7E47AA9»true¦dnsServerIp»10.155.17.68»false¦errorType»ServFail(2)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1612393533518,
+              "customColor": "#00aaff"
+            },
+            "HOST-CCE20A31C7E47AA9¦HOST»HOST-CCE20A31C7E47AA9»true¦dnsServerIp»10.155.17.69»false¦errorType»ServFail(2)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1612393535902,
+              "customColor": "#f5d30f"
+            },
+            "HOST-6063C7248B58227E¦HOST»HOST-6063C7248B58227E»true¦dnsServerIp»10.155.17.69»false¦errorType»ServFail(2)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1612393527554,
+              "customColor": "#00ff00"
+            },
+            "HOST-2D7D8D4C18F4EBF2¦HOST»HOST-2D7D8D4C18F4EBF2»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954473248,
+              "customColor": "#00aaff"
+            },
+            "HOST-2BCE4198797125E9¦HOST»HOST-2BCE4198797125E9»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954479339,
+              "customColor": "#fff29a"
+            },
+            "HOST-1A79F2FB1E832F15¦HOST»HOST-1A79F2FB1E832F15»true¦dnsServerIp»10.10.17.31»false¦errorType»NXDomain(3)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1609954459747,
+              "customColor": "#ff0000"
+            },
+            "HOST-CCE20A31C7E47AA9¦HOST»HOST-CCE20A31C7E47AA9»true¦dnsServerIp»10.5.2.7»false¦errorType»ServFail(2)»falsebuiltin:host.dns.errorCount|COUNT|TOTAL|LINE|HOST": {
+              "lastModified": 1612393537818,
+              "customColor": "#ef651f"
+            }
+          }
+        },
+        "filtersPerEntityType": {}
+      }
+    }
+  ]
+}
