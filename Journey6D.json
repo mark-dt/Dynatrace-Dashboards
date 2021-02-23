@@ -35,7 +35,6 @@
         "query": "select avg(duration) as \"Duration\" from useraction where ${journey.where-1}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
-	}
     }, {
 	    "name": "DTAQL",
         "tileType": "DTAQL",
@@ -51,7 +50,6 @@
         "query": "select avg(duration) as \"Duration\" from useraction where ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
-	}
     }, {
 	    "name": "DTAQL",
         "tileType": "DTAQL",
@@ -67,7 +65,6 @@
         "query": "select avg(duration) as \"Duration\" from useraction where ${journey.where-3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
-	}
     }, {
 	    "name": "DTAQL",
         "tileType": "DTAQL",
@@ -83,7 +80,6 @@
         "query": "select avg(duration) as \"Duration\" from useraction where ${journey.where-4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
-	}
     }, {
 	    "name": "DTAQL",
         "tileType": "DTAQL",
@@ -99,7 +95,6 @@
         "query": "select avg(duration) as \"Duration\" from useraction where ${journey.where-5}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
-	}
     }, {
 	    "name": "DTAQL",
         "tileType": "DTAQL",
@@ -115,7 +110,6 @@
         "query": "select avg(duration) as \"Duration\" from useraction where ${journey.where-6}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
-	}
     }, {
         "name": "DTAQL",
         "tileType": "DTAQL",
@@ -130,8 +124,7 @@
         "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
         "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic"
-    }, {
+        "timeFrameShift": "dynamic"    }, {
         "name": "DTAQL",
         "tileType": "DTAQL",
         "configured": true,
@@ -145,8 +138,7 @@
         "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and not ${journey.where-3}",
         "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic"
-    }, {
+        "timeFrameShift": "dynamic"    }, {
         "name": "DTAQL",
         "tileType": "DTAQL",
         "configured": true,
@@ -160,8 +152,7 @@
         "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and not ${journey.where-4}",
         "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic"
-    }, {
+        "timeFrameShift": "dynamic"    }, {
         "name": "DTAQL",
         "tileType": "DTAQL",
         "configured": true,
@@ -175,8 +166,7 @@
         "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and not ${journey.where-5}",
         "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic"
-    }, {
+        "timeFrameShift": "dynamic"    }, {
         "name": "DTAQL",
         "tileType": "DTAQL",
         "configured": true,
@@ -190,8 +180,7 @@
         "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and not ${journey.where-6}",
         "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic"
-    }, {
+        "timeFrameShift": "dynamic"    }, {
         "name": "DTAQL",
         "tileType": "DTAQL",
         "configured": true,
@@ -205,8 +194,7 @@
         "customName": " ",
         "query": "select 0 as \"Abandons\" from usersession limit 1",
         "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic"
-    }, {
+        "timeFrameShift": "dynamic"    }, {
         "name": "MARKDOWN",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -217,8 +205,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-1}](#dashboard;id=1fc1af04-a855-43cb-855c-c32f4ecda734)"
-    }, {
+        "markdown": "## [${journey.header-1}](#dashboard;id=1fc1af04-a855-43cb-855c-c32f4ecda734)"    }, {
         "name": "MARKDOWN",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -229,8 +216,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-2}](#dashboard;id=2662ddb8-dd6a-4345-a1bc-7ff069eda734)"
-    }, {
+        "markdown": "## [${journey.header-2}](#dashboard;id=2662ddb8-dd6a-4345-a1bc-7ff069eda734)"    }, {
         "name": "MARKDOWN",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -241,8 +227,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-3}](#dashboard;id=10a69069-74c2-4eba-b18a-6856d91da734)"
-    }, {
+        "markdown": "## [${journey.header-3}](#dashboard;id=10a69069-74c2-4eba-b18a-6856d91da734)"    }, {
         "name": "MARKDOWN",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -253,8 +238,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-4}](#dashboard;id=7f64e3ef-239c-416a-b3a4-66b99beda734)"
-    }, {
+        "markdown": "## [${journey.header-4}](#dashboard;id=7f64e3ef-239c-416a-b3a4-66b99beda734)"    }, {
         "name": "MARKDOWN",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -265,8 +249,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-5}](#dashboard;id=a7340848-3f03-4155-ac15-d8ea4a7da734)"
-    }, {
+        "markdown": "## [${journey.header-5}](#dashboard;id=a7340848-3f03-4155-ac15-d8ea4a7da734)"    }, {
         "name": "MARKDOWN",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -277,8 +260,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-6}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda734)"
-    }, {
+        "markdown": "## [${journey.header-6}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda734)"    }, {
         "name": "Sessions",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -289,8 +271,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Sessions](#usersearchoverview;filtrfilterApplication=${app.id})"
-    }, {
+        "markdown": "## [Sessions](#usersearchoverview;filtrfilterApplication=${app.id})"    }, {
         "name": "Abandons",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -301,8 +282,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Abandons](#dashboard;id=0d81ee7c-f7ba-4626-a086-60b76ecda734)"
-    }, {
+        "markdown": "## [Abandons](#dashboard;id=0d81ee7c-f7ba-4626-a086-60b76ecda734)"    }, {
         "name": "Apdex",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -313,8 +293,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Apdex](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=action;a=Apdex)"
-    }, {
+        "markdown": "## [Apdex](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=action;a=Apdex)"    }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,

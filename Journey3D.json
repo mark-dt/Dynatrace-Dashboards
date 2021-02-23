@@ -32,7 +32,6 @@
         "query": "select avg(duration) as \"Duration\" from useraction where ${journey.where-1}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
-	}
     }, {
 	    "name": "DTAQL",
         "tileType": "DTAQL",
@@ -48,7 +47,6 @@
         "query": "select avg(duration) as \"Duration\" from useraction where ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
-	}
     }, {
 	    "name": "DTAQL",
         "tileType": "DTAQL",
@@ -64,7 +62,6 @@
         "query": "select avg(duration) as \"Duration\" from useraction where ${journey.where-3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
-	}
     }, {
         "name": "Sessions",
         "tileType": "MARKDOWN",
@@ -76,8 +73,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Sessions](#usersearchoverview;filtrfilterApplication=${app.id})"
-    }, {
+        "markdown": "## [Sessions](#usersearchoverview;filtrfilterApplication=${app.id})"    }, {
         "name": "Abandons",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -88,8 +84,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Abandons](#dashboard;id=0d81ee7c-f7ba-4626-a086-60b76ecda734)"
-    }, {
+        "markdown": "## [Abandons](#dashboard;id=0d81ee7c-f7ba-4626-a086-60b76ecda734)"    }, {
         "name": "Apdex",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -100,8 +95,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Apdex](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=action;a=Apdex)"
-    }, {
+        "markdown": "## [Apdex](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=action;a=Apdex)"    }, {
         "name": "DTAQL",
         "tileType": "DTAQL",
         "configured": true,
@@ -115,8 +109,7 @@
         "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
         "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic"
-    }, {
+        "timeFrameShift": "dynamic"    }, {
         "name": "DTAQL",
         "tileType": "DTAQL",
         "configured": true,
@@ -130,8 +123,7 @@
         "customName": " ",
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and not ${journey.where-3}",
         "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic"
-    }, {
+        "timeFrameShift": "dynamic"    }, {
         "name": "DTAQL",
         "tileType": "DTAQL",
         "configured": true,
@@ -145,8 +137,7 @@
         "customName": " ",
         "query": "select 0 as \"Abandons\" from usersession limit 1",
         "type": "SINGLE_VALUE",
-        "timeFrameShift": "dynamic"
-    }, {
+        "timeFrameShift": "dynamic"    }, {
         "name": "MARKDOWN",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -157,8 +148,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-1}](#dashboard;id=1fc1af04-a855-43cb-855c-c32f4ecda734)"
-    }, {
+        "markdown": "## [${journey.header-1}](#dashboard;id=1fc1af04-a855-43cb-855c-c32f4ecda734)"    }, {
         "name": "MARKDOWN",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -169,8 +159,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-2}](#dashboard;id=2662ddb8-dd6a-4345-a1bc-7ff069eda734)"
-    }, {
+        "markdown": "## [${journey.header-2}](#dashboard;id=2662ddb8-dd6a-4345-a1bc-7ff069eda734)"    }, {
         "name": "MARKDOWN",
         "tileType": "MARKDOWN",
         "configured": true,
@@ -181,8 +170,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [${journey.header-3}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda734)"
-    }, {
+        "markdown": "## [${journey.header-3}](#dashboard;id=0d81ee7c-f7ba-4626-a087-60b76ecda734)"    }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
