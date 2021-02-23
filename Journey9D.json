@@ -415,7 +415,7 @@
         },
         "tileFilter": {},
         "markdown": "## [Abandons](#dashboard;id=0d81ee7c-f7ba-4626-a086-60b76ecda734)"    }, {
-        "name": "Apdex",
+        "name": "Duration",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -425,6 +425,6 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Apdex](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=action;a=Apdex)"
+        "markdown": "## [Duration](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=action;a=Performance)"
     }]
 }

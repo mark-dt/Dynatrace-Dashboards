@@ -21,7 +21,7 @@
     "tags": ["${UserJourneyName}","${app.name}","User Journey"]
  },
     "tiles": [{
-	    "name": "DTAQL",
+	    "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
@@ -36,7 +36,7 @@
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
-	    "name": "DTAQL",
+	    "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
@@ -51,7 +51,7 @@
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
-	    "name": "DTAQL",
+	    "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
@@ -66,7 +66,7 @@
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
-	    "name": "DTAQL",
+	    "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
@@ -81,7 +81,7 @@
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
-	    "name": "DTAQL",
+	    "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
@@ -96,7 +96,7 @@
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
-	    "name": "DTAQL",
+	    "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
@@ -111,7 +111,7 @@
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"
     }, {
-        "name": "DTAQL",
+        "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
@@ -125,7 +125,7 @@
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and not ${journey.where-2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"    }, {
-        "name": "DTAQL",
+        "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
@@ -139,7 +139,7 @@
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and not ${journey.where-3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"    }, {
-        "name": "DTAQL",
+        "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
@@ -153,7 +153,7 @@
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and not ${journey.where-4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"    }, {
-        "name": "DTAQL",
+        "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
@@ -167,7 +167,7 @@
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and not ${journey.where-5}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"    }, {
-        "name": "DTAQL",
+        "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
@@ -181,7 +181,7 @@
         "query": "select count(usersessionid) as \"Abandons\" from usersession where useraction.application in (\"${app.name}\") ${regionClause} ${uspClause} and ${journey.where-1} and ${journey.where-2} and ${journey.where-3} and ${journey.where-4} and ${journey.where-5} and not ${journey.where-6}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic"    }, {
-        "name": "DTAQL",
+        "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
         "bounds": {
@@ -283,7 +283,7 @@
         },
         "tileFilter": {},
         "markdown": "## [Abandons](#dashboard;id=0d81ee7c-f7ba-4626-a086-60b76ecda734)"    }, {
-        "name": "Apdex",
+        "name": "Duration",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
@@ -293,7 +293,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Apdex](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=action;a=Apdex)"    }, {
+        "markdown": "## [Duration](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=action;a=Performance)"    }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
         "configured": true,
