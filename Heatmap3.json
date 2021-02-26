@@ -219,7 +219,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val11;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val11;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -232,7 +232,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val12;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val12;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -245,7 +245,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val13;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val13;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -258,7 +258,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val14;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val14;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -271,7 +271,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val15;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val15;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -284,7 +284,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val16;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val16;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -297,7 +297,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val17;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val17;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -310,7 +310,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val18;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val18;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -323,7 +323,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val19;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val19;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -336,7 +336,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val1a;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val1a;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -349,7 +349,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val1b;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val1b;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -362,7 +362,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val1c;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val1c;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 0,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now to now${MyInterval}"},
@@ -626,7 +626,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val21;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val21;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -639,7 +639,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val22;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val22;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -652,7 +652,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val23;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val23;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -665,7 +665,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val24;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val24;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -678,7 +678,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val25;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val25;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -691,7 +691,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val26;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val26;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -704,7 +704,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val27;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val27;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -717,7 +717,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val28;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val28;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -730,7 +730,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val29;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val29;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -743,7 +743,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val2a;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val2a;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -756,7 +756,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val2b;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val2b;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -769,7 +769,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val2c;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val2c;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1368,"left": 0,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now to now${MyInterval}"},
@@ -915,7 +915,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val31;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val31;base=low;warn=${MyApp3WarningThreshold};crit=${MyApp3CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -928,7 +928,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val32;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val32;base=low;warn=${MyApp3WarningThreshold};crit=${MyApp3CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -941,7 +941,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val33;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val33;base=low;warn=${MyApp3WarningThreshold};crit=${MyApp3CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -954,7 +954,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val34;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val34;base=low;warn=${MyApp3WarningThreshold};crit=${MyApp3CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -967,7 +967,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val35;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val35;base=low;warn=${MyApp3WarningThreshold};crit=${MyApp3CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -980,7 +980,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val36;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val36;base=low;warn=${MyApp3WarningThreshold};crit=${MyApp3CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -993,7 +993,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val37;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val37;base=low;warn=${MyApp3WarningThreshold};crit=${MyApp3CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -1006,7 +1006,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val38;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val38;base=low;warn=${MyApp3WarningThreshold};crit=${MyApp3CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -1019,7 +1019,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val39;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val39;base=low;warn=${MyApp3WarningThreshold};crit=${MyApp3CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -1032,7 +1032,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val3a;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val3a;base=low;warn=${MyApp3WarningThreshold};crit=${MyApp3CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -1045,7 +1045,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val3b;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val3b;base=low;warn=${MyApp3WarningThreshold};crit=${MyApp3CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -1058,7 +1058,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val3c;base=low;warn=3;crit=6;size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val3c;base=low;warn=${MyApp3WarningThreshold};crit=${MyApp3CriticalThreshold};size=28px"
     }
 ]
 }
