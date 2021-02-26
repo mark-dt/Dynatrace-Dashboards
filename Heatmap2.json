@@ -483,7 +483,7 @@
         },
         "filtersPerEntityType": {"APPLICATION": {"SPECIFIC_ENTITIES": ["${app-1.id}"]}}
       },
-    }    {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 0,"width": 38,"height": 38},
+    } ,   {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 0,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now to now${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val21","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
           "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
@@ -602,7 +602,7 @@
         },
         "filtersPerEntityType": {"APPLICATION": {"SPECIFIC_ENTITIES": ["${app-2.id}"]}}
       },
-    }    {
+    },    {
       "name": "Markdown",
       "tileType": "MARKDOWN",
       "configured": true,
