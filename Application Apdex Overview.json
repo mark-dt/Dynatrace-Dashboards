@@ -10,10 +10,11 @@
     "name": "💎 ${overviewName} Application Apdex Overview",
     "shared": true,
     "owner": "john.kelly@dynatrace.com",
-    "tags": [
-      "!PU(banner):color=#0099CC"
-    ]
-  },
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        }
+    },
   "tiles": [
     {
       "name": "!PU(link):abc",
