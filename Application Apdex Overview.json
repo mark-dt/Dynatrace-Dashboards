@@ -724,7 +724,7 @@
       "tileFilter": {
         "timeframe": "Last 2 hours"
       },
-      "markdown": "## PROD - ${app-1.name}"
+      "markdown": "## ${app-1.name}"
     },
     {
       "name": "Markdown",
@@ -9875,7 +9875,7 @@
         "height": 76
       },
       "tileFilter": {},
-      "markdown": "## P${app-2.name}"
+      "markdown": "## ${app-2.name}"
     },
     {
       "name": "Markdown",
