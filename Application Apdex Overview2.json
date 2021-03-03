@@ -9,8 +9,12 @@
   "dashboardMetadata": {
     "name": "💎 ${overviewName} Application Apdex Overview",
     "shared": true,
-    "owner": "john.kelly@dynatrace.com"
-  },
+    "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        }
+    },
   "tiles": [
     {
       "name": "!PU(link):abc",
@@ -612,6 +616,72 @@
       "configured": true,
       "bounds": {
         "top": 722,
+        "left": 1102,
+        "width": 38,
+        "height": 190
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "theme": "DEFAULT",
+          "seriesType": "LINE"
+        },
+        "rules": []
+      }
+    },
+    {
+      "name": "!PU(link):abc",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 1634,
+        "width": 38,
+        "height": 190
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "theme": "DEFAULT",
+          "seriesType": "LINE"
+        },
+        "rules": []
+      }
+    },
+    {
+      "name": "!PU(link):abc",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 570,
+        "width": 38,
+        "height": 190
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "theme": "DEFAULT",
+          "seriesType": "LINE"
+        },
+        "rules": []
+      }
+    },
+    {
+      "name": "!PU(link):abc",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 950,
         "left": 1102,
         "width": 38,
         "height": 190
@@ -9289,6 +9359,460 @@
       }
     },
     {
+      "name": "!PU(link):val120",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 1786,
+        "left": 722,
+        "width": 38,
+        "height": 38
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:apps.web.apdex.userType",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.application",
+                "filterType": "DIMENSION",
+                "filterOperator": "OR",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "${app-20.id}",
+                    "evaluator": "EQ"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "metricSelector": "builtin:apps.web.apdex.userType:(fold,):filter(and(eq(dt.entity.application,${app-20.id}))):splitBy():avg:auto:sort(value(avg,descending)):limit(1)"
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "theme": "DEFAULT",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0.95,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.8,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE",
+          "hasTrendline": true
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "!PU(link):val220",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 1824,
+        "left": 722,
+        "width": 38,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": "today"
+      },
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:apps.web.apdex.userType",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.application",
+                "filterType": "DIMENSION",
+                "filterOperator": "OR",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "${app-20.id}",
+                    "evaluator": "EQ"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "metricSelector": "builtin:apps.web.apdex.userType:(fold,):filter(and(eq(dt.entity.application,${app-20.id}))):splitBy():avg:auto:sort(value(avg,descending)):limit(1)"
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "theme": "DEFAULT",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0.9,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.8,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE",
+          "hasTrendline": true
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "!PU(link):val320",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 1862,
+        "left": 722,
+        "width": 38,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": "yesterday"
+      },
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:apps.web.apdex.userType",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.application",
+                "filterType": "DIMENSION",
+                "filterOperator": "OR",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "${app-20.id}",
+                    "evaluator": "EQ"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "metricSelector": "builtin:apps.web.apdex.userType:(fold,):filter(and(eq(dt.entity.application,${app-20.id}))):splitBy():avg:auto:sort(value(avg,descending)):limit(1)"
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "theme": "DEFAULT",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0.9,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.8,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE",
+          "hasTrendline": true
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "!PU(link):val420",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 1900,
+        "left": 722,
+        "width": 38,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": "-7d to now"
+      },
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:apps.web.apdex.userType",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.application",
+                "filterType": "DIMENSION",
+                "filterOperator": "OR",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "${app-20.id}",
+                    "evaluator": "EQ"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "metricSelector": "builtin:apps.web.apdex.userType:(fold,):filter(and(eq(dt.entity.application,${app-20.id}))):splitBy():avg:auto:sort(value(avg,descending)):limit(1)"
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "theme": "DEFAULT",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0.95,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.8,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE",
+          "hasTrendline": true
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "!PU(link):val520",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 1938,
+        "left": 722,
+        "width": 38,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": "last 30 days"
+      },
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:apps.web.apdex.userType",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.application",
+                "filterType": "DIMENSION",
+                "filterOperator": "OR",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "${app-20.id}",
+                    "evaluator": "EQ"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "metricSelector": "builtin:apps.web.apdex.userType:(fold,):filter(and(eq(dt.entity.application,${app-20.id}))):splitBy():avg:auto:sort(value(avg,descending)):limit(1)"
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "theme": "DEFAULT",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0.9,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.8,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE",
+          "hasTrendline": true
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "!PU(link):val620",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 1976,
+        "left": 722,
+        "width": 38,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": "-60d to -30d"
+      },
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:apps.web.apdex.userType",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.application",
+                "filterType": "DIMENSION",
+                "filterOperator": "OR",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "${app-20.id}",
+                    "evaluator": "EQ"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "metricSelector": "builtin:apps.web.apdex.userType:(fold,):filter(and(eq(dt.entity.application,${app-20.id}))):splitBy():avg:auto:sort(value(avg,descending)):limit(1)"
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "theme": "DEFAULT",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0.9,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.8,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE",
+          "hasTrendline": true
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
       "name": "Markdown",
       "tileType": "MARKDOWN",
       "configured": true,
@@ -11841,6 +12365,552 @@
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
+        "top": 950,
+        "left": 76,
+        "width": 76,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "!PU(svg):icon=web;link=val117;base=high;warn=.90;crit=.80;url=${url}/#uemapplications/uemappmetrics;uemapplicationId=${app-17.id}\n"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 152,
+        "width": 418,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "## ${app-17.name}"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 76,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Current"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 76,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Today"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 76,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Yesterday"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 304,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Last Week"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 304,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Last 30 days"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 304,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Prev 30 days"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 190,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val117;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 190,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val217;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 190,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val317;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 456,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val417;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 456,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val617;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 456,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val517;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 608,
+        "width": 76,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "!PU(svg):icon=web;link=val118;base=high;warn=.90;crit=.80;url=${url}/#uemapplications/uemappmetrics;uemapplicationId=${app-18.id}\n"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 684,
+        "width": 418,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "## ${app-18.name}"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 608,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Current"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 608,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Today"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 608,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Yesterday"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 836,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Last Week"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 836,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Last 30 days"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 836,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Prev 30 days"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 722,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val118;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 722,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val218;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 722,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val318;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 988,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val418;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 988,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val518;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 988,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val618;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 1140,
+        "width": 76,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "!PU(svg):icon=web;link=val119;base=high;warn=.90;crit=.80;url=${url}/#uemapplications/uemappmetrics;uemapplicationId=${app-19.id}\n"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 1216,
+        "width": 418,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "## ${app-19.name}"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 1140,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Current"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 1140,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Today"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 1140,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Yesterday"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 1368,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Last Week"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 1368,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Last 30 days"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 1368,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Prev 30 days"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 1254,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val119;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 1254,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val219;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 1254,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val319;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 1520,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val419;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 1520,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val519;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 1520,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val619;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
         "top": 836,
         "left": 2052,
         "width": 114,
@@ -12019,6 +13089,188 @@
       "markdown": "!PU(math):exp=x1;scope=x1:val416;base=high;warn=.9;crit=.8;size=28px"
     },
     {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 2052,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val420;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 1786,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val220;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 1786,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val320;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 2052,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val520;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 2052,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val620;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 1672,
+        "width": 76,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "!PU(svg):icon=web;link=val120;base=high;warn=.90;crit=.80;url=${url}/#uemapplications/uemappmetrics;uemapplicationId=${app-20.id}\n"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 950,
+        "left": 1748,
+        "width": 418,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "## ${app-20.name}"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 1672,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Current"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 1672,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Today"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 1672,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Yesterday"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 1900,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Last Week"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1064,
+        "left": 1900,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Last 30 days"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1102,
+        "left": 1900,
+        "width": 152,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "## Prev 30 days"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 1026,
+        "left": 1786,
+        "width": 114,
+        "height": 38
+      },
+      "tileFilter": {},
+      "markdown": "!PU(math):exp=x1;scope=x1:val120;base=high;warn=.9;crit=.8;size=28px"
+    },
+    {
       "name": "!PU(link):val301",
       "tileType": "DATA_EXPLORER",
       "configured": true,
@@ -12169,640 +13421,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "!PU(link):abc",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 304,
-        "width": 38,
-        "height": 190
-      },
-      "tileFilter": {},
-      "customName": "Data explorer results",
-      "queries": [],
-      "visualConfig": {
-        "type": "GRAPH_CHART",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
-        "rules": []
-      }
-    },
-    {
-      "name": "!PU(link):abc",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 1900,
-        "width": 38,
-        "height": 190
-      },
-      "tileFilter": {},
-      "customName": "Data explorer results",
-      "queries": [],
-      "visualConfig": {
-        "type": "GRAPH_CHART",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
-        "rules": []
-      }
-    },
-    {
-      "name": "!PU(link):abc",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 836,
-        "width": 38,
-        "height": 190
-      },
-      "tileFilter": {},
-      "customName": "Data explorer results",
-      "queries": [],
-      "visualConfig": {
-        "type": "GRAPH_CHART",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
-        "rules": []
-      }
-    },
-    {
-      "name": "!PU(link):abc",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 1368,
-        "width": 38,
-        "height": 190
-      },
-      "tileFilter": {},
-      "customName": "Data explorer results",
-      "queries": [],
-      "visualConfig": {
-        "type": "GRAPH_CHART",
-        "global": {
-          "theme": "DEFAULT",
-          "seriesType": "LINE"
-        },
-        "rules": []
-      }
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 342,
-        "width": 76,
-        "height": 76
-      },
-      "tileFilter": {},
-      "markdown": "!PU(svg):icon=web;link=val117;base=high;warn=.90;crit=.80;url=${url}/#uemapplications/uemappmetrics;uemapplicationId=${app-17.id}\n"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 418,
-        "width": 418,
-        "height": 76
-      },
-      "tileFilter": {},
-      "markdown": "## ${app-17.name}"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1026,
-        "left": 342,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Current"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1064,
-        "left": 342,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Today"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1102,
-        "left": 342,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Yesterday"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1026,
-        "left": 570,
-        "width": 152,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Last Week"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1064,
-        "left": 570,
-        "width": 152,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Last 30 days"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1102,
-        "left": 570,
-        "width": 152,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Prev 30 days"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1026,
-        "left": 456,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val117;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1064,
-        "left": 456,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val217;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1026,
-        "left": 722,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val417;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1064,
-        "left": 722,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val517;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 874,
-        "width": 76,
-        "height": 76
-      },
-      "tileFilter": {},
-      "markdown": "!PU(svg):icon=web;link=val118;base=high;warn=.90;crit=.80;url=${url}/#uemapplications/uemappmetrics;uemapplicationId=${app-18.id}\n"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1026,
-        "left": 874,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Current"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1064,
-        "left": 874,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Today"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1102,
-        "left": 456,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val317;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1102,
-        "left": 874,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Yesterday"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1102,
-        "left": 722,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val617;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 950,
-        "width": 418,
-        "height": 76
-      },
-      "tileFilter": {},
-      "markdown": "## ${app-18.name}"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1026,
-        "left": 1102,
-        "width": 152,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Last Week"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1064,
-        "left": 1102,
-        "width": 152,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Last 30 days"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1064,
-        "left": 988,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val218;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1102,
-        "left": 1102,
-        "width": 152,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Prev 30 days"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1102,
-        "left": 988,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val318;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1026,
-        "left": 988,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val118;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1026,
-        "left": 1254,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val418;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 1482,
-        "width": 418,
-        "height": 76
-      },
-      "tileFilter": {},
-      "markdown": "## ${app-19.name}"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 950,
-        "left": 1406,
-        "width": 76,
-        "height": 76
-      },
-      "tileFilter": {},
-      "markdown": "!PU(svg):icon=web;link=val119;base=high;warn=.90;crit=.80;url=${url}/#uemapplications/uemappmetrics;uemapplicationId=${app-19.id}\n"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1064,
-        "left": 1254,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val518;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1026,
-        "left": 1406,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Current"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1102,
-        "left": 1254,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val618;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1064,
-        "left": 1406,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Today"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1026,
-        "left": 1634,
-        "width": 152,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Last Week"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1102,
-        "left": 1406,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Yesterday"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1064,
-        "left": 1634,
-        "width": 152,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Last 30 days"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1102,
-        "left": 1634,
-        "width": 152,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "## Prev 30 days"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1026,
-        "left": 1520,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val119;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1064,
-        "left": 1520,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val219;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1064,
-        "left": 1786,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val519;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1102,
-        "left": 1520,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val319;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1026,
-        "left": 1786,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val419;base=high;warn=.9;crit=.8;size=28px"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1102,
-        "left": 1786,
-        "width": 114,
-        "height": 38
-      },
-      "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val619;base=high;warn=.9;crit=.8;size=28px"
     }
   ]
 }
