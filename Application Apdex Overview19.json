@@ -15,7 +15,6 @@
             "published": false
         }
     },
-  },
   "tiles": [
     {
       "name": "!PU(link):abc",
