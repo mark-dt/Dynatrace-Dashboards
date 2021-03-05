@@ -5,7 +5,7 @@
     },
     "id": "e2a778c3-e67c-4d19-9ddf-bf120d06327a",
     "dashboardMetadata": {
-        "name": "💎 ${overviewName} ${MyAggregation.key} Heatmap",
+        "name": "💎 ${overviewName} ${MyMetric.key} (${MyAggregation.key}) Heatmap",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {
@@ -219,7 +219,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val11;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val11;base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -232,7 +232,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val12;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val12;base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -245,7 +245,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val13;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val13;base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -258,7 +258,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val14;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val14;base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -271,7 +271,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val15;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val15;base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -284,7 +284,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val16;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val16;base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -297,7 +297,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val17;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val17;base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -310,7 +310,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val18;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val18;base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -323,7 +323,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val19;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val19;base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -336,7 +336,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val1a;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val1a;base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -349,7 +349,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val1b;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val1b;base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -362,12 +362,12 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val1c;base=low;warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val1c;base=${MyBase.value};warn=${MyApp1WarningThreshold};crit=${MyApp1CriticalThreshold};size=28px"
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 0,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now to now${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val11","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -377,7 +377,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 38,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval} to now${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val12","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -387,7 +387,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 76,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val13","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -397,7 +397,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 114,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val14","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -407,7 +407,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 152,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val15","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -417,7 +417,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 190,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val16","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -427,7 +427,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 228,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val17","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -437,7 +437,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 266,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val18","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -447,7 +447,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 304,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val19","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -457,7 +457,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 342,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val1a","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -467,7 +467,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 380,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val1b","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -477,7 +477,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 418,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val1c","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -486,7 +486,7 @@
     } ,   {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 0,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now to now${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val21","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -496,7 +496,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 38,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval} to now${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val22","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -506,7 +506,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 76,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val23","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -516,7 +516,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 114,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val24","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -526,7 +526,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 152,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val25","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -536,7 +536,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 190,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val26","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -546,7 +546,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 228,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val27","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -556,7 +556,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 266,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val28","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -566,7 +566,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 304,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val29","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -576,7 +576,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 342,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val2a","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -586,7 +586,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 380,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val2b","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -596,7 +596,7 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 418,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val2c","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "builtin:apps.web.actionDuration.load.browser","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "APPLICATION","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
           "resultMetadata": {},"leftAxisCustomUnit": "Second"
         },
@@ -626,7 +626,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val21;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val21;base=${MyBase.value};warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -639,7 +639,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val22;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val22;base=${MyBase.value};warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -652,7 +652,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val23;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val23;base=${MyBase.value};warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -665,7 +665,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val24;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val24;base=${MyBase.value};warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -678,7 +678,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val25;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val25;base=${MyBase.value};warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -691,7 +691,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val26;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val26;base=${MyBase.value};warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -704,7 +704,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val27;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val27;base=${MyBase.value};warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -717,7 +717,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val28;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val28;base=${MyBase.value};warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -730,7 +730,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val29;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val29;base=${MyBase.value};warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -743,7 +743,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val2a;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val2a;base=${MyBase.value};warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -756,7 +756,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val2b;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val2b;base=${MyBase.value};warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     },
     {
       "name": "Markdown",
@@ -769,6 +769,6 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "!PU(math):exp=x1;scope=x1:val2c;base=low;warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
+      "markdown": "!PU(math):exp=x1;scope=x1:val2c;base=${MyBase.value};warn=${MyApp2WarningThreshold};crit=${MyApp2CriticalThreshold};size=28px"
     }]
 }
