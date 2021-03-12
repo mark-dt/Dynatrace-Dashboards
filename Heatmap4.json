@@ -206,7 +206,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "## ${app-1.name}"
+      "markdown": "## [${app-1.name}](#uemapplications/uemappmetrics;uemapplicationId=${app-1.id})"
     },
     {
       "name": "Markdown",
@@ -613,7 +613,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "## ${app-2.name}"
+      "markdown": "## [${app-2.name}](#uemapplications/uemappmetrics;uemapplicationId=${app-2.id})"
     },
     {
       "name": "Markdown",
@@ -902,7 +902,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "## ${app-3.name}"
+      "markdown": "## [${app-3.name}](#uemapplications/uemappmetrics;uemapplicationId=${app-3.id})"
     },
     {
       "name": "Markdown",
@@ -1071,7 +1071,7 @@
         "height": 38
       },
       "tileFilter": {},
-      "markdown": "## ${app-4.name}"
+      "markdown": "## [${app-4.name}](#uemapplications/uemappmetrics;uemapplicationId=${app-4.id})"
     },
     {
       "name": "Markdown",
