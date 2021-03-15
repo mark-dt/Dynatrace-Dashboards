@@ -9,7 +9,11 @@
   "dashboardMetadata": {
     "name": "${overviewName} Core web vitals",
     "shared": false,
-    "owner": "thomas.brandl@dynatrace.com"
+    "owner": "thomas.brandl@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        }
   },
   "tiles": [
     {
