@@ -1,0 +1,870 @@
+ {
+  "metadata": {
+    "configurationVersions": [
+      3
+    ],
+    "clusterVersion": "1.214.0.20210303-122713"
+  },
+  "id": "5353950f-00a0-4f05-8240-12918390871d",
+  "dashboardMetadata": {
+    "name": "${overviewName} Core web vitals",
+    "shared": false,
+    "owner": "thomas.brandl@dynatrace.com"
+  },
+  "tiles": [
+    {
+      "name": "",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 114,
+        "left": 0,
+        "width": 304,
+        "height": 152
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "CLS",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:apps.web.cumulativeLayoutShift.load.browser",
+              "aggregation": "PERCENTILE",
+              "percentile": 75,
+              "type": "LINE",
+              "entityType": "APPLICATION",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 114,
+        "left": 608,
+        "width": 304,
+        "height": 152
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "FID",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:apps.web.action.firstInputDelay.load.browser",
+              "aggregation": "PERCENTILE",
+              "percentile": 75,
+              "type": "LINE",
+              "entityType": "APPLICATION_METHOD",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 114,
+        "left": 304,
+        "width": 304,
+        "height": 152
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "LCP",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:apps.web.action.largestContentfulPaint.load.browser",
+              "aggregation": "PERCENTILE",
+              "percentile": 75,
+              "type": "LINE",
+              "entityType": "APPLICATION_METHOD",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 532,
+        "left": 0,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "CLS",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:apps.web.action.cumulativeLayoutShift.load.userType.geo",
+              "aggregation": "PERCENTILE",
+              "percentile": 75,
+              "type": "LINE",
+              "entityType": "APPLICATION_METHOD",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.application_method",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 532,
+        "left": 304,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "LCP",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:apps.web.action.largestContentfulPaint.load.browser",
+              "aggregation": "AVG",
+              "type": "LINE",
+              "entityType": "APPLICATION_METHOD",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.application_method",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 532,
+        "left": 608,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {},
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "FID",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "legendShown": true,
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:apps.web.action.firstInputDelay.load.userType",
+              "aggregation": "AVG",
+              "type": "LINE",
+              "entityType": "APPLICATION_METHOD",
+              "dimensions": [
+                {
+                  "id": "0",
+                  "name": "dt.entity.application_method",
+                  "values": [],
+                  "entityDimension": true
+                }
+              ],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Real User Monitoring",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 76,
+        "left": 0,
+        "width": 912,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 0,
+        "width": 608,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "The following measurements of the [Core Web Vitals](https://web.dev/vitals/#core-web-vitals) are provided for the 75th percentile as suggested by Google. "
+    },
+    {
+      "name": "FID",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 608,
+        "width": 304,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": "Explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:apps.web.action.largestContentfulPaint.load.userType.geo",
+          "spaceAggregation": "PERCENTILE_10",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:apps.web.action.largestContentfulPaint.load.userType.geo:splitBy():percentile(90):auto:sort(value(avg,descending)):limit(20)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "theme": "DEFAULT",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 2000,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 4000,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE"
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "CLS",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 0,
+        "width": 304,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": "Explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:apps.web.action.cumulativeLayoutShift.load.userType",
+          "spaceAggregation": "PERCENTILE_10",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "User type",
+                "filterType": "DIMENSION",
+                "filterOperator": "OR",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "Real users",
+                    "evaluator": "EQ"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          },
+          "metricSelector": "builtin:apps.web.action.cumulativeLayoutShift.load.userType:filter(and(eq(User~ type,Real~ users))):splitBy():percentile(90):auto:sort(value(avg,descending)):limit(20)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "theme": "DEFAULT",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.1,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0.25,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE"
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "LCP",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 304,
+        "width": 304,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": "Explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:apps.web.action.largestContentfulPaint.load.userType.geo",
+          "spaceAggregation": "PERCENTILE_10",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:apps.web.action.largestContentfulPaint.load.userType.geo:splitBy():percentile(90):auto:sort(value(avg,descending)):limit(20)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "theme": "DEFAULT",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 2500,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 4000,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE"
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Syntethic",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 76,
+        "left": 912,
+        "width": 608,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "CLS",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 114,
+        "left": 912,
+        "width": 304,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": "Explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:synthetic.browser.cumulativeLayoutShift.load",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "metricSelector": "builtin:synthetic.browser.cumulativeLayoutShift.load:(fold,):splitBy():avg:auto:sort(value(avg,descending)):limit(1)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "theme": "DEFAULT",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.1,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0.25,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE",
+          "hasTrendline": true
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "LCP",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 114,
+        "left": 1216,
+        "width": 304,
+        "height": 152
+      },
+      "tileFilter": {},
+      "customName": "Explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:synthetic.browser.largestContentfulPaint.load",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:synthetic.browser.largestContentfulPaint.load:(fold,):splitBy():avg:auto:sort(value(avg,descending)):limit(1)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "theme": "DEFAULT",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 2500,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 4000,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE",
+          "hasTrendline": true
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "CLS",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 532,
+        "left": 912,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": "Explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:synthetic.browser.cumulativeLayoutShift.load",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.synthetic_test"
+          ],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "metricSelector": "builtin:synthetic.browser.cumulativeLayoutShift.load:fold:splitBy(dt.entity.synthetic_test):avg:auto:sort(value(avg,descending)):limit(10)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {
+          "theme": "DEFAULT",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.1,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0.25,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE"
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "LCP",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 532,
+        "left": 1216,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {},
+      "customName": "Explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:synthetic.browser.largestContentfulPaint.load",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.synthetic_test"
+          ],
+          "metricSelector": "builtin:synthetic.browser.largestContentfulPaint.load:fold:splitBy(dt.entity.synthetic_test):avg:auto:sort(value(avg,descending)):limit(10)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TOP_LIST",
+        "global": {
+          "theme": "DEFAULT",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 2500,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 4000,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE"
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1216,
+        "width": 304,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "Largest contentful paint (**LCP**)\n\n🟩< 2.5s  🟨2.5 - 4s 🟥> 4s"
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 912,
+        "width": 304,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "Cummulative Layout Shift (**CLS**)\n \n🟩<0.1 🟨0.1 - 0.25 🟥>0.25"
+    },
+    {
+      "name": "CLS",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 912,
+        "width": 304,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": "Explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:synthetic.browser.cumulativeLayoutShift.load",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "metricSelector": "builtin:synthetic.browser.cumulativeLayoutShift.load:splitBy():avg:auto:sort(value(avg,descending)):limit(20)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "theme": "BLUE",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 0.1,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 0.25,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE"
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "LCP",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 266,
+        "left": 1216,
+        "width": 304,
+        "height": 266
+      },
+      "tileFilter": {},
+      "customName": "Explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:synthetic.browser.largestContentfulPaint.load",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "builtin:synthetic.browser.largestContentfulPaint.load:splitBy():avg:auto:sort(value(avg,descending)):limit(20)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "GRAPH_CHART",
+        "global": {
+          "theme": "BLUE",
+          "threshold": {
+            "axisTarget": "LEFT",
+            "rules": [
+              {
+                "value": 0,
+                "color": "#7dc540"
+              },
+              {
+                "value": 2500,
+                "color": "#f5d30f"
+              },
+              {
+                "value": 4000,
+                "color": "#dc172a"
+              }
+            ]
+          },
+          "seriesType": "LINE"
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "seriesType": "LINE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Markdown",
+      "tileType": "MARKDOWN",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 608,
+        "width": 304,
+        "height": 76
+      },
+      "tileFilter": {},
+      "markdown": "First Input Delay (**FID**)\n\n🟩<0ms 🟨100- 300ms 🟥>300ms"
+    }
+  ]
+}
