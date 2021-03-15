@@ -27,7 +27,7 @@
         "height": 152
       },
       "tileFilter": {},
-      "markdown": "!PU(grid):hor=0,6,12,18,24,30;ver=0,14,28,42,56;wid=100;color=#000000;margin=8"
+      "markdown": "!PU(grid):hor=0,6,12,18,24,30;ver=1,15,29,43,57;wid=100;color=#000000;margin=8"
     },
     {
       "name": "Markdown",
@@ -40,7 +40,7 @@
         "height": 152
       },
       "tileFilter": {},
-      "markdown": "!PU(grid):hor=0,6,12,18,24,30;ver=0,14,28,42,56;color=#353535"
+      "markdown": "!PU(grid):hor=0,6,12,18,24,30;ver=1,15,29,43,57;color=#353535"
     },
     {
       "name": "Markdown",
@@ -53,7 +53,7 @@
         "height": 152
       },
       "tileFilter": {},
-      "markdown": "!PU(grid):hor=31,32;ver=57,58,59;color=#000000"
+      "markdown": "!PU(grid):hor=31,32;ver=0,58,59,60;color=#000000"
     },
     {
       "name": "Markdown",
