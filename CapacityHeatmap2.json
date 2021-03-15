@@ -367,240 +367,240 @@
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 0,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now to now${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val11","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 38,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval} to now${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val12","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 76,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val13","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 114,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val14","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 152,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val15","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 190,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val16","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 228,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val17","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 266,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val18","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 304,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val19","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 342,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val1a","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 380,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val1b","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1292,"left": 418,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val1c","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-1.id}"]}}
       }
     } ,   {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 0,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now to now${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val21","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 38,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval} to now${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val22","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 76,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val23","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 114,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val24","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 152,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val25","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 190,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val26","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 228,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val27","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 266,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val28","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 304,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val29","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 342,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val2a","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 380,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val2b","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
       }
     },
     {"name": "","tileType": "CUSTOM_CHARTING","configured": true,"bounds": {"top": 1330,"left": 418,"width": 38,"height": 38},
       "tileFilter": {"timeframe": "now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval} to now${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}${MyInterval}"},
       "filterConfig": {"type": "MIXED","customName": "!PU(link):val2c","defaultName": ".","chartConfig": {"legendShown": false,"type": "SINGLE_VALUE",
-          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "HOST","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
+          "series": [{"metric": "${MyMetric.value}","aggregation": "${MyAggregation.value}","type": "LINE","entityType": "ESXI","dimensions": [],"sortAscending": false,"sortColumn": false,"aggregationRate": "TOTAL"}
           ],
-          "resultMetadata": {},"leftAxisCustomUnit": "Second"
+          "resultMetadata": {},"leftAxisCustomUnit": "Giga"
         },
-        "filtersPerEntityType": {"HOST": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
+        "filtersPerEntityType": {"ESXI": {"SPECIFIC_ENTITIES": ["${host-2.id}"]}}
       }
     },    {
       "name": "Markdown",
