@@ -40,20 +40,7 @@
         "height": 152
       },
       "tileFilter": {},
-      "markdown": "!PU(grid):hor=0,6,12,18,24,30;ver=1,15,29,43,57;color=#353535"
-    },
-    {
-      "name": "Markdown",
-      "tileType": "MARKDOWN",
-      "configured": true,
-      "bounds": {
-        "top": 1292,
-        "left": 646,
-        "width": 304,
-        "height": 152
-      },
-      "tileFilter": {},
-      "markdown": "!PU(grid):hor=31,32;ver=0,58,59,60;color=#000000"
+      "markdown": "!PU(grid):hor=0,6,12,18,24,30,31,32;ver=0,1,15,29,43,57,58,59,60;color=#353535"
     },
     {
       "name": "Markdown",
