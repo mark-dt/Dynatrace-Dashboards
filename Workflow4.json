@@ -7,7 +7,7 @@
     "dashboardMetadata": {
         "name": "${overviewName} User Workflow",
         "shared": false,
-        "owner": "aoc4810",
+        "owner": "your.name@dynatrace.com",
         "sharingDetails": {
             "linkShared": true,
             "published": false
