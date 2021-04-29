@@ -5,7 +5,7 @@
     },
     "id": "e2a778c3-e67c-4d19-9ddf-bf120d06327a",
     "dashboardMetadata": {
-        "name": "💎 ${overviewName} ${MyAggregation.key} Heatmap",
+        "name": "💎  ${MyAggregation.key} Heatmap",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {

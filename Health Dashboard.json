@@ -5,7 +5,7 @@
     },
     "id": "f7f98fb0-b2fc-4e98-8e26-932836ea93f9",
     "dashboardMetadata": {
-        "name": "${overviewName} Health Dashboard",
+        "name": " Health Dashboard",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {

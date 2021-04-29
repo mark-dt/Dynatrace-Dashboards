@@ -5,7 +5,7 @@
     },
     "id": "734f3b06-c272-4b27-a48c-31444692c433",
     "dashboardMetadata": {
-        "name": "${overviewName} Marketing Campaign Analysis - ${uspCampaign.value}",
+        "name": " Marketing Campaign Analysis - ${uspCampaign.value}",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {

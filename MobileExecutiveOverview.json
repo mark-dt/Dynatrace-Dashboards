@@ -5,7 +5,7 @@
     },
     "id": "4f08d265-a0a3-4bb9-93ee-c2f1221ddcd3",
     "dashboardMetadata": {
-        "name": "${overviewName} ${app.name} Executive Overview",
+        "name": " ${app.name} Executive Overview",
         "shared": false,
         "owner": "techshadyjk@ruxitlabs.com",
         "sharingDetails": {

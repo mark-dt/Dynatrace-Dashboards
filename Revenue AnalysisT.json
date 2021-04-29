@@ -5,7 +5,7 @@
     },
     "id": "7ce12d01-c6a3-44e5-a5c5-6e3591f29dfe",
     "dashboardMetadata": {
-        "name": "${overviewName} Revenue Analysis",
+        "name": " Revenue Analysis",
         "shared": true,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {

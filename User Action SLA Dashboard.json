@@ -5,7 +5,7 @@
     },
     "id": "263aaa0f-9c4a-487e-8788-21f44ada6020",
     "dashboardMetadata": {
-        "name": "${overviewName} User Action SLA Dashboard",
+        "name": " User Action SLA Dashboard",
         "shared": false,
         "owner": "John.Kelly@dynatrace.com",
         "sharingDetails": {

@@ -5,7 +5,7 @@
     },
     "id": "6928edcb-5b18-40d7-9e49-64e0968e1c60",
     "dashboardMetadata": {
-        "name": "${overviewName} Application Overview",
+        "name": " Application Overview",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {

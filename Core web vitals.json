@@ -7,7 +7,7 @@
   },
   "id": "5353950f-00a0-4f05-8240-12918390871d",
   "dashboardMetadata": {
-    "name": "${overviewName} Core web vitals",
+    "name": " Core web vitals",
     "shared": false,
     "owner": "thomas.brandl@dynatrace.com",
         "sharingDetails": {

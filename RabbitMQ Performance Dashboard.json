@@ -5,7 +5,7 @@
     },
     "id": "35f71905-abd4-497d-a407-af48fc384753",
     "dashboardMetadata": {
-        "name": "${overviewName} RabbitMQ Performance Dashboard",
+        "name": " RabbitMQ Performance Dashboard",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {

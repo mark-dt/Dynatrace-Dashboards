@@ -5,7 +5,7 @@
     },
     "id": "cd6606ad-207b-4d39-8e0d-5f53ca4fd0c1",
     "dashboardMetadata": {
-        "name": "${overviewName} Disk Utilization",
+        "name": " Disk Utilization",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {

@@ -5,7 +5,7 @@
     },
     "id": "734f3b06-c272-4b27-a48c-31444692c466",
     "dashboardMetadata": {
-        "name": "${overviewName} Marketing Source Analysis - ${uspSource.value}",
+        "name": " Marketing Source Analysis - ${uspSource.value}",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {

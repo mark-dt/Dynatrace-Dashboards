@@ -7,7 +7,7 @@
   },
   "id": "79a30b97-05aa-4b20-b01c-f116c938228e",
   "dashboardMetadata": {
-    "name": "${overviewName} VMware Infrastructure Utilization",
+    "name": " VMware Infrastructure Utilization",
     "shared": false,
     "owner": "${MyEmail}",
     "sharingDetails": {

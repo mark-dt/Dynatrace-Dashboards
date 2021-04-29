@@ -7,7 +7,7 @@
   },
   "id": "825c6458-41a3-44a7-a53e-5089f6b831d4",
   "dashboardMetadata": {
-    "name": "${overviewName} VMware Underutilized Infrastructure",
+    "name": " VMware Underutilized Infrastructure",
     "shared": false,
     "owner": "${MyEmail}",
     "sharingDetails": {

@@ -5,7 +5,7 @@
     },
     "id": "effc7085-0130-41aa-9521-e3efacaf0d51",
     "dashboardMetadata": { 
-        "name": "💎 ${overviewName} ${app.name} User Action Linear Weighted Forecast Analysis ",
+        "name": "💎  ${app.name} User Action Linear Weighted Forecast Analysis ",
         "shared": true,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {

@@ -5,7 +5,7 @@
     },
     "id": "cfd0d556-8a38-41ae-a768-dfb4487e7884",
     "dashboardMetadata": {
-        "name": "${overviewName} ${MyVPNName} Overview",
+        "name": " ${MyVPNName} Overview",
         "shared": true,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {

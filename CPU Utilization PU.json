@@ -5,7 +5,7 @@
     },
     "id": "508b858a-c659-40bd-9d16-0b84343c0aa7",
     "dashboardMetadata": {
-        "name": "\uD83D\uDC8E ${overviewName} CPU Utilization",
+        "name": "\uD83D\uDC8E  CPU Utilization",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {
