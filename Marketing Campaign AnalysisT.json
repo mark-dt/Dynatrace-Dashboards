@@ -7,7 +7,7 @@
     "dashboardMetadata": {
         "name": " Marketing Campaign Analysis - ${uspCampaign.value}",
         "shared": false,
-        "owner": "john.kelly@dynatrace.com",
+        "owner": "your.name@dynatrace.com",
         "sharingDetails": {
             "linkShared": true,
             "published": false

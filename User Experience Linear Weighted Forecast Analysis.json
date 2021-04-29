@@ -7,7 +7,7 @@
     "dashboardMetadata": { 
         "name": "💎  ${app.name} User Experience Linear Weighted Forecast Analysis ",
         "shared": true,
-        "owner": "john.kelly@dynatrace.com",
+        "owner": "your.name@dynatrace.com",
         "sharingDetails": {
             "linkShared": true,
             "published": true

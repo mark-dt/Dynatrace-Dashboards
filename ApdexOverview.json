@@ -5,7 +5,7 @@
     },
     "id": "2680879a-a684-428c-839b-0945597f87bb",
     "dashboardMetadata": {
-        "name": "${UserJourneyName} Customer Satisfaction Overview",
+        "name": "Customer Satisfaction Overview",
         "shared": false,
         "owner": "John.Kelly@dynatrace.com",
         "sharingDetails": {

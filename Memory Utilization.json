@@ -5,9 +5,9 @@
     },
     "id": "8fb7f5c9-4943-4ac3-ab23-5fe1087f28a3",
     "dashboardMetadata": {
-        "name": " Memory Utilization",
+        "name": "Memory Utilization",
         "shared": false,
-        "owner": "john.kelly@dynatrace.com",
+        "owner": "your.name@dynatrace.com",
         "sharingDetails": {
             "linkShared": true,
             "published": false

@@ -7,7 +7,7 @@
     "dashboardMetadata": {
         "name": " ${app.name} Executive Overview",
         "shared": false,
-        "owner": "techshadyjk@ruxitlabs.com",
+        "owner": "your.name@dynatrace.com",
         "sharingDetails": {
             "linkShared": true,
             "published": false
